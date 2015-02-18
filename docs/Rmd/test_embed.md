@@ -34,12 +34,12 @@ Here is a plot.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartcdc39c6d42&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartcdc6a014219&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartcdc39c6d42&quot;,
+ &quot;dom&quot;: &quot;chartcdc6a014219&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -58,7 +58,10 @@ Here is a plot.
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Mean&quot; 
+ &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
+} 
 } 
 } 
 ],
@@ -351,10 +354,15 @@ Here is a plot.
 ],
 &quot;xAxis&quot;: [
  {
- &quot;title&quot;: {
- &quot;text&quot;: &quot;Month&quot; 
-},
-&quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ] 
+ &quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ],
+&quot;title&quot;: {
+ &quot;text&quot;: &quot;Due to variability among climate models and among years in a natural climate system, these graphs are useful for examining trends over time, rather than for precisely&lt;br&gt;predicting monthly or yearly values. For more information on derivation, reliability, and variability among these projections, please visit www.snap.uaf.edu.&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot;,
+&quot;fontWeight&quot;: &quot;normal&quot;,
+&quot;fontSize&quot;: &quot;8px&quot; 
+} 
+} 
 } 
 ],
 &quot;subtitle&quot;: {
@@ -376,9 +384,14 @@ Here is a plot.
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
-&quot;id&quot;: &quot;chartcdc39c6d42&quot;,
+&quot;plotOptions&quot;: {
+ &quot;column&quot;: {
+ &quot;threshold&quot;:              0 
+} 
+},
+&quot;id&quot;: &quot;chartcdc6a014219&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chartcdc39c6d42&quot; 
+ &quot;renderTo&quot;: &quot;chartcdc6a014219&quot; 
 } 
 });
         });
@@ -387,7 +400,7 @@ Here is a plot.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc39c6d42'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc6a014219'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 There you have it.

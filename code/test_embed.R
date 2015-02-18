@@ -58,9 +58,9 @@ makePlot <- function(){
 	p$title(text=paste("Average Monthly", variable, "for", location), style=list(color="#000000"))
 	p$subtitle(text=paste("Historical", baseline, "and 5-Model Projected Average,", RCPLabel), style=list(color="gray"))
 	p$legend(verticalAlign="top", y=50, borderWidth=1, borderColor="gray", borderRadius=5, itemMarginBottom=-5, itemMarginBottom=-5, itemStyle=list(color="gray"))
-	#p$xAxis(categories=month.abb, title=list(text=caption, style=list(color="gray", fontWeight="normal", fontSize="8px")))
-	#p$yAxis(title=list(text=paste0(variable, " (", Unit, ")"), style=list(color="gray")))
-	#if(err!="exclusive") p$plotOptions(column=list(threshold=Thresh))
+	p$xAxis(categories=month.abb, title=list(text=caption, style=list(color="gray", fontWeight="normal", fontSize="8px")))
+	p$yAxis(title=list(text=paste0(variable, " (", Unit, ")"), style=list(color="gray")))
+	if(err!="exclusive") p$plotOptions(column=list(threshold=Thresh))
 	#if(err!="none"){
 	#	if(err=="overlay") for(k in 1:5) p$params$series[[k]]$id <- paste0("series", k)
 	#	d <- d3_scen[c(5,6,8)]
