@@ -9,18 +9,12 @@ output:
 
 ```{r knitr_setup, echo=FALSE}
 opts_chunk$set(cache=FALSE, echo=FALSE, eval=TRUE, tidy=TRUE, message=FALSE, warning=FALSE, results="asis", comment=NA)
-read_chunk("../../code/embed_ex.R")
+read_chunk("../../code/test_embed.R")
 ```
 
 Here is a plot.
 
 ```{r setup}
-```
-
-```{r inputs}
-```
-
-```{r data}
 ```
 
 ```{r plot}
