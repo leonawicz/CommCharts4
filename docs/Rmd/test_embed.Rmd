@@ -17,6 +17,12 @@ Here is a plot.
 ```{r setup}
 ```
 
+```{r inputs}
+```
+
+```{r data}
+```
+
 ```{r plot}
 ```
 
