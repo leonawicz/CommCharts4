@@ -34,12 +34,12 @@ Here is a plot.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartcdc7032311&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartcdc39c6d42&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartcdc7032311&quot;,
+ &quot;dom&quot;: &quot;chartcdc39c6d42&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -358,12 +358,27 @@ Here is a plot.
 } 
 ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: null 
+ &quot;text&quot;: &quot;Historical PRISM and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
+} 
 },
 &quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
-&quot;id&quot;: &quot;chartcdc7032311&quot;,
+&quot;legend&quot;: {
+ &quot;verticalAlign&quot;: &quot;top&quot;,
+&quot;y&quot;:             50,
+&quot;borderWidth&quot;:              1,
+&quot;borderColor&quot;: &quot;gray&quot;,
+&quot;borderRadius&quot;:              5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemStyle&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
+} 
+},
+&quot;id&quot;: &quot;chartcdc39c6d42&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chartcdc7032311&quot; 
+ &quot;renderTo&quot;: &quot;chartcdc39c6d42&quot; 
 } 
 });
         });
@@ -372,7 +387,7 @@ Here is a plot.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc7032311'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc39c6d42'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 There you have it.
