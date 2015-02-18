@@ -55,7 +55,7 @@ d3_scen <- finalizeData()
 makePlot <- function(){
 	p <- if(err=="exclusive") Highcharts$new else hPlot(x="Month", y="Mean", data=d3_scen, type="column", group="Decade")
 	p$colors(Colors)
-	#p$title(text=paste("Average Monthly", variable, "for", location), style=list(color="#000000"))
+	p$title(text=paste("Average Monthly", variable, "for", location), style=list(color="#000000"))
 	#p$subtitle(text=paste("Historical", baseline, "and 5-Model Projected Average,", RCPLabel), style=list(color="gray"))
 	#p$legend(verticalAlign="top", y=50, borderWidth=1, borderColor="gray", borderRadius=5, itemMarginBottom=-5, itemMarginBottom=-5, itemStyle=list(color="gray"))
 	#p$xAxis(categories=month.abb, title=list(text=caption, style=list(color="gray", fontWeight="normal", fontSize="8px")))
