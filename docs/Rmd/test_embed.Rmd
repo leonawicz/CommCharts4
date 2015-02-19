@@ -8,25 +8,31 @@ output:
 ---
 
 ```{r knitr_setup, echo=FALSE}
-opts_chunk$set(cache=FALSE, echo=FALSE, eval=TRUE, tidy=TRUE, message=FALSE, warning=FALSE, results="asis", comment=NA)
+opts_chunk$set(cache=FALSE, echo=TRUE, eval=TRUE, tidy=TRUE, message=FALSE, warning=FALSE, results="asis", comment=NA)
 read_chunk("../../code/test_embed.R")
 ```
 
-Here is a plot.
+## Here are three plots.
+All three display in interactive R or within a Shiny app.
+However, something about the addition of the error series appears to cause issues only when running `render` from `rmarkdown` on the Rmd file.
 
 ```{r setup}
-```
-
-```{r inputs}
-```
-
-```{r data}
 ```
 
 ```{r plot}
 ```
 
-```{r embed, comment=NA, results="asis", tidy=F}
+### Grouped bar plot
+
+```{r without_errorbars, comment=NA, results="asis", tidy=F}
 ```
 
-There you have it.
+### Grouped bar plot with error bars
+
+```{r with_errorbars, comment=NA, results="asis", tidy=F}
+```
+
+### Grouped floating error bars
+
+```{r floating_errorbars, comment=NA, results="asis", tidy=F}
+```

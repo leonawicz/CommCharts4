@@ -1,15 +1,58 @@
 
 
 
-Here is a plot.
+## Here are three plots.
+All three display in interactive R or within a Shiny app.
+However, something about the addition of the error series appears to cause issues only when running `render` from `rmarkdown` on the Rmd file.
 
 
+```r
+library(rCharts)
+library(plyr)
+seasons <- c("winter", "spring", "summer", "fall")
+seasons <- factor(seasons, levels = seasons)
+set.seed(1)
+d <- data.frame(x = rep(seasons, 5), y = rnorm(20) + 5, grp = rep(LETTERS[1:5], 
+    each = 4))
+d$lb <- 0.8 * d$y
+d$ub <- 1.2 * d$y
+```
 
 
+```r
+makePlot <- function(d, err = "overlay") {
+    p <- if (err == "exclusive") 
+        Highcharts$new() else hPlot(x = "x", y = "y", data = d, type = "column", group = "grp")
+    if (err != "none") {
+        if (err == "overlay") 
+            for (k in 1:length(unique(d$grp))) p$params$series[[k]]$id <- paste0("series", 
+                k)
+        d2 <- d[c(3, 4, 5)]
+        ddply(d2, .(grp), function(x) {
+            g <- unique(x$grp)
+            x$grp <- NULL
+            json <- toJSONArray2(x, json = F, names = F)
+            if (err == "overlay") 
+                p$series(data = json, name = g, type = "errorbar", linkedTo = paste0("series", 
+                  which(unique(d2$grp) == g))) else p$series(data = json, name = g, type = "columnrange")
+            return(NULL)
+        })
+    }
+    p
+}
+
+p1 <- makePlot(d = d, err = "none")  # No error bars
+p2 <- makePlot(d = d, err = "exclusive")  # Add error bars
+p3 <- makePlot(d = d, err = "overlay")  # Plot error only (floating bars)
+```
+
+### Grouped bar plot
 
 
-
-
+```r
+#p1$show('server')
+p1$show("iframesrc", cdn=TRUE)
+```
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
 &lt;meta charset = &#039;utf-8&#039;&gt;
@@ -34,12 +77,12 @@ Here is a plot.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartcdc6c7f3aa7&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartcdc274468e4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartcdc6c7f3aa7&quot;,
+ &quot;dom&quot;: &quot;chartcdc274468e4&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -50,18 +93,12 @@ Here is a plot.
  &quot;enabled&quot;: false 
 },
 &quot;title&quot;: {
- &quot;text&quot;: &quot;Average Monthly Temperature for Fairbanks, Alaska&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;#000000&quot; 
-} 
+ &quot;text&quot;: null 
 },
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
+ &quot;text&quot;: &quot;y&quot; 
 } 
 } 
 ],
@@ -69,55 +106,411 @@ Here is a plot.
  {
  &quot;data&quot;: [
  [
- &quot;Jan&quot;,
-         -22.5 
+ &quot;winter&quot;,
+4.373546189258 
 ],
 [
- &quot;Feb&quot;,
-           -19 
+ &quot;spring&quot;,
+5.183643324222 
 ],
 [
- &quot;Mar&quot;,
-         -11.4 
+ &quot;summer&quot;,
+ 4.16437138759 
 ],
 [
- &quot;Apr&quot;,
-          -0.9 
-],
-[
- &quot;May&quot;,
-           9.1 
-],
-[
- &quot;Jun&quot;,
-          15.1 
-],
-[
- &quot;Jul&quot;,
-          16.5 
-],
-[
- &quot;Aug&quot;,
-          13.6 
-],
-[
- &quot;Sep&quot;,
-           7.2 
-],
-[
- &quot;Oct&quot;,
-          -3.6 
-],
-[
- &quot;Nov&quot;,
-         -15.1 
-],
-[
- &quot;Dec&quot;,
-         -21.5 
+ &quot;fall&quot;,
+6.595280802138 
 ] 
 ],
-&quot;name&quot;: &quot;1961-1990&quot;,
+&quot;name&quot;: &quot;A&quot;,
+&quot;type&quot;: &quot;column&quot;,
+&quot;marker&quot;: {
+ &quot;radius&quot;:              3 
+} 
+},
+{
+ &quot;data&quot;: [
+ [
+ &quot;winter&quot;,
+5.329507771815 
+],
+[
+ &quot;spring&quot;,
+4.179531615882 
+],
+[
+ &quot;summer&quot;,
+5.487429052428 
+],
+[
+ &quot;fall&quot;,
+5.738324705129 
+] 
+],
+&quot;name&quot;: &quot;B&quot;,
+&quot;type&quot;: &quot;column&quot;,
+&quot;marker&quot;: {
+ &quot;radius&quot;:              3 
+} 
+},
+{
+ &quot;data&quot;: [
+ [
+ &quot;winter&quot;,
+5.575781351653 
+],
+[
+ &quot;spring&quot;,
+4.694611612844 
+],
+[
+ &quot;summer&quot;,
+6.511781168451 
+],
+[
+ &quot;fall&quot;,
+5.389843236411 
+] 
+],
+&quot;name&quot;: &quot;C&quot;,
+&quot;type&quot;: &quot;column&quot;,
+&quot;marker&quot;: {
+ &quot;radius&quot;:              3 
+} 
+},
+{
+ &quot;data&quot;: [
+ [
+ &quot;winter&quot;,
+4.378759419458 
+],
+[
+ &quot;spring&quot;,
+2.785300112823 
+],
+[
+ &quot;summer&quot;,
+6.124930918143 
+],
+[
+ &quot;fall&quot;,
+4.955066390985 
+] 
+],
+&quot;name&quot;: &quot;D&quot;,
+&quot;type&quot;: &quot;column&quot;,
+&quot;marker&quot;: {
+ &quot;radius&quot;:              3 
+} 
+},
+{
+ &quot;data&quot;: [
+ [
+ &quot;winter&quot;,
+4.983809736901 
+],
+[
+ &quot;spring&quot;,
+5.943836210685 
+],
+[
+ &quot;summer&quot;,
+5.821221195098 
+],
+[
+ &quot;fall&quot;,
+5.593901321218 
+] 
+],
+&quot;name&quot;: &quot;E&quot;,
+&quot;type&quot;: &quot;column&quot;,
+&quot;marker&quot;: {
+ &quot;radius&quot;:              3 
+} 
+} 
+],
+&quot;xAxis&quot;: [
+ {
+ &quot;title&quot;: {
+ &quot;text&quot;: &quot;x&quot; 
+},
+&quot;categories&quot;: [ &quot;winter&quot;, &quot;spring&quot;, &quot;summer&quot;, &quot;fall&quot; ] 
+} 
+],
+&quot;subtitle&quot;: {
+ &quot;text&quot;: null 
+},
+&quot;id&quot;: &quot;chartcdc274468e4&quot;,
+&quot;chart&quot;: {
+ &quot;renderTo&quot;: &quot;chartcdc274468e4&quot; 
+} 
+});
+        });
+    })(jQuery);
+&lt;/script&gt;
+    
+    &lt;script&gt;&lt;/script&gt;    
+  &lt;/body&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc274468e4'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+### Grouped bar plot with error bars
+
+
+```r
+#p2$show('server')
+p2$show("iframesrc", cdn=TRUE)
+```
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&quot;&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    
+    &lt;style&gt;
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body &gt;
+    
+    &lt;div id = &#039;chartcdc48fe1192&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ &quot;dom&quot;: &quot;chartcdc48fe1192&quot;,
+&quot;width&quot;:            800,
+&quot;height&quot;:            400,
+&quot;credits&quot;: {
+ &quot;href&quot;: null,
+&quot;text&quot;: null 
+},
+&quot;exporting&quot;: {
+ &quot;enabled&quot;: false 
+},
+&quot;title&quot;: {
+ &quot;text&quot;: null 
+},
+&quot;yAxis&quot;: {
+ &quot;title&quot;: {
+ &quot;text&quot;: null 
+} 
+},
+&quot;series&quot;: [
+ {
+ &quot;data&quot;: [
+ [
+ 3.498836951406,
+5.248255427109 
+],
+[
+ 4.146914659378,
+6.220371989066 
+],
+[
+ 3.331497110072,
+4.997245665108 
+],
+[
+  5.27622464171,
+7.914336962565 
+] 
+],
+&quot;name&quot;: &quot;A&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 4.263606217452,
+6.395409326178 
+],
+[
+ 3.343625292706,
+5.015437939058 
+],
+[
+ 4.389943241943,
+6.584914862914 
+],
+[
+ 4.590659764103,
+6.885989646155 
+] 
+],
+&quot;name&quot;: &quot;B&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 4.460625081323,
+6.690937621984 
+],
+[
+ 3.755689290275,
+5.633533935412 
+],
+[
+ 5.209424934761,
+7.814137402141 
+],
+[
+ 4.311874589129,
+6.467811883694 
+] 
+],
+&quot;name&quot;: &quot;C&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 3.503007535567,
+ 5.25451130335 
+],
+[
+ 2.228240090258,
+3.342360135387 
+],
+[
+ 4.899944734514,
+7.349917101772 
+],
+[
+ 3.964053112788,
+5.946079669182 
+] 
+],
+&quot;name&quot;: &quot;D&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 3.987047789521,
+5.980571684281 
+],
+[
+ 4.755068968548,
+7.132603452822 
+],
+[
+ 4.656976956078,
+6.985465434118 
+],
+[
+ 4.475121056974,
+6.712681585461 
+] 
+],
+&quot;name&quot;: &quot;E&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+} 
+],
+&quot;id&quot;: &quot;chartcdc48fe1192&quot;,
+&quot;chart&quot;: {
+ &quot;renderTo&quot;: &quot;chartcdc48fe1192&quot; 
+} 
+});
+        });
+    })(jQuery);
+&lt;/script&gt;
+    
+    &lt;script&gt;&lt;/script&gt;    
+  &lt;/body&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc48fe1192'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+### Grouped floating error bars
+
+
+```r
+#p3$show('server')
+p3$show("iframesrc", cdn=TRUE)
+```
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&quot;&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    
+    &lt;style&gt;
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body &gt;
+    
+    &lt;div id = &#039;chartcdcb8a2510&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ &quot;dom&quot;: &quot;chartcdcb8a2510&quot;,
+&quot;width&quot;:            800,
+&quot;height&quot;:            400,
+&quot;credits&quot;: {
+ &quot;href&quot;: null,
+&quot;text&quot;: null 
+},
+&quot;exporting&quot;: {
+ &quot;enabled&quot;: false 
+},
+&quot;title&quot;: {
+ &quot;text&quot;: null 
+},
+&quot;yAxis&quot;: [
+ {
+ &quot;title&quot;: {
+ &quot;text&quot;: &quot;y&quot; 
+} 
+} 
+],
+&quot;series&quot;: [
+ {
+ &quot;data&quot;: [
+ [
+ &quot;winter&quot;,
+4.373546189258 
+],
+[
+ &quot;spring&quot;,
+5.183643324222 
+],
+[
+ &quot;summer&quot;,
+ 4.16437138759 
+],
+[
+ &quot;fall&quot;,
+6.595280802138 
+] 
+],
+&quot;name&quot;: &quot;A&quot;,
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
@@ -127,55 +520,23 @@ Here is a plot.
 {
  &quot;data&quot;: [
  [
- &quot;Jan&quot;,
-         -20.6 
+ &quot;winter&quot;,
+5.329507771815 
 ],
 [
- &quot;Feb&quot;,
-         -17.3 
+ &quot;spring&quot;,
+4.179531615882 
 ],
 [
- &quot;Mar&quot;,
-          -8.9 
+ &quot;summer&quot;,
+5.487429052428 
 ],
 [
- &quot;Apr&quot;,
-           0.8 
-],
-[
- &quot;May&quot;,
-          10.3 
-],
-[
- &quot;Jun&quot;,
-          16.2 
-],
-[
- &quot;Jul&quot;,
-          17.7 
-],
-[
- &quot;Aug&quot;,
-          14.9 
-],
-[
- &quot;Sep&quot;,
-           8.5 
-],
-[
- &quot;Oct&quot;,
-          -1.5 
-],
-[
- &quot;Nov&quot;,
-           -13 
-],
-[
- &quot;Dec&quot;,
-         -20.5 
+ &quot;fall&quot;,
+5.738324705129 
 ] 
 ],
-&quot;name&quot;: &quot;2010-2019&quot;,
+&quot;name&quot;: &quot;B&quot;,
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
@@ -185,55 +546,23 @@ Here is a plot.
 {
  &quot;data&quot;: [
  [
- &quot;Jan&quot;,
-         -18.8 
+ &quot;winter&quot;,
+5.575781351653 
 ],
 [
- &quot;Feb&quot;,
-         -14.9 
+ &quot;spring&quot;,
+4.694611612844 
 ],
 [
- &quot;Mar&quot;,
-          -7.5 
+ &quot;summer&quot;,
+6.511781168451 
 ],
 [
- &quot;Apr&quot;,
-           1.3 
-],
-[
- &quot;May&quot;,
-          10.5 
-],
-[
- &quot;Jun&quot;,
-          17.6 
-],
-[
- &quot;Jul&quot;,
-          18.4 
-],
-[
- &quot;Aug&quot;,
-          15.4 
-],
-[
- &quot;Sep&quot;,
-           9.3 
-],
-[
- &quot;Oct&quot;,
-          -0.9 
-],
-[
- &quot;Nov&quot;,
-         -11.5 
-],
-[
- &quot;Dec&quot;,
-         -17.2 
+ &quot;fall&quot;,
+5.389843236411 
 ] 
 ],
-&quot;name&quot;: &quot;2040-2049&quot;,
+&quot;name&quot;: &quot;C&quot;,
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
@@ -243,55 +572,23 @@ Here is a plot.
 {
  &quot;data&quot;: [
  [
- &quot;Jan&quot;,
-           -17 
+ &quot;winter&quot;,
+4.378759419458 
 ],
 [
- &quot;Feb&quot;,
-         -13.2 
+ &quot;spring&quot;,
+2.785300112823 
 ],
 [
- &quot;Mar&quot;,
-          -6.4 
+ &quot;summer&quot;,
+6.124930918143 
 ],
 [
- &quot;Apr&quot;,
-           2.7 
-],
-[
- &quot;May&quot;,
-          11.9 
-],
-[
- &quot;Jun&quot;,
-          17.4 
-],
-[
- &quot;Jul&quot;,
-          18.8 
-],
-[
- &quot;Aug&quot;,
-          16.2 
-],
-[
- &quot;Sep&quot;,
-          10.2 
-],
-[
- &quot;Oct&quot;,
-          -0.3 
-],
-[
- &quot;Nov&quot;,
-          -9.6 
-],
-[
- &quot;Dec&quot;,
-         -16.4 
+ &quot;fall&quot;,
+4.955066390985 
 ] 
 ],
-&quot;name&quot;: &quot;2060-2069&quot;,
+&quot;name&quot;: &quot;D&quot;,
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
@@ -301,55 +598,23 @@ Here is a plot.
 {
  &quot;data&quot;: [
  [
- &quot;Jan&quot;,
-         -15.5 
+ &quot;winter&quot;,
+4.983809736901 
 ],
 [
- &quot;Feb&quot;,
-         -12.5 
+ &quot;spring&quot;,
+5.943836210685 
 ],
 [
- &quot;Mar&quot;,
-            -5 
+ &quot;summer&quot;,
+5.821221195098 
 ],
 [
- &quot;Apr&quot;,
-           3.8 
-],
-[
- &quot;May&quot;,
-          13.2 
-],
-[
- &quot;Jun&quot;,
-          18.8 
-],
-[
- &quot;Jul&quot;,
-          19.4 
-],
-[
- &quot;Aug&quot;,
-          16.9 
-],
-[
- &quot;Sep&quot;,
-          10.8 
-],
-[
- &quot;Oct&quot;,
-           0.6 
-],
-[
- &quot;Nov&quot;,
-          -9.5 
-],
-[
- &quot;Dec&quot;,
-           -15 
+ &quot;fall&quot;,
+5.593901321218 
 ] 
 ],
-&quot;name&quot;: &quot;2090-2099&quot;,
+&quot;name&quot;: &quot;E&quot;,
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
@@ -359,319 +624,133 @@ Here is a plot.
 {
  &quot;data&quot;: [
  [
- null,
-null 
+ 3.498836951406,
+5.248255427109 
 ],
 [
- null,
-null 
+ 4.146914659378,
+6.220371989066 
 ],
 [
- null,
-null 
+ 3.331497110072,
+4.997245665108 
 ],
 [
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
+  5.27622464171,
+7.914336962565 
 ] 
 ],
-&quot;name&quot;: &quot;1961-1990&quot;,
+&quot;name&quot;: &quot;A&quot;,
 &quot;type&quot;: &quot;errorbar&quot;,
 &quot;linkedTo&quot;: &quot;series1&quot; 
 },
 {
  &quot;data&quot;: [
  [
-          -25.6,
-         -15.6 
+ 4.263606217452,
+6.395409326178 
 ],
 [
-            -21,
-         -13.6 
+ 3.343625292706,
+5.015437939058 
 ],
 [
-          -12.7,
-          -5.1 
+ 4.389943241943,
+6.584914862914 
 ],
 [
-           -1.7,
-           3.3 
-],
-[
-            8.4,
-          12.2 
-],
-[
-           14.5,
-          17.9 
-],
-[
-           15.9,
-          19.5 
-],
-[
-           13.4,
-          16.4 
-],
-[
-            6.8,
-          10.2 
-],
-[
-           -4.4,
-           1.4 
-],
-[
-          -16.4,
-          -9.6 
-],
-[
-          -24.3,
-         -16.7 
+ 4.590659764103,
+6.885989646155 
 ] 
 ],
-&quot;name&quot;: &quot;2010-2019&quot;,
+&quot;name&quot;: &quot;B&quot;,
 &quot;type&quot;: &quot;errorbar&quot;,
 &quot;linkedTo&quot;: &quot;series2&quot; 
 },
 {
  &quot;data&quot;: [
  [
-          -23.1,
-         -14.5 
+ 4.460625081323,
+6.690937621984 
 ],
 [
-          -19.6,
-         -10.2 
+ 3.755689290275,
+5.633533935412 
 ],
 [
-          -10.7,
-          -4.3 
+ 5.209424934761,
+7.814137402141 
 ],
 [
-           -1.4,
-             4 
-],
-[
-            8.2,
-          12.8 
-],
-[
-           15.8,
-          19.4 
-],
-[
-           16.8,
-            20 
-],
-[
-           13.9,
-          16.9 
-],
-[
-            7.3,
-          11.3 
-],
-[
-           -3.5,
-           1.7 
-],
-[
-            -15,
-            -8 
-],
-[
-          -21.4,
-           -13 
+ 4.311874589129,
+6.467811883694 
 ] 
 ],
-&quot;name&quot;: &quot;2040-2049&quot;,
+&quot;name&quot;: &quot;C&quot;,
 &quot;type&quot;: &quot;errorbar&quot;,
 &quot;linkedTo&quot;: &quot;series3&quot; 
 },
 {
  &quot;data&quot;: [
  [
-          -21.5,
-         -12.5 
+ 3.503007535567,
+ 5.25451130335 
 ],
 [
-          -17.4,
-            -9 
+ 2.228240090258,
+3.342360135387 
 ],
 [
-           -9.7,
-          -3.1 
+ 4.899944734514,
+7.349917101772 
 ],
 [
-           -0.4,
-           5.8 
-],
-[
-            9.7,
-          14.1 
-],
-[
-           15.5,
-          19.3 
-],
-[
-             17,
-          20.6 
-],
-[
-           14.3,
-          18.1 
-],
-[
-            8.4,
-            12 
-],
-[
-           -2.5,
-           1.9 
-],
-[
-          -13.3,
-          -5.9 
-],
-[
-          -20.8,
-           -12 
+ 3.964053112788,
+5.946079669182 
 ] 
 ],
-&quot;name&quot;: &quot;2060-2069&quot;,
+&quot;name&quot;: &quot;D&quot;,
 &quot;type&quot;: &quot;errorbar&quot;,
 &quot;linkedTo&quot;: &quot;series4&quot; 
 },
 {
  &quot;data&quot;: [
  [
-          -19.9,
-         -11.1 
+ 3.987047789521,
+5.980571684281 
 ],
 [
-          -18.1,
-          -6.9 
+ 4.755068968548,
+7.132603452822 
 ],
 [
-           -8.9,
-          -1.1 
+ 4.656976956078,
+6.985465434118 
 ],
 [
-            0.6,
-             7 
-],
-[
-           10.3,
-          16.1 
-],
-[
-           15.9,
-          21.7 
-],
-[
-           17.3,
-          21.5 
-],
-[
-           15.2,
-          18.6 
-],
-[
-            8.8,
-          12.8 
-],
-[
-           -1.7,
-           2.9 
-],
-[
-            -13,
-            -6 
-],
-[
-            -20,
-           -10 
+ 4.475121056974,
+6.712681585461 
 ] 
 ],
-&quot;name&quot;: &quot;2090-2099&quot;,
+&quot;name&quot;: &quot;E&quot;,
 &quot;type&quot;: &quot;errorbar&quot;,
 &quot;linkedTo&quot;: &quot;series5&quot; 
 } 
 ],
 &quot;xAxis&quot;: [
  {
- &quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ],
-&quot;title&quot;: {
- &quot;text&quot;: &quot;Due to variability among climate models and among years in a natural climate system, these graphs are useful for examining trends over time, rather than for precisely&lt;br&gt;predicting monthly or yearly values. For more information on derivation, reliability, and variability among these projections, please visit www.snap.uaf.edu.&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot;,
-&quot;fontWeight&quot;: &quot;normal&quot;,
-&quot;fontSize&quot;: &quot;8px&quot; 
-} 
-} 
+ &quot;title&quot;: {
+ &quot;text&quot;: &quot;x&quot; 
+},
+&quot;categories&quot;: [ &quot;winter&quot;, &quot;spring&quot;, &quot;summer&quot;, &quot;fall&quot; ] 
 } 
 ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical PRISM and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
+ &quot;text&quot;: null 
 },
-&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
-&quot;legend&quot;: {
- &quot;verticalAlign&quot;: &quot;top&quot;,
-&quot;y&quot;:             50,
-&quot;borderWidth&quot;:              1,
-&quot;borderColor&quot;: &quot;gray&quot;,
-&quot;borderRadius&quot;:              5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemStyle&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
-},
-&quot;plotOptions&quot;: {
- &quot;column&quot;: {
- &quot;threshold&quot;:              0 
-} 
-},
-&quot;id&quot;: &quot;chartcdc6c7f3aa7&quot;,
+&quot;id&quot;: &quot;chartcdcb8a2510&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chartcdc6c7f3aa7&quot; 
+ &quot;renderTo&quot;: &quot;chartcdcb8a2510&quot; 
 } 
 });
         });
@@ -680,7 +759,5 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdc6c7f3aa7'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartcdcb8a2510'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-There you have it.
