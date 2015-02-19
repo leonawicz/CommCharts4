@@ -69,7 +69,7 @@ makePlot <- function(){
 			return(NULL)
 		})
 	}
-	p$chart(width=800, height=500)
+	p$chart(width=900, height=500)
 	p
 }
 
