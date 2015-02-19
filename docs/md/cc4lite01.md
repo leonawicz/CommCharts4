@@ -34,12 +34,12 @@ Here is a plot.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1e283da3371f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ff44fd04cec&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1e283da3371f&quot;,
+ &quot;dom&quot;: &quot;chart1ff44fd04cec&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -58,7 +58,7 @@ Here is a plot.
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Ã‚Â°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -670,11 +670,11 @@ null
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:           1000,
-&quot;height&quot;:            600,
-&quot;renderTo&quot;: &quot;chart1e283da3371f&quot; 
+ &quot;width&quot;:            800,
+&quot;height&quot;:            500,
+&quot;renderTo&quot;: &quot;chart1ff44fd04cec&quot; 
 },
-&quot;id&quot;: &quot;chart1e283da3371f&quot; 
+&quot;id&quot;: &quot;chart1ff44fd04cec&quot; 
 });
         });
     })(jQuery);
@@ -682,8 +682,8 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1e283da3371f'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ff44fd04cec'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-<style>iframe.rChart{ width: 100%; height: 600px;}</style>
+<style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 There you have it.
