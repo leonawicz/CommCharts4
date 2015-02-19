@@ -34,12 +34,12 @@ Here is a plot.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ff42b325935&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ff4635b39c7&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ff42b325935&quot;,
+ &quot;dom&quot;: &quot;chart1ff4635b39c7&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -672,9 +672,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ff42b325935&quot; 
+&quot;renderTo&quot;: &quot;chart1ff4635b39c7&quot; 
 },
-&quot;id&quot;: &quot;chart1ff42b325935&quot; 
+&quot;id&quot;: &quot;chart1ff4635b39c7&quot; 
 });
         });
     })(jQuery);
@@ -682,8 +682,8 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ff42b325935'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ff4635b39c7'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-<style>iframe.rChart{ width: 800px; height: 500px;}</style>
+<style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 There you have it.
