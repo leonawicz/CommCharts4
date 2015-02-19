@@ -10,6 +10,7 @@ output:
 ```{r knitr_setup, echo=FALSE}
 opts_chunk$set(cache=FALSE, echo=FALSE, eval=TRUE, tidy=TRUE, message=FALSE, warning=FALSE, results="asis", comment=NA)
 read_chunk("../../code/embed_ex.R")
+options(encoding="UTF-8")
 ```
 
 Here is a plot.
@@ -28,5 +29,6 @@ Here is a plot.
 
 ```{r embed, comment=NA, results="asis", tidy=F}
 ```
+<style>iframe.rChart{ width: 100%; height: 600px;}</style>
 
 There you have it.
