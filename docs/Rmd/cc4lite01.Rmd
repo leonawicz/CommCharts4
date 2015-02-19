@@ -28,6 +28,6 @@ Here is a plot.
 
 ```{r embed, comment=NA, results="asis", tidy=F}
 ```
-<style>iframe.rChart{ width: 100%; height: 500px;}</style>
+<style>iframe.rChart{ width: 800px; height: 500px;}</style>
 
 There you have it.
