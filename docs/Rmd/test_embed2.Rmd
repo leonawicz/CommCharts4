@@ -13,8 +13,6 @@ read_chunk("../../code/test_embed.R")
 ```
 
 ## Here are three plots.
-All three display in interactive R or within a Shiny app.
-However, something about the addition of the error series appears to cause issues only when running `render` from `rmarkdown` on the Rmd file.
 
 ```{r setup}
 ```

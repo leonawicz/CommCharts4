@@ -2,8 +2,6 @@
 
 
 ## Here are three plots.
-All three display in interactive R or within a Shiny app.
-However, something about the addition of the error series appears to cause issues only when running `render` from `rmarkdown` on the Rmd file.
 
 
 ```r
@@ -42,8 +40,8 @@ makePlot <- function(d, err = "overlay") {
 }
 
 p1 <- makePlot(d = d, err = "none")  # No error bars
-p2 <- makePlot(d = d, err = "exclusive")  # Add error bars
-p3 <- makePlot(d = d, err = "overlay")  # Plot error only (floating bars)
+p2 <- makePlot(d = d, err = "overlay")  # Add error bars
+p3 <- makePlot(d = d, err = "exclusive")  # Plot error only (floating bars)
 ```
 
 ### Grouped bar plot
@@ -77,12 +75,12 @@ p1$show("iframesrc", cdn=TRUE)
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart40c6d0e45cb&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart40c2add1d6d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart40c6d0e45cb&quot;,
+ &quot;dom&quot;: &quot;chart40c2add1d6d&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -240,9 +238,9 @@ p1$show("iframesrc", cdn=TRUE)
 &quot;subtitle&quot;: {
  &quot;text&quot;: null 
 },
-&quot;id&quot;: &quot;chart40c6d0e45cb&quot;,
+&quot;id&quot;: &quot;chart40c2add1d6d&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart40c6d0e45cb&quot; 
+ &quot;renderTo&quot;: &quot;chart40c2add1d6d&quot; 
 } 
 });
         });
@@ -251,7 +249,7 @@ p1$show("iframesrc", cdn=TRUE)
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart40c6d0e45cb'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart40c2add1d6d'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ### Grouped bar plot with error bars
@@ -285,192 +283,12 @@ p2$show("iframesrc", cdn=TRUE)
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart40c4915788f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart40c1dd4595c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart40c4915788f&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
-&quot;credits&quot;: {
- &quot;href&quot;: null,
-&quot;text&quot;: null 
-},
-&quot;exporting&quot;: {
- &quot;enabled&quot;: false 
-},
-&quot;title&quot;: {
- &quot;text&quot;: null 
-},
-&quot;yAxis&quot;: {
- &quot;title&quot;: {
- &quot;text&quot;: null 
-} 
-},
-&quot;series&quot;: [
- {
- &quot;data&quot;: [
- [
- 3.498836951406,
-5.248255427109 
-],
-[
- 4.146914659378,
-6.220371989066 
-],
-[
- 3.331497110072,
-4.997245665108 
-],
-[
-  5.27622464171,
-7.914336962565 
-] 
-],
-&quot;name&quot;: &quot;A&quot;,
-&quot;type&quot;: &quot;columnrange&quot; 
-},
-{
- &quot;data&quot;: [
- [
- 4.263606217452,
-6.395409326178 
-],
-[
- 3.343625292706,
-5.015437939058 
-],
-[
- 4.389943241943,
-6.584914862914 
-],
-[
- 4.590659764103,
-6.885989646155 
-] 
-],
-&quot;name&quot;: &quot;B&quot;,
-&quot;type&quot;: &quot;columnrange&quot; 
-},
-{
- &quot;data&quot;: [
- [
- 4.460625081323,
-6.690937621984 
-],
-[
- 3.755689290275,
-5.633533935412 
-],
-[
- 5.209424934761,
-7.814137402141 
-],
-[
- 4.311874589129,
-6.467811883694 
-] 
-],
-&quot;name&quot;: &quot;C&quot;,
-&quot;type&quot;: &quot;columnrange&quot; 
-},
-{
- &quot;data&quot;: [
- [
- 3.503007535567,
- 5.25451130335 
-],
-[
- 2.228240090258,
-3.342360135387 
-],
-[
- 4.899944734514,
-7.349917101772 
-],
-[
- 3.964053112788,
-5.946079669182 
-] 
-],
-&quot;name&quot;: &quot;D&quot;,
-&quot;type&quot;: &quot;columnrange&quot; 
-},
-{
- &quot;data&quot;: [
- [
- 3.987047789521,
-5.980571684281 
-],
-[
- 4.755068968548,
-7.132603452822 
-],
-[
- 4.656976956078,
-6.985465434118 
-],
-[
- 4.475121056974,
-6.712681585461 
-] 
-],
-&quot;name&quot;: &quot;E&quot;,
-&quot;type&quot;: &quot;columnrange&quot; 
-} 
-],
-&quot;id&quot;: &quot;chart40c4915788f&quot;,
-&quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart40c4915788f&quot; 
-} 
-});
-        });
-    })(jQuery);
-&lt;/script&gt;
-    
-    &lt;script&gt;&lt;/script&gt;    
-  &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart40c4915788f'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-### Grouped floating error bars
-
-
-```r
-#p3$show('server')
-p3$show("iframesrc", cdn=TRUE)
-```
-
-<iframe srcdoc=' &lt;!doctype HTML&gt;
-&lt;meta charset = &#039;utf-8&#039;&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    
-    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
-    
-    &lt;style&gt;
-    .rChart {
-      display: block;
-      margin-left: auto; 
-      margin-right: auto;
-      width: 800px;
-      height: 400px;
-    }  
-    &lt;/style&gt;
-    
-  &lt;/head&gt;
-  &lt;body &gt;
-    
-    &lt;div id = &#039;chart40c20471116&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
-    &lt;script type=&#039;text/javascript&#039;&gt;
-    (function($){
-        $(function () {
-            var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart40c20471116&quot;,
+ &quot;dom&quot;: &quot;chart40c1dd4595c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -748,9 +566,9 @@ p3$show("iframesrc", cdn=TRUE)
 &quot;subtitle&quot;: {
  &quot;text&quot;: null 
 },
-&quot;id&quot;: &quot;chart40c20471116&quot;,
+&quot;id&quot;: &quot;chart40c1dd4595c&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart40c20471116&quot; 
+ &quot;renderTo&quot;: &quot;chart40c1dd4595c&quot; 
 } 
 });
         });
@@ -759,5 +577,185 @@ p3$show("iframesrc", cdn=TRUE)
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart40c20471116'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart40c1dd4595c'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+### Grouped floating error bars
+
+
+```r
+#p3$show('server')
+p3$show("iframesrc", cdn=TRUE)
+```
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    
+    &lt;style&gt;
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body &gt;
+    
+    &lt;div id = &#039;chart40c7d44cb&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ &quot;dom&quot;: &quot;chart40c7d44cb&quot;,
+&quot;width&quot;:            800,
+&quot;height&quot;:            400,
+&quot;credits&quot;: {
+ &quot;href&quot;: null,
+&quot;text&quot;: null 
+},
+&quot;exporting&quot;: {
+ &quot;enabled&quot;: false 
+},
+&quot;title&quot;: {
+ &quot;text&quot;: null 
+},
+&quot;yAxis&quot;: {
+ &quot;title&quot;: {
+ &quot;text&quot;: null 
+} 
+},
+&quot;series&quot;: [
+ {
+ &quot;data&quot;: [
+ [
+ 3.498836951406,
+5.248255427109 
+],
+[
+ 4.146914659378,
+6.220371989066 
+],
+[
+ 3.331497110072,
+4.997245665108 
+],
+[
+  5.27622464171,
+7.914336962565 
+] 
+],
+&quot;name&quot;: &quot;A&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 4.263606217452,
+6.395409326178 
+],
+[
+ 3.343625292706,
+5.015437939058 
+],
+[
+ 4.389943241943,
+6.584914862914 
+],
+[
+ 4.590659764103,
+6.885989646155 
+] 
+],
+&quot;name&quot;: &quot;B&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 4.460625081323,
+6.690937621984 
+],
+[
+ 3.755689290275,
+5.633533935412 
+],
+[
+ 5.209424934761,
+7.814137402141 
+],
+[
+ 4.311874589129,
+6.467811883694 
+] 
+],
+&quot;name&quot;: &quot;C&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 3.503007535567,
+ 5.25451130335 
+],
+[
+ 2.228240090258,
+3.342360135387 
+],
+[
+ 4.899944734514,
+7.349917101772 
+],
+[
+ 3.964053112788,
+5.946079669182 
+] 
+],
+&quot;name&quot;: &quot;D&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+ 3.987047789521,
+5.980571684281 
+],
+[
+ 4.755068968548,
+7.132603452822 
+],
+[
+ 4.656976956078,
+6.985465434118 
+],
+[
+ 4.475121056974,
+6.712681585461 
+] 
+],
+&quot;name&quot;: &quot;E&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+} 
+],
+&quot;id&quot;: &quot;chart40c7d44cb&quot;,
+&quot;chart&quot;: {
+ &quot;renderTo&quot;: &quot;chart40c7d44cb&quot; 
+} 
+});
+        });
+    })(jQuery);
+&lt;/script&gt;
+    
+    &lt;script&gt;&lt;/script&gt;    
+  &lt;/body&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart40c7d44cb'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
