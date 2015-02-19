@@ -61,15 +61,15 @@ makePlot <- function(){
 	p$xAxis(categories=month.abb, title=list(text=caption, style=list(color="gray", fontWeight="normal", fontSize="8px")))
 	p$yAxis(title=list(text=paste0(variable, " (", Unit, ")"), style=list(color="gray")))
 	if(err!="exclusive") p$plotOptions(column=list(threshold=Thresh))
-	#if(err!="none"){
-	#	if(err=="overlay") for(k in 1:5) p$params$series[[k]]$id <- paste0("series", k)
-	#	d <- d3_scen[c(5,6,8)]
-	#	ddply(d, .(Decade), function(x) {
-	#		g <- unique(x$Decade); x$Decade <- NULL; json <- toJSONArray2(x, json=F, names=F)
-	#		if(err=="overlay") p$series(data=json, name=g, type="errorbar", linkedTo=paste0("series", which(unique(d$Decade)==g))) else p$series(data=json, name=g, type="columnrange")
-	#		return(NULL)
-	#	})
-	#}
+	if(err!="none"){
+		if(err=="overlay") for(k in 1:5) p$params$series[[k]]$id <- paste0("series", k)
+		d <- d3_scen[c(5,6,8)]
+		ddply(d, .(Decade), function(x) {
+			g <- unique(x$Decade); x$Decade <- NULL; json <- toJSONArray2(x, json=F, names=F)
+			if(err=="overlay") p$series(data=json, name=g, type="errorbar", linkedTo=paste0("series", which(unique(d$Decade)==g))) else p$series(data=json, name=g, type="columnrange")
+			return(NULL)
+		})
+	}
 	#p$chart(width=700, height=400)
 	p
 }
