@@ -1,5 +1,4 @@
 # @knitr setup
-#setwd("C:/leonawicz/cc4lite/workspaces")
 setwd("/workspace/UA/mfleonawicz/leonawicz/projects/SNAPQAQC/data/final")
 #library(plyr)
 library(dplyr)
@@ -13,6 +12,7 @@ decades.cru <- c(1960, 1970, 1980)
 files.gcm <- list.files(file.path("city_files_GCM", domain), pattern=".RData$", full=TRUE)
 files.cru <- list.files(file.path("city_files_CRU", domain), pattern=".RData$", full=TRUE)
 
+# @ knitr function
 f <- function(i, files, decades, phase){
 	print(length(files)-i)
 	load(files[i], envir=environment())
@@ -26,6 +26,7 @@ f <- function(i, files, decades, phase){
 	city.dat
 }
 
+# @knitr process
 system.time( out <- mclapply(1:length(files.gcm), f, files=files.gcm, decades=decades.gcm, phase="CMIP5", mc.cores=n.cores) )
 #system.time( d1 <- do.call(rbind, out) )
 #system.time( d2 <- ldply(out, data.frame) )
@@ -44,6 +45,7 @@ system.time( out <- mclapply(1:length(files.cru), f, files=files.cru, decades=de
 system.time( d.cru <- as.data.frame(data.table::rbindlist(out)) )
 d.cru <- d.cru[,c(1:4,9,5:8)]
 
+# @knitr save
 locs <- unique(d$Location)
 file.2km <- "cc4lite/cc4lite_akcan2km.RData"
 file.10min <- "cc4lite/cc4lite_world10min.RData"

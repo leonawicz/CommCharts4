@@ -1,0 +1,78 @@
+---
+output:
+  html_document:
+    toc: false
+    theme: cosmo
+    highlight: zenburn
+    keep_md: true
+---
+
+```{r knitr_setup, echo=FALSE}
+opts_chunk$set(cache=TRUE, echo=FALSE, eval=TRUE, tidy=FALSE, message=FALSE, warning=FALSE, results="asis", comment=NA)
+read_chunk("../../code/cc4lite.R")
+```
+
+```{r setup}
+```
+
+```{r functions}
+```
+
+##
+##
+### Spatial scale: precipitation
+
+Now repeat the previous comparisons for precipitation.
+Only the latter two plots using floating range bars are shown.
+Due to the heteroskadasticity in the precipitation variable, the patterns of change in mean and variability between scales are similar.
+
+#### Mean precipitation: 2-km resolution
+
+```{r plot08a_cru_precip_exclusive_2km}
+```
+
+#### Mean precipitation: 10-minute resolution
+
+```{r plot08b_cru_precip_exclusive_10min}
+```
+
+Apparently, Fairbanks is not where the rain and snow are falling.
+A comparison of scales reveals that total monthly precipitation averaged across a 10-minute grid cell is substantially greater than that based on the 2-km PRISM climatology.
+
+A quick comparison with a very wet community, Juneau, Alaska, will reveal the exact opposite.
+Precipitation is very high there at 2-km resolution, but relatively washed out (no pun intended) at 10-minute resolution.
+
+#### Precipitation range: 2-km resolution
+
+```{r plot09a_cru_precip_exclusive_2km}
+```
+
+#### Precipitation range: 10-minute resolution
+
+```{r plot09b_cru_precip_exclusive_10min}
+```
+
+<style>iframe.rChart{ width: 100%; height: 500px;}</style>
+
+In summary, there are series issues of bias and pronounced heteroskadisticty between the 2-km and 10-minute resolution versions of these data.
+With the exception of a quick comparison with Juneau, the magnitude of changes seen across scales are evidenced just by looking at Fairbanks.
+There are thousands of communities in the Community Charts application, many of which will likely exhibit similar patterns as well as even more pronounced ones.
+Furthermore, the comparison with Juneau reveals an important difference showing that even what has been uncovered here cannot be safely extrapolated to all communities.
+
+If it is made clear that these differences across spatial scale exist and that, at the coarser scale, the climate signal no longer represents what would reasonably be considered community-level data,
+then it is not bad to offer both resolutions for graphing.
+However, it is not as though both resolutions would be offered.
+Of course, for those communities to be added which necessitated consideration of 10-minute resolution "community" data in the first place, both resolutions cannot be offered.
+Due to a combination of a push for adding communities to the application for which no high-resolution climate model outputs exist and a lack of due diligence in assessing the scientific merits of this,
+communities are slated for inclusion in the application despite the known issues.
+
+With what is shown here, a caveat next to a graph about this issue is simply not good enough.
+Under the current circumstances, the 10-minute resolution data have no defensible place in the Community Charts application.
+In fact, it can be argued that if use of the 10-minute resolution data is truly justifiable, that it is sufficiently spatially unbiased, and representative of community-level data,
+then the most appropriate path forward is to dispense with the 2-km data which has a more limited geographic range, ensuring consistency of comparable data across communities.
+
+The application could actually contain communities worldwide if using the 10-minute data. Why stop with the Northwest Territories?
+This is too easy a claim to make, however.
+It leaves aside many issues beyond the scope of this document regarding weaknesses in the 10-minute resolution downscaled CRU data and climate model outputs,
+such as boundary issues during interpolation and downscaling which affect the usability of coarse coastal data for coastal communities.
+If anything, the 10-minute resolution downscaled data should receive its own discrete treatment in any application and should not be mixed with 2-km outputs.

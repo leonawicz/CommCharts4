@@ -12,22 +12,34 @@ opts_chunk$set(cache=FALSE, eval=FALSE, tidy=TRUE, message=FALSE, warning=FALSE)
 read_chunk("../../code/agg_city_data.R")
 ```
 
+##
+##
+
 Most of the QAQC documentation and code can be explored under that project.
 Here I will discuss only the most relevant end stage **R** code used to curate the data for direct use in the Community Charts application,
 specifically the script, `agg_city_data.R`.
 
-### Code flow
-Here is a diagram for a fuller context regarding how the Community Charts application grows out of the SNAP data QAQC project.
+### R code
 
-```{r code_sankey, echo=F, eval=T}
+General setup includes specifying paths, loading **R** packages, setting the number of processing cores for `parallel`, defining decades of interest, and listing files.
+
+```{r setup}
 ```
 
-```{r code_sankey_embed, echo=F, eval=T, comment=NA, results="asis", tidy=F}
+The function used for loading and manipulating the data into curated form.
+The `%>%` (pipe operator) is available from the `magrittr` package, which is loaded when `dplyr` is loaded.
+
+```{r function}
 ```
 
-## R code
+The data are processed in parallel.
+The lines which are commented out refer to some tests of compute times for different methods of combining multiple data frames.
 
-### Setup
-ADD_TEXT_HERE: EXAMPLE
-Setup consists of loading required **R** packages and additional files, preparing any command line arguments for use, and defining functions and other **R** objects.
+```{r process}
+```
 
+A variety of useful **R** workspace files are saved.
+Some prior workspaces are also loaded at specific stages below to be added to the current workspace before it is saved again.
+
+```{r save}
+```
