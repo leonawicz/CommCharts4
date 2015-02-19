@@ -24,8 +24,8 @@ makePlot <- function(d, err="overlay"){
 }
 
 p1 <- makePlot(d=d, err="none") # No error bars
-p2 <- makePlot(d=d, err="exclusive") # Add error bars
-p3 <- makePlot(d=d, err="overlay") # Plot error only (floating bars)
+p2 <- makePlot(d=d, err="overlay") # Add error bars
+p3 <- makePlot(d=d, err="exclusive") # Plot error only (floating bars)
 
 # @knitr without_errorbars
 #p1$show('server')
