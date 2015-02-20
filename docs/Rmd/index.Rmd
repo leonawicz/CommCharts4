@@ -26,15 +26,15 @@ read_chunk("../../code/cc4lite.R")
 ##
 ### Introduction
 
-##
-#### Exhibit A
-
 An example plot taken from the updated <code>Community Charts version 4 Lite</code> production suite.
 
 ##
 
 ```{r plot00a}
 ```
+
+##
+##
 
 Here is the original chart for comparison.
 
@@ -49,6 +49,8 @@ It will download a graphic in Celsius regardless of the user's specification or 
 I had to save a screenshot of the online image in order to include it here.
 Also, although this is only a screenshot, the original application offers some but not all of the interactivity available in the updated version.*]
 
+##
+##
 #### Other versions
 
 Version 4 of the Community Charts application is documented here.

@@ -13,9 +13,6 @@ Matthew Leonawicz
 ##
 ### Introduction
 
-##
-#### Exhibit A
-
 An example plot taken from the updated <code>Community Charts version 4 Lite</code> production suite.
 
 ##
@@ -43,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8418c4034&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad857833ce&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8418c4034&quot;,
+ &quot;dom&quot;: &quot;chart1ad857833ce&quot;,
 
 
 &quot;credits&quot;: {
@@ -680,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad8418c4034&quot;,
+&quot;id&quot;: &quot;chart1ad857833ce&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad8418c4034&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad857833ce&quot; 
 } 
 });
         });
@@ -691,8 +688,11 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8418c4034'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad857833ce'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
+
+##
+##
 
 Here is the original chart for comparison.
 
@@ -707,6 +707,8 @@ It will download a graphic in Celsius regardless of the user's specification or 
 I had to save a screenshot of the online image in order to include it here.
 Also, although this is only a screenshot, the original application offers some but not all of the interactivity available in the updated version.*]
 
+##
+##
 #### Other versions
 
 Version 4 of the Community Charts application is documented here.
