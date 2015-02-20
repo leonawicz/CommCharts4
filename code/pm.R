@@ -35,14 +35,14 @@ proj.menu <- c("Overview", "cc4lite", "R Code", "All Projects")
 
 proj.submenu <- list(
 	c("empty"),
-	c("Getting started"),
+	c("Levels of measurement", "Historical baseline", "Displaying variability", "divider", "Spatial scale", "Temperature", "Precipitation", "divider", "Color palettes"),
 	c("empty"),
 	c("empty")
 )
 
 proj.files <- list(
 	c("index.html"),
-	c("cc4lite01.html"),
+	c("cc4lite01.html", "cc4lite02.html", "cc4lite03.html", "divider", "header", "cc4lite04.html", "cc4lite05.html", "divider", "cc4lite06.html"),
 	c("agg_city_data.html"),
 	c("http://leonawicz.github.io")
 )
@@ -77,3 +77,12 @@ files.Rmd <- list.files(pattern=".Rmd$", full=T)
 lapply(files.Rmd, render, output_format="all")
 insert_gatc(list.files(pattern=".html$"))
 moveDocs(path.docs=docs.path)
+
+# if also making PDFs for a project, speed up the Rmd to Rnw file conversion/duplication
+rnw.path <- file.path(docs.path, "Rnw")
+setwd(rnw.path)
+#themes <- knit_theme$get()
+highlight <- "solarized-dark"
+convertDocs(path=rmd.path, emphasis="replace", overwrite=TRUE, highlight=highlight) # Be careful
+lapply(list.files(pattern=".Rnw$"), knit2pdf)
+moveDocs(path.docs=docs.path, type="pdf", remove.latex=FALSE)
