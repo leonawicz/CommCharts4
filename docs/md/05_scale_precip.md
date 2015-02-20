@@ -39,12 +39,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart199814567935&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199838355589&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart199814567935&quot;,
+ &quot;dom&quot;: &quot;chart199838355589&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -377,9 +377,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart199814567935&quot; 
+&quot;renderTo&quot;: &quot;chart199838355589&quot; 
 },
-&quot;id&quot;: &quot;chart199814567935&quot; 
+&quot;id&quot;: &quot;chart199838355589&quot; 
 });
         });
     })(jQuery);
@@ -387,7 +387,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199814567935'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199838355589'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -416,12 +416,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1998b903709&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19983af25e13&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1998b903709&quot;,
+ &quot;dom&quot;: &quot;chart19983af25e13&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -754,9 +754,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1998b903709&quot; 
+&quot;renderTo&quot;: &quot;chart19983af25e13&quot; 
 },
-&quot;id&quot;: &quot;chart1998b903709&quot; 
+&quot;id&quot;: &quot;chart19983af25e13&quot; 
 });
         });
     })(jQuery);
@@ -764,7 +764,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998b903709'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19983af25e13'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
@@ -772,6 +772,8 @@ A comparison of scales reveals that total monthly precipitation averaged across 
 
 A quick comparison with a very wet community, Juneau, Alaska, will reveal the exact opposite.
 Precipitation is very high there at 2-km resolution, but relatively washed out (no pun intended) at 10-minute resolution.
+Even more noteworthy is that between spatial scales even the seasonal cycle of precipitation is different, with an annual mode in October at the 2-km scale and in July at thr 10-minute scale.
+This also affects the time of year when higher or lower inter-decadal variability is expressed by the climate models.
 
 ##
 #### Precipitation range: 2-km resolution
@@ -799,12 +801,12 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19987f8f3663&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199854385663&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19987f8f3663&quot;,
+ &quot;dom&quot;: &quot;chart199854385663&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1137,9 +1139,9 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19987f8f3663&quot; 
+&quot;renderTo&quot;: &quot;chart199854385663&quot; 
 },
-&quot;id&quot;: &quot;chart19987f8f3663&quot; 
+&quot;id&quot;: &quot;chart199854385663&quot; 
 });
         });
     })(jQuery);
@@ -1147,7 +1149,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19987f8f3663'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199854385663'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1176,12 +1178,12 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19982aae77c0&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19987d314caf&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19982aae77c0&quot;,
+ &quot;dom&quot;: &quot;chart19987d314caf&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1514,9 +1516,9 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19982aae77c0&quot; 
+&quot;renderTo&quot;: &quot;chart19987d314caf&quot; 
 },
-&quot;id&quot;: &quot;chart19982aae77c0&quot; 
+&quot;id&quot;: &quot;chart19987d314caf&quot; 
 });
         });
     })(jQuery);
@@ -1524,7 +1526,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19982aae77c0'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19987d314caf'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

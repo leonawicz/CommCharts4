@@ -131,10 +131,11 @@ img {
 <h2></h2>
 <div id="color-palettes" class="section level3">
 <h3>Color palettes</h3>
-<p>For an increasing variable like decades, it is appropriate to apply an increasing or diverging color palette. This is not a requirement, however, and not always the best approach. First of all, in the plots previously shown, color differences between bars helps mainly to visually separate the narrow bars grouped together by month than it does to tell us what the decade is. Second, the decades shown are not evenly spaced. Third, the first bar has a color unrelated to the rest of the increasing palette in order to help separate historical data from projected climate model outputs and a 30-year period from decadal periods.</p>
-<p>Fourth, while temperature increases are apparent through time, a look at precipitation plots reveals that an increasing color palette has been applied to the levels of the decade variable regardless of whether precipitation increases through time. “Of course!” you might say. After all, the increasing palette applies to <em>decades</em>, not climate data, as I just mentioned. Then why does the temperature plot range from yellow to red and the precipitation plot use blue hues? On this point alone it would be worth considering using the same colors for both plots. How about four more shades of gray? Shades of gray are more discernible to the human eye than similar shades of other colors.</p>
+<p>For an increasing variable like decades, it is appropriate to apply an increasing or diverging color palette. This is not a requirement, however, and not always the best approach. First of all, in the plots previously shown, color differences between bars help primarily to visually separate the narrow bars grouped together by month than to identify the decade. Second, the decades shown are not evenly spaced. Third, the first bar has a color unrelated to the rest of the increasing palette in order to help separate historical data from projected climate model outputs and a 30-year period from decadal periods.</p>
+<p>Fourth, while temperature increases are apparent through time, a look at precipitation plots reveals that an increasing color palette has been applied to the levels of the decade variable regardless of whether precipitation increases through time. “Of course!” you might say. After all, the increasing palette applies to <em>decades</em>, not climate data, as I just mentioned. Then why does the temperature plot range from yellow to red and the precipitation plot use blue hues? On this point alone it would be worth considering using the same colors for both plots. How about four more shades of gray? Shades of gray are more discernible to the human eye than similar shades of some other colors.</p>
 <p>This choice of “heat” colors for temperature and “wet” colors for precipitation brings up the fifth point about these plots, which is that in general data should not be redundantly represented by multiple plot attributes. It gets people asking too many questions, the frustrating kind, frustrating because the questions could have been avoided by making a less ambiguous or confusing plot.</p>
-<p>In these plots, 30-historical and decadal bars are ordered sequentially. Since they are not explicitly labeled, a color key of some kind is still necessary. However, not only ought they not be colors which could be confused with temperature or precipitation values, but considering there are only four colors in the increasing palette anyhow, which refer to unequally spaced decades no less, it would not be the end of the world to offer a qualitative color palette option. Some users may find this easier to see.</p>
+<p>In these plots, 30-year historical and decadal bars are ordered sequentially and there are very few of them per month to concern ourselves with. Nevertheless, since they are not explicitly labeled, a color key of some kind is still necessary. However, not only ought they not be colors which could be confused with temperature or precipitation values, but considering there are only four colors in the increasing palette anyhow, which refer to unequally spaced decades no less, it would not be the end of the world to offer a qualitative color palette option.</p>
+<p>Some users may find this easier to see, and with a combination of unequally spaced periods of unequal length, separated in time by a number of years, a case can be made for treating these period categories as falling somewhere between nominal and ordinal forms of data. Either approach is appropriate.</p>
 <p>Here are a couple examples using qualitative colors.</p>
 </div>
 </div>
@@ -165,12 +166,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart199873251ea9' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1998637f5165' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart199873251ea9&quot;,
+ &quot;dom&quot;: &quot;chart1998637f5165&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -181,7 +182,7 @@ img {
  &quot;enabled&quot;: false 
 },
 &quot;title&quot;: {
- &quot;text&quot;: &quot;Average Monthly Temperature for Fairbanks, Alaska&quot;,
+ &quot;text&quot;: &quot;Average Monthly Temperature for Anchorage, Alaska&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;#000000&quot; 
 } 
@@ -232,52 +233,52 @@ img {
  {
  &quot;data&quot;: [
  [
-          -34.3,
-          -6.9 
+          -15.6,
+           1.5 
 ],
 [
-          -32.4,
-          -9.8 
+          -12.7,
+           0.3 
 ],
 [
-          -18.6,
-          -2.2 
+           -8.8,
+           3.4 
 ],
 [
-           -5.9,
-           3.2 
+             -2,
+           5.2 
 ],
 [
-            4.1,
-          12.1 
-],
-[
-           12.4,
-          18.6 
-],
-[
-             14,
-          20.3 
-],
-[
-           10.4,
-          17.5 
-],
-[
-              5,
+            5.9,
           11.3 
 ],
 [
-          -10.1,
-             1 
+           11.6,
+          15.3 
 ],
 [
-          -22.8,
-          -5.9 
+           14.1,
+          17.6 
 ],
 [
-          -32.7,
-         -13.7 
+           12.8,
+          16.3 
+],
+[
+            8.1,
+          12.6 
+],
+[
+           -3.2,
+           4.6 
+],
+[
+          -11.2,
+           0.4 
+],
+[
+          -16.9,
+          -1.4 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -286,52 +287,52 @@ img {
 {
  &quot;data&quot;: [
  [
-          -31.6,
-         -10.6 
+          -19.1,
+          -1.6 
 ],
 [
-          -25.4,
-          -9.2 
+          -14.1,
+          -0.5 
 ],
 [
-          -15.8,
-          -1.2 
+           -7.9,
+           4.1 
 ],
 [
-           -5.2,
-           5.8 
+           -1.7,
+           8.2 
 ],
 [
-            5.3,
-          14.5 
+            5.6,
+          14.4 
 ],
 [
-           12.4,
-            20 
+            8.7,
+          17.5 
 ],
 [
-           13.9,
-          23.2 
+             13,
+          21.5 
 ],
 [
-           11.3,
-          19.2 
+           12.7,
+          19.1 
 ],
 [
-              4,
-          11.4 
+            6.8,
+          13.1 
 ],
 [
-           -7.5,
-           4.3 
+           -2.8,
+           7.5 
 ],
 [
-          -18.6,
-          -4.3 
+          -10.5,
+           2.1 
 ],
 [
-          -29.7,
-         -13.2 
+          -16.4,
+          -1.6 
 ] 
 ],
 &quot;name&quot;: &quot;2010-2019&quot;,
@@ -340,52 +341,52 @@ img {
 {
  &quot;data&quot;: [
  [
-          -28.7,
-         -10.5 
+          -15.9,
+           0.1 
 ],
 [
-          -24.8,
-          -6.1 
+          -13.9,
+           5.2 
 ],
 [
-          -15.3,
-          -1.5 
-],
-[
-           -3.3,
-           6.7 
-],
-[
-            5.6,
-          15.6 
-],
-[
-           13.9,
-          22.7 
-],
-[
-           15.2,
-          22.3 
-],
-[
-             12,
-          18.3 
-],
-[
-            5.5,
-          13.8 
-],
-[
-           -7.1,
+             -7,
            4.4 
 ],
 [
-          -18.7,
-          -3.1 
+           -0.6,
+           9.9 
 ],
 [
-          -25.4,
-          -9.7 
+            5.6,
+          14.7 
+],
+[
+           11.2,
+          20.1 
+],
+[
+           13.6,
+          20.6 
+],
+[
+           13.3,
+          18.8 
+],
+[
+            7.5,
+          14.6 
+],
+[
+           -2.4,
+           8.1 
+],
+[
+           -9.7,
+             4 
+],
+[
+          -12.1,
+             1 
 ] 
 ],
 &quot;name&quot;: &quot;2040-2049&quot;,
@@ -394,52 +395,52 @@ img {
 {
  &quot;data&quot;: [
  [
-          -25.8,
-          -7.6 
+          -13.3,
+           1.7 
 ],
 [
-          -20.9,
-          -6.7 
+          -10.4,
+           4.5 
 ],
 [
-            -15,
-           1.4 
+           -7.2,
+           6.3 
 ],
 [
-           -3.2,
-           9.4 
+            0.4,
+          10.9 
 ],
 [
             7.7,
-          15.8 
+            15 
+],
+[
+           10.8,
+          19.3 
+],
+[
+           14.2,
+          21.6 
 ],
 [
            13.1,
-          21.2 
+          19.9 
 ],
 [
-             15,
-          22.8 
+            8.9,
+          14.6 
 ],
 [
-           12.8,
-            21 
+           -0.3,
+           7.7 
 ],
 [
-            6.5,
-          14.3 
-],
-[
-           -4.6,
+           -8.6,
            4.2 
 ],
 [
-          -16.8,
-            -3 
-],
-[
-          -26.5,
-          -7.8 
+          -13.9,
+           2.2 
 ] 
 ],
 &quot;name&quot;: &quot;2060-2069&quot;,
@@ -448,52 +449,52 @@ img {
 {
  &quot;data&quot;: [
  [
-          -24.3,
-          -4.6 
+          -11.6,
+           4.4 
 ],
 [
-          -22.4,
-          -1.8 
+          -10.8,
+           7.6 
 ],
 [
-          -14.2,
-             3 
+           -6.3,
+             9 
 ],
 [
-           -3.5,
-           9.6 
+           -0.1,
+          10.8 
 ],
 [
-            7.9,
-            19 
+            8.4,
+          17.2 
+],
+[
+           11.8,
+            22 
+],
+[
+           14.8,
+          22.3 
 ],
 [
            13.9,
-            25 
+          20.5 
 ],
 [
-           15.6,
-          23.5 
+            9.9,
+            16 
 ],
 [
-           13.2,
-          20.3 
+            0.1,
+           9.4 
 ],
 [
-            6.8,
-          15.4 
+           -7.7,
+           4.1 
 ],
 [
-           -5.5,
-           6.1 
-],
-[
-          -16.8,
-          -2.7 
-],
-[
-          -27.4,
-          -7.4 
+          -14.8,
+           2.4 
 ] 
 ],
 &quot;name&quot;: &quot;2090-2099&quot;,
@@ -503,9 +504,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart199873251ea9&quot; 
+&quot;renderTo&quot;: &quot;chart1998637f5165&quot; 
 },
-&quot;id&quot;: &quot;chart199873251ea9&quot; 
+&quot;id&quot;: &quot;chart1998637f5165&quot; 
 });
         });
     })(jQuery);
@@ -513,7 +514,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart199873251ea9">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1998637f5165">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
@@ -545,12 +546,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1998354b12b6' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1998176150d6' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1998354b12b6&quot;,
+ &quot;dom&quot;: &quot;chart1998176150d6&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -561,7 +562,7 @@ img {
  &quot;enabled&quot;: false 
 },
 &quot;title&quot;: {
- &quot;text&quot;: &quot;Average Monthly Precipitation for Fairbanks, Alaska&quot;,
+ &quot;text&quot;: &quot;Average Monthly Precipitation for Anchorage, Alaska&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;#000000&quot; 
 } 
@@ -612,52 +613,52 @@ img {
  {
  &quot;data&quot;: [
  [
-              0,
-            46 
+              1,
+            57 
 ],
 [
-              2,
-            29 
+              4,
+            39 
 ],
 [
-              0,
-            29 
+              1,
+            41 
 ],
 [
-              0,
-            17 
+              1,
+            41 
 ],
 [
-              2,
-            46 
+              6,
+            48 
 ],
 [
-             11,
-            71 
-],
-[
-             18,
-           109 
+              6,
+            70 
 ],
 [
              15,
-           132 
+           108 
+],
+[
+             15,
+           140 
+],
+[
+             19,
+           126 
+],
+[
+             14,
+           109 
 ],
 [
               3,
-            63 
+            80 
 ],
 [
-              3,
-            56 
-],
-[
-              3,
-            40 
-],
-[
-              0,
-            44 
+             12,
+            75 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -667,51 +668,51 @@ img {
  &quot;data&quot;: [
  [
               5,
-            37 
-],
-[
-              3,
-            36 
-],
-[
-              4,
-            28 
-],
-[
-              1,
-            22 
-],
-[
-              3,
-            43 
-],
-[
-             12,
-            87 
-],
-[
-             18,
-           128 
-],
-[
-             15,
-           102 
-],
-[
-              3,
-            84 
-],
-[
-              9,
-            56 
-],
-[
-              6,
             44 
 ],
 [
-              6,
+              2,
+            63 
+],
+[
+              4,
+            42 
+],
+[
+              2,
+            28 
+],
+[
+              7,
             49 
+],
+[
+             12,
+            63 
+],
+[
+             11,
+            81 
+],
+[
+             16,
+           189 
+],
+[
+             15,
+           145 
+],
+[
+             22,
+           127 
+],
+[
+              7,
+            67 
+],
+[
+              7,
+            85 
 ] 
 ],
 &quot;name&quot;: &quot;2010-2019&quot;,
@@ -720,52 +721,52 @@ img {
 {
  &quot;data&quot;: [
  [
-              3,
-            57 
-],
-[
-              4,
-            43 
-],
-[
-              4,
-            30 
-],
-[
-              2,
-            18 
-],
-[
-              5,
-            49 
-],
-[
-             15,
-            82 
-],
-[
-             26,
-           100 
-],
-[
-             22,
-           123 
-],
-[
-             11,
-            56 
-],
-[
-             11,
-            60 
+              9,
+            44 
 ],
 [
               7,
-            54 
+            44 
+],
+[
+              5,
+            44 
+],
+[
+              5,
+            37 
 ],
 [
               6,
-            51 
+            47 
+],
+[
+             10,
+            67 
+],
+[
+             17,
+            77 
+],
+[
+             18,
+           161 
+],
+[
+             15,
+           133 
+],
+[
+             11,
+           117 
+],
+[
+              7,
+            52 
+],
+[
+             12,
+            97 
 ] 
 ],
 &quot;name&quot;: &quot;2040-2049&quot;,
@@ -774,52 +775,52 @@ img {
 {
  &quot;data&quot;: [
  [
-              6,
+              8,
             52 
 ],
 [
+              8,
+            47 
+],
+[
+              6,
+            45 
+],
+[
+              9,
+            53 
+],
+[
               3,
-            31 
-],
-[
-              2,
-            26 
-],
-[
-              2,
-            18 
+            51 
 ],
 [
               7,
-            70 
-],
-[
-             12,
-           110 
+            76 
 ],
 [
              18,
-           146 
+           109 
+],
+[
+              7,
+           136 
+],
+[
+             32,
+           147 
+],
+[
+             24,
+           111 
 ],
 [
              10,
-           112 
+            70 
 ],
 [
-              8,
-            83 
-],
-[
-              9,
-            71 
-],
-[
-              9,
-            43 
-],
-[
-              8,
-            51 
+              6,
+           120 
 ] 
 ],
 &quot;name&quot;: &quot;2060-2069&quot;,
@@ -828,52 +829,52 @@ img {
 {
  &quot;data&quot;: [
  [
-              3,
-            41 
-],
-[
-              3,
-            46 
-],
-[
-              4,
-            21 
-],
-[
-              2,
-            24 
-],
-[
-              8,
-            52 
+              7,
+            58 
 ],
 [
               6,
-           113 
+            46 
 ],
 [
-             25,
-           117 
-],
-[
-             18,
-           134 
-],
-[
-             12,
-            70 
-],
-[
-             12,
-            74 
-],
-[
-              9,
-            52 
+             10,
+            36 
 ],
 [
               7,
-            49 
+            39 
+],
+[
+              7,
+            45 
+],
+[
+             12,
+            72 
+],
+[
+             10,
+           104 
+],
+[
+             27,
+           237 
+],
+[
+             33,
+           159 
+],
+[
+             13,
+           105 
+],
+[
+              3,
+            64 
+],
+[
+              9,
+            94 
 ] 
 ],
 &quot;name&quot;: &quot;2090-2099&quot;,
@@ -883,9 +884,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1998354b12b6&quot; 
+&quot;renderTo&quot;: &quot;chart1998176150d6&quot; 
 },
-&quot;id&quot;: &quot;chart1998354b12b6&quot; 
+&quot;id&quot;: &quot;chart1998176150d6&quot; 
 });
         });
     })(jQuery);
@@ -893,7 +894,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1998354b12b6">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1998176150d6">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

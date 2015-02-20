@@ -24,23 +24,26 @@ read_chunk("../../code/cc4lite.R")
 
 For an increasing variable like decades, it is appropriate to apply an increasing or diverging color palette.
 This is not a requirement, however, and not always the best approach.
-First of all, in the plots previously shown, color differences between bars helps mainly to visually separate the narrow bars grouped together by month than it does to tell us what the decade is.
+First of all, in the plots previously shown, color differences between bars help primarily to visually separate the narrow bars grouped together by month than to identify the decade.
 Second, the decades shown are not evenly spaced.
 Third, the first bar has a color unrelated to the rest of the increasing palette in order to help separate historical data from projected climate model outputs and a 30-year period from decadal periods.
 
 Fourth, while temperature increases are apparent through time, a look at precipitation plots reveals that an increasing color palette has been applied to the levels of the decade variable regardless of whether precipitation increases through time.
 "Of course!" you might say. After all, the increasing palette applies to *decades*, not climate data, as I just mentioned.
 Then why does the temperature plot range from yellow to red and the precipitation plot use blue hues?
-On this point alone it would be worth considering using the same colors for both plots. How about four more shades of gray? Shades of gray are more discernible to the human eye than similar shades of other colors.
+On this point alone it would be worth considering using the same colors for both plots. How about four more shades of gray? Shades of gray are more discernible to the human eye than similar shades of some other colors.
 
 This choice of "heat" colors for temperature and "wet" colors for precipitation brings up the fifth point about these plots, which is that in general data should not be redundantly represented by multiple plot attributes.
 It gets people asking too many questions, the frustrating kind, frustrating because the questions could have been avoided by making a less ambiguous or confusing plot.
 
-In these plots, 30-historical and decadal bars are ordered sequentially.
-Since they are not explicitly labeled, a color key of some kind is still necessary.
+In these plots, 30-year historical and decadal bars are ordered sequentially and there are very few of them per month to concern ourselves with.
+Nevertheless, since they are not explicitly labeled, a color key of some kind is still necessary.
 However, not only ought they not be colors which could be confused with temperature or precipitation values, but considering there are only four colors in the increasing palette anyhow,
 which refer to unequally spaced decades no less, it would not be the end of the world to offer a qualitative color palette option.
-Some users may find this easier to see.
+
+Some users may find this easier to see, and with a combination of unequally spaced periods of unequal length, separated in time by a number of years,
+a case can be made for treating these period categories as falling somewhere between nominal and ordinal forms of data.
+Either approach is appropriate.
 
 Here are a couple examples using qualitative colors.
 

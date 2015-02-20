@@ -186,13 +186,13 @@ p$show("iframesrc", cdn=TRUE)
 
 #### Color options
 # @knitr plot10a_temp_colors
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1", col="default")
+d <- finalizeData(res="2km", location="Anchorage, Alaska", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
+p <- makePlot(d, location="Anchorage, Alaska", variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1", col="default")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot10b_precip_colors
-d <- finalizeData(res="2km", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1", col="default")
+d <- finalizeData(res="2km", location="Anchorage, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
+p <- makePlot(d, location="Anchorage, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1", col="default")
 p$show("iframesrc", cdn=TRUE)
 
 
