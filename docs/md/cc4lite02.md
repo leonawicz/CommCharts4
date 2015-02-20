@@ -47,12 +47,12 @@ The reason that comparing data of notably different temporal scales (as would be
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c6baa661c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart4643dd049d9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c6baa661c&quot;,
+ &quot;dom&quot;: &quot;chart4643dd049d9&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -399,15 +399,17 @@ The reason that comparing data of notably different temporal scales (as would be
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c6baa661c&quot; 
+&quot;renderTo&quot;: &quot;chart4643dd049d9&quot; 
 },
-&quot;id&quot;: &quot;chartb7c6baa661c&quot; 
+&quot;id&quot;: &quot;chart4643dd049d9&quot; 
 });
         });
     })(jQuery);
@@ -415,7 +417,7 @@ The reason that comparing data of notably different temporal scales (as would be
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c6baa661c'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4643dd049d9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -460,12 +462,12 @@ It also assists in graphing the Community Charts slightly differently, as will b
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c37ff1af9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart4642c795e01&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c37ff1af9&quot;,
+ &quot;dom&quot;: &quot;chart4642c795e01&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1092,15 +1094,17 @@ It also assists in graphing the Community Charts slightly differently, as will b
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c37ff1af9&quot; 
+&quot;renderTo&quot;: &quot;chart4642c795e01&quot; 
 },
-&quot;id&quot;: &quot;chartb7c37ff1af9&quot; 
+&quot;id&quot;: &quot;chart4642c795e01&quot; 
 });
         });
     })(jQuery);
@@ -1108,7 +1112,7 @@ It also assists in graphing the Community Charts slightly differently, as will b
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c37ff1af9'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4642c795e01'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

@@ -59,12 +59,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c5ba4203b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart46469da1d78&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c5ba4203b&quot;,
+ &quot;dom&quot;: &quot;chart46469da1d78&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -411,15 +411,17 @@ The first shows a range bar and the second shows +/- one standard deviation from
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c5ba4203b&quot; 
+&quot;renderTo&quot;: &quot;chart46469da1d78&quot; 
 },
-&quot;id&quot;: &quot;chartb7c5ba4203b&quot; 
+&quot;id&quot;: &quot;chart46469da1d78&quot; 
 });
         });
     })(jQuery);
@@ -427,7 +429,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c5ba4203b'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart46469da1d78'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -453,12 +455,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c2aa61c6c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart464b8e5520&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c2aa61c6c&quot;,
+ &quot;dom&quot;: &quot;chart464b8e5520&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1085,15 +1087,17 @@ The first shows a range bar and the second shows +/- one standard deviation from
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c2aa61c6c&quot; 
+&quot;renderTo&quot;: &quot;chart464b8e5520&quot; 
 },
-&quot;id&quot;: &quot;chartb7c2aa61c6c&quot; 
+&quot;id&quot;: &quot;chart464b8e5520&quot; 
 });
         });
     })(jQuery);
@@ -1101,7 +1105,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c2aa61c6c'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart464b8e5520'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1136,12 +1140,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c1a156713&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart4649d2377c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c1a156713&quot;,
+ &quot;dom&quot;: &quot;chart4649d2377c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1488,15 +1492,17 @@ Here are plots of the same data corresponding to the two plots above.
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c1a156713&quot; 
+&quot;renderTo&quot;: &quot;chart4649d2377c&quot; 
 },
-&quot;id&quot;: &quot;chartb7c1a156713&quot; 
+&quot;id&quot;: &quot;chart4649d2377c&quot; 
 });
         });
     })(jQuery);
@@ -1504,7 +1510,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c1a156713'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4649d2377c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1530,12 +1536,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c5ac8750&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart4646eac248&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c5ac8750&quot;,
+ &quot;dom&quot;: &quot;chart4646eac248&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2162,15 +2168,17 @@ Here are plots of the same data corresponding to the two plots above.
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c5ac8750&quot; 
+&quot;renderTo&quot;: &quot;chart4646eac248&quot; 
 },
-&quot;id&quot;: &quot;chartb7c5ac8750&quot; 
+&quot;id&quot;: &quot;chart4646eac248&quot; 
 });
         });
     })(jQuery);
@@ -2178,7 +2186,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c5ac8750'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4646eac248'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars
@@ -2214,12 +2222,12 @@ to give the user something to look at for mere visual orientation we have to fak
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chartb7c7410ff5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart46474225e6f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb7c7410ff5&quot;,
+ &quot;dom&quot;: &quot;chart46474225e6f&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2846,15 +2854,17 @@ null
 },
 &quot;plotOptions&quot;: {
  &quot;column&quot;: {
- &quot;threshold&quot;:              0 
+ &quot;threshold&quot;:              0,
+&quot;groupPadding&quot;:            0.1,
+&quot;pointPadding&quot;:           0.05 
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            800,
+ &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb7c7410ff5&quot; 
+&quot;renderTo&quot;: &quot;chart46474225e6f&quot; 
 },
-&quot;id&quot;: &quot;chartb7c7410ff5&quot; 
+&quot;id&quot;: &quot;chart46474225e6f&quot; 
 });
         });
     })(jQuery);
@@ -2862,7 +2872,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c7410ff5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart46474225e6f'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
