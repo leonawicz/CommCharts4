@@ -93,12 +93,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be05f4e7413&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c17b3679a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be05f4e7413&quot;,
+ &quot;dom&quot;: &quot;chartb7c17b3679a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -430,6 +430,7 @@ Error bars have been removed to help focus on mean values.
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -450,9 +451,9 @@ Error bars have been removed to help focus on mean values.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be05f4e7413&quot; 
+&quot;renderTo&quot;: &quot;chartb7c17b3679a&quot; 
 },
-&quot;id&quot;: &quot;chart1be05f4e7413&quot; 
+&quot;id&quot;: &quot;chartb7c17b3679a&quot; 
 });
         });
     })(jQuery);
@@ -460,7 +461,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be05f4e7413'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c17b3679a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -489,12 +490,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0385a6298&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c6493599d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0385a6298&quot;,
+ &quot;dom&quot;: &quot;chartb7c6493599d&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -826,6 +827,7 @@ Error bars have been removed to help focus on mean values.
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -846,9 +848,9 @@ Error bars have been removed to help focus on mean values.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0385a6298&quot; 
+&quot;renderTo&quot;: &quot;chartb7c6493599d&quot; 
 },
-&quot;id&quot;: &quot;chart1be0385a6298&quot; 
+&quot;id&quot;: &quot;chartb7c6493599d&quot; 
 });
         });
     })(jQuery);
@@ -856,7 +858,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0385a6298'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c6493599d'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 During some months, mean monthly temperature differs by more than 10 degrees C and 20 degrees F - and these are decadal averages of monthly averages!
@@ -895,12 +897,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be03d3eb1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c40da33c5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be03d3eb1&quot;,
+ &quot;dom&quot;: &quot;chartb7c40da33c5&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -926,6 +928,7 @@ This makes it easier to focus on the variability at different scales.
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -1232,9 +1235,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be03d3eb1&quot; 
+&quot;renderTo&quot;: &quot;chartb7c40da33c5&quot; 
 },
-&quot;id&quot;: &quot;chart1be03d3eb1&quot; 
+&quot;id&quot;: &quot;chartb7c40da33c5&quot; 
 });
         });
     })(jQuery);
@@ -1242,7 +1245,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be03d3eb1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c40da33c5'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1271,12 +1274,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be063e2694a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c12ba3278&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be063e2694a&quot;,
+ &quot;dom&quot;: &quot;chartb7c12ba3278&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1302,6 +1305,7 @@ This makes it easier to focus on the variability at different scales.
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -1608,9 +1612,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be063e2694a&quot; 
+&quot;renderTo&quot;: &quot;chartb7c12ba3278&quot; 
 },
-&quot;id&quot;: &quot;chart1be063e2694a&quot; 
+&quot;id&quot;: &quot;chartb7c12ba3278&quot; 
 });
         });
     })(jQuery);
@@ -1618,7 +1622,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be063e2694a'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c12ba3278'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias.
@@ -1660,12 +1664,12 @@ This makes it clear how different the two temperature signals are from one anoth
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be07dd4421a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c4d74433e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be07dd4421a&quot;,
+ &quot;dom&quot;: &quot;chartb7c4d74433e&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1997,6 +2001,7 @@ This makes it clear how different the two temperature signals are from one anoth
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -2017,9 +2022,9 @@ This makes it clear how different the two temperature signals are from one anoth
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be07dd4421a&quot; 
+&quot;renderTo&quot;: &quot;chartb7c4d74433e&quot; 
 },
-&quot;id&quot;: &quot;chart1be07dd4421a&quot; 
+&quot;id&quot;: &quot;chartb7c4d74433e&quot; 
 });
         });
     })(jQuery);
@@ -2027,7 +2032,7 @@ This makes it clear how different the two temperature signals are from one anoth
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be07dd4421a'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c4d74433e'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

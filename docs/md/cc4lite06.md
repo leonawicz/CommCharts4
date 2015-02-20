@@ -29,7 +29,7 @@ However, not only ought they not be colors which could be confused with temperat
 which refer to unequally spaced decades no less, it would not be the end of the world to offer a qualitative color palette option.
 Some users may find this easier to see.
 
-Here are a couple examples using default Highcharts colors.
+Here are a couple examples using qualitative colors.
 
 ##
 #### Anchorage temperature
@@ -57,12 +57,12 @@ Here are a couple examples using default Highcharts colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0793b4a93&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c6c005eac&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0793b4a93&quot;,
+ &quot;dom&quot;: &quot;chartb7c6c005eac&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -88,7 +88,7 @@ Here are a couple examples using default Highcharts colors.
 } 
 } 
 ],
-&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FF8C00&quot;, &quot;#6495ED&quot;, &quot;#B3EE3A&quot;, &quot;#A020F0&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -395,9 +395,9 @@ Here are a couple examples using default Highcharts colors.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0793b4a93&quot; 
+&quot;renderTo&quot;: &quot;chartb7c6c005eac&quot; 
 },
-&quot;id&quot;: &quot;chart1be0793b4a93&quot; 
+&quot;id&quot;: &quot;chartb7c6c005eac&quot; 
 });
         });
     })(jQuery);
@@ -405,7 +405,7 @@ Here are a couple examples using default Highcharts colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0793b4a93'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c6c005eac'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -434,12 +434,12 @@ Here are a couple examples using default Highcharts colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0770257e4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c6a113bad&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0770257e4&quot;,
+ &quot;dom&quot;: &quot;chartb7c6a113bad&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -465,7 +465,7 @@ Here are a couple examples using default Highcharts colors.
 } 
 } 
 ],
-&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#7FFFD4&quot;, &quot;#5AC4BB&quot;, &quot;#3589A3&quot;, &quot;#104E8B&quot; ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FF8C00&quot;, &quot;#6495ED&quot;, &quot;#B3EE3A&quot;, &quot;#A020F0&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -772,9 +772,9 @@ Here are a couple examples using default Highcharts colors.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0770257e4&quot; 
+&quot;renderTo&quot;: &quot;chartb7c6a113bad&quot; 
 },
-&quot;id&quot;: &quot;chart1be0770257e4&quot; 
+&quot;id&quot;: &quot;chartb7c6a113bad&quot; 
 });
         });
     })(jQuery);
@@ -782,7 +782,7 @@ Here are a couple examples using default Highcharts colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0770257e4'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c6a113bad'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

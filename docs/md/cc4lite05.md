@@ -39,12 +39,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be07f871798&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c4c072269&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be07f871798&quot;,
+ &quot;dom&quot;: &quot;chartb7c4c072269&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -70,6 +70,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#7FFFD4&quot;, &quot;#5AC4BB&quot;, &quot;#3589A3&quot;, &quot;#104E8B&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -376,9 +377,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be07f871798&quot; 
+&quot;renderTo&quot;: &quot;chartb7c4c072269&quot; 
 },
-&quot;id&quot;: &quot;chart1be07f871798&quot; 
+&quot;id&quot;: &quot;chartb7c4c072269&quot; 
 });
         });
     })(jQuery);
@@ -386,7 +387,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be07f871798'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c4c072269'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -415,12 +416,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be05d597a3e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c5fc45a85&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be05d597a3e&quot;,
+ &quot;dom&quot;: &quot;chartb7c5fc45a85&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -446,6 +447,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#7FFFD4&quot;, &quot;#5AC4BB&quot;, &quot;#3589A3&quot;, &quot;#104E8B&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -752,9 +754,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be05d597a3e&quot; 
+&quot;renderTo&quot;: &quot;chartb7c5fc45a85&quot; 
 },
-&quot;id&quot;: &quot;chart1be05d597a3e&quot; 
+&quot;id&quot;: &quot;chartb7c5fc45a85&quot; 
 });
         });
     })(jQuery);
@@ -762,7 +764,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be05d597a3e'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c5fc45a85'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
@@ -797,12 +799,12 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be05daa4100&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c750d3417&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be05daa4100&quot;,
+ &quot;dom&quot;: &quot;chartb7c750d3417&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -828,6 +830,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#7FFFD4&quot;, &quot;#5AC4BB&quot;, &quot;#3589A3&quot;, &quot;#104E8B&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -1134,9 +1137,9 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be05daa4100&quot; 
+&quot;renderTo&quot;: &quot;chartb7c750d3417&quot; 
 },
-&quot;id&quot;: &quot;chart1be05daa4100&quot; 
+&quot;id&quot;: &quot;chartb7c750d3417&quot; 
 });
         });
     })(jQuery);
@@ -1144,7 +1147,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be05daa4100'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c750d3417'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1173,12 +1176,12 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be050844c4a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c54dc7a93&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be050844c4a&quot;,
+ &quot;dom&quot;: &quot;chartb7c54dc7a93&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1204,6 +1207,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#7FFFD4&quot;, &quot;#5AC4BB&quot;, &quot;#3589A3&quot;, &quot;#104E8B&quot; ],
 &quot;subtitle&quot;: {
  &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
@@ -1510,9 +1514,9 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be050844c4a&quot; 
+&quot;renderTo&quot;: &quot;chartb7c54dc7a93&quot; 
 },
-&quot;id&quot;: &quot;chart1be050844c4a&quot; 
+&quot;id&quot;: &quot;chartb7c54dc7a93&quot; 
 });
         });
     })(jQuery);
@@ -1520,7 +1524,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be050844c4a'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c54dc7a93'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

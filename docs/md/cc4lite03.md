@@ -59,12 +59,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0680a1307&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c5ba4203b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0680a1307&quot;,
+ &quot;dom&quot;: &quot;chartb7c5ba4203b&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -396,6 +396,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -416,9 +417,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0680a1307&quot; 
+&quot;renderTo&quot;: &quot;chartb7c5ba4203b&quot; 
 },
-&quot;id&quot;: &quot;chart1be0680a1307&quot; 
+&quot;id&quot;: &quot;chartb7c5ba4203b&quot; 
 });
         });
     })(jQuery);
@@ -426,7 +427,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0680a1307'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c5ba4203b'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -452,12 +453,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0423f5dd8&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c2aa61c6c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0423f5dd8&quot;,
+ &quot;dom&quot;: &quot;chartb7c2aa61c6c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1069,6 +1070,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -1089,9 +1091,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0423f5dd8&quot; 
+&quot;renderTo&quot;: &quot;chartb7c2aa61c6c&quot; 
 },
-&quot;id&quot;: &quot;chart1be0423f5dd8&quot; 
+&quot;id&quot;: &quot;chartb7c2aa61c6c&quot; 
 });
         });
     })(jQuery);
@@ -1099,7 +1101,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0423f5dd8'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c2aa61c6c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1134,12 +1136,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be09f646ac&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c1a156713&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be09f646ac&quot;,
+ &quot;dom&quot;: &quot;chartb7c1a156713&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1471,6 +1473,7 @@ Here are plots of the same data corresponding to the two plots above.
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -1491,9 +1494,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be09f646ac&quot; 
+&quot;renderTo&quot;: &quot;chartb7c1a156713&quot; 
 },
-&quot;id&quot;: &quot;chart1be09f646ac&quot; 
+&quot;id&quot;: &quot;chartb7c1a156713&quot; 
 });
         });
     })(jQuery);
@@ -1501,7 +1504,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be09f646ac'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c1a156713'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1527,12 +1530,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be05e83b8d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c5ac8750&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be05e83b8d&quot;,
+ &quot;dom&quot;: &quot;chartb7c5ac8750&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2144,6 +2147,7 @@ Here are plots of the same data corresponding to the two plots above.
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -2164,9 +2168,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be05e83b8d&quot; 
+&quot;renderTo&quot;: &quot;chartb7c5ac8750&quot; 
 },
-&quot;id&quot;: &quot;chart1be05e83b8d&quot; 
+&quot;id&quot;: &quot;chartb7c5ac8750&quot; 
 });
         });
     })(jQuery);
@@ -2174,7 +2178,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be05e83b8d'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c5ac8750'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars
@@ -2210,12 +2214,12 @@ to give the user something to look at for mere visual orientation we have to fak
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be04f6d250&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chartb7c7410ff5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be04f6d250&quot;,
+ &quot;dom&quot;: &quot;chartb7c7410ff5&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2827,6 +2831,7 @@ null
  &quot;color&quot;: &quot;gray&quot; 
 } 
 },
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;legend&quot;: {
  &quot;verticalAlign&quot;: &quot;top&quot;,
 &quot;y&quot;:             50,
@@ -2847,9 +2852,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be04f6d250&quot; 
+&quot;renderTo&quot;: &quot;chartb7c7410ff5&quot; 
 },
-&quot;id&quot;: &quot;chart1be04f6d250&quot; 
+&quot;id&quot;: &quot;chartb7c7410ff5&quot; 
 });
         });
     })(jQuery);
@@ -2857,7 +2862,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be04f6d250'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chartb7c7410ff5'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
