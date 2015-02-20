@@ -106,6 +106,7 @@ img {
               <li><a href="05_scale_precip.html">Precipitation</a></li>
               <li class="divider"></li>
               <li><a href="06_colors.html">Color palettes</a></li>
+              <li><a href="07_minutiae.html">Minutiae</a></li>
             </ul>
 
           <li><a href="agg_city_data.html">R Code</a></li>
@@ -141,7 +142,6 @@ img {
 <div id="version-1-community-chart" class="section level4">
 <h4>Version 1 Community Chart</h4>
 <p><img src="img/v1_ex1.png" height="500" width="900"></p>
-<p>[<em>Note that it is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it. It will download a graphic in Celsius regardless of the user’s specification or what is displayed in the browser. I had to save a screenshot of the online image in order to include it here.</em>]</p>
 </div>
 </div>
 <div id="section-3" class="section level2">
@@ -153,7 +153,6 @@ img {
 <p>As long a bar plot is used to display these trends, there will have to be a baseline. Later this problem will be circumvented with an alternative type of bar plot, but for now we continue with a common baseline value. We will stick with freezing point as one sensible baseline.</p>
 <p>As a quick aside, another option is to use the historical “baseline” average temperature, as it’s ironically already called. This may be more sensible given the general utility of the information in the graph. Additionally, there would then be no need to plot twelve monthly historical period bars, greatly freeing up space and opening up the plot in a way that could make it more easily readable.</p>
 <p>Below are two example plots from the Community Charts version 4 Lite suite using each temperature scale. The baseline is adaptive, defined as the freezing point irrespective of units of measurement. When changing the measurement scale, the data are not transformed in any way that should change the appearance of the bars in the two plots. Only the y-axis need take on new values.</p>
-<p>[<em>Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.</em>]</p>
 </div>
 </div>
 <div id="section-4" class="section level2">
@@ -183,12 +182,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1543c322005' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1ad83999b25' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1543c322005&quot;,
+ &quot;dom&quot;: &quot;chart1ad83999b25&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -207,7 +206,7 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (\\circC)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -823,9 +822,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1543c322005&quot; 
+&quot;renderTo&quot;: &quot;chart1ad83999b25&quot; 
 },
-&quot;id&quot;: &quot;chart1543c322005&quot; 
+&quot;id&quot;: &quot;chart1ad83999b25&quot; 
 });
         });
     })(jQuery);
@@ -833,7 +832,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1543c322005">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad83999b25">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
@@ -865,12 +864,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1542d52f73' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1ad866712cc' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1542d52f73&quot;,
+ &quot;dom&quot;: &quot;chart1ad866712cc&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -889,7 +888,7 @@ null
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°F)&quot;,
+ &quot;text&quot;: &quot;Temperature (\\circF)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1505,9 +1504,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1542d52f73&quot; 
+&quot;renderTo&quot;: &quot;chart1ad866712cc&quot; 
 },
-&quot;id&quot;: &quot;chart1542d52f73&quot; 
+&quot;id&quot;: &quot;chart1ad866712cc&quot; 
 });
         });
     })(jQuery);
@@ -1515,7 +1514,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1542d52f73">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad866712cc">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
@@ -1555,12 +1554,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart15473c5ff9' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1ad8614f1def' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart15473c5ff9&quot;,
+ &quot;dom&quot;: &quot;chart1ad8614f1def&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1915,9 +1914,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart15473c5ff9&quot; 
+&quot;renderTo&quot;: &quot;chart1ad8614f1def&quot; 
 },
-&quot;id&quot;: &quot;chart15473c5ff9&quot; 
+&quot;id&quot;: &quot;chart1ad8614f1def&quot; 
 });
         });
     })(jQuery);
@@ -1925,7 +1924,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart15473c5ff9">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad8614f1def">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
@@ -1958,12 +1957,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart154640b590e' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1ad821582956' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart154640b590e&quot;,
+ &quot;dom&quot;: &quot;chart1ad821582956&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2598,9 +2597,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart154640b590e&quot; 
+&quot;renderTo&quot;: &quot;chart1ad821582956&quot; 
 },
-&quot;id&quot;: &quot;chart154640b590e&quot; 
+&quot;id&quot;: &quot;chart1ad821582956&quot; 
 });
         });
     })(jQuery);
@@ -2608,7 +2607,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart154640b590e">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad821582956">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
@@ -2641,12 +2640,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1545fd11adc' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1ad874d27076' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1545fd11adc&quot;,
+ &quot;dom&quot;: &quot;chart1ad874d27076&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -3281,9 +3280,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1545fd11adc&quot; 
+&quot;renderTo&quot;: &quot;chart1ad874d27076&quot; 
 },
-&quot;id&quot;: &quot;chart1545fd11adc&quot; 
+&quot;id&quot;: &quot;chart1ad874d27076&quot; 
 });
         });
     })(jQuery);
@@ -3291,7 +3290,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1545fd11adc">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad874d27076">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

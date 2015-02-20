@@ -44,10 +44,6 @@ The error bars remain insensitive to this baseline because they are, like precip
 
 <img src="img/v1_ex1.png" height="500" width="900">
 
-[*Note that it is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it.
-It will download a graphic in Celsius regardless of the user's specification or what is displayed in the browser.
-I had to save a screenshot of the online image in order to include it here.*]
-
 ##
 ### Bar baseline
 
@@ -70,8 +66,6 @@ Below are two example plots from the Community Charts version 4 Lite suite using
 The baseline is adaptive, defined as the freezing point irrespective of units of measurement.
 When changing the measurement scale, the data are not transformed in any way that should change the appearance of the bars in the two plots.
 Only the y-axis need take on new values.
-
-[*Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.*]
 
 ##
 #### Freezing point baseline: Celsius
