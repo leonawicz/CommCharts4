@@ -21,7 +21,7 @@ Version 3 is currently under development as a component of the SNAP data QAQC ap
 #### Improvements from version 1
 
 Like the original, version 4 uses the Highcharts plotting library, but like versions 2 and 3, it is built using **R**.
-Community Charts version four, also known as `CC 4 Lite`, accesses Highcharts through the **R** package, `rCharts`.
+Community Charts version four, also known in some circles as `CC4 Lite` or `CC4L`, accesses Highcharts through the **R** package, `rCharts`.
 `rCharts` acts as a wrapper to a number of external plotting libraries, but the intent here is to make a Community Charts application similar to the original, hence the focus on Highcharts.
 At the same, it is important to improve upon the original, which can be criticized on a number of poor graphing practices and other uses of descriptive statistics.
 Some improvements are considered here, addressing criticisms of historical baseline data sources, temporal periods, bar plot baseline thresholds, color usage, and uncertainty among climate models.
