@@ -54,12 +54,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart199874af2b71&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19981090179c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart199874af2b71&quot;,
+ &quot;dom&quot;: &quot;chart19981090179c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -141,7 +141,8 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
-} 
+},
+&quot;id&quot;: &quot;series1&quot; 
 },
 {
  &quot;data&quot;: [
@@ -198,7 +199,8 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
-} 
+},
+&quot;id&quot;: &quot;series2&quot; 
 },
 {
  &quot;data&quot;: [
@@ -255,7 +257,8 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
-} 
+},
+&quot;id&quot;: &quot;series3&quot; 
 },
 {
  &quot;data&quot;: [
@@ -312,7 +315,8 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
-} 
+},
+&quot;id&quot;: &quot;series4&quot; 
 },
 {
  &quot;data&quot;: [
@@ -369,7 +373,283 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;type&quot;: &quot;column&quot;,
 &quot;marker&quot;: {
  &quot;radius&quot;:              3 
-} 
+},
+&quot;id&quot;: &quot;series5&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -34.3,
+          -6.9 
+],
+[
+          -32.4,
+          -9.8 
+],
+[
+          -18.6,
+          -2.2 
+],
+[
+           -5.9,
+           3.2 
+],
+[
+            4.1,
+          12.1 
+],
+[
+           12.4,
+          18.6 
+],
+[
+             14,
+          20.3 
+],
+[
+           10.4,
+          17.5 
+],
+[
+              5,
+          11.3 
+],
+[
+          -10.1,
+             1 
+],
+[
+          -22.8,
+          -5.9 
+],
+[
+          -32.7,
+         -13.7 
+] 
+],
+&quot;name&quot;: &quot;1960-1989&quot;,
+&quot;type&quot;: &quot;errorbar&quot;,
+&quot;linkedTo&quot;: &quot;series1&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -31.6,
+         -10.6 
+],
+[
+          -25.4,
+          -9.2 
+],
+[
+          -15.8,
+          -1.2 
+],
+[
+           -5.2,
+           5.8 
+],
+[
+            5.3,
+          14.5 
+],
+[
+           12.4,
+            20 
+],
+[
+           13.9,
+          23.2 
+],
+[
+           11.3,
+          19.2 
+],
+[
+              4,
+          11.4 
+],
+[
+           -7.5,
+           4.3 
+],
+[
+          -18.6,
+          -4.3 
+],
+[
+          -29.7,
+         -13.2 
+] 
+],
+&quot;name&quot;: &quot;2010-2019&quot;,
+&quot;type&quot;: &quot;errorbar&quot;,
+&quot;linkedTo&quot;: &quot;series2&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -28.7,
+         -10.5 
+],
+[
+          -24.8,
+          -6.1 
+],
+[
+          -15.3,
+          -1.5 
+],
+[
+           -3.3,
+           6.7 
+],
+[
+            5.6,
+          15.6 
+],
+[
+           13.9,
+          22.7 
+],
+[
+           15.2,
+          22.3 
+],
+[
+             12,
+          18.3 
+],
+[
+            5.5,
+          13.8 
+],
+[
+           -7.1,
+           4.4 
+],
+[
+          -18.7,
+          -3.1 
+],
+[
+          -25.4,
+          -9.7 
+] 
+],
+&quot;name&quot;: &quot;2040-2049&quot;,
+&quot;type&quot;: &quot;errorbar&quot;,
+&quot;linkedTo&quot;: &quot;series3&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -25.8,
+          -7.6 
+],
+[
+          -20.9,
+          -6.7 
+],
+[
+            -15,
+           1.4 
+],
+[
+           -3.2,
+           9.4 
+],
+[
+            7.7,
+          15.8 
+],
+[
+           13.1,
+          21.2 
+],
+[
+             15,
+          22.8 
+],
+[
+           12.8,
+            21 
+],
+[
+            6.5,
+          14.3 
+],
+[
+           -4.6,
+           4.2 
+],
+[
+          -16.8,
+            -3 
+],
+[
+          -26.5,
+          -7.8 
+] 
+],
+&quot;name&quot;: &quot;2060-2069&quot;,
+&quot;type&quot;: &quot;errorbar&quot;,
+&quot;linkedTo&quot;: &quot;series4&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -24.3,
+          -4.6 
+],
+[
+          -22.4,
+          -1.8 
+],
+[
+          -14.2,
+             3 
+],
+[
+           -3.5,
+           9.6 
+],
+[
+            7.9,
+            19 
+],
+[
+           13.9,
+            25 
+],
+[
+           15.6,
+          23.5 
+],
+[
+           13.2,
+          20.3 
+],
+[
+            6.8,
+          15.4 
+],
+[
+           -5.5,
+           6.1 
+],
+[
+          -16.8,
+          -2.7 
+],
+[
+          -27.4,
+          -7.4 
+] 
+],
+&quot;name&quot;: &quot;2090-2099&quot;,
+&quot;type&quot;: &quot;errorbar&quot;,
+&quot;linkedTo&quot;: &quot;series5&quot; 
 } 
 ],
 &quot;xAxis&quot;: [
@@ -414,9 +694,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart199874af2b71&quot; 
+&quot;renderTo&quot;: &quot;chart19981090179c&quot; 
 },
-&quot;id&quot;: &quot;chart199874af2b71&quot; 
+&quot;id&quot;: &quot;chart19981090179c&quot; 
 });
         });
     })(jQuery);
@@ -424,7 +704,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199874af2b71'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19981090179c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -450,12 +730,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19987c321377&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19981809666d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19987c321377&quot;,
+ &quot;dom&quot;: &quot;chart19981809666d&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1090,9 +1370,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19987c321377&quot; 
+&quot;renderTo&quot;: &quot;chart19981809666d&quot; 
 },
-&quot;id&quot;: &quot;chart19987c321377&quot; 
+&quot;id&quot;: &quot;chart19981809666d&quot; 
 });
         });
     })(jQuery);
@@ -1100,7 +1380,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19987c321377'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19981809666d'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1135,12 +1415,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19983fe0385e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199832f4461e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19983fe0385e&quot;,
+ &quot;dom&quot;: &quot;chart199832f4461e&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1166,293 +1446,25 @@ Here are plots of the same data corresponding to the two plots above.
 } 
 } 
 ],
-&quot;series&quot;: [
- {
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -22.3 
-],
-[
- &quot;Feb&quot;,
-           -20 
-],
-[
- &quot;Mar&quot;,
-         -11.3 
-],
-[
- &quot;Apr&quot;,
-          -0.6 
-],
-[
- &quot;May&quot;,
-           9.5 
-],
-[
- &quot;Jun&quot;,
-          15.7 
-],
-[
- &quot;Jul&quot;,
-          17.2 
-],
-[
- &quot;Aug&quot;,
-          14.2 
-],
-[
- &quot;Sep&quot;,
-           7.9 
-],
-[
- &quot;Oct&quot;,
-            -4 
-],
-[
- &quot;Nov&quot;,
-         -15.5 
-],
-[
- &quot;Dec&quot;,
-         -21.5 
-] 
-],
-&quot;name&quot;: &quot;1960-1989&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
+&quot;subtitle&quot;: {
+ &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
 } 
 },
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -20.6 
-],
-[
- &quot;Feb&quot;,
-         -17.3 
-],
-[
- &quot;Mar&quot;,
-          -8.9 
-],
-[
- &quot;Apr&quot;,
-           0.8 
-],
-[
- &quot;May&quot;,
-          10.3 
-],
-[
- &quot;Jun&quot;,
-          16.2 
-],
-[
- &quot;Jul&quot;,
-          17.7 
-],
-[
- &quot;Aug&quot;,
-          14.9 
-],
-[
- &quot;Sep&quot;,
-           8.5 
-],
-[
- &quot;Oct&quot;,
-          -1.5 
-],
-[
- &quot;Nov&quot;,
-           -13 
-],
-[
- &quot;Dec&quot;,
-         -20.5 
-] 
-],
-&quot;name&quot;: &quot;2010-2019&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
+&quot;legend&quot;: {
+ &quot;verticalAlign&quot;: &quot;top&quot;,
+&quot;y&quot;:             50,
+&quot;borderWidth&quot;:              1,
+&quot;borderColor&quot;: &quot;gray&quot;,
+&quot;borderRadius&quot;:              5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemStyle&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
 } 
 },
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -18.8 
-],
-[
- &quot;Feb&quot;,
-         -14.9 
-],
-[
- &quot;Mar&quot;,
-          -7.5 
-],
-[
- &quot;Apr&quot;,
-           1.3 
-],
-[
- &quot;May&quot;,
-          10.5 
-],
-[
- &quot;Jun&quot;,
-          17.6 
-],
-[
- &quot;Jul&quot;,
-          18.4 
-],
-[
- &quot;Aug&quot;,
-          15.4 
-],
-[
- &quot;Sep&quot;,
-           9.3 
-],
-[
- &quot;Oct&quot;,
-          -0.9 
-],
-[
- &quot;Nov&quot;,
-         -11.5 
-],
-[
- &quot;Dec&quot;,
-         -17.2 
-] 
-],
-&quot;name&quot;: &quot;2040-2049&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-} 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-           -17 
-],
-[
- &quot;Feb&quot;,
-         -13.2 
-],
-[
- &quot;Mar&quot;,
-          -6.4 
-],
-[
- &quot;Apr&quot;,
-           2.7 
-],
-[
- &quot;May&quot;,
-          11.9 
-],
-[
- &quot;Jun&quot;,
-          17.4 
-],
-[
- &quot;Jul&quot;,
-          18.8 
-],
-[
- &quot;Aug&quot;,
-          16.2 
-],
-[
- &quot;Sep&quot;,
-          10.2 
-],
-[
- &quot;Oct&quot;,
-          -0.3 
-],
-[
- &quot;Nov&quot;,
-          -9.6 
-],
-[
- &quot;Dec&quot;,
-         -16.4 
-] 
-],
-&quot;name&quot;: &quot;2060-2069&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-} 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -15.5 
-],
-[
- &quot;Feb&quot;,
-         -12.5 
-],
-[
- &quot;Mar&quot;,
-            -5 
-],
-[
- &quot;Apr&quot;,
-           3.8 
-],
-[
- &quot;May&quot;,
-          13.2 
-],
-[
- &quot;Jun&quot;,
-          18.8 
-],
-[
- &quot;Jul&quot;,
-          19.4 
-],
-[
- &quot;Aug&quot;,
-          16.9 
-],
-[
- &quot;Sep&quot;,
-          10.8 
-],
-[
- &quot;Oct&quot;,
-           0.6 
-],
-[
- &quot;Nov&quot;,
-          -9.5 
-],
-[
- &quot;Dec&quot;,
-           -15 
-] 
-],
-&quot;name&quot;: &quot;2090-2099&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-} 
-} 
-],
 &quot;xAxis&quot;: [
  {
  &quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ],
@@ -1466,38 +1478,284 @@ Here are plots of the same data corresponding to the two plots above.
 } 
 } 
 ],
-&quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
+&quot;series&quot;: [
+ {
+ &quot;data&quot;: [
+ [
+          -34.3,
+          -6.9 
+],
+[
+          -32.4,
+          -9.8 
+],
+[
+          -18.6,
+          -2.2 
+],
+[
+           -5.9,
+           3.2 
+],
+[
+            4.1,
+          12.1 
+],
+[
+           12.4,
+          18.6 
+],
+[
+             14,
+          20.3 
+],
+[
+           10.4,
+          17.5 
+],
+[
+              5,
+          11.3 
+],
+[
+          -10.1,
+             1 
+],
+[
+          -22.8,
+          -5.9 
+],
+[
+          -32.7,
+         -13.7 
+] 
+],
+&quot;name&quot;: &quot;1960-1989&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
 },
-&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
-&quot;legend&quot;: {
- &quot;verticalAlign&quot;: &quot;top&quot;,
-&quot;y&quot;:             50,
-&quot;borderWidth&quot;:              1,
-&quot;borderColor&quot;: &quot;gray&quot;,
-&quot;borderRadius&quot;:              5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemStyle&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
+{
+ &quot;data&quot;: [
+ [
+          -31.6,
+         -10.6 
+],
+[
+          -25.4,
+          -9.2 
+],
+[
+          -15.8,
+          -1.2 
+],
+[
+           -5.2,
+           5.8 
+],
+[
+            5.3,
+          14.5 
+],
+[
+           12.4,
+            20 
+],
+[
+           13.9,
+          23.2 
+],
+[
+           11.3,
+          19.2 
+],
+[
+              4,
+          11.4 
+],
+[
+           -7.5,
+           4.3 
+],
+[
+          -18.6,
+          -4.3 
+],
+[
+          -29.7,
+         -13.2 
+] 
+],
+&quot;name&quot;: &quot;2010-2019&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
 },
-&quot;plotOptions&quot;: {
- &quot;column&quot;: {
- &quot;threshold&quot;:              0,
-&quot;groupPadding&quot;:            0.1,
-&quot;pointPadding&quot;:           0.05 
-} 
+{
+ &quot;data&quot;: [
+ [
+          -28.7,
+         -10.5 
+],
+[
+          -24.8,
+          -6.1 
+],
+[
+          -15.3,
+          -1.5 
+],
+[
+           -3.3,
+           6.7 
+],
+[
+            5.6,
+          15.6 
+],
+[
+           13.9,
+          22.7 
+],
+[
+           15.2,
+          22.3 
+],
+[
+             12,
+          18.3 
+],
+[
+            5.5,
+          13.8 
+],
+[
+           -7.1,
+           4.4 
+],
+[
+          -18.7,
+          -3.1 
+],
+[
+          -25.4,
+          -9.7 
+] 
+],
+&quot;name&quot;: &quot;2040-2049&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
 },
+{
+ &quot;data&quot;: [
+ [
+          -25.8,
+          -7.6 
+],
+[
+          -20.9,
+          -6.7 
+],
+[
+            -15,
+           1.4 
+],
+[
+           -3.2,
+           9.4 
+],
+[
+            7.7,
+          15.8 
+],
+[
+           13.1,
+          21.2 
+],
+[
+             15,
+          22.8 
+],
+[
+           12.8,
+            21 
+],
+[
+            6.5,
+          14.3 
+],
+[
+           -4.6,
+           4.2 
+],
+[
+          -16.8,
+            -3 
+],
+[
+          -26.5,
+          -7.8 
+] 
+],
+&quot;name&quot;: &quot;2060-2069&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -24.3,
+          -4.6 
+],
+[
+          -22.4,
+          -1.8 
+],
+[
+          -14.2,
+             3 
+],
+[
+           -3.5,
+           9.6 
+],
+[
+            7.9,
+            19 
+],
+[
+           13.9,
+            25 
+],
+[
+           15.6,
+          23.5 
+],
+[
+           13.2,
+          20.3 
+],
+[
+            6.8,
+          15.4 
+],
+[
+           -5.5,
+           6.1 
+],
+[
+          -16.8,
+          -2.7 
+],
+[
+          -27.4,
+          -7.4 
+] 
+],
+&quot;name&quot;: &quot;2090-2099&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+} 
+],
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19983fe0385e&quot; 
+&quot;renderTo&quot;: &quot;chart199832f4461e&quot; 
 },
-&quot;id&quot;: &quot;chart19983fe0385e&quot; 
+&quot;id&quot;: &quot;chart199832f4461e&quot; 
 });
         });
     })(jQuery);
@@ -1505,7 +1763,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19983fe0385e'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199832f4461e'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1531,12 +1789,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19982f403959&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199827df29c0&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19982f403959&quot;,
+ &quot;dom&quot;: &quot;chart199827df29c0&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1562,298 +1820,40 @@ Here are plots of the same data corresponding to the two plots above.
 } 
 } 
 ],
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
+&quot;subtitle&quot;: {
+ &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
+} 
+},
+&quot;legend&quot;: {
+ &quot;verticalAlign&quot;: &quot;top&quot;,
+&quot;y&quot;:             50,
+&quot;borderWidth&quot;:              1,
+&quot;borderColor&quot;: &quot;gray&quot;,
+&quot;borderRadius&quot;:              5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemStyle&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
+} 
+},
+&quot;xAxis&quot;: [
+ {
+ &quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ],
+&quot;title&quot;: {
+ &quot;text&quot;: &quot;Due to variability among climate models and among years in a natural climate system, these graphs are useful for examining trends over time, rather than for precisely&lt;br&gt;predicting monthly or yearly values. For more information on derivation, reliability, and variability among these projections, please visit www.snap.uaf.edu.&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot;,
+&quot;fontWeight&quot;: &quot;normal&quot;,
+&quot;fontSize&quot;: &quot;8px&quot; 
+} 
+} 
+} 
+],
 &quot;series&quot;: [
  {
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -22.3 
-],
-[
- &quot;Feb&quot;,
-           -20 
-],
-[
- &quot;Mar&quot;,
-         -11.3 
-],
-[
- &quot;Apr&quot;,
-          -0.6 
-],
-[
- &quot;May&quot;,
-           9.5 
-],
-[
- &quot;Jun&quot;,
-          15.7 
-],
-[
- &quot;Jul&quot;,
-          17.2 
-],
-[
- &quot;Aug&quot;,
-          14.2 
-],
-[
- &quot;Sep&quot;,
-           7.9 
-],
-[
- &quot;Oct&quot;,
-            -4 
-],
-[
- &quot;Nov&quot;,
-         -15.5 
-],
-[
- &quot;Dec&quot;,
-         -21.5 
-] 
-],
-&quot;name&quot;: &quot;1960-1989&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series1&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -20.6 
-],
-[
- &quot;Feb&quot;,
-         -17.3 
-],
-[
- &quot;Mar&quot;,
-          -8.9 
-],
-[
- &quot;Apr&quot;,
-           0.8 
-],
-[
- &quot;May&quot;,
-          10.3 
-],
-[
- &quot;Jun&quot;,
-          16.2 
-],
-[
- &quot;Jul&quot;,
-          17.7 
-],
-[
- &quot;Aug&quot;,
-          14.9 
-],
-[
- &quot;Sep&quot;,
-           8.5 
-],
-[
- &quot;Oct&quot;,
-          -1.5 
-],
-[
- &quot;Nov&quot;,
-           -13 
-],
-[
- &quot;Dec&quot;,
-         -20.5 
-] 
-],
-&quot;name&quot;: &quot;2010-2019&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series2&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -18.8 
-],
-[
- &quot;Feb&quot;,
-         -14.9 
-],
-[
- &quot;Mar&quot;,
-          -7.5 
-],
-[
- &quot;Apr&quot;,
-           1.3 
-],
-[
- &quot;May&quot;,
-          10.5 
-],
-[
- &quot;Jun&quot;,
-          17.6 
-],
-[
- &quot;Jul&quot;,
-          18.4 
-],
-[
- &quot;Aug&quot;,
-          15.4 
-],
-[
- &quot;Sep&quot;,
-           9.3 
-],
-[
- &quot;Oct&quot;,
-          -0.9 
-],
-[
- &quot;Nov&quot;,
-         -11.5 
-],
-[
- &quot;Dec&quot;,
-         -17.2 
-] 
-],
-&quot;name&quot;: &quot;2040-2049&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series3&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-           -17 
-],
-[
- &quot;Feb&quot;,
-         -13.2 
-],
-[
- &quot;Mar&quot;,
-          -6.4 
-],
-[
- &quot;Apr&quot;,
-           2.7 
-],
-[
- &quot;May&quot;,
-          11.9 
-],
-[
- &quot;Jun&quot;,
-          17.4 
-],
-[
- &quot;Jul&quot;,
-          18.8 
-],
-[
- &quot;Aug&quot;,
-          16.2 
-],
-[
- &quot;Sep&quot;,
-          10.2 
-],
-[
- &quot;Oct&quot;,
-          -0.3 
-],
-[
- &quot;Nov&quot;,
-          -9.6 
-],
-[
- &quot;Dec&quot;,
-         -16.4 
-] 
-],
-&quot;name&quot;: &quot;2060-2069&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series4&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -15.5 
-],
-[
- &quot;Feb&quot;,
-         -12.5 
-],
-[
- &quot;Mar&quot;,
-            -5 
-],
-[
- &quot;Apr&quot;,
-           3.8 
-],
-[
- &quot;May&quot;,
-          13.2 
-],
-[
- &quot;Jun&quot;,
-          18.8 
-],
-[
- &quot;Jul&quot;,
-          19.4 
-],
-[
- &quot;Aug&quot;,
-          16.9 
-],
-[
- &quot;Sep&quot;,
-          10.8 
-],
-[
- &quot;Oct&quot;,
-           0.6 
-],
-[
- &quot;Nov&quot;,
-          -9.5 
-],
-[
- &quot;Dec&quot;,
-           -15 
-] 
-],
-&quot;name&quot;: &quot;2090-2099&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series5&quot; 
-},
-{
  &quot;data&quot;: [
  [
           -28.6,
@@ -1905,8 +1905,7 @@ Here are plots of the same data corresponding to the two plots above.
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series1&quot; 
+&quot;type&quot;: &quot;columnrange&quot; 
 },
 {
  &quot;data&quot;: [
@@ -1960,8 +1959,7 @@ Here are plots of the same data corresponding to the two plots above.
 ] 
 ],
 &quot;name&quot;: &quot;2010-2019&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series2&quot; 
+&quot;type&quot;: &quot;columnrange&quot; 
 },
 {
  &quot;data&quot;: [
@@ -2015,8 +2013,7 @@ Here are plots of the same data corresponding to the two plots above.
 ] 
 ],
 &quot;name&quot;: &quot;2040-2049&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series3&quot; 
+&quot;type&quot;: &quot;columnrange&quot; 
 },
 {
  &quot;data&quot;: [
@@ -2070,8 +2067,7 @@ Here are plots of the same data corresponding to the two plots above.
 ] 
 ],
 &quot;name&quot;: &quot;2060-2069&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series4&quot; 
+&quot;type&quot;: &quot;columnrange&quot; 
 },
 {
  &quot;data&quot;: [
@@ -2125,55 +2121,15 @@ Here are plots of the same data corresponding to the two plots above.
 ] 
 ],
 &quot;name&quot;: &quot;2090-2099&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series5&quot; 
+&quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;xAxis&quot;: [
- {
- &quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ],
-&quot;title&quot;: {
- &quot;text&quot;: &quot;Due to variability among climate models and among years in a natural climate system, these graphs are useful for examining trends over time, rather than for precisely&lt;br&gt;predicting monthly or yearly values. For more information on derivation, reliability, and variability among these projections, please visit www.snap.uaf.edu.&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot;,
-&quot;fontWeight&quot;: &quot;normal&quot;,
-&quot;fontSize&quot;: &quot;8px&quot; 
-} 
-} 
-} 
-],
-&quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
-},
-&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
-&quot;legend&quot;: {
- &quot;verticalAlign&quot;: &quot;top&quot;,
-&quot;y&quot;:             50,
-&quot;borderWidth&quot;:              1,
-&quot;borderColor&quot;: &quot;gray&quot;,
-&quot;borderRadius&quot;:              5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemStyle&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
-},
-&quot;plotOptions&quot;: {
- &quot;column&quot;: {
- &quot;threshold&quot;:              0,
-&quot;groupPadding&quot;:            0.1,
-&quot;pointPadding&quot;:           0.05 
-} 
-},
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19982f403959&quot; 
+&quot;renderTo&quot;: &quot;chart199827df29c0&quot; 
 },
-&quot;id&quot;: &quot;chart19982f403959&quot; 
+&quot;id&quot;: &quot;chart199827df29c0&quot; 
 });
         });
     })(jQuery);
@@ -2181,7 +2137,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19982f403959'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199827df29c0'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars
@@ -2191,8 +2147,8 @@ This essentially would be moving in the direction of a box plot minus several pr
 Referring back to the discussion of CRU 3.1 data and error bars,
 it is clear how the ability to have error bars for the historical baseline period assists in this Community Charts plot.
 There is something to see. Without some measure of dispersion around the historical baseline average, the twelve spaces for historical bars in this plot would be blank.
-With PRISM data where we do not have a measure of inter-annual variability or any other measure of uncertainty,
-to give the user something to look at for mere visual orientation we have to fake an error bar to at least provide a little rectangle of sorts to remind them where the historical mean is located (and that it's not perfectly estimated).
+With PRISM data we do not have a measure of inter-annual variability or any other measure of uncertainty.
+To give the user something to look at for mere visual orientation we have to fake an error bar to at least provide a little rectangle of sorts to remind them where the historical mean is located (and that it's not perfectly estimated).
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
 &lt;meta charset = &#039;utf-8&#039;&gt;
@@ -2217,12 +2173,12 @@ to give the user something to look at for mere visual orientation we have to fak
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart199820707a1b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19983bc533b3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart199820707a1b&quot;,
+ &quot;dom&quot;: &quot;chart19983bc533b3&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2248,573 +2204,25 @@ to give the user something to look at for mere visual orientation we have to fak
 } 
 } 
 ],
-&quot;series&quot;: [
- {
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -22.5 
-],
-[
- &quot;Feb&quot;,
-           -19 
-],
-[
- &quot;Mar&quot;,
-         -11.4 
-],
-[
- &quot;Apr&quot;,
-          -0.9 
-],
-[
- &quot;May&quot;,
-           9.1 
-],
-[
- &quot;Jun&quot;,
-          15.1 
-],
-[
- &quot;Jul&quot;,
-          16.5 
-],
-[
- &quot;Aug&quot;,
-          13.6 
-],
-[
- &quot;Sep&quot;,
-           7.2 
-],
-[
- &quot;Oct&quot;,
-          -3.6 
-],
-[
- &quot;Nov&quot;,
-         -15.1 
-],
-[
- &quot;Dec&quot;,
-         -21.5 
-] 
-],
-&quot;name&quot;: &quot;1961-1990&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series1&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -20.6 
-],
-[
- &quot;Feb&quot;,
-         -17.3 
-],
-[
- &quot;Mar&quot;,
-          -8.9 
-],
-[
- &quot;Apr&quot;,
-           0.8 
-],
-[
- &quot;May&quot;,
-          10.3 
-],
-[
- &quot;Jun&quot;,
-          16.2 
-],
-[
- &quot;Jul&quot;,
-          17.7 
-],
-[
- &quot;Aug&quot;,
-          14.9 
-],
-[
- &quot;Sep&quot;,
-           8.5 
-],
-[
- &quot;Oct&quot;,
-          -1.5 
-],
-[
- &quot;Nov&quot;,
-           -13 
-],
-[
- &quot;Dec&quot;,
-         -20.5 
-] 
-],
-&quot;name&quot;: &quot;2010-2019&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series2&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -18.8 
-],
-[
- &quot;Feb&quot;,
-         -14.9 
-],
-[
- &quot;Mar&quot;,
-          -7.5 
-],
-[
- &quot;Apr&quot;,
-           1.3 
-],
-[
- &quot;May&quot;,
-          10.5 
-],
-[
- &quot;Jun&quot;,
-          17.6 
-],
-[
- &quot;Jul&quot;,
-          18.4 
-],
-[
- &quot;Aug&quot;,
-          15.4 
-],
-[
- &quot;Sep&quot;,
-           9.3 
-],
-[
- &quot;Oct&quot;,
-          -0.9 
-],
-[
- &quot;Nov&quot;,
-         -11.5 
-],
-[
- &quot;Dec&quot;,
-         -17.2 
-] 
-],
-&quot;name&quot;: &quot;2040-2049&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series3&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-           -17 
-],
-[
- &quot;Feb&quot;,
-         -13.2 
-],
-[
- &quot;Mar&quot;,
-          -6.4 
-],
-[
- &quot;Apr&quot;,
-           2.7 
-],
-[
- &quot;May&quot;,
-          11.9 
-],
-[
- &quot;Jun&quot;,
-          17.4 
-],
-[
- &quot;Jul&quot;,
-          18.8 
-],
-[
- &quot;Aug&quot;,
-          16.2 
-],
-[
- &quot;Sep&quot;,
-          10.2 
-],
-[
- &quot;Oct&quot;,
-          -0.3 
-],
-[
- &quot;Nov&quot;,
-          -9.6 
-],
-[
- &quot;Dec&quot;,
-         -16.4 
-] 
-],
-&quot;name&quot;: &quot;2060-2069&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series4&quot; 
-},
-{
- &quot;data&quot;: [
- [
- &quot;Jan&quot;,
-         -15.5 
-],
-[
- &quot;Feb&quot;,
-         -12.5 
-],
-[
- &quot;Mar&quot;,
-            -5 
-],
-[
- &quot;Apr&quot;,
-           3.8 
-],
-[
- &quot;May&quot;,
-          13.2 
-],
-[
- &quot;Jun&quot;,
-          18.8 
-],
-[
- &quot;Jul&quot;,
-          19.4 
-],
-[
- &quot;Aug&quot;,
-          16.9 
-],
-[
- &quot;Sep&quot;,
-          10.8 
-],
-[
- &quot;Oct&quot;,
-           0.6 
-],
-[
- &quot;Nov&quot;,
-          -9.5 
-],
-[
- &quot;Dec&quot;,
-           -15 
-] 
-],
-&quot;name&quot;: &quot;2090-2099&quot;,
-&quot;type&quot;: &quot;column&quot;,
-&quot;marker&quot;: {
- &quot;radius&quot;:              3 
-},
-&quot;id&quot;: &quot;series5&quot; 
-},
-{
- &quot;data&quot;: [
- [
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-],
-[
- null,
-null 
-] 
-],
-&quot;name&quot;: &quot;1961-1990&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series1&quot; 
-},
-{
- &quot;data&quot;: [
- [
-          -25.6,
-         -15.6 
-],
-[
-            -21,
-         -13.6 
-],
-[
-          -12.7,
-          -5.1 
-],
-[
-           -1.7,
-           3.3 
-],
-[
-            8.4,
-          12.2 
-],
-[
-           14.5,
-          17.9 
-],
-[
-           15.9,
-          19.5 
-],
-[
-           13.4,
-          16.4 
-],
-[
-            6.8,
-          10.2 
-],
-[
-           -4.4,
-           1.4 
-],
-[
-          -16.4,
-          -9.6 
-],
-[
-          -24.3,
-         -16.7 
-] 
-],
-&quot;name&quot;: &quot;2010-2019&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series2&quot; 
-},
-{
- &quot;data&quot;: [
- [
-          -23.1,
-         -14.5 
-],
-[
-          -19.6,
-         -10.2 
-],
-[
-          -10.7,
-          -4.3 
-],
-[
-           -1.4,
-             4 
-],
-[
-            8.2,
-          12.8 
-],
-[
-           15.8,
-          19.4 
-],
-[
-           16.8,
-            20 
-],
-[
-           13.9,
-          16.9 
-],
-[
-            7.3,
-          11.3 
-],
-[
-           -3.5,
-           1.7 
-],
-[
-            -15,
-            -8 
-],
-[
-          -21.4,
-           -13 
-] 
-],
-&quot;name&quot;: &quot;2040-2049&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series3&quot; 
-},
-{
- &quot;data&quot;: [
- [
-          -21.5,
-         -12.5 
-],
-[
-          -17.4,
-            -9 
-],
-[
-           -9.7,
-          -3.1 
-],
-[
-           -0.4,
-           5.8 
-],
-[
-            9.7,
-          14.1 
-],
-[
-           15.5,
-          19.3 
-],
-[
-             17,
-          20.6 
-],
-[
-           14.3,
-          18.1 
-],
-[
-            8.4,
-            12 
-],
-[
-           -2.5,
-           1.9 
-],
-[
-          -13.3,
-          -5.9 
-],
-[
-          -20.8,
-           -12 
-] 
-],
-&quot;name&quot;: &quot;2060-2069&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series4&quot; 
-},
-{
- &quot;data&quot;: [
- [
-          -19.9,
-         -11.1 
-],
-[
-          -18.1,
-          -6.9 
-],
-[
-           -8.9,
-          -1.1 
-],
-[
-            0.6,
-             7 
-],
-[
-           10.3,
-          16.1 
-],
-[
-           15.9,
-          21.7 
-],
-[
-           17.3,
-          21.5 
-],
-[
-           15.2,
-          18.6 
-],
-[
-            8.8,
-          12.8 
-],
-[
-           -1.7,
-           2.9 
-],
-[
-            -13,
-            -6 
-],
-[
-            -20,
-           -10 
-] 
-],
-&quot;name&quot;: &quot;2090-2099&quot;,
-&quot;type&quot;: &quot;errorbar&quot;,
-&quot;linkedTo&quot;: &quot;series5&quot; 
+&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
+&quot;subtitle&quot;: {
+ &quot;text&quot;: &quot;Historical PRISM and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+&quot;style&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
 } 
-],
+},
+&quot;legend&quot;: {
+ &quot;verticalAlign&quot;: &quot;top&quot;,
+&quot;y&quot;:             50,
+&quot;borderWidth&quot;:              1,
+&quot;borderColor&quot;: &quot;gray&quot;,
+&quot;borderRadius&quot;:              5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemMarginBottom&quot;:             -5,
+&quot;itemStyle&quot;: {
+ &quot;color&quot;: &quot;gray&quot; 
+} 
+},
 &quot;xAxis&quot;: [
  {
  &quot;categories&quot;: [ &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; ],
@@ -2828,38 +2236,284 @@ null
 } 
 } 
 ],
-&quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical PRISM and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
-&quot;style&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
+&quot;series&quot;: [
+ {
+ &quot;data&quot;: [
+ [
+         -23.25,
+        -21.75 
+],
+[
+         -19.75,
+        -18.25 
+],
+[
+         -12.15,
+        -10.65 
+],
+[
+          -1.65,
+         -0.15 
+],
+[
+           8.35,
+          9.85 
+],
+[
+          14.35,
+         15.85 
+],
+[
+          15.75,
+         17.25 
+],
+[
+          12.85,
+         14.35 
+],
+[
+           6.45,
+          7.95 
+],
+[
+          -4.35,
+         -2.85 
+],
+[
+         -15.85,
+        -14.35 
+],
+[
+         -22.25,
+        -20.75 
+] 
+],
+&quot;name&quot;: &quot;1961-1990&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
 },
-&quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
-&quot;legend&quot;: {
- &quot;verticalAlign&quot;: &quot;top&quot;,
-&quot;y&quot;:             50,
-&quot;borderWidth&quot;:              1,
-&quot;borderColor&quot;: &quot;gray&quot;,
-&quot;borderRadius&quot;:              5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemMarginBottom&quot;:             -5,
-&quot;itemStyle&quot;: {
- &quot;color&quot;: &quot;gray&quot; 
-} 
+{
+ &quot;data&quot;: [
+ [
+          -31.6,
+         -10.6 
+],
+[
+          -25.4,
+          -9.2 
+],
+[
+          -15.8,
+          -1.2 
+],
+[
+           -5.2,
+           5.8 
+],
+[
+            5.3,
+          14.5 
+],
+[
+           12.4,
+            20 
+],
+[
+           13.9,
+          23.2 
+],
+[
+           11.3,
+          19.2 
+],
+[
+              4,
+          11.4 
+],
+[
+           -7.5,
+           4.3 
+],
+[
+          -18.6,
+          -4.3 
+],
+[
+          -29.7,
+         -13.2 
+] 
+],
+&quot;name&quot;: &quot;2010-2019&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
 },
-&quot;plotOptions&quot;: {
- &quot;column&quot;: {
- &quot;threshold&quot;:              0,
-&quot;groupPadding&quot;:            0.1,
-&quot;pointPadding&quot;:           0.05 
-} 
+{
+ &quot;data&quot;: [
+ [
+          -28.7,
+         -10.5 
+],
+[
+          -24.8,
+          -6.1 
+],
+[
+          -15.3,
+          -1.5 
+],
+[
+           -3.3,
+           6.7 
+],
+[
+            5.6,
+          15.6 
+],
+[
+           13.9,
+          22.7 
+],
+[
+           15.2,
+          22.3 
+],
+[
+             12,
+          18.3 
+],
+[
+            5.5,
+          13.8 
+],
+[
+           -7.1,
+           4.4 
+],
+[
+          -18.7,
+          -3.1 
+],
+[
+          -25.4,
+          -9.7 
+] 
+],
+&quot;name&quot;: &quot;2040-2049&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
 },
+{
+ &quot;data&quot;: [
+ [
+          -25.8,
+          -7.6 
+],
+[
+          -20.9,
+          -6.7 
+],
+[
+            -15,
+           1.4 
+],
+[
+           -3.2,
+           9.4 
+],
+[
+            7.7,
+          15.8 
+],
+[
+           13.1,
+          21.2 
+],
+[
+             15,
+          22.8 
+],
+[
+           12.8,
+            21 
+],
+[
+            6.5,
+          14.3 
+],
+[
+           -4.6,
+           4.2 
+],
+[
+          -16.8,
+            -3 
+],
+[
+          -26.5,
+          -7.8 
+] 
+],
+&quot;name&quot;: &quot;2060-2069&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+},
+{
+ &quot;data&quot;: [
+ [
+          -24.3,
+          -4.6 
+],
+[
+          -22.4,
+          -1.8 
+],
+[
+          -14.2,
+             3 
+],
+[
+           -3.5,
+           9.6 
+],
+[
+            7.9,
+            19 
+],
+[
+           13.9,
+            25 
+],
+[
+           15.6,
+          23.5 
+],
+[
+           13.2,
+          20.3 
+],
+[
+            6.8,
+          15.4 
+],
+[
+           -5.5,
+           6.1 
+],
+[
+          -16.8,
+          -2.7 
+],
+[
+          -27.4,
+          -7.4 
+] 
+],
+&quot;name&quot;: &quot;2090-2099&quot;,
+&quot;type&quot;: &quot;columnrange&quot; 
+} 
+],
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart199820707a1b&quot; 
+&quot;renderTo&quot;: &quot;chart19983bc533b3&quot; 
 },
-&quot;id&quot;: &quot;chart199820707a1b&quot; 
+&quot;id&quot;: &quot;chart19983bc533b3&quot; 
 });
         });
     })(jQuery);
@@ -2867,7 +2521,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199820707a1b'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19983bc533b3'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
