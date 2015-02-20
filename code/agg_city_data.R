@@ -12,7 +12,7 @@ decades.cru <- c(1960, 1970, 1980)
 files.gcm <- list.files(file.path("city_files_GCM", domain), pattern=".RData$", full=TRUE)
 files.cru <- list.files(file.path("city_files_CRU", domain), pattern=".RData$", full=TRUE)
 
-# @ knitr function
+# @knitr function
 f <- function(i, files, decades, phase){
 	print(length(files)-i)
 	load(files[i], envir=environment())

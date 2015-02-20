@@ -14,7 +14,7 @@
 
 <script src="libs/jquery-1.11.0/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/cosmo.min.css" rel="stylesheet" />
+<link href="libs/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
@@ -132,6 +132,10 @@ img {
 <div id="historical-baseline" class="section level3">
 <h3>Historical baseline</h3>
 <p>In the original Community Charts application, only the 1961-1990 PRISM climatology was available as a historical baseline against which to compare future climate projections. An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs. Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.</p>
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2></h2>
 <div id="historical-baseline-prism" class="section level4">
 <h4>Historical baseline: PRISM</h4>
 <p>The PRISM climatology is a fixed 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM. Because PRISM is a fixed 30-year mean, there is no accompanying statistic describing inter-annual variability, hence no error bars.</p>
@@ -159,12 +163,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be07da047df' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be01142e95' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be07da047df&quot;,
+ &quot;dom&quot;: &quot;chart1be01142e95&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -516,9 +520,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be07da047df&quot; 
+&quot;renderTo&quot;: &quot;chart1be01142e95&quot; 
 },
-&quot;id&quot;: &quot;chart1be07da047df&quot; 
+&quot;id&quot;: &quot;chart1be01142e95&quot; 
 });
         });
     })(jQuery);
@@ -526,10 +530,13 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be07da047df">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be01142e95">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
+</div>
+<div id="section-3" class="section level2">
+<h2></h2>
 <div id="historical-baseline-cru-3.1" class="section level4">
 <h4>Historical baseline: CRU 3.1</h4>
 <p>Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above. However, now error bars are available. The historical values are not known with precision, even using CRU, which is based on weather station observations, or PRISM for that matter, which is based on CRU. (Let’s ignore the confusion regarding CRU being downscaled to PRISM which is based on CRU… it is not relevant here).</p>
@@ -558,12 +565,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be062a85a9c' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be03fb43778' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be062a85a9c&quot;,
+ &quot;dom&quot;: &quot;chart1be03fb43778&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1195,9 +1202,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be062a85a9c&quot; 
+&quot;renderTo&quot;: &quot;chart1be03fb43778&quot; 
 },
-&quot;id&quot;: &quot;chart1be062a85a9c&quot; 
+&quot;id&quot;: &quot;chart1be03fb43778&quot; 
 });
         });
     })(jQuery);
@@ -1205,11 +1212,10 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be062a85a9c">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be03fb43778">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-</div>
 </div>
 </div>
 

@@ -2,7 +2,7 @@
 output:
   html_document:
     toc: false
-    theme: cosmo
+    theme: cerulean
     highlight: zenburn
     keep_md: true
 ---
@@ -47,6 +47,7 @@ Again, our interest is in broad scale climate trends, enough so that some uncert
 
 Until now.
 
+##
 #### 10-minute spatial resolution
 
 Would you directly compare a sample of annual average temperatures from one community to a sample of 30-year annual temperature climatologies from another community and argue that the latter community has more stable weather?
@@ -79,11 +80,13 @@ It depends on what kind of information comes through at that coarser scale in th
 Let's take a look again at our test case, Fairbanks, Alaska.
 Error bars have been removed to help focus on mean values.
 
+##
 #### Mean temperature: 2-km resolution
 
 ```{r plot06a_cru_temp_none_2km}
 ```
 
+##
 #### Mean temperature: 10-minute resolution
 
 ```{r plot06b_cru_temp_none_10min}
@@ -99,11 +102,13 @@ The average temperature signal over the 10-minute grid cell is not likely to be 
 Next, the same data are plotted using floating range bars only.
 This makes it easier to focus on the variability at different scales.
 
+##
 #### Temperature range: 2-km resolution
 
 ```{r plot07a_cru_temp_exclusive_2km}
 ```
 
+##
 #### Temperature range: 10-minute resolution
 
 ```{r plot07b_cru_temp_exclusive_10min}
@@ -117,6 +122,7 @@ How much each of these factors competes with differences between 2-km and 10-min
 It is also important to note that the test case of Fairbanks, Alaska here represents a sample of size one.
 The same properties may behave differently in other geographic locations and must be checked as well.
 
+##
 #### 2-km PRISM data with 10-minute climate model output
 
 Note that the above plots all use CRU 3.1 data for a historical baseline.

@@ -2,7 +2,7 @@
 output:
   html_document:
     toc: false
-    theme: cosmo
+    theme: cerulean
     highlight: zenburn
     keep_md: true
 ---
@@ -44,11 +44,13 @@ Some users may find this easier to see.
 
 Here are a couple examples using default Highcharts colors.
 
+##
 #### Anchorage temperature
 
 ```{r plot10a_temp_colors}
 ```
 
+##
 #### Anchorage precipitation
 
 ```{r plot10b_precip_colors}

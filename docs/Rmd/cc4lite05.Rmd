@@ -2,7 +2,7 @@
 output:
   html_document:
     toc: false
-    theme: cosmo
+    theme: cerulean
     highlight: zenburn
     keep_md: true
 ---
@@ -26,11 +26,13 @@ Now repeat the previous comparisons for precipitation.
 Only the latter two plots using floating range bars are shown.
 Due to the heteroskadasticity in the precipitation variable, the patterns of change in mean and variability between scales are similar.
 
+##
 #### Mean precipitation: 2-km resolution
 
 ```{r plot08a_cru_precip_exclusive_2km}
 ```
 
+##
 #### Mean precipitation: 10-minute resolution
 
 ```{r plot08b_cru_precip_exclusive_10min}
@@ -42,11 +44,13 @@ A comparison of scales reveals that total monthly precipitation averaged across 
 A quick comparison with a very wet community, Juneau, Alaska, will reveal the exact opposite.
 Precipitation is very high there at 2-km resolution, but relatively washed out (no pun intended) at 10-minute resolution.
 
+##
 #### Precipitation range: 2-km resolution
 
 ```{r plot09a_cru_precip_exclusive_2km}
 ```
 
+##
 #### Precipitation range: 10-minute resolution
 
 ```{r plot09b_cru_precip_exclusive_10min}

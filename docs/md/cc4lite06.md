@@ -31,6 +31,7 @@ Some users may find this easier to see.
 
 Here are a couple examples using default Highcharts colors.
 
+##
 #### Anchorage temperature
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -56,12 +57,12 @@ Here are a couple examples using default Highcharts colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be096cc06&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be0793b4a93&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be096cc06&quot;,
+ &quot;dom&quot;: &quot;chart1be0793b4a93&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -394,9 +395,9 @@ Here are a couple examples using default Highcharts colors.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be096cc06&quot; 
+&quot;renderTo&quot;: &quot;chart1be0793b4a93&quot; 
 },
-&quot;id&quot;: &quot;chart1be096cc06&quot; 
+&quot;id&quot;: &quot;chart1be0793b4a93&quot; 
 });
         });
     })(jQuery);
@@ -404,9 +405,10 @@ Here are a couple examples using default Highcharts colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be096cc06'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0793b4a93'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Anchorage precipitation
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -432,12 +434,12 @@ Here are a couple examples using default Highcharts colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be077ab26f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be0770257e4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be077ab26f&quot;,
+ &quot;dom&quot;: &quot;chart1be0770257e4&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -770,9 +772,9 @@ Here are a couple examples using default Highcharts colors.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be077ab26f&quot; 
+&quot;renderTo&quot;: &quot;chart1be0770257e4&quot; 
 },
-&quot;id&quot;: &quot;chart1be077ab26f&quot; 
+&quot;id&quot;: &quot;chart1be0770257e4&quot; 
 });
         });
     })(jQuery);
@@ -780,7 +782,7 @@ Here are a couple examples using default Highcharts colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be077ab26f'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0770257e4'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

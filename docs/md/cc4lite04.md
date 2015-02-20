@@ -34,6 +34,7 @@ Again, our interest is in broad scale climate trends, enough so that some uncert
 
 Until now.
 
+##
 #### 10-minute spatial resolution
 
 Would you directly compare a sample of annual average temperatures from one community to a sample of 30-year annual temperature climatologies from another community and argue that the latter community has more stable weather?
@@ -66,6 +67,7 @@ It depends on what kind of information comes through at that coarser scale in th
 Let's take a look again at our test case, Fairbanks, Alaska.
 Error bars have been removed to help focus on mean values.
 
+##
 #### Mean temperature: 2-km resolution
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -91,12 +93,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0290a257&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be05f4e7413&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0290a257&quot;,
+ &quot;dom&quot;: &quot;chart1be05f4e7413&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -448,9 +450,9 @@ Error bars have been removed to help focus on mean values.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0290a257&quot; 
+&quot;renderTo&quot;: &quot;chart1be05f4e7413&quot; 
 },
-&quot;id&quot;: &quot;chart1be0290a257&quot; 
+&quot;id&quot;: &quot;chart1be05f4e7413&quot; 
 });
         });
     })(jQuery);
@@ -458,9 +460,10 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0290a257'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be05f4e7413'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Mean temperature: 10-minute resolution
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -486,12 +489,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be073951d15&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be0385a6298&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be073951d15&quot;,
+ &quot;dom&quot;: &quot;chart1be0385a6298&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -843,9 +846,9 @@ Error bars have been removed to help focus on mean values.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be073951d15&quot; 
+&quot;renderTo&quot;: &quot;chart1be0385a6298&quot; 
 },
-&quot;id&quot;: &quot;chart1be073951d15&quot; 
+&quot;id&quot;: &quot;chart1be0385a6298&quot; 
 });
         });
     })(jQuery);
@@ -853,7 +856,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be073951d15'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0385a6298'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 During some months, mean monthly temperature differs by more than 10 degrees C and 20 degrees F - and these are decadal averages of monthly averages!
@@ -866,6 +869,7 @@ The average temperature signal over the 10-minute grid cell is not likely to be 
 Next, the same data are plotted using floating range bars only.
 This makes it easier to focus on the variability at different scales.
 
+##
 #### Temperature range: 2-km resolution
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -891,12 +895,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be07d2929ac&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be03d3eb1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be07d2929ac&quot;,
+ &quot;dom&quot;: &quot;chart1be03d3eb1&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1228,9 +1232,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be07d2929ac&quot; 
+&quot;renderTo&quot;: &quot;chart1be03d3eb1&quot; 
 },
-&quot;id&quot;: &quot;chart1be07d2929ac&quot; 
+&quot;id&quot;: &quot;chart1be03d3eb1&quot; 
 });
         });
     })(jQuery);
@@ -1238,9 +1242,10 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be07d2929ac'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be03d3eb1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Temperature range: 10-minute resolution
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1266,12 +1271,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be04e3234e3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be063e2694a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be04e3234e3&quot;,
+ &quot;dom&quot;: &quot;chart1be063e2694a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1603,9 +1608,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be04e3234e3&quot; 
+&quot;renderTo&quot;: &quot;chart1be063e2694a&quot; 
 },
-&quot;id&quot;: &quot;chart1be04e3234e3&quot; 
+&quot;id&quot;: &quot;chart1be063e2694a&quot; 
 });
         });
     })(jQuery);
@@ -1613,7 +1618,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be04e3234e3'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be063e2694a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias.
@@ -1624,6 +1629,7 @@ How much each of these factors competes with differences between 2-km and 10-min
 It is also important to note that the test case of Fairbanks, Alaska here represents a sample of size one.
 The same properties may behave differently in other geographic locations and must be checked as well.
 
+##
 #### 2-km PRISM data with 10-minute climate model output
 
 Note that the above plots all use CRU 3.1 data for a historical baseline.
@@ -1654,12 +1660,12 @@ This makes it clear how different the two temperature signals are from one anoth
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0f3847c5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be07dd4421a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0f3847c5&quot;,
+ &quot;dom&quot;: &quot;chart1be07dd4421a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2011,9 +2017,9 @@ This makes it clear how different the two temperature signals are from one anoth
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0f3847c5&quot; 
+&quot;renderTo&quot;: &quot;chart1be07dd4421a&quot; 
 },
-&quot;id&quot;: &quot;chart1be0f3847c5&quot; 
+&quot;id&quot;: &quot;chart1be07dd4421a&quot; 
 });
         });
     })(jQuery);
@@ -2021,7 +2027,7 @@ This makes it clear how different the two temperature signals are from one anoth
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0f3847c5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be07dd4421a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

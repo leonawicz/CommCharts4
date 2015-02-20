@@ -7,7 +7,7 @@
 
 ##
 ##
-## Levels of measurement
+### Levels of measurement
 
 To get started, an example version 1 Community Charts graphic is shown below to illustrate a key opportunity for improvement.
 The original plots are available in Celsius (C) or Fahrenheit (F) degree units.
@@ -26,6 +26,7 @@ In fact, sometimes the confusion is misplaced "Why is the error so much greater 
 The real issue is simply that they seem bigger relative to a shrinking bar based on proximity to the arbitrary baseline value.
 The error bars remain insensitive to this baseline because they are, like precipitation, ratio level data.
 
+##
 #### Version 1 Community Chart
 
 <img src="img/v1_ex1.png" height="500" width="900">
@@ -34,6 +35,7 @@ The error bars remain insensitive to this baseline because they are, like precip
 It will download a graphic in Celsius regardless of the user's specification or what is displayed in the browser.
 I had to save a screenshot of the online image in order to include it here.*]
 
+##
 ### Bar baseline
 
 If there is specific interest in degrees above freezing, then the baseline is not so arbitrary and bar height is not problematic.
@@ -56,6 +58,7 @@ The baseline is adaptive, defined as the freezing point irrespective of units of
 When changing the measurement scale, the data are not transformed in any way that should change the appearance of the bars in the two plots.
 Only the y-axis need take on new values.
 
+##
 #### Freezing point baseline: Celsius
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -81,12 +84,12 @@ Only the y-axis need take on new values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be043c31f98&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be0725e1321&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be043c31f98&quot;,
+ &quot;dom&quot;: &quot;chart1be0725e1321&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -718,9 +721,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be043c31f98&quot; 
+&quot;renderTo&quot;: &quot;chart1be0725e1321&quot; 
 },
-&quot;id&quot;: &quot;chart1be043c31f98&quot; 
+&quot;id&quot;: &quot;chart1be0725e1321&quot; 
 });
         });
     })(jQuery);
@@ -728,9 +731,10 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be043c31f98'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0725e1321'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Freezing point baseline: Fahrenheit
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -756,12 +760,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0b994452&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be015c2343f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0b994452&quot;,
+ &quot;dom&quot;: &quot;chart1be015c2343f&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1393,9 +1397,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0b994452&quot; 
+&quot;renderTo&quot;: &quot;chart1be015c2343f&quot; 
 },
-&quot;id&quot;: &quot;chart1be0b994452&quot; 
+&quot;id&quot;: &quot;chart1be015c2343f&quot; 
 });
         });
     })(jQuery);
@@ -1403,9 +1407,10 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0b994452'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be015c2343f'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 ### Error bars
 
 Another difference that stands out is the increased range of the error bars.
@@ -1421,6 +1426,7 @@ it is arguably more useful as well as honest to display the range of the five cl
 In any case, it is easy enough to optionally provide either statistic for error bars, just as version 1 allows error bars to be toggled on or off.
 Below are three plots showing each of these three options when plotting precipitation trends.
 
+##
 #### No error bars
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1446,12 +1452,12 @@ Below are three plots showing each of these three options when plotting precipit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be0627e336b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be0229ebb9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0627e336b&quot;,
+ &quot;dom&quot;: &quot;chart1be0229ebb9&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1803,9 +1809,9 @@ Below are three plots showing each of these three options when plotting precipit
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0627e336b&quot; 
+&quot;renderTo&quot;: &quot;chart1be0229ebb9&quot; 
 },
-&quot;id&quot;: &quot;chart1be0627e336b&quot; 
+&quot;id&quot;: &quot;chart1be0229ebb9&quot; 
 });
         });
     })(jQuery);
@@ -1813,9 +1819,10 @@ Below are three plots showing each of these three options when plotting precipit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0627e336b'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be0229ebb9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Error bars: +/- one standard deviation from the mean
 
 Precipitation is a random variable that typically displays natural heteroskedasticity.
@@ -1844,12 +1851,12 @@ Error bars may be larger, requiring a greater range for the overall y-axis in th
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be042eb1f3f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be053e7849&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be042eb1f3f&quot;,
+ &quot;dom&quot;: &quot;chart1be053e7849&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2481,9 +2488,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be042eb1f3f&quot; 
+&quot;renderTo&quot;: &quot;chart1be053e7849&quot; 
 },
-&quot;id&quot;: &quot;chart1be042eb1f3f&quot; 
+&quot;id&quot;: &quot;chart1be053e7849&quot; 
 });
         });
     })(jQuery);
@@ -2491,9 +2498,10 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be042eb1f3f'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be053e7849'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Error bars: range of the five discrete climate models
 
 Precipitation is also likely to have a skewed distribution, making use of standard deviation without additional information sometimes unable to depict an accurate representation of variation.
@@ -2522,12 +2530,12 @@ Here the full spread of the five individual models is depicted by the error bars
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be066726cd&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be043b32fa4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be066726cd&quot;,
+ &quot;dom&quot;: &quot;chart1be043b32fa4&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -3159,9 +3167,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be066726cd&quot; 
+&quot;renderTo&quot;: &quot;chart1be043b32fa4&quot; 
 },
-&quot;id&quot;: &quot;chart1be066726cd&quot; 
+&quot;id&quot;: &quot;chart1be043b32fa4&quot; 
 });
         });
     })(jQuery);
@@ -3169,7 +3177,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be066726cd'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be043b32fa4'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

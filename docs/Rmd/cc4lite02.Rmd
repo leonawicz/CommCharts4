@@ -2,7 +2,7 @@
 output:
   html_document:
     toc: false
-    theme: cosmo
+    theme: cerulean
     highlight: zenburn
     keep_md: true
 ---
@@ -26,6 +26,7 @@ In the original Community Charts application, only the 1961-1990 PRISM climatolo
 An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
 Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.
 
+##
 #### Historical baseline: PRISM
 
 The PRISM climatology is a fixed 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM.
@@ -39,6 +40,7 @@ The reason that comparing data of notably different temporal scales (as would be
 ```{r plot03a_prism}
 ```
 
+##
 #### Historical baseline: CRU 3.1
 
 Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.

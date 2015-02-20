@@ -13,6 +13,7 @@ In the original Community Charts application, only the 1961-1990 PRISM climatolo
 An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
 Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.
 
+##
 #### Historical baseline: PRISM
 
 The PRISM climatology is a fixed 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM.
@@ -46,12 +47,12 @@ The reason that comparing data of notably different temporal scales (as would be
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be07da047df&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be01142e95&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be07da047df&quot;,
+ &quot;dom&quot;: &quot;chart1be01142e95&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -403,9 +404,9 @@ The reason that comparing data of notably different temporal scales (as would be
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be07da047df&quot; 
+&quot;renderTo&quot;: &quot;chart1be01142e95&quot; 
 },
-&quot;id&quot;: &quot;chart1be07da047df&quot; 
+&quot;id&quot;: &quot;chart1be01142e95&quot; 
 });
         });
     })(jQuery);
@@ -413,9 +414,10 @@ The reason that comparing data of notably different temporal scales (as would be
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be07da047df'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be01142e95'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
+##
 #### Historical baseline: CRU 3.1
 
 Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
@@ -457,12 +459,12 @@ It also assists in graphing the Community Charts slightly differently, as will b
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1be062a85a9c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1be03fb43778&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be062a85a9c&quot;,
+ &quot;dom&quot;: &quot;chart1be03fb43778&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1094,9 +1096,9 @@ It also assists in graphing the Community Charts slightly differently, as will b
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be062a85a9c&quot; 
+&quot;renderTo&quot;: &quot;chart1be03fb43778&quot; 
 },
-&quot;id&quot;: &quot;chart1be062a85a9c&quot; 
+&quot;id&quot;: &quot;chart1be03fb43778&quot; 
 });
         });
     })(jQuery);
@@ -1104,7 +1106,7 @@ It also assists in graphing the Community Charts slightly differently, as will b
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be062a85a9c'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1be03fb43778'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

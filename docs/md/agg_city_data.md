@@ -28,8 +28,13 @@ files.gcm <- list.files(file.path("city_files_GCM", domain), pattern = ".RData$"
     full = TRUE)
 files.cru <- list.files(file.path("city_files_CRU", domain), pattern = ".RData$", 
     full = TRUE)
+```
 
-# @ knitr function
+The function used for loading and manipulating the data into curated form.
+The `%>%` (pipe operator) is available from the `magrittr` package, which is loaded when `dplyr` is loaded.
+
+
+```r
 f <- function(i, files, decades, phase) {
     print(length(files) - i)
     load(files[i], envir = environment())
@@ -49,11 +54,6 @@ f <- function(i, files, decades, phase) {
     city.dat
 }
 ```
-
-The function used for loading and manipulating the data into curated form.
-The `%>%` (pipe operator) is available from the `magrittr` package, which is loaded when `dplyr` is loaded.
-
-
 
 The data are processed in parallel.
 The lines which are commented out refer to some tests of compute times for different methods of combining multiple data frames.
