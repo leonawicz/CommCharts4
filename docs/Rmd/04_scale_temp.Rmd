@@ -96,6 +96,8 @@ Error bars have been removed to help focus on mean values.
 ```
 
 During some months, mean monthly temperatures differ between resolutions by more than 10 degrees C and 20 degrees F - and these are decadal averages of monthly averages of five-model averages!
+Look at January 2010-2019.
+Use the decadal color key in each of the above two plots to deselect all but this decade to see the difference more easily.
 Comparing data while transcending this much of a spatial scale reveals seriously biased values between scales.
 In other months bias can go in the opposite direction.
 
