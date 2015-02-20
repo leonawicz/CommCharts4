@@ -62,7 +62,7 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 			return(NULL)
 		})
 	}
-	p$chart(width=width, height=height)
+	#p$chart(width=width, height=height) # set by notepad++ "search and replace in files"
 	p
 }
 

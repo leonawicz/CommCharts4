@@ -72,22 +72,22 @@ Only the y-axis need take on new values.
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad815d475b3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad86cbc650b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad815d475b3&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad86cbc650b&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -104,11 +104,10 @@ Only the y-axis need take on new values.
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Temperature (°C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -718,12 +717,10 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
+&quot;id&quot;: &quot;chart1ad86cbc650b&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad815d475b3&quot; 
-},
-&quot;id&quot;: &quot;chart1ad815d475b3&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad86cbc650b&quot; 
+} 
 });
         });
     })(jQuery);
@@ -731,8 +728,8 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad815d475b3'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad86cbc650b'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 #### Freezing point baseline: Fahrenheit
@@ -752,22 +749,22 @@ null
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8155176c5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad81cf15dc5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8155176c5&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad81cf15dc5&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -784,11 +781,10 @@ null
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Temperature (°F)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Temperature (°F)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -1398,12 +1394,10 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
+&quot;id&quot;: &quot;chart1ad81cf15dc5&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad8155176c5&quot; 
-},
-&quot;id&quot;: &quot;chart1ad8155176c5&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad81cf15dc5&quot; 
+} 
 });
         });
     })(jQuery);
@@ -1411,8 +1405,8 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8155176c5'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad81cf15dc5'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 ### Error bars
@@ -1448,22 +1442,22 @@ Below are three plots showing each of these three options when plotting precipit
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad86ff366e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad870193a6&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad86ff366e&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad870193a6&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -1480,11 +1474,10 @@ Below are three plots showing each of these three options when plotting precipit
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -1814,12 +1807,10 @@ Below are three plots showing each of these three options when plotting precipit
 &quot;pointPadding&quot;:           0.05 
 } 
 },
+&quot;id&quot;: &quot;chart1ad870193a6&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad86ff366e&quot; 
-},
-&quot;id&quot;: &quot;chart1ad86ff366e&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad870193a6&quot; 
+} 
 });
         });
     })(jQuery);
@@ -1827,8 +1818,8 @@ Below are three plots showing each of these three options when plotting precipit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad86ff366e'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad870193a6'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 #### Error bars: +/- one standard deviation from the mean
@@ -1851,22 +1842,22 @@ Error bars may be larger, requiring a greater range for the overall y-axis in th
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad843482dbb&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad844ba5060&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad843482dbb&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad844ba5060&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -1883,11 +1874,10 @@ Error bars may be larger, requiring a greater range for the overall y-axis in th
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -2497,12 +2487,10 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
+&quot;id&quot;: &quot;chart1ad844ba5060&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad843482dbb&quot; 
-},
-&quot;id&quot;: &quot;chart1ad843482dbb&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad844ba5060&quot; 
+} 
 });
         });
     })(jQuery);
@@ -2510,8 +2498,8 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad843482dbb'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad844ba5060'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 #### Error bars: range of the five discrete climate models
@@ -2534,22 +2522,22 @@ Here the full spread of the five individual models is depicted by the error bars
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8608b2415&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad83f092edc&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8608b2415&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad83f092edc&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -2566,11 +2554,10 @@ Here the full spread of the five individual models is depicted by the error bars
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -3180,12 +3167,10 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
+&quot;id&quot;: &quot;chart1ad83f092edc&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad8608b2415&quot; 
-},
-&quot;id&quot;: &quot;chart1ad8608b2415&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad83f092edc&quot; 
+} 
 });
         });
     })(jQuery);
@@ -3193,7 +3178,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8608b2415'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad83f092edc'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

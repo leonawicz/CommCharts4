@@ -31,22 +31,22 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad83af77c27&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad8210f3a3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad83af77c27&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad8210f3a3&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -63,11 +63,10 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -375,12 +374,10 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
+&quot;id&quot;: &quot;chart1ad8210f3a3&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad83af77c27&quot; 
-},
-&quot;id&quot;: &quot;chart1ad83af77c27&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad8210f3a3&quot; 
+} 
 });
         });
     })(jQuery);
@@ -388,8 +385,8 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad83af77c27'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8210f3a3'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 #### Mean precipitation: 10-minute resolution
@@ -409,22 +406,22 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad84338705c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad872211d0e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad84338705c&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad872211d0e&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -441,11 +438,10 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -753,12 +749,10 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
+&quot;id&quot;: &quot;chart1ad872211d0e&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad84338705c&quot; 
-},
-&quot;id&quot;: &quot;chart1ad84338705c&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad872211d0e&quot; 
+} 
 });
         });
     })(jQuery);
@@ -766,8 +760,8 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84338705c'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad872211d0e'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
 A comparison of scales reveals that total monthly precipitation averaged across a 10-minute grid cell is substantially greater than that based on the 2-km PRISM climatology.
@@ -795,22 +789,22 @@ This also affects the time of year when higher or lower inter-decadal variabilit
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad86fca2c22&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad8603459f3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad86fca2c22&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad8603459f3&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -827,11 +821,10 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -1139,12 +1132,10 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
+&quot;id&quot;: &quot;chart1ad8603459f3&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad86fca2c22&quot; 
-},
-&quot;id&quot;: &quot;chart1ad86fca2c22&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad8603459f3&quot; 
+} 
 });
         });
     })(jQuery);
@@ -1152,8 +1143,8 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad86fca2c22'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8603459f3'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 #### Precipitation range: 10-minute resolution
@@ -1173,22 +1164,22 @@ This also affects the time of year when higher or lower inter-decadal variabilit
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 100%;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad834a65eac&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad89e62622&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad834a65eac&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad89e62622&quot;,
+
+
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -1205,11 +1196,10 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Precipitation (mm)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Precipitation (mm)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -1517,12 +1507,10 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
+&quot;id&quot;: &quot;chart1ad89e62622&quot;,
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
-&quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad834a65eac&quot; 
-},
-&quot;id&quot;: &quot;chart1ad834a65eac&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad89e62622&quot; 
+} 
 });
         });
     })(jQuery);
@@ -1530,8 +1518,8 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad834a65eac'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad89e62622'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
