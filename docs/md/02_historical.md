@@ -1,154 +1,38 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-
-
-
-<title></title>
-
-<script src="libs/jquery-1.11.0/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-padding-top: 50px;
-padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar) */
-.section h2 {
-padding-top: 55px;
-margin-top: -55px;
-}
-.section h3 {
-padding-top: 55px;
-margin-top: -55px;
-}
-/* don't use link color in navbar */
-.dropdown-menu>li>a {
-color: black;
-}
-/* some padding for disqus */
-#disqus_thread {
-margin-top: 45px;
-}
-</style>
-<link rel="stylesheet" href="libs/font-awesome-4.1.0/css/font-awesome.min.css"/>
 
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46129458-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-</head>
-
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img { 
-  max-width:100%; 
-  height: auto; 
-}
-</style>
-<div class="container-fluid main-container">
-
-<div class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Community Charts</a>
-      </div>
-      <div class="navbar-collapse collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Overview</a></li>
-
-          <li class="dropdown">
-            <a href="cc4lite" class="dropdown-toggle" data-toggle="dropdown">cc4lite <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="cc4lite01.html">Levels of measurement</a></li>
-              <li><a href="cc4lite02.html">Historical baseline</a></li>
-              <li><a href="cc4lite03.html">Displaying variability</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Spatial scale</li>
-              <li><a href="cc4lite04.html">Temperature</a></li>
-              <li><a href="cc4lite05.html">Precipitation</a></li>
-              <li class="divider"></li>
-              <li><a href="cc4lite06.html">Color palettes</a></li>
-            </ul>
-
-          <li><a href="agg_city_data.html">R Code</a></li>
-
-          <li><a href="http://leonawicz.github.io">All Projects</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <a class="btn btn-link" href="https://github.com/leonawicz/CommCharts4">
-            <i class="fa fa-github fa-lg"></i>
-            Github
-          </a>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
 
 
 
-<div id="section" class="section level2">
-<h2></h2>
-</div>
-<div id="section-1" class="section level2">
-<h2></h2>
-<div id="historical-baseline" class="section level3">
-<h3>Historical baseline</h3>
-<p>In the original Community Charts application, only the 1961-1990 PRISM climatology was available as a historical baseline against which to compare future climate projections. An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs. Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.</p>
-</div>
-</div>
-<div id="section-2" class="section level2">
-<h2></h2>
-<div id="historical-baseline-prism" class="section level4">
-<h4>Historical baseline: PRISM</h4>
-<p>The PRISM climatology is a fixed 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM. Because PRISM is a fixed 30-year mean, there is no accompanying statistic describing inter-annual variability, hence no error bars.</p>
-<p>It is worth considering the merits and drawbacks of using a 30-year average to compare with a handful of 10-year averages. I think it is of little issue in these graphs, but this tends to speak more to the fact that displaying a historical baseline is not necessary for visualizing projected trends when those future trends are apparent already. The reason that comparing data of notably different temporal scales (as would be the case with spatial scales) is not a cause for concern in this context is because it is actually of little importance to the climate data in the graph either way.</p>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+##
+##
+### Historical baseline
+
+In the original Community Charts application, only the 1961-1990 PRISM climatology was available as a historical baseline against which to compare future climate projections.
+An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
+Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.
+
+##
+#### Historical baseline: PRISM
+
+The PRISM climatology is a fixed 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM.
+Because PRISM is a fixed 30-year mean, there is no accompanying statistic describing inter-annual variability, hence no error bars.
+
+It is worth considering the merits and drawbacks of using a 30-year average to compare with a handful of 10-year averages.
+I think it is of little issue in these graphs,
+but this tends to speak more to the fact that displaying a historical baseline is not necessary for visualizing projected trends when those future trends are apparent already.
+The reason that comparing data of notably different temporal scales (as would be the case with spatial scales) is not a cause for concern in this context is because it is actually of little importance to the climate data in the graph either way.
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -163,12 +47,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart4643dd049d9' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart1998155a300e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart4643dd049d9&quot;,
+ &quot;dom&quot;: &quot;chart1998155a300e&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -523,9 +407,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart4643dd049d9&quot; 
+&quot;renderTo&quot;: &quot;chart1998155a300e&quot; 
 },
-&quot;id&quot;: &quot;chart4643dd049d9&quot; 
+&quot;id&quot;: &quot;chart1998155a300e&quot; 
 });
         });
     })(jQuery);
@@ -533,27 +417,37 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart4643dd049d9">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-</div>
-</div>
-<div id="section-3" class="section level2">
-<h2></h2>
-<div id="historical-baseline-cru-3.1" class="section level4">
-<h4>Historical baseline: CRU 3.1</h4>
-<p>Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above. However, now error bars are available. The historical values are not known with precision, even using CRU, which is based on weather station observations, or PRISM for that matter, which is based on CRU. (Let’s ignore the confusion regarding CRU being downscaled to PRISM which is based on CRU… it is not relevant here).</p>
-<p>It is sensible to expect the error bars to be smaller for the historical data, but keep in mind that the error bars have different meanings. First and foremost, CRU is not a climate model, nor is it a collection of five climate models like those represented in the plot. There is no notion of variability across multiple runs or versions of CRU data here. Variation is limited to that across years whereas for the climate model outputs it is across years and models. On the other hand, variability is increased because the inter-annual variability across 30 years of data is more than that among 10 years of data.</p>
-<p>As the plot shows, this leads to error bars for CRU to be comparable to those shown for the decadal model outputs. This also hints at why data of different temporal scales should not be directly compared without careful consideration of which properties of the data are comparable and which are not. In any case, this permits error bars for the historical baseline. It also assists in graphing the Community Charts slightly differently, as will be shown later, in a way that may be more interpretable and useful.</p>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998155a300e'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+##
+#### Historical baseline: CRU 3.1
+
+Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
+However, now error bars are available.
+The historical values are not known with precision, even using CRU, which is based on weather station observations, or PRISM for that matter, which is based on CRU.
+(Let's ignore the confusion regarding CRU being downscaled to PRISM which is based on CRU... it is not relevant here).
+
+It is sensible to expect the error bars to be smaller for the historical data, but keep in mind that the error bars have different meanings.
+First and foremost, CRU is not a climate model, nor is it a collection of five climate models like those represented in the plot.
+There is no notion of variability across multiple runs or versions of CRU data here.
+Variation is limited to that across years whereas for the climate model outputs it is across years and models.
+On the other hand, variability is increased because the inter-annual variability across 30 years of data is more than that among 10 years of data.
+
+As the plot shows, this leads to error bars for CRU to be comparable to those shown for the decadal model outputs.
+This also hints at why data of different temporal scales should not be directly compared without careful consideration of which properties of the data are comparable and which are not.
+In any case, this permits error bars for the historical baseline.
+It also assists in graphing the Community Charts slightly differently, as will be shown later, in a way that may be more interpretable and useful.
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -568,12 +462,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart4642c795e01' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart199845fc35ae&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart4642c795e01&quot;,
+ &quot;dom&quot;: &quot;chart199845fc35ae&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1208,9 +1102,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart4642c795e01&quot; 
+&quot;renderTo&quot;: &quot;chart199845fc35ae&quot; 
 },
-&quot;id&quot;: &quot;chart4642c795e01&quot; 
+&quot;id&quot;: &quot;chart199845fc35ae&quot; 
 });
         });
     })(jQuery);
@@ -1218,25 +1112,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart4642c795e01">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199845fc35ae'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-</div>
-</div>
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-$(document).ready(function () {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
-</script>
-
-
-</body>
-</html>

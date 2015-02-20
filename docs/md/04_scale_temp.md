@@ -93,12 +93,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart46472c833de&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1998719f646c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart46472c833de&quot;,
+ &quot;dom&quot;: &quot;chart1998719f646c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -453,9 +453,9 @@ Error bars have been removed to help focus on mean values.
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart46472c833de&quot; 
+&quot;renderTo&quot;: &quot;chart1998719f646c&quot; 
 },
-&quot;id&quot;: &quot;chart46472c833de&quot; 
+&quot;id&quot;: &quot;chart1998719f646c&quot; 
 });
         });
     })(jQuery);
@@ -463,7 +463,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart46472c833de'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998719f646c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -492,12 +492,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart464568d60c5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19981980135a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart464568d60c5&quot;,
+ &quot;dom&quot;: &quot;chart19981980135a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -852,9 +852,9 @@ Error bars have been removed to help focus on mean values.
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart464568d60c5&quot; 
+&quot;renderTo&quot;: &quot;chart19981980135a&quot; 
 },
-&quot;id&quot;: &quot;chart464568d60c5&quot; 
+&quot;id&quot;: &quot;chart19981980135a&quot; 
 });
         });
     })(jQuery);
@@ -862,7 +862,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart464568d60c5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19981980135a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 During some months, mean monthly temperature differs by more than 10 degrees C and 20 degrees F - and these are decadal averages of monthly averages!
@@ -901,12 +901,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart464311977a8&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199871e52986&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart464311977a8&quot;,
+ &quot;dom&quot;: &quot;chart199871e52986&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1239,9 +1239,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart464311977a8&quot; 
+&quot;renderTo&quot;: &quot;chart199871e52986&quot; 
 },
-&quot;id&quot;: &quot;chart464311977a8&quot; 
+&quot;id&quot;: &quot;chart199871e52986&quot; 
 });
         });
     })(jQuery);
@@ -1249,7 +1249,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart464311977a8'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199871e52986'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1278,12 +1278,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart4643a97b93&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199876a27de1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart4643a97b93&quot;,
+ &quot;dom&quot;: &quot;chart199876a27de1&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1616,9 +1616,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart4643a97b93&quot; 
+&quot;renderTo&quot;: &quot;chart199876a27de1&quot; 
 },
-&quot;id&quot;: &quot;chart4643a97b93&quot; 
+&quot;id&quot;: &quot;chart199876a27de1&quot; 
 });
         });
     })(jQuery);
@@ -1626,7 +1626,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4643a97b93'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199876a27de1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias.
@@ -1668,12 +1668,12 @@ This makes it clear how different the two temperature signals are from one anoth
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart464653fe02&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19985c9c7f8a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart464653fe02&quot;,
+ &quot;dom&quot;: &quot;chart19985c9c7f8a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2028,9 +2028,9 @@ This makes it clear how different the two temperature signals are from one anoth
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart464653fe02&quot; 
+&quot;renderTo&quot;: &quot;chart19985c9c7f8a&quot; 
 },
-&quot;id&quot;: &quot;chart464653fe02&quot; 
+&quot;id&quot;: &quot;chart19985c9c7f8a&quot; 
 });
         });
     })(jQuery);
@@ -2038,7 +2038,7 @@ This makes it clear how different the two temperature signals are from one anoth
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart464653fe02'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19985c9c7f8a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

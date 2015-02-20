@@ -1,174 +1,77 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-
-
-
-<title></title>
-
-<script src="libs/jquery-1.11.0/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-padding-top: 50px;
-padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar) */
-.section h2 {
-padding-top: 55px;
-margin-top: -55px;
-}
-.section h3 {
-padding-top: 55px;
-margin-top: -55px;
-}
-/* don't use link color in navbar */
-.dropdown-menu>li>a {
-color: black;
-}
-/* some padding for disqus */
-#disqus_thread {
-margin-top: 45px;
-}
-</style>
-<link rel="stylesheet" href="libs/font-awesome-4.1.0/css/font-awesome.min.css"/>
 
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46129458-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-</head>
-
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img { 
-  max-width:100%; 
-  height: auto; 
-}
-</style>
-<div class="container-fluid main-container">
-
-<div class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Community Charts</a>
-      </div>
-      <div class="navbar-collapse collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Overview</a></li>
-
-          <li class="dropdown">
-            <a href="cc4lite" class="dropdown-toggle" data-toggle="dropdown">cc4lite <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="cc4lite01.html">Levels of measurement</a></li>
-              <li><a href="cc4lite02.html">Historical baseline</a></li>
-              <li><a href="cc4lite03.html">Displaying variability</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Spatial scale</li>
-              <li><a href="cc4lite04.html">Temperature</a></li>
-              <li><a href="cc4lite05.html">Precipitation</a></li>
-              <li class="divider"></li>
-              <li><a href="cc4lite06.html">Color palettes</a></li>
-            </ul>
-
-          <li><a href="agg_city_data.html">R Code</a></li>
-
-          <li><a href="http://leonawicz.github.io">All Projects</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <a class="btn btn-link" href="https://github.com/leonawicz/CommCharts4">
-            <i class="fa fa-github fa-lg"></i>
-            Github
-          </a>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
 
 
 
-<div id="section" class="section level2">
-<h2></h2>
-</div>
-<div id="section-1" class="section level2">
-<h2></h2>
-<div id="levels-of-measurement" class="section level3">
-<h3>Levels of measurement</h3>
-<p>To get started, an example version 1 Community Charts graphic is shown below to illustrate a key opportunity for improvement. The original plots are available in Celsius (C) or Fahrenheit (F) degree units. Although bar charts or column charts whose bars originate from a fixed baseline make sense for random variables with a real zero, e.g., precipitation amounts, they are problematic for a random variable such as temperature. Unless using the Kelvin scale, which we are most certainly not in this context, temperature data in C or F becomes interval data in terms of level of measurement, like precipitation, but unlike precipitation it is not also ratio data.</p>
-<p>Compared to a line plot or scatter plot which are more sensible, plotting temperature using bars leads to a natural inclination to view temperature as an amount, to see it as ratio data. In looking at the graph this may not be a conscious thought, but relative to an arbitrary baseline, differences in temperature may be thought of as greater than they really are for bars of substantially different height and lesser than actual for bars of similar height.</p>
-<p>Another thing to note is that with the inclusion of error bars, the odd interpretation of bar height becomes even more evident and possibly confusing. In fact, sometimes the confusion is misplaced “Why is the error so much greater on these bars than on those bars?” The real issue is simply that they seem bigger relative to a shrinking bar based on proximity to the arbitrary baseline value. The error bars remain insensitive to this baseline because they are, like precipitation, ratio level data.</p>
-</div>
-</div>
-<div id="section-2" class="section level2">
-<h2></h2>
-<div id="version-1-community-chart" class="section level4">
-<h4>Version 1 Community Chart</h4>
-<p><img src="img/v1_ex1.png" height="500" width="900"></p>
-<p>[<em>Note that it is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it. It will download a graphic in Celsius regardless of the user’s specification or what is displayed in the browser. I had to save a screenshot of the online image in order to include it here.</em>]</p>
-</div>
-</div>
-<div id="section-3" class="section level2">
-<h2></h2>
-<div id="bar-baseline" class="section level3">
-<h3>Bar baseline</h3>
-<p>If there is specific interest in degrees above freezing, then the baseline is not so arbitrary and bar height is not problematic. However, this is not the case for the Community Charts application. There is more interest in general temperature trends over time, in a manner that genuinely reflects interval level measurement.</p>
-<p>The most flagrant issue with the above plot, however, is that the bars maintain a baseline of zero degrees <em>regardless of the unit of measurement</em>! This was known at the time, evidenced by the forced inclusion of a 32 degree F line, which thankfully is not similarly hardcoded into the version using Celsius as a bar baseline of zero degrees is hardcoded here.</p>
-<p>As long a bar plot is used to display these trends, there will have to be a baseline. Later this problem will be circumvented with an alternative type of bar plot, but for now we continue with a common baseline value. We will stick with freezing point as one sensible baseline.</p>
-<p>As a quick aside, another option is to use the historical “baseline” average temperature, as it’s ironically already called. This may be more sensible given the general utility of the information in the graph. Additionally, there would then be no need to plot twelve monthly historical period bars, greatly freeing up space and opening up the plot in a way that could make it more easily readable.</p>
-<p>Below are two example plots from the Community Charts version 4 Lite suite using each temperature scale. The baseline is adaptive, defined as the freezing point irrespective of units of measurement. When changing the measurement scale, the data are not transformed in any way that should change the appearance of the bars in the two plots. Only the y-axis need take on new values.</p>
-<p>[<em>Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.</em>]</p>
-</div>
-</div>
-<div id="section-4" class="section level2">
-<h2></h2>
-<div id="freezing-point-baseline-celsius" class="section level4">
-<h4>Freezing point baseline: Celsius</h4>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+##
+##
+### Levels of measurement
+
+To get started, an example version 1 Community Charts graphic is shown below to illustrate a key opportunity for improvement.
+The original plots are available in Celsius (C) or Fahrenheit (F) degree units.
+Although bar charts or column charts whose bars originate from a fixed baseline make sense for random variables with a real zero,
+e.g., precipitation amounts, they are problematic for a random variable such as temperature.
+Unless using the Kelvin scale, which we are most certainly not in this context, temperature data in C or F becomes interval data in terms of level of measurement, like precipitation,
+but unlike precipitation it is not also ratio data.
+
+Compared to a line plot or scatter plot which are more sensible, plotting temperature using bars leads to a natural inclination to view temperature as an amount,
+to see it as ratio data.
+In looking at the graph this may not be a conscious thought, but relative to an arbitrary baseline,
+differences in temperature may be thought of as greater than they really are for bars of substantially different height and lesser than actual for bars of similar height.
+
+Another thing to note is that with the inclusion of error bars, the odd interpretation of bar height becomes even more evident and possibly confusing.
+In fact, sometimes the confusion is misplaced "Why is the error so much greater on these bars than on those bars?"
+The real issue is simply that they seem bigger relative to a shrinking bar based on proximity to the arbitrary baseline value.
+The error bars remain insensitive to this baseline because they are, like precipitation, ratio level data.
+
+##
+#### Version 1 Community Chart
+
+<img src="img/v1_ex1.png" height="500" width="900">
+
+[*Note that it is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it.
+It will download a graphic in Celsius regardless of the user's specification or what is displayed in the browser.
+I had to save a screenshot of the online image in order to include it here.*]
+
+##
+### Bar baseline
+
+If there is specific interest in degrees above freezing, then the baseline is not so arbitrary and bar height is not problematic.
+However, this is not the case for the Community Charts application.
+There is more interest in general temperature trends over time, in a manner that genuinely reflects interval level measurement.
+
+The most flagrant issue with the above plot, however, is that the bars maintain a baseline of zero degrees *regardless of the unit of measurement*!
+This was known at the time, evidenced by the forced inclusion of a 32 degree F line, which thankfully is not similarly hardcoded into the version using Celsius as a bar baseline of zero degrees is hardcoded here.
+
+As long a bar plot is used to display these trends, there will have to be a baseline.
+Later this problem will be circumvented with an alternative type of bar plot, but for now we continue with a common baseline value.
+We will stick with freezing point as one sensible baseline.
+
+As a quick aside, another option is to use the historical "baseline" average temperature, as it's ironically already called.
+This may be more sensible given the general utility of the information in the graph.
+Additionally, there would then be no need to plot twelve monthly historical period bars, greatly freeing up space and opening up the plot in a way that could make it more easily readable.
+
+Below are two example plots from the Community Charts version 4 Lite suite using each temperature scale.
+The baseline is adaptive, defined as the freezing point irrespective of units of measurement.
+When changing the measurement scale, the data are not transformed in any way that should change the appearance of the bars in the two plots.
+Only the y-axis need take on new values.
+
+[*Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.*]
+
+##
+#### Freezing point baseline: Celsius
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -183,12 +86,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chartb3837d27756' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart1998776aa00&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb3837d27756&quot;,
+ &quot;dom&quot;: &quot;chart1998776aa00&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -823,9 +726,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb3837d27756&quot; 
+&quot;renderTo&quot;: &quot;chart1998776aa00&quot; 
 },
-&quot;id&quot;: &quot;chartb3837d27756&quot; 
+&quot;id&quot;: &quot;chart1998776aa00&quot; 
 });
         });
     })(jQuery);
@@ -833,24 +736,21 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chartb3837d27756">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-</div>
-</div>
-<div id="section-5" class="section level2">
-<h2></h2>
-<div id="freezing-point-baseline-fahrenheit" class="section level4">
-<h4>Freezing point baseline: Fahrenheit</h4>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998776aa00'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+##
+#### Freezing point baseline: Fahrenheit
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -865,12 +765,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chartb38532e1097' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart199825d9338b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb38532e1097&quot;,
+ &quot;dom&quot;: &quot;chart199825d9338b&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1505,9 +1405,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb38532e1097&quot; 
+&quot;renderTo&quot;: &quot;chart199825d9338b&quot; 
 },
-&quot;id&quot;: &quot;chartb38532e1097&quot; 
+&quot;id&quot;: &quot;chart199825d9338b&quot; 
 });
         });
     })(jQuery);
@@ -1515,32 +1415,37 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chartb38532e1097">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-</div>
-</div>
-<div id="section-6" class="section level2">
-<h2></h2>
-<div id="error-bars" class="section level3">
-<h3>Error bars</h3>
-<p>Another difference that stands out is the increased range of the error bars. In neither version of Community Charts are these error bars in any strict sense. In the first version, the bars are so small because they represent one standard deviation, as computed on a set of only five values (the five climate models). Standard deviation naturally invokes thoughts of symmetry. In fact, as can be expected, the bars in the original plot are drawn extending symmetrically one standard deviation from the mean in each direction. This is based on a small collection of future values from a highly uncertain variable and there is no way to see from the plot how these five climate model values are distributed around their mean.</p>
-<p>Considering the small sample, the possible skewness of the values, that variability is not the same as uncertainty, and that the models and scenarios available in the Community Charts application account for only a portion of the total uncertainty in future projections, it is arguably more useful as well as honest to display the range of the five climate models than the standard deviation around the mean. In any case, it is easy enough to optionally provide either statistic for error bars, just as version 1 allows error bars to be toggled on or off. Below are three plots showing each of these three options when plotting precipitation trends.</p>
-</div>
-</div>
-<div id="section-7" class="section level2">
-<h2></h2>
-<div id="no-error-bars" class="section level4">
-<h4>No error bars</h4>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199825d9338b'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+##
+### Error bars
+
+Another difference that stands out is the increased range of the error bars.
+In neither version of Community Charts are these error bars in any strict sense.
+In the first version, the bars are so small because they represent one standard deviation, as computed on a set of only five values (the five climate models).
+Standard deviation naturally invokes thoughts of symmetry.
+In fact, as can be expected, the bars in the original plot are drawn extending symmetrically one standard deviation from the mean in each direction.
+This is based on a small collection of future values from a highly uncertain variable and there is no way to see from the plot how these five climate model values are distributed around their mean.
+
+Considering the small sample, the possible skewness of the values, that variability is not the same as uncertainty,
+and that the models and scenarios available in the Community Charts application account for only a portion of the total uncertainty in future projections,
+it is arguably more useful as well as honest to display the range of the five climate models than the standard deviation around the mean.
+In any case, it is easy enough to optionally provide either statistic for error bars, just as version 1 allows error bars to be toggled on or off.
+Below are three plots showing each of these three options when plotting precipitation trends.
+
+##
+#### No error bars
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -1555,12 +1460,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chartb386f072085' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart1998224f2f0b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb386f072085&quot;,
+ &quot;dom&quot;: &quot;chart1998224f2f0b&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1915,9 +1820,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb386f072085&quot; 
+&quot;renderTo&quot;: &quot;chart1998224f2f0b&quot; 
 },
-&quot;id&quot;: &quot;chartb386f072085&quot; 
+&quot;id&quot;: &quot;chart1998224f2f0b&quot; 
 });
         });
     })(jQuery);
@@ -1925,25 +1830,24 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chartb386f072085">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-</div>
-</div>
-<div id="section-8" class="section level2">
-<h2></h2>
-<div id="error-bars---one-standard-deviation-from-the-mean" class="section level4">
-<h4>Error bars: +/- one standard deviation from the mean</h4>
-<p>Precipitation is a random variable that typically displays natural heteroskedasticity. Error bars may be larger, requiring a greater range for the overall y-axis in the graph, hence why the colored bars appear smaller now.</p>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998224f2f0b'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+##
+#### Error bars: +/- one standard deviation from the mean
+
+Precipitation is a random variable that typically displays natural heteroskedasticity.
+Error bars may be larger, requiring a greater range for the overall y-axis in the graph, hence why the colored bars appear smaller now.
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -1958,12 +1862,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chartb384da1867' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart199817371c84&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb384da1867&quot;,
+ &quot;dom&quot;: &quot;chart199817371c84&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2598,9 +2502,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb384da1867&quot; 
+&quot;renderTo&quot;: &quot;chart199817371c84&quot; 
 },
-&quot;id&quot;: &quot;chartb384da1867&quot; 
+&quot;id&quot;: &quot;chart199817371c84&quot; 
 });
         });
     })(jQuery);
@@ -2608,25 +2512,24 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chartb384da1867">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
-</div>
-</div>
-<div id="section-9" class="section level2">
-<h2></h2>
-<div id="error-bars-range-of-the-five-discrete-climate-models" class="section level4">
-<h4>Error bars: range of the five discrete climate models</h4>
-<p>Precipitation is also likely to have a skewed distribution, making use of standard deviation without additional information sometimes unable to depict an accurate representation of variation. Here the full spread of the five individual models is depicted by the error bars.</p>
-<iframe srcdoc=" &lt;!doctype HTML&gt;
-&lt;meta charset = 'utf-8'&gt;
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199817371c84'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+##
+#### Error bars: range of the five discrete climate models
+
+Precipitation is also likely to have a skewed distribution, making use of standard deviation without additional information sometimes unable to depict an accurate representation of variation.
+Here the full spread of the five individual models is depicted by the error bars.
+
+<iframe srcdoc=' &lt;!doctype HTML&gt;
+&lt;meta charset = &#039;utf-8&#039;&gt;
 &lt;html&gt;
   &lt;head&gt;
     
-    &lt;script src='//code.jquery.com/jquery-1.9.1.min.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/highcharts-more.js' type='text/javascript'&gt;&lt;/script&gt;
-    &lt;script src='//code.highcharts.com/modules/exporting.js' type='text/javascript'&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.jquery.com/jquery-1.9.1.min.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/highcharts-more.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
+    &lt;script src=&#039;//code.highcharts.com/modules/exporting.js&#039; type=&#039;text/javascript&#039;&gt;&lt;/script&gt;
     
     &lt;style&gt;
     .rChart {
@@ -2641,12 +2544,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chartb3831cb8d9' class = 'rChart highcharts'&gt;&lt;/div&gt;    
-    &lt;script type='text/javascript'&gt;
+    &lt;div id = &#039;chart19985f4f3bba&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chartb3831cb8d9&quot;,
+ &quot;dom&quot;: &quot;chart19985f4f3bba&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -3281,9 +3184,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chartb3831cb8d9&quot; 
+&quot;renderTo&quot;: &quot;chart19985f4f3bba&quot; 
 },
-&quot;id&quot;: &quot;chartb3831cb8d9&quot; 
+&quot;id&quot;: &quot;chart19985f4f3bba&quot; 
 });
         });
     })(jQuery);
@@ -3291,25 +3194,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chartb3831cb8d9">
-</iframe>
-<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19985f4f3bba'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-</div>
-</div>
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-$(document).ready(function () {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
-</script>
-
-
-</body>
-</html>

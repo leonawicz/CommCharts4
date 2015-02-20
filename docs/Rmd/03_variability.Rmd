@@ -32,11 +32,6 @@ If you look back at the error bars in the original Community Charts example grap
 An informed viewer will know to disregard them (so why have them?), if for no other reason that an awareness that the bars are not intended to portray a complete profile of uncertainty about the future.
 Most will interpret them as suggesting the colored bars are highly precise.
 
-[*In fact, they appear so precise that I have to wonder if they were even properly included in the application.
-They seem too small even compared to the same standard deviation bars in the subsequent version 4 graph which uses the newer CMIP5 models and RCPs
-Perhaps they are halved, only one standard deviation shown in total, centered on the mean, rather than one standard extending from the mean in both directions.
-That would represent quite a blunder. Ultimately, I do not know why they appear so small in the original.*].
-
 ##
 #### Overlay error bars
 

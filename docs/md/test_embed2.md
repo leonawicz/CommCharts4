@@ -75,12 +75,12 @@ p1$show("iframesrc", cdn=TRUE)
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart4641d086026&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19987e4f4a01&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart4641d086026&quot;,
+ &quot;dom&quot;: &quot;chart19987e4f4a01&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -238,9 +238,9 @@ p1$show("iframesrc", cdn=TRUE)
 &quot;subtitle&quot;: {
  &quot;text&quot;: null 
 },
-&quot;id&quot;: &quot;chart4641d086026&quot;,
+&quot;id&quot;: &quot;chart19987e4f4a01&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart4641d086026&quot; 
+ &quot;renderTo&quot;: &quot;chart19987e4f4a01&quot; 
 } 
 });
         });
@@ -249,7 +249,7 @@ p1$show("iframesrc", cdn=TRUE)
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4641d086026'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19987e4f4a01'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ### Grouped bar plot with error bars
@@ -283,12 +283,12 @@ p2$show("iframesrc", cdn=TRUE)
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart464791c11e6&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199837aa10c1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart464791c11e6&quot;,
+ &quot;dom&quot;: &quot;chart199837aa10c1&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -566,9 +566,9 @@ p2$show("iframesrc", cdn=TRUE)
 &quot;subtitle&quot;: {
  &quot;text&quot;: null 
 },
-&quot;id&quot;: &quot;chart464791c11e6&quot;,
+&quot;id&quot;: &quot;chart199837aa10c1&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart464791c11e6&quot; 
+ &quot;renderTo&quot;: &quot;chart199837aa10c1&quot; 
 } 
 });
         });
@@ -577,7 +577,7 @@ p2$show("iframesrc", cdn=TRUE)
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart464791c11e6'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199837aa10c1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ### Grouped floating error bars
@@ -611,12 +611,12 @@ p3$show("iframesrc", cdn=TRUE)
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart4647bd34fd5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199812671d0c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart4647bd34fd5&quot;,
+ &quot;dom&quot;: &quot;chart199812671d0c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -746,9 +746,9 @@ p3$show("iframesrc", cdn=TRUE)
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart4647bd34fd5&quot;,
+&quot;id&quot;: &quot;chart199812671d0c&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart4647bd34fd5&quot; 
+ &quot;renderTo&quot;: &quot;chart199812671d0c&quot; 
 } 
 });
         });
@@ -757,5 +757,5 @@ p3$show("iframesrc", cdn=TRUE)
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart4647bd34fd5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199812671d0c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
