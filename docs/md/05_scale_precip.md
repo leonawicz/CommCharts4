@@ -39,12 +39,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8210f3a3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad85c72447e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8210f3a3&quot;,
+ &quot;dom&quot;: &quot;chart1ad85c72447e&quot;,
 
 
 &quot;credits&quot;: {
@@ -374,9 +374,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad8210f3a3&quot;,
+&quot;id&quot;: &quot;chart1ad85c72447e&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad8210f3a3&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad85c72447e&quot; 
 } 
 });
         });
@@ -385,7 +385,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8210f3a3'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad85c72447e'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -414,12 +414,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad872211d0e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad84a0e1188&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad872211d0e&quot;,
+ &quot;dom&quot;: &quot;chart1ad84a0e1188&quot;,
 
 
 &quot;credits&quot;: {
@@ -749,9 +749,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad872211d0e&quot;,
+&quot;id&quot;: &quot;chart1ad84a0e1188&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad872211d0e&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad84a0e1188&quot; 
 } 
 });
         });
@@ -760,7 +760,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad872211d0e'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84a0e1188'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
@@ -768,7 +768,7 @@ A comparison of scales reveals that total monthly precipitation averaged across 
 
 A quick comparison with a very wet community, Juneau, Alaska, will reveal the exact opposite.
 Precipitation is very high there at 2-km resolution, but relatively washed out (no pun intended) at 10-minute resolution.
-Even more noteworthy is that between spatial scales even the seasonal cycle of precipitation is different, with an annual mode in October at the 2-km scale and in July at thr 10-minute scale.
+Even more noteworthy is that between spatial scales even the seasonal cycle of precipitation is different, with an annual mode in October at the 2-km scale and in July at the 10-minute scale.
 This also affects the time of year when higher or lower inter-decadal variability is expressed by the climate models.
 
 ##
@@ -797,12 +797,12 @@ This also affects the time of year when higher or lower inter-decadal variabilit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8603459f3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad8c7e21b1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8603459f3&quot;,
+ &quot;dom&quot;: &quot;chart1ad8c7e21b1&quot;,
 
 
 &quot;credits&quot;: {
@@ -1132,9 +1132,9 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad8603459f3&quot;,
+&quot;id&quot;: &quot;chart1ad8c7e21b1&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad8603459f3&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad8c7e21b1&quot; 
 } 
 });
         });
@@ -1143,7 +1143,7 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8603459f3'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8c7e21b1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1172,12 +1172,12 @@ This also affects the time of year when higher or lower inter-decadal variabilit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad89e62622&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad8495f68a1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad89e62622&quot;,
+ &quot;dom&quot;: &quot;chart1ad8495f68a1&quot;,
 
 
 &quot;credits&quot;: {
@@ -1507,9 +1507,9 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad89e62622&quot;,
+&quot;id&quot;: &quot;chart1ad8495f68a1&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad89e62622&quot; 
+ &quot;renderTo&quot;: &quot;chart1ad8495f68a1&quot; 
 } 
 });
         });
@@ -1518,7 +1518,7 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad89e62622'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8495f68a1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

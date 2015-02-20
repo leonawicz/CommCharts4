@@ -43,7 +43,7 @@ A comparison of scales reveals that total monthly precipitation averaged across 
 
 A quick comparison with a very wet community, Juneau, Alaska, will reveal the exact opposite.
 Precipitation is very high there at 2-km resolution, but relatively washed out (no pun intended) at 10-minute resolution.
-Even more noteworthy is that between spatial scales even the seasonal cycle of precipitation is different, with an annual mode in October at the 2-km scale and in July at thr 10-minute scale.
+Even more noteworthy is that between spatial scales even the seasonal cycle of precipitation is different, with an annual mode in October at the 2-km scale and in July at the 10-minute scale.
 This also affects the time of year when higher or lower inter-decadal variability is expressed by the climate models.
 
 ##
