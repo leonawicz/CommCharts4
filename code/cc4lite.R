@@ -45,7 +45,7 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 	Colors <- if(variable=="Temperature") c("#666666", colorRampPalette(c("gold", "orange", "orangered", "darkred"))(4)) else c("#666666", colorRampPalette(c("aquamarine", "dodgerblue4"))(4))
 	
 	p <- if(err=="exclusive") Highcharts$new() else hPlot(x="Month", y="Mean", data=d, type="column", group="Decade")
-	if(col!="variable") p$colors(Colors)
+	if(col=="variable") p$colors(Colors) else p$colors(c("#666666", "#FF8C00", "#6495ED", "#B3EE3A", "#A020F0"))
 	p$title(text=paste("Average Monthly", variable, "for", location), style=list(color="#000000"))
 	p$subtitle(text=paste("Historical", baseline, "and 5-Model Projected Average,", RCPLabel), style=list(color="gray"))
 	p$legend(verticalAlign="top", y=50, borderWidth=1, borderColor="gray", borderRadius=5, itemMarginBottom=-5, itemMarginBottom=-5, itemStyle=list(color="gray"))

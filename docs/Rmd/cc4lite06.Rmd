@@ -42,7 +42,7 @@ However, not only ought they not be colors which could be confused with temperat
 which refer to unequally spaced decades no less, it would not be the end of the world to offer a qualitative color palette option.
 Some users may find this easier to see.
 
-Here are a couple examples using default Highcharts colors.
+Here are a couple examples using qualitative colors.
 
 ##
 #### Anchorage temperature
