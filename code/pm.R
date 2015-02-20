@@ -31,7 +31,7 @@ index.url <- "index.html"
 #file.copy(index.url, "index.html")
 
 proj.title <- "Community Charts"
-proj.menu <- c("Overview", "cc4lite", "R Code", "All Projects")
+proj.menu <- c("Overview", "CC4 Lite", "R Code", "All Projects")
 
 proj.submenu <- list(
 	c("empty"),
