@@ -38,10 +38,11 @@ finalizeData <- function(res="2km", location="Fairbanks, Alaska", variable="Temp
 	x
 }
 
-makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, baseline, col="variable"){
+makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, baseline, col="variable", width=850, height=500){
 	FreezePoint <-ifelse(units=="Fin", 32, 0)
 	Thresh <- ifelse(variable=="Precipitation", 0, FreezePoint)
-	Unit <- if(variable=="Temperature") paste0("°", substr(units, 1, 1)) else substr(units, 2, 3)
+	#Unit <- if(variable=="Temperature") paste0("°", substr(units, 1, 1)) else substr(units, 2, 3)
+	Unit <- if(variable=="Temperature") paste0("\\circ", substr(units, 1, 1)) else substr(units, 2, 3)
 	Colors <- if(variable=="Temperature") c("#666666", colorRampPalette(c("gold", "orange", "orangered", "darkred"))(4)) else c("#666666", colorRampPalette(c("aquamarine", "dodgerblue4"))(4))
 	
 	p <- if(err=="exclusive") Highcharts$new() else hPlot(x="Month", y="Mean", data=d, type="column", group="Decade")
@@ -61,9 +62,16 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 			return(NULL)
 		})
 	}
-	p$chart(width=850, height=500)
+	p$chart(width=width, height=height)
 	p
 }
+
+#### Intro example
+# @knitr plot00a
+d <- finalizeData(res="2km", location="Barrow, Alaska", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Fin", baseline="CRU 3.1")
+p <- makePlot(d, location="Barrow, Alaska", variable="Temperature", err="overlay", units="Fin", baseline="CRU 3.1")
+p$show("iframesrc", cdn=TRUE)
+
 
 #### Bars with freezing point baseline
 # @knitr plot01a_Cmm
