@@ -14,7 +14,7 @@
 
 <script src="libs/jquery-1.11.0/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/cosmo.min.css" rel="stylesheet" />
+<link href="libs/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
@@ -173,10 +173,9 @@ decades.cru &lt;-<span class="st"> </span><span class="kw">c</span>(<span class=
 files.gcm &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_GCM&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
     <span class="dt">full =</span> <span class="ot">TRUE</span>)
 files.cru &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_CRU&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
-    <span class="dt">full =</span> <span class="ot">TRUE</span>)
-
-<span class="co"># @ knitr function</span>
-f &lt;-<span class="st"> </span>function(i, files, decades, phase) {
+    <span class="dt">full =</span> <span class="ot">TRUE</span>)</code></pre>
+<p>The function used for loading and manipulating the data into curated form. The <code>%&gt;%</code> (pipe operator) is available from the <code>magrittr</code> package, which is loaded when <code>dplyr</code> is loaded.</p>
+<pre class="sourceCode r"><code class="sourceCode r">f &lt;-<span class="st"> </span>function(i, files, decades, phase) {
     <span class="kw">print</span>(<span class="kw">length</span>(files) -<span class="st"> </span>i)
     <span class="kw">load</span>(files[i], <span class="dt">envir =</span> <span class="kw">environment</span>())
     if (phase ==<span class="st"> &quot;CRU 3.1&quot;</span>) 
@@ -194,7 +193,6 @@ f &lt;-<span class="st"> </span>function(i, files, decades, phase) {
     city.dat &lt;-<span class="st"> </span><span class="kw">arrange</span>(city.dat, Location, Scenario, Var, Decade, Month)
     city.dat
 }</code></pre>
-<p>The function used for loading and manipulating the data into curated form. The <code>%&gt;%</code> (pipe operator) is available from the <code>magrittr</code> package, which is loaded when <code>dplyr</code> is loaded.</p>
 <p>The data are processed in parallel. The lines which are commented out refer to some tests of compute times for different methods of combining multiple data frames.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">system.time</span>(out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(files.gcm), f, <span class="dt">files =</span> files.gcm, <span class="dt">decades =</span> decades.gcm, 
     <span class="dt">phase =</span> <span class="st">&quot;CMIP5&quot;</span>, <span class="dt">mc.cores =</span> n.cores))

@@ -14,7 +14,7 @@
 
 <script src="libs/jquery-1.11.0/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/cosmo.min.css" rel="stylesheet" />
+<link href="libs/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
 <script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
@@ -134,6 +134,10 @@ img {
 <p>There are many ways to display data. Some place more emphasis on visualizing averages, trends, proportional changes, etc. The purpose of including error bars in the Community Charts graphs is to provide a sense of uncertainty. The error bars in this application will only every provide view of one of several sources of uncertainty in future climate projections, specifically variability of an estimator used to measure the average of a handful of climate models across a period of ten years.</p>
 <p>Even when using the range of the models to inform the error bars, this is an underestimation of uncertainty, which is another argument against bothering with the standard deviation bars. If you look back at the error bars in the original Community Charts example graph, they are suggestive of a level of precision regarding the future that begs criticism. An informed viewer will know to disregard them (so why have them?), if for no other reason that an awareness that the bars are not intended to portray a complete profile of uncertainty about the future. Most will interpret them as suggesting the colored bars are highly precise.</p>
 <p>[<em>In fact, they appear so precise that I have to wonder if they were even properly included in the application. They seem too small even compared to the same standard deviation bars in the subsequent version 4 graph which uses the newer CMIP5 models and RCPs Perhaps they are halved, only one standard deviation shown in total, centered on the mean, rather than one standard extending from the mean in both directions. That would represent quite a blunder. Ultimately, I do not know why they appear so small in the original.</em>].</p>
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2></h2>
 <div id="overlay-error-bars" class="section level4">
 <h4>Overlay error bars</h4>
 <p>We have already seen one method for visualizing variability, which is to overlay error bars on top of the colored bars of the bar plot. This is in keeping with what was done in the original version (questionable precision aside). The only difference considered so far was regarding what statistic to use as a measure of dispersion, the standard deviation or the range. Others could be considered, such as the inter-quartile range (IQR), but as mentioned previously, there are so few data points contributing to estimation of variability that some statistics just won’t work well.</p>
@@ -161,12 +165,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be0486818b9' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be0680a1307' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be0486818b9&quot;,
+ &quot;dom&quot;: &quot;chart1be0680a1307&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -518,9 +522,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be0486818b9&quot; 
+&quot;renderTo&quot;: &quot;chart1be0680a1307&quot; 
 },
-&quot;id&quot;: &quot;chart1be0486818b9&quot; 
+&quot;id&quot;: &quot;chart1be0680a1307&quot; 
 });
         });
     })(jQuery);
@@ -528,7 +532,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be0486818b9">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be0680a1307">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <iframe srcdoc=" &lt;!doctype HTML&gt;
@@ -554,12 +558,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be035a07632' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be0423f5dd8' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be035a07632&quot;,
+ &quot;dom&quot;: &quot;chart1be0423f5dd8&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1191,9 +1195,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be035a07632&quot; 
+&quot;renderTo&quot;: &quot;chart1be0423f5dd8&quot; 
 },
-&quot;id&quot;: &quot;chart1be035a07632&quot; 
+&quot;id&quot;: &quot;chart1be0423f5dd8&quot; 
 });
         });
     })(jQuery);
@@ -1201,10 +1205,13 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be035a07632">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be0423f5dd8">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 </div>
+</div>
+<div id="section-3" class="section level2">
+<h2></h2>
 <div id="floating-bars" class="section level4">
 <h4>Floating bars</h4>
 <p>However, the focus now is on plotting the data differently, in a way that will enhance the view of variability, while at the same time benefiting from complete removal of the bar baseline problem (for temperature). Whereas measures of spread or dispersion around a mean cannot be inferred from looking at a mean value (this is why we must add explicit error bars), measures of center can be inferred relatively easily from a plot of dispersion without having to add layers to the plot. Here are plots of the same data corresponding to the two plots above.</p>
@@ -1231,12 +1238,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be04a5936d9' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be09f646ac' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be04a5936d9&quot;,
+ &quot;dom&quot;: &quot;chart1be09f646ac&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1588,9 +1595,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be04a5936d9&quot; 
+&quot;renderTo&quot;: &quot;chart1be09f646ac&quot; 
 },
-&quot;id&quot;: &quot;chart1be04a5936d9&quot; 
+&quot;id&quot;: &quot;chart1be09f646ac&quot; 
 });
         });
     })(jQuery);
@@ -1598,7 +1605,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be04a5936d9">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be09f646ac">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <iframe srcdoc=" &lt;!doctype HTML&gt;
@@ -1624,12 +1631,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be03668daf' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be05e83b8d' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be03668daf&quot;,
+ &quot;dom&quot;: &quot;chart1be05e83b8d&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2261,9 +2268,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be03668daf&quot; 
+&quot;renderTo&quot;: &quot;chart1be05e83b8d&quot; 
 },
-&quot;id&quot;: &quot;chart1be03668daf&quot; 
+&quot;id&quot;: &quot;chart1be05e83b8d&quot; 
 });
         });
     })(jQuery);
@@ -2271,7 +2278,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be03668daf">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be05e83b8d">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <p>Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars on top of a possibly even longer colored bar that is supposed to represent a point estimate but is improperly drawn as an interval (for temperature). This essentially would be moving in the direction of a box plot minus several properties.</p>
@@ -2299,12 +2306,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1be08bb97' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1be04f6d250' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1be08bb97&quot;,
+ &quot;dom&quot;: &quot;chart1be04f6d250&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2936,9 +2943,9 @@ null
 &quot;chart&quot;: {
  &quot;width&quot;:            800,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1be08bb97&quot; 
+&quot;renderTo&quot;: &quot;chart1be04f6d250&quot; 
 },
-&quot;id&quot;: &quot;chart1be08bb97&quot; 
+&quot;id&quot;: &quot;chart1be04f6d250&quot; 
 });
         });
     })(jQuery);
@@ -2946,11 +2953,10 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be08bb97">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1be04f6d250">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-</div>
 </div>
 </div>
 
