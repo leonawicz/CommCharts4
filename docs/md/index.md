@@ -13,12 +13,12 @@ Matthew Leonawicz
 ##
 ### Introduction
 
-Exhibits A and B, a comparison of an original Community Charts plot with an updated version.
+##
+#### Exhibit A
+
+An example plot taken from the updated <code>Community Charts version 4 Lite</code> production suite.
 
 ##
-
-<img src="img/v1_ex0.png" height="500" width="900">
-
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
 &lt;meta charset = &#039;utf-8&#039;&gt;
@@ -43,12 +43,12 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad841687e80&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad84c657364&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad841687e80&quot;,
+ &quot;dom&quot;: &quot;chart1ad84c657364&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -67,7 +67,7 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Temperature (°F)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (_DEGREE_SYMBOL_F)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 },
@@ -684,9 +684,9 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad841687e80&quot; 
+&quot;renderTo&quot;: &quot;chart1ad84c657364&quot; 
 },
-&quot;id&quot;: &quot;chart1ad841687e80&quot; 
+&quot;id&quot;: &quot;chart1ad84c657364&quot; 
 });
         });
     })(jQuery);
@@ -694,14 +694,23 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad841687e80'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84c657364'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
-<style>iframe.rChart{ width: 100%; height: 500px;}</style>
+<style>iframe.rChart{ width: 100%; height: 500px; align: left}</style>
+
+Here is the original chart for comparison.
+
+##
+
+<img src="img/v1_ex0.png" height="500" width="900">
+
+##
 
 [*Note: It is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it.
 It will download a graphic in Celsius regardless of the user's specification or what is displayed in the browser.
-I had to save a screenshot of the online image in order to include it here.*]
+I had to save a screenshot of the online image in order to include it here.
+Also, although this is only a screenshot, the original application offers some but not all of the interactivity available in the updated version.*]
 
 #### Other versions
 
