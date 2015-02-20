@@ -72,8 +72,8 @@ This essentially would be moving in the direction of a box plot minus several pr
 Referring back to the discussion of CRU 3.1 data and error bars,
 it is clear how the ability to have error bars for the historical baseline period assists in this Community Charts plot.
 There is something to see. Without some measure of dispersion around the historical baseline average, the twelve spaces for historical bars in this plot would be blank.
-With PRISM data where we do not have a measure of inter-annual variability or any other measure of uncertainty,
-to give the user something to look at for mere visual orientation we have to fake an error bar to at least provide a little rectangle of sorts to remind them where the historical mean is located (and that it's not perfectly estimated).
+With PRISM data we do not have a measure of inter-annual variability or any other measure of uncertainty.
+To give the user something to look at for mere visual orientation we have to fake an error bar to at least provide a little rectangle of sorts to remind them where the historical mean is located (and that it's not perfectly estimated).
 
 ```{r plot05c_prism_exclusive_range}
 ```

@@ -108,8 +108,8 @@ p$show("iframesrc", cdn=TRUE)
 
 #### Displaying variability
 # @knitr plot04a_cru_overlay_range
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="none", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="range", units="Cmm", baseline="CRU 3.1")
+p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.1")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot04b_cru_overlay_sd
@@ -120,18 +120,18 @@ p$show("iframesrc", cdn=TRUE)
 
 #### Floating bars
 # @knitr plot05a_cru_exclusive_range
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="none", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot05b_cru_exclusive_sd
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.1")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot05c_prism_exclusive_range
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Cmm", baseline="PRISM")
-p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="PRISM")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="PRISM")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="PRISM")
 p$show("iframesrc", cdn=TRUE)
 
 
