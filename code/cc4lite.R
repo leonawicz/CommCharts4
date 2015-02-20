@@ -51,7 +51,7 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 	p$legend(verticalAlign="top", y=50, borderWidth=1, borderColor="gray", borderRadius=5, itemMarginBottom=-5, itemMarginBottom=-5, itemStyle=list(color="gray"))
 	p$xAxis(categories=month.abb, title=list(text=caption, style=list(color="gray", fontWeight="normal", fontSize="8px")))
 	p$yAxis(title=list(text=paste0(variable, " (", Unit, ")"), style=list(color="gray")))
-	if(err!="exclusive") p$plotOptions(column=list(threshold=Thresh))
+	if(err!="exclusive") p$plotOptions(column=list(threshold=Thresh, groupPadding=0.1, pointPadding=0.05))
 	if(err!="none"){
 		if(err=="overlay") for(k in 1:5) p$params$series[[k]]$id <- paste0("series", k)
 		d <- d[c(5,6,8)]
@@ -61,7 +61,7 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 			return(NULL)
 		})
 	}
-	p$chart(width=800, height=500)
+	p$chart(width=850, height=500)
 	p
 }
 
