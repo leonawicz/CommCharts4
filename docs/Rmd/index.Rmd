@@ -21,7 +21,7 @@ opts_chunk$set(cache=FALSE, eval=FALSE, tidy=TRUE, message=FALSE, warning=FALSE)
 
 #### Other versions
 
-Version 4 of the Community Charts application is presented here.
+Version 4 of the Community Charts application is documented here.
 Community Charts version 4 is a lightweight application similar to version 1.
 For a more powerful community charts application, see version 2, which offers much more data and interaction to the user.
 Version 3 is an even more powerful and adaptive version than 2, also including more communities, data, as well as graphical and analytic capabilities.
@@ -30,10 +30,11 @@ Version 3 is currently under development as a component of the SNAP data QAQC ap
 ##
 #### Improvements from version 1
 
-Like the original, version 4 uses the Highcharts plotting library via the **R** package, `rCharts`.
-`rCharts` acts as a wrapper to a number of external plotting libraries, but the intent here is to make a Community Charts tool similar to the original, hence the focus on Highcharts.
+Like the original, version 4 uses the Highcharts plotting library, but like versions 2 and 3, it is built using **R**.
+Community Charts version four, also known as `CC 4 Lite`, accesses Highcharts through the **R** package, `rCharts`.
+`rCharts` acts as a wrapper to a number of external plotting libraries, but the intent here is to make a Community Charts application similar to the original, hence the focus on Highcharts.
 At the same, it is important to improve upon the original, which can be criticized on a number of poor graphing practices and other uses of descriptive statistics.
-Some improvements are considered here, addressing criticisms of baseline data sources, temporal periods, bar plot thresholds, color usage, and uncertainty among climate models.
+Some improvements are considered here, addressing criticisms of historical baseline data sources, temporal periods, bar plot baseline thresholds, color usage, and uncertainty among climate models.
 
 ##
 #### New features and data sources
