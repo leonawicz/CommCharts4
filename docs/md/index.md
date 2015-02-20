@@ -43,12 +43,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad84c657364&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad84d534e9a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad84c657364&quot;,
+ &quot;dom&quot;: &quot;chart1ad84d534e9a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -67,11 +67,10 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;&lt;span&gt;Temperature (_DEGREE_SYMBOL_F)&lt;/span&gt;&quot;,
+ &quot;text&quot;: &quot;Temperature (_DEGREE_SYMBOL_F)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-},
-&quot;useHTML&quot;: true 
+} 
 } 
 } 
 ],
@@ -684,9 +683,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad84c657364&quot; 
+&quot;renderTo&quot;: &quot;chart1ad84d534e9a&quot; 
 },
-&quot;id&quot;: &quot;chart1ad84c657364&quot; 
+&quot;id&quot;: &quot;chart1ad84d534e9a&quot; 
 });
         });
     })(jQuery);
@@ -694,10 +693,10 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84c657364'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84d534e9a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
-<style>iframe.rChart{ width: 100%; height: 500px; align: left}</style>
+<style>iframe.rChart{ width: 100%; height: 500px; float: left}</style>
 
 Here is the original chart for comparison.
 
