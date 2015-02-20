@@ -45,6 +45,33 @@ margin-top: 45px;
 <link rel="stylesheet" href="libs/font-awesome-4.1.0/css/font-awesome.min.css"/>
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #303030; color: #cccccc; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #cccccc; background-color: #303030; }
+code > span.kw { color: #f0dfaf; }
+code > span.dt { color: #dfdfbf; }
+code > span.dv { color: #dcdccc; }
+code > span.bn { color: #dca3a3; }
+code > span.fl { color: #c0bed1; }
+code > span.ch { color: #dca3a3; }
+code > span.st { color: #cc9393; }
+code > span.co { color: #7f9f7f; }
+code > span.ot { color: #efef8f; }
+code > span.al { color: #ffcfaf; }
+code > span.fu { color: #efef8f; }
+code > span.er { color: #c3bf9f; }
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
 
 
 <script>
@@ -97,7 +124,15 @@ img {
           <li class="dropdown">
             <a href="cc4lite" class="dropdown-toggle" data-toggle="dropdown">cc4lite <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="cc4lite01.html">Getting started</a></li>
+              <li><a href="cc4lite01.html">Levels of measurement</a></li>
+              <li><a href="cc4lite02.html">Historical baseline</a></li>
+              <li><a href="cc4lite03.html">Displaying variability</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Spatial scale</li>
+              <li><a href="cc4lite04.html">Temperature</a></li>
+              <li><a href="cc4lite05.html">Precipitation</a></li>
+              <li class="divider"></li>
+              <li><a href="cc4lite06.html">Color palettes</a></li>
             </ul>
 
           <li><a href="agg_city_data.html">R Code</a></li>
@@ -116,16 +151,90 @@ img {
 
 
 
-<p>Most of the QAQC documentation and code can be explored under that project. Here I will discuss only the most relevant end stage <strong>R</strong> code used to curate the data for direct use in the Community Charts application, specifically the script, <code>agg_city_data.R</code>.</p>
-<div id="code-flow" class="section level3">
-<h3>Code flow</h3>
-<p>Here is a diagram for a fuller context regarding how the Community Charts application grows out of the SNAP data QAQC project.</p>
+<div id="section" class="section level2">
+<h2></h2>
 </div>
-<div id="r-code" class="section level2">
-<h2>R code</h2>
-<div id="setup" class="section level3">
-<h3>Setup</h3>
-<p>ADD_TEXT_HERE: EXAMPLE Setup consists of loading required <strong>R</strong> packages and additional files, preparing any command line arguments for use, and defining functions and other <strong>R</strong> objects.</p>
+<div id="section-1" class="section level2">
+<h2></h2>
+<p>Most of the QAQC documentation and code can be explored under that project. Here I will discuss only the most relevant end stage <strong>R</strong> code used to curate the data for direct use in the Community Charts application, specifically the script, <code>agg_city_data.R</code>.</p>
+<div id="r-code" class="section level3">
+<h3>R code</h3>
+<p>General setup includes specifying paths, loading <strong>R</strong> packages, setting the number of processing cores for <code>parallel</code>, defining decades of interest, and listing files.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">setwd</span>(<span class="st">&quot;/workspace/UA/mfleonawicz/leonawicz/projects/SNAPQAQC/data/final&quot;</span>)
+<span class="co"># library(plyr)</span>
+<span class="kw">library</span>(dplyr)
+<span class="kw">library</span>(parallel)
+n.cores &lt;-<span class="st"> </span><span class="dv">32</span>
+
+domain &lt;-<span class="st"> &quot;akcan2km&quot;</span>
+<span class="co"># domain &lt;- &#39;world10min&#39;</span>
+decades.gcm &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2010</span>, <span class="dv">2040</span>, <span class="dv">2060</span>, <span class="dv">2090</span>)
+decades.cru &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1960</span>, <span class="dv">1970</span>, <span class="dv">1980</span>)
+files.gcm &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_GCM&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
+    <span class="dt">full =</span> <span class="ot">TRUE</span>)
+files.cru &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_CRU&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
+    <span class="dt">full =</span> <span class="ot">TRUE</span>)
+
+<span class="co"># @ knitr function</span>
+f &lt;-<span class="st"> </span>function(i, files, decades, phase) {
+    <span class="kw">print</span>(<span class="kw">length</span>(files) -<span class="st"> </span>i)
+    <span class="kw">load</span>(files[i], <span class="dt">envir =</span> <span class="kw">environment</span>())
+    if (phase ==<span class="st"> &quot;CRU 3.1&quot;</span>) 
+        city.dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">Phase =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">Scenario =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">Model =</span> <span class="st">&quot;CRU 3.1&quot;</span>, 
+            city.cru.dat)
+    city.dat &lt;-<span class="st"> </span>city.dat %&gt;%<span class="st"> </span><span class="kw">filter</span>(Phase ==<span class="st"> </span>phase, Decade %in%<span class="st"> </span>decades) %&gt;%<span class="st"> </span>
+<span class="st">        </span><span class="kw">group_by</span>(Location, Scenario, Var, Month)
+    if (phase !=<span class="st"> &quot;CRU 3.1&quot;</span>) 
+        city.dat &lt;-<span class="st"> </span><span class="kw">group_by</span>(city.dat, Decade, <span class="dt">add =</span> <span class="ot">TRUE</span>)
+    city.dat &lt;-<span class="st"> </span>city.dat %&gt;%<span class="st"> </span><span class="kw">summarise</span>(<span class="dt">Min =</span> <span class="kw">min</span>(Val), <span class="dt">Mean =</span> <span class="kw">mean</span>(Val), <span class="dt">Max =</span> <span class="kw">max</span>(Val), 
+        <span class="dt">SD =</span> <span class="kw">sd</span>(Val)) %&gt;%<span class="st"> </span><span class="kw">mutate</span>(<span class="dt">Mean =</span> <span class="kw">ifelse</span>(Var ==<span class="st"> &quot;Precipitation&quot;</span>, <span class="kw">round</span>(Mean), 
+        <span class="kw">round</span>(Mean, <span class="dv">1</span>)), <span class="dt">SD =</span> <span class="kw">round</span>(SD, <span class="dv">1</span>)) %&gt;%<span class="st"> </span><span class="kw">as.data.frame</span>()
+    if (phase ==<span class="st"> &quot;CRU 3.1&quot;</span>) 
+        city.dat$Decade &lt;-<span class="st"> </span><span class="kw">paste</span>(decades[<span class="dv">1</span>], <span class="kw">tail</span>(decades, <span class="dv">1</span>) +<span class="st"> </span><span class="dv">9</span>, <span class="dt">sep =</span> <span class="st">&quot;-&quot;</span>)
+    city.dat &lt;-<span class="st"> </span><span class="kw">arrange</span>(city.dat, Location, Scenario, Var, Decade, Month)
+    city.dat
+}</code></pre>
+<p>The function used for loading and manipulating the data into curated form. The <code>%&gt;%</code> (pipe operator) is available from the <code>magrittr</code> package, which is loaded when <code>dplyr</code> is loaded.</p>
+<p>The data are processed in parallel. The lines which are commented out refer to some tests of compute times for different methods of combining multiple data frames.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">system.time</span>(out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(files.gcm), f, <span class="dt">files =</span> files.gcm, <span class="dt">decades =</span> decades.gcm, 
+    <span class="dt">phase =</span> <span class="st">&quot;CMIP5&quot;</span>, <span class="dt">mc.cores =</span> n.cores))
+<span class="co"># system.time( d1 &lt;- do.call(rbind, out) ) system.time( d2 &lt;- ldply(out,</span>
+<span class="co"># data.frame) ) system.time( d3 &lt;- rbind.fill(out) )</span>
+<span class="kw">system.time</span>(d &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(data.table::<span class="kw">rbindlist</span>(out)))
+d$Decade &lt;-<span class="st"> </span><span class="kw">paste</span>(d$Decade, <span class="kw">as.numeric</span>(d$Decade) +<span class="st"> </span><span class="dv">9</span>, <span class="dt">sep =</span> <span class="st">&quot;-&quot;</span>)
+
+<span class="co"># identical(d1, d2) identical(d1, d3) identical(d1, d)</span>
+
+<span class="kw">system.time</span>(out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(files.cru), f, <span class="dt">files =</span> files.cru, <span class="dt">decades =</span> decades.cru, 
+    <span class="dt">phase =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">mc.cores =</span> n.cores))
+<span class="co"># system.time( d1 &lt;- do.call(rbind, out) ) system.time( d2 &lt;- ldply(out,</span>
+<span class="co"># data.frame) ) system.time( d3 &lt;- rbind.fill(out) )</span>
+<span class="kw">system.time</span>(d.cru &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(data.table::<span class="kw">rbindlist</span>(out)))
+d.cru &lt;-<span class="st"> </span>d.cru[, <span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">5</span>:<span class="dv">8</span>)]</code></pre>
+<p>A variety of useful <strong>R</strong> workspace files are saved. Some prior workspaces are also loaded at specific stages below to be added to the current workspace before it is saved again.</p>
+<pre class="sourceCode r"><code class="sourceCode r">locs &lt;-<span class="st"> </span><span class="kw">unique</span>(d$Location)
+file.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_akcan2km.RData&quot;</span>
+file.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_world10min.RData&quot;</span>
+file.cru.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_akcan2km.RData&quot;</span>
+file.cru.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_world10min.RData&quot;</span>
+if (domain ==<span class="st"> &quot;akcan2km&quot;</span>) {
+    d.2km &lt;-<span class="st"> </span>d
+    d.cru.2km &lt;-<span class="st"> </span>d.cru
+    <span class="kw">save</span>(d.2km, locs, <span class="dt">file =</span> file.2km)
+    <span class="kw">save</span>(d.2km, d.cru.2km, locs, <span class="dt">file =</span> file.cru.2km)
+} else if (domain ==<span class="st"> &quot;world10min&quot;</span>) {
+    d.10min &lt;-<span class="st"> </span>d
+    d.cru.10min &lt;-<span class="st"> </span>d.cru
+    <span class="kw">save</span>(d.10min, locs, <span class="dt">file =</span> file.10min)
+    <span class="kw">save</span>(d.10min, d.cru.10min, locs, <span class="dt">file =</span> file.cru.10min)
+}
+
+if (<span class="kw">all</span>(<span class="kw">file.exists</span>(file.cru.2km, file.cru.10min))) {
+    <span class="kw">load</span>(file.cru.2km)
+    <span class="kw">load</span>(file.cru.10min)
+    <span class="kw">save</span>(d.2km, d.10min, locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_2km10min.RData&quot;</span>)
+    <span class="kw">save</span>(d.2km, d.10min, d.cru.2km, d.cru.10min, locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_cru31_2km10min.RData&quot;</span>)
+}</code></pre>
 </div>
 </div>
 
