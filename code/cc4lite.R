@@ -38,7 +38,7 @@ finalizeData <- function(res="2km", location="Fairbanks, Alaska", variable="Temp
 	x
 }
 
-makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, baseline, col="variable", width=850, height=500){
+makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, baseline, col="variable", width=940, height=500){
 	FreezePoint <-ifelse(units=="Fin", 32, 0)
 	Thresh <- ifelse(variable=="Precipitation", 0, FreezePoint)
 	#Unit <- if(variable=="Temperature") paste0("°", substr(units, 1, 1)) else substr(units, 2, 3)

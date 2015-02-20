@@ -75,7 +75,10 @@ files.Rmd <- list.files(pattern=".Rmd$", full=T)
 # @knitr save
 # write all yaml front-matter-specified outputs to Rmd directory for all Rmd files
 lapply(files.Rmd, render, output_format="all")
-#### MANUAL STEP #### Do a search and replace, swapping any instance of _DEGREE_SYMBOL_ with ° in md or html files #### symbol does not carry through directly when using rmarkdown::render
+#### MANUAL STEP: Search and replace ####
+#swapping any instance of _DEGREE_SYMBOL_ with ° in md or html files #### symbol does not carry through directly when using rmarkdown::render
+# replace any 800px and 400px with 940px and 500px, any 800 or 400 preceeded by 10 spaces and followed by a comma, with 940, and 400,
+
 insert_gatc(list.files(pattern=".html$"))
 moveDocs(path.docs=docs.path)
 

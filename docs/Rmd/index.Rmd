@@ -36,13 +36,11 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 ```{r plot00a}
 ```
 
-<style>iframe.rChart{ width: 100%; height: 500px; }</style>
-
 Here is the original chart for comparison.
 
 ##
 
-<img src="img/v1_ex0.png" height="500" width="900">
+<img src="img/v1_ex0.png" height="500" width="940">
 
 ##
 

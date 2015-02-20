@@ -35,22 +35,22 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
       display: block;
       margin-left: auto; 
       margin-right: auto;
-      width: 800px;
-      height: 400px;
+      width: 940px;
+      height: 500px;
     }  
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad833644eb3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad863597d41&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad833644eb3&quot;,
-&quot;width&quot;:            800,
-&quot;height&quot;:            400,
+ &quot;dom&quot;: &quot;chart1ad863597d41&quot;,
+&quot;width&quot;:           940,
+&quot;height&quot;:           500,
 &quot;credits&quot;: {
  &quot;href&quot;: null,
 &quot;text&quot;: null 
@@ -67,7 +67,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (_DEGREE_SYMBOL_F)&quot;,
+ &quot;text&quot;: &quot;Temperature (°F)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -681,11 +681,11 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 } 
 },
 &quot;chart&quot;: {
- &quot;width&quot;:            850,
+ &quot;width&quot;:            940,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad833644eb3&quot; 
+&quot;renderTo&quot;: &quot;chart1ad863597d41&quot; 
 },
-&quot;id&quot;: &quot;chart1ad833644eb3&quot; 
+&quot;id&quot;: &quot;chart1ad863597d41&quot; 
 });
         });
     })(jQuery);
@@ -693,16 +693,14 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad833644eb3'> </iframe>
- <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-<style>iframe.rChart{ width: 100%; height: 500px; }</style>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad863597d41'> </iframe>
+ <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Here is the original chart for comparison.
 
 ##
 
-<img src="img/v1_ex0.png" height="500" width="900">
+<img src="img/v1_ex0.png" height="500" width="940">
 
 ##
 
