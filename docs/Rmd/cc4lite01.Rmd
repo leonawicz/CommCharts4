@@ -71,6 +71,8 @@ The baseline is adaptive, defined as the freezing point irrespective of units of
 When changing the measurement scale, the data are not transformed in any way that should change the appearance of the bars in the two plots.
 Only the y-axis need take on new values.
 
+[*Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.*]
+
 ##
 #### Freezing point baseline: Celsius
 
