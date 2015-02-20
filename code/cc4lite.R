@@ -42,8 +42,8 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 	FreezePoint <-ifelse(units=="Fin", 32, 0)
 	Thresh <- ifelse(variable=="Precipitation", 0, FreezePoint)
 	#Unit <- if(variable=="Temperature") paste0("°", substr(units, 1, 1)) else substr(units, 2, 3)
-	#Unit <- if(variable=="Temperature") paste0("┬░", substr(units, 1, 1)) else substr(units, 2, 3)
-	Unit <- if(variable=="Temperature") paste0("&deg;", substr(units, 1, 1)) else substr(units, 2, 3)
+	Unit <- if(variable=="Temperature") paste0("┬░", substr(units, 1, 1)) else substr(units, 2, 3)
+	#Unit <- if(variable=="Temperature") paste0("&deg;", substr(units, 1, 1)) else substr(units, 2, 3)
 	Colors <- if(variable=="Temperature") c("#666666", colorRampPalette(c("gold", "orange", "orangered", "darkred"))(4)) else c("#666666", colorRampPalette(c("aquamarine", "dodgerblue4"))(4))
 	
 	p <- if(err=="exclusive") Highcharts$new() else hPlot(x="Month", y="Mean", data=d, type="column", group="Decade")
@@ -52,7 +52,7 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 	p$subtitle(text=paste("Historical", baseline, "and 5-Model Projected Average,", RCPLabel), style=list(color="gray"))
 	p$legend(verticalAlign="top", y=50, borderWidth=1, borderColor="gray", borderRadius=5, itemMarginBottom=-5, itemMarginBottom=-5, itemStyle=list(color="gray"))
 	p$xAxis(categories=month.abb, title=list(text=caption, style=list(color="gray", fontWeight="normal", fontSize="8px")))
-	p$yAxis(title=list(text=paste0("<span>", variable, " (", Unit, ")</span>"), style=list(color="gray")))
+	p$yAxis(title=list(text=paste0("<span>", variable, " (", Unit, ")</span>"), style=list(color="gray"), useHTML=TRUE))
 	if(err!="exclusive") p$plotOptions(column=list(threshold=Thresh, groupPadding=0.1, pointPadding=0.05))
 	if(err!="none"){
 		if(err=="overlay") for(k in 1:5) p$params$series[[k]]$id <- paste0("series", k)
