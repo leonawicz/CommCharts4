@@ -39,12 +39,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19985cff3c4f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199814567935&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19985cff3c4f&quot;,
+ &quot;dom&quot;: &quot;chart199814567935&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -377,9 +377,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19985cff3c4f&quot; 
+&quot;renderTo&quot;: &quot;chart199814567935&quot; 
 },
-&quot;id&quot;: &quot;chart19985cff3c4f&quot; 
+&quot;id&quot;: &quot;chart199814567935&quot; 
 });
         });
     })(jQuery);
@@ -387,7 +387,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19985cff3c4f'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199814567935'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -416,12 +416,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19986b40568b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1998b903709&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19986b40568b&quot;,
+ &quot;dom&quot;: &quot;chart1998b903709&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -754,9 +754,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart19986b40568b&quot; 
+&quot;renderTo&quot;: &quot;chart1998b903709&quot; 
 },
-&quot;id&quot;: &quot;chart19986b40568b&quot; 
+&quot;id&quot;: &quot;chart1998b903709&quot; 
 });
         });
     })(jQuery);
@@ -764,7 +764,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19986b40568b'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998b903709'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
@@ -799,12 +799,12 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1998602e103a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19987f8f3663&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1998602e103a&quot;,
+ &quot;dom&quot;: &quot;chart19987f8f3663&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1137,9 +1137,9 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1998602e103a&quot; 
+&quot;renderTo&quot;: &quot;chart19987f8f3663&quot; 
 },
-&quot;id&quot;: &quot;chart1998602e103a&quot; 
+&quot;id&quot;: &quot;chart19987f8f3663&quot; 
 });
         });
     })(jQuery);
@@ -1147,7 +1147,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998602e103a'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19987f8f3663'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1176,12 +1176,12 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1998398c35b7&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19982aae77c0&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1998398c35b7&quot;,
+ &quot;dom&quot;: &quot;chart19982aae77c0&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1514,9 +1514,9 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1998398c35b7&quot; 
+&quot;renderTo&quot;: &quot;chart19982aae77c0&quot; 
 },
-&quot;id&quot;: &quot;chart1998398c35b7&quot; 
+&quot;id&quot;: &quot;chart19982aae77c0&quot; 
 });
         });
     })(jQuery);
@@ -1524,7 +1524,7 @@ Precipitation is very high there at 2-km resolution, but relatively washed out (
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998398c35b7'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19982aae77c0'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

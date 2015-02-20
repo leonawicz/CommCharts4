@@ -42,7 +42,7 @@ proj.submenu <- list(
 
 proj.files <- list(
 	c("index.html"),
-	c("cc4lite01.html", "cc4lite02.html", "cc4lite03.html", "divider", "header", "cc4lite04.html", "cc4lite05.html", "divider", "cc4lite06.html"),
+	c("01_measurement.html", "02_historical.html", "03_variability.html", "divider", "header", "04_scale_temp.html", "05_scale_precip.html", "divider", "06_colors.html"),
 	c("agg_city_data.html"),
 	c("http://leonawicz.github.io")
 )

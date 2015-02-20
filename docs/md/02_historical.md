@@ -47,12 +47,12 @@ The reason that comparing data of notably different temporal scales (as would be
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1998155a300e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19982d9fd0c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1998155a300e&quot;,
+ &quot;dom&quot;: &quot;chart19982d9fd0c&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -407,9 +407,9 @@ The reason that comparing data of notably different temporal scales (as would be
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1998155a300e&quot; 
+&quot;renderTo&quot;: &quot;chart19982d9fd0c&quot; 
 },
-&quot;id&quot;: &quot;chart1998155a300e&quot; 
+&quot;id&quot;: &quot;chart19982d9fd0c&quot; 
 });
         });
     })(jQuery);
@@ -417,7 +417,7 @@ The reason that comparing data of notably different temporal scales (as would be
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1998155a300e'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19982d9fd0c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -462,12 +462,12 @@ It also assists in graphing the Community Charts slightly differently, as will b
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart199845fc35ae&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart199867cb65b9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart199845fc35ae&quot;,
+ &quot;dom&quot;: &quot;chart199867cb65b9&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1102,9 +1102,9 @@ It also assists in graphing the Community Charts slightly differently, as will b
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart199845fc35ae&quot; 
+&quot;renderTo&quot;: &quot;chart199867cb65b9&quot; 
 },
-&quot;id&quot;: &quot;chart199845fc35ae&quot; 
+&quot;id&quot;: &quot;chart199867cb65b9&quot; 
 });
         });
     })(jQuery);
@@ -1112,7 +1112,7 @@ It also assists in graphing the Community Charts slightly differently, as will b
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199845fc35ae'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart199867cb65b9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
