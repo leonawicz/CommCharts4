@@ -54,12 +54,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1544a90aa1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad83889501f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1544a90aa1&quot;,
+ &quot;dom&quot;: &quot;chart1ad83889501f&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -78,10 +78,11 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -694,9 +695,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1544a90aa1&quot; 
+&quot;renderTo&quot;: &quot;chart1ad83889501f&quot; 
 },
-&quot;id&quot;: &quot;chart1544a90aa1&quot; 
+&quot;id&quot;: &quot;chart1ad83889501f&quot; 
 });
         });
     })(jQuery);
@@ -704,7 +705,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1544a90aa1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad83889501f'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -730,12 +731,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1541fe27de5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad82a0863ae&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1541fe27de5&quot;,
+ &quot;dom&quot;: &quot;chart1ad82a0863ae&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -754,10 +755,11 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -1370,9 +1372,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1541fe27de5&quot; 
+&quot;renderTo&quot;: &quot;chart1ad82a0863ae&quot; 
 },
-&quot;id&quot;: &quot;chart1541fe27de5&quot; 
+&quot;id&quot;: &quot;chart1ad82a0863ae&quot; 
 });
         });
     })(jQuery);
@@ -1380,7 +1382,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1541fe27de5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad82a0863ae'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -1415,12 +1417,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1547d3c58e2&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad8228d67c1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1547d3c58e2&quot;,
+ &quot;dom&quot;: &quot;chart1ad8228d67c1&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1439,10 +1441,11 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -1753,9 +1756,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1547d3c58e2&quot; 
+&quot;renderTo&quot;: &quot;chart1ad8228d67c1&quot; 
 },
-&quot;id&quot;: &quot;chart1547d3c58e2&quot; 
+&quot;id&quot;: &quot;chart1ad8228d67c1&quot; 
 });
         });
     })(jQuery);
@@ -1763,7 +1766,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1547d3c58e2'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8228d67c1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1789,12 +1792,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1543c2d7348&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad870732689&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1543c2d7348&quot;,
+ &quot;dom&quot;: &quot;chart1ad870732689&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -1813,10 +1816,11 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -2127,9 +2131,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1543c2d7348&quot; 
+&quot;renderTo&quot;: &quot;chart1ad870732689&quot; 
 },
-&quot;id&quot;: &quot;chart1543c2d7348&quot; 
+&quot;id&quot;: &quot;chart1ad870732689&quot; 
 });
         });
     })(jQuery);
@@ -2137,7 +2141,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1543c2d7348'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad870732689'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars
@@ -2173,12 +2177,12 @@ To give the user something to look at for mere visual orientation we have to fak
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart15410563c08&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad83cab5b4a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart15410563c08&quot;,
+ &quot;dom&quot;: &quot;chart1ad83cab5b4a&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -2197,10 +2201,11 @@ To give the user something to look at for mere visual orientation we have to fak
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -2511,9 +2516,9 @@ To give the user something to look at for mere visual orientation we have to fak
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart15410563c08&quot; 
+&quot;renderTo&quot;: &quot;chart1ad83cab5b4a&quot; 
 },
-&quot;id&quot;: &quot;chart15410563c08&quot; 
+&quot;id&quot;: &quot;chart1ad83cab5b4a&quot; 
 });
         });
     })(jQuery);
@@ -2521,7 +2526,7 @@ To give the user something to look at for mere visual orientation we have to fak
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart15410563c08'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad83cab5b4a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

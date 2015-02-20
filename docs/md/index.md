@@ -43,12 +43,12 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad816b06fd5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad841687e80&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad816b06fd5&quot;,
+ &quot;dom&quot;: &quot;chart1ad841687e80&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -67,10 +67,11 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (\\circF)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°F)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -683,9 +684,9 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad816b06fd5&quot; 
+&quot;renderTo&quot;: &quot;chart1ad841687e80&quot; 
 },
-&quot;id&quot;: &quot;chart1ad816b06fd5&quot; 
+&quot;id&quot;: &quot;chart1ad841687e80&quot; 
 });
         });
     })(jQuery);
@@ -693,16 +694,14 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad816b06fd5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad841687e80'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
-[*Note that it is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it.
+[*Note: It is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it.
 It will download a graphic in Celsius regardless of the user's specification or what is displayed in the browser.
 I had to save a screenshot of the online image in order to include it here.*]
-
-[*Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.*]
 
 #### Other versions
 

@@ -42,8 +42,6 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 	FreezePoint <-ifelse(units=="Fin", 32, 0)
 	Thresh <- ifelse(variable=="Precipitation", 0, FreezePoint)
 	#Unit <- if(variable=="Temperature") paste0("°", substr(units, 1, 1)) else substr(units, 2, 3)
-	#Unit <- if(variable=="Temperature") paste0("┬░", substr(units, 1, 1)) else substr(units, 2, 3)
-	#Unit <- if(variable=="Temperature") paste0("&deg;", substr(units, 1, 1)) else substr(units, 2, 3)
 	Unit <- if(variable=="Temperature") paste0("_DEGREE_SYMBOL_", substr(units, 1, 1)) else substr(units, 2, 3)
 	Colors <- if(variable=="Temperature") c("#666666", colorRampPalette(c("gold", "orange", "orangered", "darkred"))(4)) else c("#666666", colorRampPalette(c("aquamarine", "dodgerblue4"))(4))
 	

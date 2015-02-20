@@ -47,12 +47,12 @@ The reason that comparing data of notably different temporal scales (as would be
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart15479927bd0&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad85a2258ee&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart15479927bd0&quot;,
+ &quot;dom&quot;: &quot;chart1ad85a2258ee&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -71,10 +71,11 @@ The reason that comparing data of notably different temporal scales (as would be
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -407,9 +408,9 @@ The reason that comparing data of notably different temporal scales (as would be
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart15479927bd0&quot; 
+&quot;renderTo&quot;: &quot;chart1ad85a2258ee&quot; 
 },
-&quot;id&quot;: &quot;chart15479927bd0&quot; 
+&quot;id&quot;: &quot;chart1ad85a2258ee&quot; 
 });
         });
     })(jQuery);
@@ -417,7 +418,7 @@ The reason that comparing data of notably different temporal scales (as would be
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart15479927bd0'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad85a2258ee'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ##
@@ -462,12 +463,12 @@ It also assists in graphing the Community Charts slightly differently, as will b
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart154609560df&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1ad833532a13&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart154609560df&quot;,
+ &quot;dom&quot;: &quot;chart1ad833532a13&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -486,10 +487,11 @@ It also assists in graphing the Community Charts slightly differently, as will b
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (Â°C)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°C)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -1102,9 +1104,9 @@ It also assists in graphing the Community Charts slightly differently, as will b
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart154609560df&quot; 
+&quot;renderTo&quot;: &quot;chart1ad833532a13&quot; 
 },
-&quot;id&quot;: &quot;chart154609560df&quot; 
+&quot;id&quot;: &quot;chart1ad833532a13&quot; 
 });
         });
     })(jQuery);
@@ -1112,7 +1114,7 @@ It also assists in graphing the Community Charts slightly differently, as will b
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart154609560df'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad833532a13'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

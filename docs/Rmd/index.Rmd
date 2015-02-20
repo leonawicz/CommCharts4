@@ -40,8 +40,7 @@ Exhibits A and B, a comparison of an original Community Charts plot with an upda
 
 [*Note: It is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it.
 It will download a graphic in Celsius regardless of the user's specification or what is displayed in the browser.
-I had to save a screenshot of the online image in order to include it here.
-Also, erroneous degree symbol encoding in axis label on the updated plot only occurs in this rendered markdown document, for now. It does not occur in web applications.*]
+I had to save a screenshot of the online image in order to include it here.*]
 
 #### Other versions
 

@@ -172,12 +172,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1ad816b06fd5' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart1ad841687e80' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad816b06fd5&quot;,
+ &quot;dom&quot;: &quot;chart1ad841687e80&quot;,
 &quot;width&quot;:            800,
 &quot;height&quot;:            400,
 &quot;credits&quot;: {
@@ -196,10 +196,11 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (\\circF)&quot;,
+ &quot;text&quot;: &quot;&lt;span&gt;Temperature (°F)&lt;/span&gt;&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
-} 
+},
+&quot;useHTML&quot;: true 
 } 
 } 
 ],
@@ -812,9 +813,9 @@ img {
 &quot;chart&quot;: {
  &quot;width&quot;:            850,
 &quot;height&quot;:            500,
-&quot;renderTo&quot;: &quot;chart1ad816b06fd5&quot; 
+&quot;renderTo&quot;: &quot;chart1ad841687e80&quot; 
 },
-&quot;id&quot;: &quot;chart1ad816b06fd5&quot; 
+&quot;id&quot;: &quot;chart1ad841687e80&quot; 
 });
         });
     })(jQuery);
@@ -822,12 +823,11 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad816b06fd5">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad841687e80">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-<p>[<em>Note that it is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it. It will download a graphic in Celsius regardless of the user’s specification or what is displayed in the browser. I had to save a screenshot of the online image in order to include it here.</em>]</p>
-<p>[<em>Note: erroneous degree symbol encoding in axis label only occurs in this rendered markdown document, for now. It did not occur in web applications.</em>]</p>
+<p>[<em>Note: It is not possible to download original Community Charts in Fahrenheit units even though the application purports to allow it. It will download a graphic in Celsius regardless of the user’s specification or what is displayed in the browser. I had to save a screenshot of the online image in order to include it here.</em>]</p>
 <div id="other-versions" class="section level4">
 <h4>Other versions</h4>
 <p>Version 4 of the Community Charts application is documented here. Community Charts version 4 is a lightweight application similar to <a href="https://www.snap.uaf.edu/sites/all/modules/snap_community_charts/charts.php">version 1</a>. For a more powerful community charts application, see <a href="http://shiny.snap.uaf.edu/akcan_climate/">version 2</a>, which offers much more data and interaction to the user. Version 3 is an even more powerful and adaptive version than 2, also including more communities, data, as well as graphical and analytic capabilities. Version 3 is currently under development as a component of the SNAP data QAQC application, which is not publicly available.</p>
