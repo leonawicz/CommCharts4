@@ -35,14 +35,14 @@ proj.menu <- c("Overview", "CC4 Lite", "R Code", "All Projects")
 
 proj.submenu <- list(
 	c("empty"),
-	c("Levels of measurement", "Historical baseline", "Displaying variability", "divider", "Spatial scale", "Temperature", "Precipitation", "divider", "Color palettes"),
+	c("Levels of measurement", "Historical baseline", "Displaying variability", "divider", "Spatial scale", "Temperature", "Precipitation", "divider", "Color palettes", "Minutiae"),
 	c("empty"),
 	c("empty")
 )
 
 proj.files <- list(
 	c("index.html"),
-	c("01_measurement.html", "02_historical.html", "03_variability.html", "divider", "header", "04_scale_temp.html", "05_scale_precip.html", "divider", "06_colors.html"),
+	c("01_measurement.html", "02_historical.html", "03_variability.html", "divider", "header", "04_scale_temp.html", "05_scale_precip.html", "divider", "06_colors.html", "07_minutiae.html"),
 	c("agg_city_data.html"),
 	c("http://leonawicz.github.io")
 )
