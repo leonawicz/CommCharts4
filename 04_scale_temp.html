@@ -135,7 +135,7 @@ img {
 <p>The resolution of the data used to inform the Community Charts application is an important consideration. For example, it would not make sense to use raw CRU data at 0.5 degrees latitude and longitude spatial resolution or raw climate model outputs with grid cells upwards of a few degrees across to stand in for point data representing communities, even if a community is a large, sprawling city. Instead, downscaled data are used.</p>
 <p>PRISM, the historical baseline, uses 2-km grid cells, as does anything downscaled to the PRISM climatology, e.g., SNAP’s CRU 3.1 data and five global climate models. Climate trends for communities are extracted from these gridded data products using the grid cell in which a community’s given spatial coordinates fall. These coordinates may fall in the center of a cell or they may fall near an edge or corner, but considering a cell is only four square kilometers and the focus is on very broad trends at a decadal time scale, this is not particularly problematic.</p>
 <p>Nevertheless, some thought should be given to the accuracy of the coordinates. The communities data set from which community names, populations, and coordinates are pulled, is one I would consider to be of ill repute and quite unkempt as previously mentioned. A glance at populations for many communities makes it immediately clear that the numbers in the data set are imprecise if not also inaccruate.</p>
-<p>This leaves an open question regarding the accuracy and precision of spatial coordinates. Chiefly, if they are not to a high enough precision, the most assuredly will not be accurate. I don’t know offhand how many decimal places are required in longitude and latitude to precisely reference a specific 2-km grid cell, but it’s more than a few.</p>
+<p>This leaves an open question regarding the accuracy and precision of spatial coordinates. Chiefly, if they are not to a high enough precision, they most assuredly will not be accurate. I don’t know offhand how many decimal places are required in longitude and latitude to precisely reference a specific 2-km grid cell, but it’s more than a few.</p>
 <p>Another potential weakness of the data is in terms of strict accuracy. This is based on my observation that there are apparent duplicate communities, same name, same province, and almost the same coordinates, but not quite the same. Sometimes a community occurs many times within the data set and it must be considered whether this represents a change over time in location of a city center or public administration unit.</p>
 <p>With all that in mind, we proceed on the assumption that the spatial coordinates for each community are “good enough”. Again, our interest is in broad scale climate trends, enough so that some uncertainty in the spatial dimension is a moot point.</p>
 <p>Until now.</p>
@@ -145,12 +145,12 @@ img {
 <h2></h2>
 <div id="minute-spatial-resolution" class="section level4">
 <h4>10-minute spatial resolution</h4>
-<p>Would you directly compare a sample of annual average temperatures from one community to a sample of 30-year annual temperature climatologies from another community and argue that the latter community has more stable weather? What about average July precipitation from a 2-km downscaled grid cell vs. that seen over a 10-minute grid cell?</p>
-<p>Although the communities in the Community Charts application range roughly from northwestern Alaska down through the western half of Canada, a quick calculation for a typical community situated at a typical latitude in the application shows that 10 minutes by ten minutes is somewhere on the order of 70 square kilometers. That’s no community I’ve ever heard of. Compare that to four square kilometers for a 2-km by 2km grid cell.</p>
-<p>It is not known in advance what kind of effect this will have on assessment of climate trends, in either temperature or precipitation, and whether any difference will be noteworthy. However, this is why we analyze these things, so that we know for sure and can make an informed decision on the legitimacy of mixing the two scales. This is not to say that I wouldn’t be comfortable wagering on how this will turn out.</p>
-<p>In the absence of context it is difficult to imagine why this mixture of scales, one to be used for some communities, another to be used for the rest, would even be a consideration. It’s not like the two scales are 1-km and 2-km, or 10-minute and 12-minute. The reason it is considered here is simply because there is interest giving the Community Charts application a nominal boost in the number of communities available. (How about we remove the duplicates and otherwise clean up the data set first?) Anyhow, inclusion of additional communities is sensible because they will be specifically for the Northwest Territories in Canada, which is currently not represented in the application.</p>
+<p>Would you directly compare a sample of annual average temperatures from one community to a sample of 30-year annual temperature climatologies from another community and argue that the latter community has more stable climate? What about average July precipitation from a 2-km downscaled grid cell vs. that seen over a 10-minute grid cell?</p>
+<p>Although the communities in the Community Charts application range roughly from northwestern Alaska down through the western half of Canada, a quick calculation for a typical community situated at a typical latitude in the application shows that a 10-minute by 10-minute grid cell is somewhere on the order of 70 square kilometers. That’s no community I’ve ever heard of. Compare that to four square kilometers for a 2-km by 2-km grid cell.</p>
+<p>It is not known in advance what kind of effect this will have on assessment of climate trends, in either temperature or precipitation, or whether any difference will be noteworthy. However, this is why we analyze these things, so that we know for sure and can make an informed decision on the legitimacy of mixing the two scales. Of course, this is not to say that I wouldn’t be comfortable wagering on how this will turn out.</p>
+<p>In the absence of context it is difficult to imagine why this mixture of scales, one to be used for some communities, another to be used for the rest, would even be a consideration. It’s not like the two scales are 1-km and 2-km, or 10-minute and 12-minute. The reason it is considered here is simply because there is interest giving the Community Charts application a nominal boost in the number of communities available. (How about we remove the duplicates and otherwise clean up the data set first?) Anyhow, inclusion of additional communities is sensible because they will be specifically from the Northwest Territories in Canada, which is currently not represented in the application.</p>
 <p>The problem is that there is good reason this region was never included in versions 1, 2, or 3 of Community Charts (it will eventually be added to version 3 as well as this version 4 here). The PRISM climatology does not cover this area. Therefore coarser climate model outputs (and CRU data) could not be downscaled using the 2-km PRISM climatology. The finest resolution climatology available over this geographic region is the 10-minute resolution CRU climatology, which is world wide (over landmasses only, ocean excluded, since CRU is weather station based).</p>
-<p>Whereas the vast majority of communities in the data set will be able to retain their basis in 2-km downscaled data, the nominal addition of communities based on 10-minute resolution data will likely incur some initial fanfare and be touted when and where possible. While there will surely be some caveat noted on the chart indicating the spatial resolution and what people should take away from it, this does not make it acceptable to use. It depends on what kind of information comes through at that coarser scale in the context of community-level data.</p>
+<p>Whereas the vast majority of communities in the data set will be able to retain their basis in 2-km downscaled data, the nominal addition of communities based on 10-minute resolution data will likely incur some initial fanfare and be touted when and where possible. While there will surely be some caveat noted on the chart indicating the spatial resolution and what people should take away from it, this does not automatically make it acceptable to use. It depends on what kind of information comes through at that coarser scale in the context of community-level data.</p>
 <p>Let’s take a look again at our test case, Fairbanks, Alaska. Error bars have been removed to help focus on mean values.</p>
 </div>
 </div>
@@ -181,12 +181,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1ad829c26507' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart11cc3320509e' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad829c26507&quot;,
+ &quot;dom&quot;: &quot;chart11cc3320509e&quot;,
 
 
 &quot;credits&quot;: {
@@ -205,7 +205,7 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (�C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -538,9 +538,9 @@ img {
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad829c26507&quot;,
+&quot;id&quot;: &quot;chart11cc3320509e&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad829c26507&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3320509e&quot; 
 } 
 });
         });
@@ -549,7 +549,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad829c26507">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart11cc3320509e">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 </div>
@@ -581,12 +581,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1ad85711473a' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart11cc1de8637' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad85711473a&quot;,
+ &quot;dom&quot;: &quot;chart11cc1de8637&quot;,
 
 
 &quot;credits&quot;: {
@@ -605,7 +605,7 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (�C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -938,9 +938,9 @@ img {
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad85711473a&quot;,
+&quot;id&quot;: &quot;chart11cc1de8637&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad85711473a&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc1de8637&quot; 
 } 
 });
         });
@@ -949,10 +949,10 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad85711473a">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart11cc1de8637">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-<p>During some months, mean monthly temperatures differ between resolutions by more than 10 degrees C and 20 degrees F - and these are decadal averages of monthly averages of five-model averages! Look at January 2010-2019. Use the decadal color key in each of the above two plots to deselect all but this decade to see the difference more easily. Comparing data while transcending this much of a spatial scale reveals seriously biased values between scales. In other months bias can go in the opposite direction.</p>
+<p>During some months, mean monthly temperatures differ between resolutions by more than 10 degrees Celsius and 20 degrees Fahrenheit! And this despite that these are decadal averages of monthly averages of five-model averages! Look at January 2010-2019. Use the decadal color key in each of the above two plots to deselect all but this decade to see the difference more easily. Comparing data while transcending this much of a spatial scale reveals seriously biased values between scales. In other months bias can go in the opposite direction.</p>
 <p>Now it is clear that at a 10-minute resolution, where a community falls inside a grid cell based on its coordinates can easily introduce bias if that grid cell is large. A larger grid cell has a higher chance of including area which would not downscale to values similar to the 2-km grid cell where the community actually resides. The average temperature signal over the 10-minute grid cell is not likely to be representative of any random 4-km square segment within it that is based on high resolution PRISM data.</p>
 <p>Next, the same data are plotted using floating range bars only. This makes it easier to focus on the variability at different scales.</p>
 </div>
@@ -984,12 +984,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1ad82f7623a8' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart11cc3c9c3193' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad82f7623a8&quot;,
+ &quot;dom&quot;: &quot;chart11cc3c9c3193&quot;,
 
 
 &quot;credits&quot;: {
@@ -1008,7 +1008,7 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (�C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1319,9 +1319,9 @@ img {
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad82f7623a8&quot;,
+&quot;id&quot;: &quot;chart11cc3c9c3193&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad82f7623a8&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3c9c3193&quot; 
 } 
 });
         });
@@ -1330,7 +1330,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad82f7623a8">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart11cc3c9c3193">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 </div>
@@ -1362,12 +1362,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1ad8229513fa' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart11cc77117b97' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8229513fa&quot;,
+ &quot;dom&quot;: &quot;chart11cc77117b97&quot;,
 
 
 &quot;credits&quot;: {
@@ -1386,7 +1386,7 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (�C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1697,9 +1697,9 @@ img {
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad8229513fa&quot;,
+&quot;id&quot;: &quot;chart11cc77117b97&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad8229513fa&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc77117b97&quot; 
 } 
 });
         });
@@ -1708,10 +1708,10 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad8229513fa">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart11cc77117b97">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-<p>Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias. This is possibly because variability, while being an inherent property of scale, here is one component among an amalgamation of additional variables which are constant between scales, e.g., size of temporal windows and number of climate models. How much each of these factors competes with differences between 2-km and 10-minute resolution in terms of contribution to total variability may be enough to minimize the impact.</p>
+<p>Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias. This is possibly because variability, while being in part a function of scale, here is essentially based on other variables which are constant between scales, e.g., size of temporal windows and number of climate models. Changes in spatial variability with spatial resolution can only creep in here indirectly in terms of the effect of scale on the range of the five models during a ten-year period. Ultimately, there is no direct information content here regarding variability across space. At both resolutions a community is based on a single grid cell, however large that grid cell may be. Compared to precipitation, temperature tends to be positively autocorrelated in space at greater distances.</p>
 <p>It is also important to note that the test case of Fairbanks, Alaska here represents a sample of size one. The same properties may behave differently in other geographic locations and must be checked as well.</p>
 </div>
 </div>
@@ -1743,12 +1743,12 @@ img {
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = 'chart1ad87482260c' class = 'rChart highcharts'&gt;&lt;/div&gt;    
+    &lt;div id = 'chart11cc13bc7179' class = 'rChart highcharts'&gt;&lt;/div&gt;    
     &lt;script type='text/javascript'&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad87482260c&quot;,
+ &quot;dom&quot;: &quot;chart11cc13bc7179&quot;,
 
 
 &quot;credits&quot;: {
@@ -1767,7 +1767,7 @@ img {
 &quot;yAxis&quot;: [
  {
  &quot;title&quot;: {
- &quot;text&quot;: &quot;Temperature (°C)&quot;,
+ &quot;text&quot;: &quot;Temperature (�C)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -2100,9 +2100,9 @@ img {
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad87482260c&quot;,
+&quot;id&quot;: &quot;chart11cc13bc7179&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad87482260c&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc13bc7179&quot; 
 } 
 });
         });
@@ -2111,7 +2111,7 @@ img {
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart1ad87482260c">
+&lt;/html&gt; " scrolling="no" frameBorder="0" seamless class="rChart  highcharts  " id="iframe-chart11cc13bc7179">
 </iframe>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
