@@ -68,10 +68,6 @@ setwd(rmd.path)
 # Rmd files
 files.Rmd <- list.files(pattern=".Rmd$", full=T)
 
-# potential non-Rmd directories for writing various output files
-#outtype <- file.path(dirname(getwd()), list.dirs("../", full=F, recursive=F))
-#outtype <- outtype[basename(outtype)!="Rmd"]
-
 # @knitr save
 # write all yaml front-matter-specified outputs to Rmd directory for all Rmd files
 lapply(files.Rmd, render, output_format="all")
@@ -80,14 +76,16 @@ lapply(files.Rmd, render, output_format="all")
 # replace any instance of _DEGREE_SYMBOL_ with ° in md or html files #### symbol does not carry through directly when using rmarkdown::render
 swap <- function(i, filename, l){
 	filename <- filename[[i]]
+	ext <- tail(strsplit(filename, "\\.")[[1]], 1)
 	x <- l[[i]]
 	x <- gsub("&quot;width&quot;:            800,", "", x)
 	x <- gsub("&quot;height&quot;:            400,", "", x)
 	x <- gsub("800px", "100%", x)
 	x <- gsub("400px", "500px", x)
-	x <- gsub("_DEGREE_SYMBOL_", "\u00b0", x)
+	if(ext=="md") x <- gsub("_DEGREE_SYMBOL_", "\u00b0", x)
+	if(ext=="html") x <- gsub("_DEGREE_SYMBOL_", "\uc2\ub0", x)
 	z <- file(filename)
-	writeLines(x, z, useBytes=TRUE)
+	writeLines(x, z)
 	close(z)
 	return()
 }

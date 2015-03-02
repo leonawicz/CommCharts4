@@ -40,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc430e5899&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc55304dc9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc430e5899&quot;,
+ &quot;dom&quot;: &quot;chart11cc55304dc9&quot;,
 
 
 &quot;credits&quot;: {
@@ -677,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11cc430e5899&quot;,
+&quot;id&quot;: &quot;chart11cc55304dc9&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc430e5899&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc55304dc9&quot; 
 } 
 });
         });
@@ -688,7 +688,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc430e5899'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc55304dc9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -733,7 +733,7 @@ In additional to a critical look at the original version, critical evaluations o
 New communities are intended to be added to the application, but for which data only exist at a much coarser resolution compared to the originally included communities.
 This mixture of disparate data sources must be clearly noted in the application of course.
 
-However, this is not enough. To stop here is amateurish and not justifiable.
+However, this is not enough. Stopping here is not justified.
 At a bare minimum, it is crucial that the effect of spatial scale on climate data in this context be investigated.
 It is possible that climate estimates differ enough between scales such that allowing some communities to use data exclusively at one scale and others at the alternative scale ought to be prohibited from the application entirely.
 

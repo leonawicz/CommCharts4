@@ -39,12 +39,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc2e264880&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc27b93e3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc2e264880&quot;,
+ &quot;dom&quot;: &quot;chart11cc27b93e3&quot;,
 
 
 &quot;credits&quot;: {
@@ -374,9 +374,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc2e264880&quot;,
+&quot;id&quot;: &quot;chart11cc27b93e3&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc2e264880&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc27b93e3&quot; 
 } 
 });
         });
@@ -385,7 +385,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc2e264880'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc27b93e3'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -414,12 +414,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11ccec4230c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc44da65f3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11ccec4230c&quot;,
+ &quot;dom&quot;: &quot;chart11cc44da65f3&quot;,
 
 
 &quot;credits&quot;: {
@@ -749,9 +749,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11ccec4230c&quot;,
+&quot;id&quot;: &quot;chart11cc44da65f3&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11ccec4230c&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc44da65f3&quot; 
 } 
 });
         });
@@ -760,7 +760,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11ccec4230c'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc44da65f3'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
@@ -800,12 +800,12 @@ This also affects the time of year when higher or lower inter-decadal variabilit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc3b061f70&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc5b686451&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc3b061f70&quot;,
+ &quot;dom&quot;: &quot;chart11cc5b686451&quot;,
 
 
 &quot;credits&quot;: {
@@ -1135,9 +1135,9 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc3b061f70&quot;,
+&quot;id&quot;: &quot;chart11cc5b686451&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc3b061f70&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc5b686451&quot; 
 } 
 });
         });
@@ -1146,7 +1146,7 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3b061f70'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc5b686451'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1175,12 +1175,12 @@ This also affects the time of year when higher or lower inter-decadal variabilit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc3b0fa50&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc68cd35d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc3b0fa50&quot;,
+ &quot;dom&quot;: &quot;chart11cc68cd35d&quot;,
 
 
 &quot;credits&quot;: {
@@ -1510,9 +1510,9 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc3b0fa50&quot;,
+&quot;id&quot;: &quot;chart11cc68cd35d&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc3b0fa50&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc68cd35d&quot; 
 } 
 });
         });
@@ -1521,7 +1521,7 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3b0fa50'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc68cd35d'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

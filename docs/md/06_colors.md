@@ -60,12 +60,12 @@ Here are a couple examples using qualitative colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc34081af1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc46f15871&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc34081af1&quot;,
+ &quot;dom&quot;: &quot;chart11cc46f15871&quot;,
 
 
 &quot;credits&quot;: {
@@ -395,9 +395,9 @@ Here are a couple examples using qualitative colors.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc34081af1&quot;,
+&quot;id&quot;: &quot;chart11cc46f15871&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc34081af1&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc46f15871&quot; 
 } 
 });
         });
@@ -406,7 +406,7 @@ Here are a couple examples using qualitative colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc34081af1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc46f15871'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -435,12 +435,12 @@ Here are a couple examples using qualitative colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc2a1371d3&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc7ebf6894&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc2a1371d3&quot;,
+ &quot;dom&quot;: &quot;chart11cc7ebf6894&quot;,
 
 
 &quot;credits&quot;: {
@@ -770,9 +770,9 @@ Here are a couple examples using qualitative colors.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc2a1371d3&quot;,
+&quot;id&quot;: &quot;chart11cc7ebf6894&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc2a1371d3&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc7ebf6894&quot; 
 } 
 });
         });
@@ -781,7 +781,7 @@ Here are a couple examples using qualitative colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc2a1371d3'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc7ebf6894'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
