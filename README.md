@@ -40,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad857833ce&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc55304dc9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad857833ce&quot;,
+ &quot;dom&quot;: &quot;chart11cc55304dc9&quot;,
 
 
 &quot;credits&quot;: {
@@ -677,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad857833ce&quot;,
+&quot;id&quot;: &quot;chart11cc55304dc9&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad857833ce&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc55304dc9&quot; 
 } 
 });
         });
@@ -688,7 +688,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad857833ce'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc55304dc9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -723,7 +723,7 @@ Version 3 is currently under development as a component of the SNAP data QAQC ap
 Like the original, version 4 uses the <code>Highcharts</code> javascript plotting library, but like versions 2 and 3, it is built using **R**.
 Community Charts version 4, also known in some circles as `CC4 Lite` or `CC4L`, accesses <code>Highcharts</code> through the **R** package, `rCharts`.
 `rCharts` acts as a wrapper to a number of external plotting libraries, but the intent here is to make a Community Charts application similar to the original, hence the focus on <code>Highcharts</code>.
-At the same, it is important to improve upon the original, which can be criticized on a number of poor graphing practices and other uses of descriptive statistics.
+At the same time, it is important to improve upon the original, which can be criticized on a number of poor graphing practices and other uses of descriptive statistics.
 Some improvements are considered here, addressing criticisms of historical baseline data sources, temporal periods, bar plot baseline thresholds, color usage, and uncertainty among climate models.
 
 ##
@@ -733,7 +733,7 @@ In additional to a critical look at the original version, critical evaluations o
 New communities are intended to be added to the application, but for which data only exist at a much coarser resolution compared to the originally included communities.
 This mixture of disparate data sources must be clearly noted in the application of course.
 
-However, this is not enough. To stop here is amateurish and not justifiable.
+However, this is not enough. Stopping here is not justified.
 At a bare minimum, it is crucial that the effect of spatial scale on climate data in this context be investigated.
 It is possible that climate estimates differ enough between scales such that allowing some communities to use data exclusively at one scale and others at the alternative scale ought to be prohibited from the application entirely.
 
@@ -756,7 +756,7 @@ Most notably, older downscaled climate model outputs can be swapped out for more
 A new version also presents an opportunity to update the communities data set.
 This means not only including new communities (not ignoring the necessary investigation noted above),
 but more importantly a chance to clean up and refactor the original set of communities.
-These currently represent a very messy data set, including communities with several duplicate listing (which actually show up in the original application) and "communities" with populations of size zero.
+These currently represent a very messy data set, including communities with several duplicate listings (which actually show up in the original application) and "communities" with populations of size zero.
 Some of these are essentially campsites and only serve to clutter the application and elongate the community selection menu. More is not necessarily better, especially if it presents poorly.
 
 ##
