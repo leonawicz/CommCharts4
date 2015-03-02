@@ -11,13 +11,13 @@
 
 There are many ways to display data. Some place more emphasis on visualizing averages, trends, proportional changes, etc.
 The purpose of including error bars in the Community Charts graphs is to provide a sense of uncertainty.
-The error bars in this application will only every provide view of one of several sources of uncertainty in future climate projections,
-specifically variability of an estimator used to measure the average of a handful of climate models across a period of ten years.
+The error bars in this application will only every provide a view of one of several sources of uncertainty in future climate projections,
+specifically variability around an estimator used to measure the average of a handful of climate models across a period of ten years.
 
-Even when using the range of the models to inform the error bars, this is an underestimation of uncertainty, which is another argument against bothering with the standard deviation bars.
+Even when using the range of the models to inform the error bars, this is an underestimation of uncertainty, which is another argument against bothering with the substantially even narrower standard deviation bars.
 If you look back at the error bars in the original Community Charts example graph, they are suggestive of a level of precision regarding the future that begs criticism.
 An informed viewer will know to disregard them (so why have them?), if for no other reason that an awareness that the bars are not intended to portray a complete profile of uncertainty about the future.
-Most will interpret them as suggesting the colored bars are highly precise.
+Most will interpret them as suggesting the colored bars are highly precise with regarding predicting the future.
 
 ##
 #### Overlay error bars
@@ -54,12 +54,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad81ce42b91&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc3a0932e1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad81ce42b91&quot;,
+ &quot;dom&quot;: &quot;chart11cc3a0932e1&quot;,
 
 
 &quot;credits&quot;: {
@@ -691,9 +691,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad81ce42b91&quot;,
+&quot;id&quot;: &quot;chart11cc3a0932e1&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad81ce42b91&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3a0932e1&quot; 
 } 
 });
         });
@@ -702,7 +702,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad81ce42b91'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3a0932e1'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -728,12 +728,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad873f751e0&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc3e9a6ca4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad873f751e0&quot;,
+ &quot;dom&quot;: &quot;chart11cc3e9a6ca4&quot;,
 
 
 &quot;credits&quot;: {
@@ -1365,9 +1365,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad873f751e0&quot;,
+&quot;id&quot;: &quot;chart11cc3e9a6ca4&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad873f751e0&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3e9a6ca4&quot; 
 } 
 });
         });
@@ -1376,7 +1376,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad873f751e0'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3e9a6ca4'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1411,12 +1411,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad83e2d1b62&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc61cc3c6b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad83e2d1b62&quot;,
+ &quot;dom&quot;: &quot;chart11cc61cc3c6b&quot;,
 
 
 &quot;credits&quot;: {
@@ -1746,9 +1746,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad83e2d1b62&quot;,
+&quot;id&quot;: &quot;chart11cc61cc3c6b&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad83e2d1b62&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc61cc3c6b&quot; 
 } 
 });
         });
@@ -1757,7 +1757,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad83e2d1b62'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc61cc3c6b'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1783,12 +1783,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad887d511c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cceea488f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad887d511c&quot;,
+ &quot;dom&quot;: &quot;chart11cceea488f&quot;,
 
 
 &quot;credits&quot;: {
@@ -2118,9 +2118,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad887d511c&quot;,
+&quot;id&quot;: &quot;chart11cceea488f&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad887d511c&quot; 
+ &quot;renderTo&quot;: &quot;chart11cceea488f&quot; 
 } 
 });
         });
@@ -2129,7 +2129,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad887d511c'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cceea488f'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars
@@ -2165,12 +2165,12 @@ To give the user something to look at for mere visual orientation we have to fak
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad86bb84d54&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc3c712f47&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad86bb84d54&quot;,
+ &quot;dom&quot;: &quot;chart11cc3c712f47&quot;,
 
 
 &quot;credits&quot;: {
@@ -2500,9 +2500,9 @@ To give the user something to look at for mere visual orientation we have to fak
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad86bb84d54&quot;,
+&quot;id&quot;: &quot;chart11cc3c712f47&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad86bb84d54&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3c712f47&quot; 
 } 
 });
         });
@@ -2511,7 +2511,7 @@ To give the user something to look at for mere visual orientation we have to fak
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad86bb84d54'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3c712f47'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

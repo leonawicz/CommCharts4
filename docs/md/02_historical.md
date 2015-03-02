@@ -22,7 +22,8 @@ Because PRISM is a fixed 30-year mean, there is no accompanying statistic descri
 It is worth considering the merits and drawbacks of using a 30-year average to compare with a handful of 10-year averages.
 I think it is of little issue in these graphs,
 but this tends to speak more to the fact that displaying a historical baseline is not necessary for visualizing projected trends when those future trends are apparent already.
-The reason that comparing data of notably different temporal scales (as would be the case with spatial scales) is not a cause for concern in this context is because it is actually of little importance to the climate data in the graph either way.
+The reason that comparing data of notably different temporal scales is not a cause for concern in this context is because the historical baseline is not critical to establishing this trend in moedel outputs.
+There are bigger differences between the baseline and the future decades than temporal resolution, namely, the former is based on observational data and the latter on climate models.
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
 &lt;meta charset = &#039;utf-8&#039;&gt;
@@ -47,12 +48,12 @@ The reason that comparing data of notably different temporal scales (as would be
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad824e34f1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc40507ec5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad824e34f1&quot;,
+ &quot;dom&quot;: &quot;chart11cc40507ec5&quot;,
 
 
 &quot;credits&quot;: {
@@ -404,9 +405,9 @@ The reason that comparing data of notably different temporal scales (as would be
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad824e34f1&quot;,
+&quot;id&quot;: &quot;chart11cc40507ec5&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad824e34f1&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc40507ec5&quot; 
 } 
 });
         });
@@ -415,7 +416,7 @@ The reason that comparing data of notably different temporal scales (as would be
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad824e34f1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc40507ec5'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -431,6 +432,7 @@ First and foremost, CRU is not a climate model, nor is it a collection of five c
 There is no notion of variability across multiple runs or versions of CRU data here.
 Variation is limited to that across years whereas for the climate model outputs it is across years and models.
 On the other hand, variability is increased because the inter-annual variability across 30 years of data is more than that among 10 years of data.
+This last point is by no means necessarily true, but happens to be the case here.
 
 As the plot shows, this leads to error bars for CRU to be comparable to those shown for the decadal model outputs.
 This also hints at why data of different temporal scales should not be directly compared without careful consideration of which properties of the data are comparable and which are not.
@@ -460,12 +462,12 @@ It also assists in graphing the Community Charts slightly differently, as will b
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad84e142933&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc5d47dbf&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad84e142933&quot;,
+ &quot;dom&quot;: &quot;chart11cc5d47dbf&quot;,
 
 
 &quot;credits&quot;: {
@@ -1097,9 +1099,9 @@ It also assists in graphing the Community Charts slightly differently, as will b
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1ad84e142933&quot;,
+&quot;id&quot;: &quot;chart11cc5d47dbf&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad84e142933&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc5d47dbf&quot; 
 } 
 });
         });
@@ -1108,7 +1110,7 @@ It also assists in graphing the Community Charts slightly differently, as will b
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84e142933'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc5d47dbf'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

@@ -35,7 +35,8 @@ Because PRISM is a fixed 30-year mean, there is no accompanying statistic descri
 It is worth considering the merits and drawbacks of using a 30-year average to compare with a handful of 10-year averages.
 I think it is of little issue in these graphs,
 but this tends to speak more to the fact that displaying a historical baseline is not necessary for visualizing projected trends when those future trends are apparent already.
-The reason that comparing data of notably different temporal scales (as would be the case with spatial scales) is not a cause for concern in this context is because it is actually of little importance to the climate data in the graph either way.
+The reason that comparing data of notably different temporal scales is not a cause for concern in this context is because the historical baseline is not critical to establishing this trend in moedel outputs.
+There are bigger differences between the baseline and the future decades than temporal resolution, namely, the former is based on observational data and the latter on climate models.
 
 ```{r plot03a_prism}
 ```
@@ -53,6 +54,7 @@ First and foremost, CRU is not a climate model, nor is it a collection of five c
 There is no notion of variability across multiple runs or versions of CRU data here.
 Variation is limited to that across years whereas for the climate model outputs it is across years and models.
 On the other hand, variability is increased because the inter-annual variability across 30 years of data is more than that among 10 years of data.
+This last point is by no means necessarily true, but happens to be the case here.
 
 As the plot shows, this leads to error bars for CRU to be comparable to those shown for the decadal model outputs.
 This also hints at why data of different temporal scales should not be directly compared without careful consideration of which properties of the data are comparable and which are not.

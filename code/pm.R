@@ -75,12 +75,27 @@ files.Rmd <- list.files(pattern=".Rmd$", full=T)
 # @knitr save
 # write all yaml front-matter-specified outputs to Rmd directory for all Rmd files
 lapply(files.Rmd, render, output_format="all")
-#### MANUAL STEPS: Search and replace ####
-z1 <- "&quot;width&quot;:            800," # replace with ""
-z2 <- "&quot;height&quot;:            400," # replace with ""
-z3 <- "800px" # replace with "100%"
-z4 <- "400px" # replace with "500px"
+#### Search and replace ####
+# remove hardcoded rChart plot dimension settings
 # replace any instance of _DEGREE_SYMBOL_ with ° in md or html files #### symbol does not carry through directly when using rmarkdown::render
+swap <- function(i, filename, l){
+	filename <- filename[[i]]
+	x <- l[[i]]
+	x <- gsub("&quot;width&quot;:            800,", "", x)
+	x <- gsub("&quot;height&quot;:            400,", "", x)
+	x <- gsub("800px", "100%", x)
+	x <- gsub("400px", "500px", x)
+	x <- gsub("_DEGREE_SYMBOL_", "\u00b0", x)
+	z <- file(filename)
+	writeLines(x, z, useBytes=TRUE)
+	close(z)
+	return()
+}
+
+sub.files <- c(list.files(pattern="\\.md$", full=TRUE), list.files(pattern="\\.html$", full=TRUE))
+l <- lapply(sub.files, readLines)
+lapply(10, swap, filename=sub.files, l=l)
+
 insert_gatc(list.files(pattern=".html$"))
 moveDocs(path.docs=docs.path)
 

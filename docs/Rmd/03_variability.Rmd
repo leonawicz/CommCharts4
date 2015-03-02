@@ -24,13 +24,13 @@ read_chunk("../../code/cc4lite.R")
 
 There are many ways to display data. Some place more emphasis on visualizing averages, trends, proportional changes, etc.
 The purpose of including error bars in the Community Charts graphs is to provide a sense of uncertainty.
-The error bars in this application will only every provide view of one of several sources of uncertainty in future climate projections,
-specifically variability of an estimator used to measure the average of a handful of climate models across a period of ten years.
+The error bars in this application will only every provide a view of one of several sources of uncertainty in future climate projections,
+specifically variability around an estimator used to measure the average of a handful of climate models across a period of ten years.
 
-Even when using the range of the models to inform the error bars, this is an underestimation of uncertainty, which is another argument against bothering with the standard deviation bars.
+Even when using the range of the models to inform the error bars, this is an underestimation of uncertainty, which is another argument against bothering with the substantially even narrower standard deviation bars.
 If you look back at the error bars in the original Community Charts example graph, they are suggestive of a level of precision regarding the future that begs criticism.
 An informed viewer will know to disregard them (so why have them?), if for no other reason that an awareness that the bars are not intended to portray a complete profile of uncertainty about the future.
-Most will interpret them as suggesting the colored bars are highly precise.
+Most will interpret them as suggesting the colored bars are highly precise with regarding predicting the future.
 
 ##
 #### Overlay error bars

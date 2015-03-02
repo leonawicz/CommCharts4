@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+<title></title>
+
+<script src="libs/jquery-1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+padding-top: 50px;
+padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar) */
+.section h2 {
+padding-top: 55px;
+margin-top: -55px;
+}
+.section h3 {
+padding-top: 55px;
+margin-top: -55px;
+}
+/* don't use link color in navbar */
+.dropdown-menu>li>a {
+color: black;
+}
+/* some padding for disqus */
+#disqus_thread {
+margin-top: 45px;
+}
+</style>
+<link rel="stylesheet" href="libs/font-awesome-4.1.0/css/font-awesome.min.css"/>
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46129458-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img { 
+  max-width:100%; 
+  height: auto; 
+}
+</style>
+<div class="container-fluid main-container">
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Community Charts</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Overview</a></li>
+
+          <li class="dropdown">
+            <a href="cc4-lite" class="dropdown-toggle" data-toggle="dropdown">CC4 Lite <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="01_measurement.html">Levels of measurement</a></li>
+              <li><a href="02_historical.html">Historical baseline</a></li>
+              <li><a href="03_variability.html">Displaying variability</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Spatial scale</li>
+              <li><a href="04_scale_temp.html">Temperature</a></li>
+              <li><a href="05_scale_precip.html">Precipitation</a></li>
+              <li class="divider"></li>
+              <li><a href="06_colors.html">Color palettes</a></li>
+              <li><a href="07_minutiae.html">Minutiae</a></li>
+            </ul>
+
+          <li><a href="agg_city_data.html">R Code</a></li>
+
+          <li><a href="http://leonawicz.github.io">All Projects</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <a class="btn btn-link" href="https://github.com/leonawicz/CommCharts4">
+            <i class="fa fa-github fa-lg"></i>
+            Github
+          </a>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+
+<div id="section" class="section level2">
+<h2></h2>
+</div>
+<div id="section-1" class="section level2">
+<h2></h2>
+<div id="minutiae" class="section level3">
+<h3>Minutiae</h3>
+<div id="improvements-to-ignore-until-all-else-is-completed" class="section level4">
+<h4>Improvements to ignore until all else is completed</h4>
+<p>Some things are much less important than data content, quality, and graphing practices, but still worth noting. I note them here for the record, albeit at risk of great peril, that others may not heed my recommendation to ignore these things and instead focus on this minutiae when there are bigger fish to fry.</p>
+<ul>
+<li><p>The interactive nature of the original application is limited. The user does not have the ability to manipulate the plot in some fundamental ways intrinsically provided by the <code>Highcharts</code> library. The javascript library was chosen in part because it generates interactive plots, but as far as interactive plots go, the original version is very stale.</p></li>
+<li><p>Overall, the version 1 application page looks cartoonish. It appears fanciful. First impression on visiting the page is it feels like playing with a toy. This is of course in part my opinion, but I say in part because there are generally agreed upon reasons and common perspectives which explain why there aren’t many similar web tools that have an appearance like Community Charts version 1.</p>
+<ul>
+<li><p>The font is excessively large. Sometimes we attempt to cater to audiences that largely do not exist for our content. Note that font size in a browser is easily controlled by the user. Many do not know this only because it is irrelevant to their concerns. Of the very few who do, they can generally handle it on their own. It seems laudable on the surface, but there is no need to fill a page with big text and big buttons and emphasis added where emphasis not needed.</p></li>
+<li><p>There is an overuse of italicized font. All the italicized font in the community selection menu and on the buttons should be set back to normal.</p></li>
+</ul></li>
+<li><p>The CSS could use significant improvement. Modals/popups are oddly formatted with multiple <code>close</code> buttons (yet an inability to close a window by clicking outside of it) and redundant titling. Again, the font is too large.</p></li>
+<li><p>The graph itself, based on the <code>Highcharts</code> library, cannot be expected to scale up or down on window resizing (at least not without custom programming) or scale itself for use on different devices. Nevertheless, there is no reason all the other content on the page should not consist of responsive elements which expand and collapse automatically.</p></li>
+<li><p>The behavior of the plot download popup is even more problematic than its oversized presentation. If you attempt to download a plot, it does not necessarily give you the plot that you request. Furthermore, unless the user is downloading to somewhere like to their Desktop and it is in view and they happen to notice the downloaded file has appeared on their computer, they may wonder what is taking so long. The popup never vanishes. The loading circle will spin indefinitely. I suppose that’s why this popup offers an <code>OK</code> (and an <code>x</code>) whereas others offer a <code>close</code> (and an <code>x</code>), right?</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2></h2>
+<p><img src="img/v1_dl_screen.png" height="500" width="900"></p>
+</div>
+<div id="section-3" class="section level2">
+<h2></h2>
+<p>The user must sit and watch this until they decide something has gone wrong and they elect to manually close the download popup window while their download appears to still be in progress, only then to realize that nothing went wrong and they’ve been waiting for however long for no reason. Highcharts actually provides its own plot exporting capabilities currently. It may be more sensible to just make use of that. It also offers more download options and less funny business.</p>
+<p>None of these things from version 1 are addressed in this documentation on <code>CC4 Lite</code> because they are lowest priority, having nothing to do with data, analysis, or graphing. They are simply noted for the record as worth improving when time permits. Also, these issues are not present in <strong>R</strong>-based <code>CC4 Lite</code>, or my versions 2 and 3 of Community Charts. They only exist to be contended with in the alternate universe that is the original application.</p>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+
+</body>
+</html>

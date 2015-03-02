@@ -39,12 +39,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad85c72447e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc2e264880&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad85c72447e&quot;,
+ &quot;dom&quot;: &quot;chart11cc2e264880&quot;,
 
 
 &quot;credits&quot;: {
@@ -374,9 +374,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad85c72447e&quot;,
+&quot;id&quot;: &quot;chart11cc2e264880&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad85c72447e&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc2e264880&quot; 
 } 
 });
         });
@@ -385,7 +385,7 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad85c72447e'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc2e264880'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -414,12 +414,12 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad84a0e1188&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11ccec4230c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad84a0e1188&quot;,
+ &quot;dom&quot;: &quot;chart11ccec4230c&quot;,
 
 
 &quot;credits&quot;: {
@@ -749,9 +749,9 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad84a0e1188&quot;,
+&quot;id&quot;: &quot;chart11ccec4230c&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad84a0e1188&quot; 
+ &quot;renderTo&quot;: &quot;chart11ccec4230c&quot; 
 } 
 });
         });
@@ -760,11 +760,14 @@ Due to the heteroskadasticity in the precipitation variable, the patterns of cha
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad84a0e1188'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11ccec4230c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
 A comparison of scales reveals that total monthly precipitation averaged across a 10-minute grid cell is substantially greater than that based on the 2-km PRISM climatology.
+This is not unreasonable. Compared to temperature, a precipitation signal is likely to drop off much more rapidly across space.
+Broad frontal storm systems may blanket a grid cell roughly uniformly, but precipitation can also have a more patchy spatial distribution.
+Particularly in the latter case, the average precipitation over a large grid cell cannot be representative of all the point locations within it.
 
 A quick comparison with a very wet community, Juneau, Alaska, will reveal the exact opposite.
 Precipitation is very high there at 2-km resolution, but relatively washed out (no pun intended) at 10-minute resolution.
@@ -797,12 +800,12 @@ This also affects the time of year when higher or lower inter-decadal variabilit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8c7e21b1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc3b061f70&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8c7e21b1&quot;,
+ &quot;dom&quot;: &quot;chart11cc3b061f70&quot;,
 
 
 &quot;credits&quot;: {
@@ -1132,9 +1135,9 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad8c7e21b1&quot;,
+&quot;id&quot;: &quot;chart11cc3b061f70&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad8c7e21b1&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3b061f70&quot; 
 } 
 });
         });
@@ -1143,7 +1146,7 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8c7e21b1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3b061f70'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1172,12 +1175,12 @@ This also affects the time of year when higher or lower inter-decadal variabilit
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1ad8495f68a1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart11cc3b0fa50&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1ad8495f68a1&quot;,
+ &quot;dom&quot;: &quot;chart11cc3b0fa50&quot;,
 
 
 &quot;credits&quot;: {
@@ -1507,9 +1510,9 @@ This also affects the time of year when higher or lower inter-decadal variabilit
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1ad8495f68a1&quot;,
+&quot;id&quot;: &quot;chart11cc3b0fa50&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1ad8495f68a1&quot; 
+ &quot;renderTo&quot;: &quot;chart11cc3b0fa50&quot; 
 } 
 });
         });
@@ -1518,13 +1521,13 @@ This also affects the time of year when higher or lower inter-decadal variabilit
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1ad8495f68a1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3b0fa50'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
-In summary, there are series issues of bias and pronounced heteroskadisticty between the 2-km and 10-minute resolution versions of these data.
-With the exception of a quick comparison with Juneau, the magnitude of changes seen across scales are evidenced just by looking at Fairbanks.
+In summary, there are serious issues of bias and pronounced heteroskadisticty between the 2-km and 10-minute resolution data.
+With the exception of a quick comparison with Juneau, the magnitude of changes seen across scales is evidenced just by looking at Fairbanks.
 There are thousands of communities in the Community Charts application, many of which will likely exhibit similar patterns as well as even more pronounced ones.
 Furthermore, the comparison with Juneau reveals an important difference showing that even what has been uncovered here cannot be safely extrapolated to all communities.
 
@@ -1532,13 +1535,13 @@ If it is made clear that these differences across spatial scale exist and that, 
 then it is not bad to offer both resolutions for graphing.
 However, it is not as though both resolutions would be offered.
 Of course, for those communities to be added which necessitated consideration of 10-minute resolution "community" data in the first place, both resolutions cannot be offered.
-Due to a combination of a push for adding communities to the application for which no high-resolution climate model outputs exist and a lack of due diligence in assessing the scientific merits of this,
+Due to a combination of a push for adding communities to the application for which no high-resolution climate model outputs exist and a lack of due diligence in assessing the scientific merits of using the suggested data,
 communities are slated for inclusion in the application despite the known issues.
 
 With what is shown here, a caveat next to a graph about this issue is simply not good enough.
 Under the current circumstances, the 10-minute resolution data have no defensible place in the Community Charts application.
-In fact, it can be argued that if use of the 10-minute resolution data is truly justifiable, that it is sufficiently spatially unbiased, and representative of community-level data,
-then the most appropriate path forward is to dispense with the 2-km data which has a more limited geographic range, ensuring consistency of comparable data across communities.
+In fact, if it can be legitimately argued (it cannot, but let's pretend for a moment) that use of the 10-minute resolution data is truly justifiable, that it is sufficiently spatially unbiased, and representative of community-level data,
+then the most appropriate path forward is to dispense with the 2-km data which has a more limited geographic range and clearly is not comparable to the 10-minute data, thus ensuring consistency of comparable data across all communities.
 
 The application could actually contain communities worldwide if using the 10-minute data. Why stop with the Northwest Territories?
 This is too easy a claim to make, however.
