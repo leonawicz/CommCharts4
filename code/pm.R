@@ -94,7 +94,7 @@ swap <- function(i, filename, l){
 
 sub.files <- c(list.files(pattern="\\.md$", full=TRUE), list.files(pattern="\\.html$", full=TRUE))
 l <- lapply(sub.files, readLines)
-lapply(10, swap, filename=sub.files, l=l)
+lapply(1:length(l), swap, filename=sub.files, l=l)
 
 insert_gatc(list.files(pattern=".html$"))
 moveDocs(path.docs=docs.path)
