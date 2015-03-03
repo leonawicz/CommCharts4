@@ -29,14 +29,15 @@ Plots using each historical baseline are shown below. Unless otherwise noted, er
 ##
 #### Historical baseline: PRISM
 
-The PRISM climatology is a fixed 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM.
+The PRISM climatology is a 30-year climatology. It is at 2-km spatial resolution, as are the downscaled climate model outputs because they are downscaled using PRISM.
 Because PRISM is a fixed 30-year mean, there is no accompanying statistic describing inter-annual variability, hence no error bars.
 
 It is worth considering the merits and drawbacks of using a 30-year average to compare with a handful of 10-year averages.
 I think it is of little issue in these graphs,
-but this tends to speak more to the fact that displaying a historical baseline is not necessary for visualizing projected trends when those future trends are apparent already.
-The reason that comparing data of notably different temporal scales is not a cause for concern in this context is because the historical baseline is not critical to establishing this trend in moedel outputs.
-There are bigger differences between the baseline and the future decades than temporal resolution, namely, the former is based on observational data and the latter on climate models.
+but this tends to speak more to the fact that displaying a historical baseline is not necessary for visualizing projected trends when those future trends are already apparent.
+The reason that comparing data of notably different temporal scales is not a cause for concern in this context is because the historical baseline is not critical to establishing this trend in modeled outputs.
+It is mainly present for reference and orientation.
+There are more important differences between the baseline and the future decades than temporal resolution, namely, the former is based on observational data and the latter on climate models.
 
 ```{r plot03a_prism}
 ```
@@ -46,22 +47,28 @@ There are bigger differences between the baseline and the future decades than te
 
 Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
 However, now error bars are available.
-The historical values are not known with precision, even using CRU, which is based on weather station observations, or PRISM for that matter, which is based on CRU.
-(Let's ignore the confusion regarding CRU being downscaled to PRISM which is based on CRU... it is not relevant here).
+The historical values are not known with precision, even using CRU, which is based on weather station observations, or when using PRISM for that matter.
 
 It is sensible to expect the error bars to be smaller for the historical data, but keep in mind that the error bars have different meanings.
 First and foremost, CRU is not a climate model, nor is it a collection of five climate models like those represented in the plot.
-There is no notion of variability across multiple runs or versions of CRU data here.
-Variation is limited to that across years whereas for the climate model outputs it is across years and models.
+There is no notion of variability across multiple runs or versions of CRU data here
+There easily could be.
+Different versions of CRU data, particularly with precipitation, can differ notably from one another in Arctic regions and regions without accurate, consistent weather station data records, like large swaths of Alaska,
+and these differences can be magnified by downscaling.
+This is not accounted for here since only one version of downscaled CRU data is used.
+
+Variation is essentially limited to that across years whereas for the climate model outputs it is across years and models.
 On the other hand, variability is increased because the inter-annual variability across 30 years of data is more than that among 10 years of data.
 This last point is by no means necessarily true, but happens to be the case here.
 
-As the plot shows, this leads to error bars for CRU to be comparable to those shown for the decadal model outputs.
-This also hints at why data of different temporal scales should not be directly compared without careful consideration of which properties of the data are comparable and which are not.
-In any case, this permits error bars for the historical baseline.
-It also assists in graphing the Community Charts slightly differently, as will be shown later, in a way that may be more interpretable and useful.
-
 ```{r plot03b_cru}
 ```
+
+As the plot shows, this leads to error bars for CRU which are comparable to those shown for the decadal model outputs.
+it is important to remember that the error bars are inherently different than those displayed over the model-based future decades.
+It is equally important to remember that this is no different than the inherent disparate nature of the CRU data set and climate models themselves.
+This also hints at why data of different temporal scales should not be directly compared without careful consideration of which properties of the data are comparable and which are not.
+In any case, this permits error bars for the historical baseline.
+As eluded to earlier and shown in the next section, it also assists in graphing the Community Charts slightly differently, in a way that may be more interpretable and useful.
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

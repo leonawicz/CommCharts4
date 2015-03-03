@@ -110,5 +110,5 @@ Fourth, new options available to the user for interacting with the graphs may be
 ##
 #### Community Charts as QAQC
 
-Although this is more true of version 3, version 4 of the Community Charts application is also a practical use case for extracted data which serves as an extension of SNAP data QAQC procedures.
+Although this is more true of version 3, version 4 of the Community Charts application is also a practical use case for extracted raster data which serves as an extension of SNAP data QAQC procedures.
 In fact, the **R** code used to extract data from some of SNAP's core spatially explicit data sets as a fundamental component of my ongoing SNAP data QAQC project provide the very data used by this application.
