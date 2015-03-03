@@ -39,12 +39,12 @@ Only the floating range bars are shown here.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1982e673d75&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1094aa12dcb&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1982e673d75&quot;,
+ &quot;dom&quot;: &quot;chart1094aa12dcb&quot;,
 
 
 &quot;credits&quot;: {
@@ -374,9 +374,9 @@ Only the floating range bars are shown here.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1982e673d75&quot;,
+&quot;id&quot;: &quot;chart1094aa12dcb&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1982e673d75&quot; 
+ &quot;renderTo&quot;: &quot;chart1094aa12dcb&quot; 
 } 
 });
         });
@@ -385,7 +385,7 @@ Only the floating range bars are shown here.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1982e673d75'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094aa12dcb'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -414,12 +414,12 @@ Only the floating range bars are shown here.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart198758c2060&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1094716446c6&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart198758c2060&quot;,
+ &quot;dom&quot;: &quot;chart1094716446c6&quot;,
 
 
 &quot;credits&quot;: {
@@ -749,9 +749,9 @@ Only the floating range bars are shown here.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart198758c2060&quot;,
+&quot;id&quot;: &quot;chart1094716446c6&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart198758c2060&quot; 
+ &quot;renderTo&quot;: &quot;chart1094716446c6&quot; 
 } 
 });
         });
@@ -760,7 +760,7 @@ Only the floating range bars are shown here.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198758c2060'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094716446c6'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Apparently, Fairbanks is not where the rain and snow are falling.
@@ -811,12 +811,12 @@ Scale aside, it can also be said more generally that these are intrinsically dif
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19850977903&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart10944f941f32&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19850977903&quot;,
+ &quot;dom&quot;: &quot;chart10944f941f32&quot;,
 
 
 &quot;credits&quot;: {
@@ -1146,9 +1146,9 @@ Scale aside, it can also be said more generally that these are intrinsically dif
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart19850977903&quot;,
+&quot;id&quot;: &quot;chart10944f941f32&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart19850977903&quot; 
+ &quot;renderTo&quot;: &quot;chart10944f941f32&quot; 
 } 
 });
         });
@@ -1157,7 +1157,7 @@ Scale aside, it can also be said more generally that these are intrinsically dif
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19850977903'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10944f941f32'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1186,12 +1186,12 @@ Scale aside, it can also be said more generally that these are intrinsically dif
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19843a92758&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1094222d5669&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19843a92758&quot;,
+ &quot;dom&quot;: &quot;chart1094222d5669&quot;,
 
 
 &quot;credits&quot;: {
@@ -1521,9 +1521,9 @@ Scale aside, it can also be said more generally that these are intrinsically dif
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart19843a92758&quot;,
+&quot;id&quot;: &quot;chart1094222d5669&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart19843a92758&quot; 
+ &quot;renderTo&quot;: &quot;chart1094222d5669&quot; 
 } 
 });
         });
@@ -1532,7 +1532,7 @@ Scale aside, it can also be said more generally that these are intrinsically dif
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19843a92758'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094222d5669'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

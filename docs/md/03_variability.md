@@ -55,12 +55,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19879c01832&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1094e322547&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19879c01832&quot;,
+ &quot;dom&quot;: &quot;chart1094e322547&quot;,
 
 
 &quot;credits&quot;: {
@@ -692,9 +692,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart19879c01832&quot;,
+&quot;id&quot;: &quot;chart1094e322547&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart19879c01832&quot; 
+ &quot;renderTo&quot;: &quot;chart1094e322547&quot; 
 } 
 });
         });
@@ -703,7 +703,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19879c01832'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094e322547'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -729,12 +729,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart198453d5bad&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart109432ce116&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart198453d5bad&quot;,
+ &quot;dom&quot;: &quot;chart109432ce116&quot;,
 
 
 &quot;credits&quot;: {
@@ -1366,9 +1366,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart198453d5bad&quot;,
+&quot;id&quot;: &quot;chart109432ce116&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart198453d5bad&quot; 
+ &quot;renderTo&quot;: &quot;chart109432ce116&quot; 
 } 
 });
         });
@@ -1377,7 +1377,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198453d5bad'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109432ce116'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1412,12 +1412,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart198341844d6&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart10946cc75b97&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart198341844d6&quot;,
+ &quot;dom&quot;: &quot;chart10946cc75b97&quot;,
 
 
 &quot;credits&quot;: {
@@ -1747,9 +1747,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart198341844d6&quot;,
+&quot;id&quot;: &quot;chart10946cc75b97&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart198341844d6&quot; 
+ &quot;renderTo&quot;: &quot;chart10946cc75b97&quot; 
 } 
 });
         });
@@ -1758,7 +1758,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198341844d6'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10946cc75b97'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1784,12 +1784,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1984cec284f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1094538940e9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1984cec284f&quot;,
+ &quot;dom&quot;: &quot;chart1094538940e9&quot;,
 
 
 &quot;credits&quot;: {
@@ -2119,9 +2119,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1984cec284f&quot;,
+&quot;id&quot;: &quot;chart1094538940e9&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1984cec284f&quot; 
+ &quot;renderTo&quot;: &quot;chart1094538940e9&quot; 
 } 
 });
         });
@@ -2130,7 +2130,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1984cec284f'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094538940e9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Referring back to the discussion of CRU 3.1 data and error bars,
@@ -2166,12 +2166,12 @@ It's basically still a point value, but I want it to be clearly visible.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19829bc4820&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart109473282803&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19829bc4820&quot;,
+ &quot;dom&quot;: &quot;chart109473282803&quot;,
 
 
 &quot;credits&quot;: {
@@ -2501,9 +2501,9 @@ It's basically still a point value, but I want it to be clearly visible.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart19829bc4820&quot;,
+&quot;id&quot;: &quot;chart109473282803&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart19829bc4820&quot; 
+ &quot;renderTo&quot;: &quot;chart109473282803&quot; 
 } 
 });
         });
@@ -2512,7 +2512,7 @@ It's basically still a point value, but I want it to be clearly visible.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19829bc4820'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109473282803'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

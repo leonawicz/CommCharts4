@@ -48,14 +48,14 @@ proj.files <- list(
 )
 
 # generate navigation bar html file common to all pages
-genNavbar(htmlfile=file.path(proj.location, proj.name, "docs/Rmd/include/navbar.html"), title=proj.title, menu=proj.menu, submenus=proj.submenu, files=proj.files, title.url="index.html", home.url="index.html", site.url=proj.github, include.home=FALSE)
+genNavbar(htmlfile=file.path(rmd.path, "include/navbar.html"), title=proj.title, menu=proj.menu, submenus=proj.submenu, files=proj.files, site.url=proj.github, include.home=FALSE)
 
 # generate _output.yaml file
 # Note that external libraries are expected, stored in the "libs" below
 yaml.out <- file.path(proj.location, proj.name, "docs/Rmd/_output.yaml")
 libs <- "libs"
 common.header <- "include/in_header.html"
-genOutyaml(file=yaml.out, lib=libs, header=common.header, before_body="include/navbar.html")
+genOutyaml(file=yaml.out, lib=libs, header=common.header, before_body="include/navbar.html", after_body="include/after_body.html")
 
 # @knitr knit_setup
 library(rmarkdown)

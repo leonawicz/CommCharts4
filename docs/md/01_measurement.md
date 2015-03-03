@@ -89,12 +89,12 @@ The two plots appear almost the same, and nothing like the original example show
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart198623a6dc0&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart10941adb2ef4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart198623a6dc0&quot;,
+ &quot;dom&quot;: &quot;chart10941adb2ef4&quot;,
 
 
 &quot;credits&quot;: {
@@ -726,9 +726,9 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart198623a6dc0&quot;,
+&quot;id&quot;: &quot;chart10941adb2ef4&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart198623a6dc0&quot; 
+ &quot;renderTo&quot;: &quot;chart10941adb2ef4&quot; 
 } 
 });
         });
@@ -737,7 +737,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198623a6dc0'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10941adb2ef4'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -766,12 +766,12 @@ null
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart198104f24a7&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart10946d0f7ca6&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart198104f24a7&quot;,
+ &quot;dom&quot;: &quot;chart10946d0f7ca6&quot;,
 
 
 &quot;credits&quot;: {
@@ -1403,9 +1403,9 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart198104f24a7&quot;,
+&quot;id&quot;: &quot;chart10946d0f7ca6&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart198104f24a7&quot; 
+ &quot;renderTo&quot;: &quot;chart10946d0f7ca6&quot; 
 } 
 });
         });
@@ -1414,7 +1414,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198104f24a7'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10946d0f7ca6'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1469,12 +1469,12 @@ a line one standard deviation in total length was centered on the mean.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart19822cc41db&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart109421853481&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart19822cc41db&quot;,
+ &quot;dom&quot;: &quot;chart109421853481&quot;,
 
 
 &quot;credits&quot;: {
@@ -1826,9 +1826,9 @@ a line one standard deviation in total length was centered on the mean.
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart19822cc41db&quot;,
+&quot;id&quot;: &quot;chart109421853481&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart19822cc41db&quot; 
+ &quot;renderTo&quot;: &quot;chart109421853481&quot; 
 } 
 });
         });
@@ -1837,7 +1837,7 @@ a line one standard deviation in total length was centered on the mean.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19822cc41db'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109421853481'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1869,12 +1869,12 @@ Error bars may be larger, requiring a greater range for the overall y-axis in th
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1982db6219&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart10942fe61221&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1982db6219&quot;,
+ &quot;dom&quot;: &quot;chart10942fe61221&quot;,
 
 
 &quot;credits&quot;: {
@@ -2506,9 +2506,9 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1982db6219&quot;,
+&quot;id&quot;: &quot;chart10942fe61221&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1982db6219&quot; 
+ &quot;renderTo&quot;: &quot;chart10942fe61221&quot; 
 } 
 });
         });
@@ -2517,7 +2517,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1982db6219'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10942fe61221'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -2550,12 +2550,12 @@ Here the full spread of the five individual models is depicted by the error bars
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1984f0b7c14&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart109453995ca7&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1984f0b7c14&quot;,
+ &quot;dom&quot;: &quot;chart109453995ca7&quot;,
 
 
 &quot;credits&quot;: {
@@ -3187,9 +3187,9 @@ null
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1984f0b7c14&quot;,
+&quot;id&quot;: &quot;chart109453995ca7&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1984f0b7c14&quot; 
+ &quot;renderTo&quot;: &quot;chart109453995ca7&quot; 
 } 
 });
         });
@@ -3198,7 +3198,7 @@ null
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1984f0b7c14'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109453995ca7'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
