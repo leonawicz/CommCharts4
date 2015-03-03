@@ -15,18 +15,19 @@ The error bars in this application will only every provide a view of one of seve
 specifically variability around an estimator used to measure the average of a handful of climate models across a period of ten years.
 
 Even when using the range of the models to inform the error bars, this is an underestimation of uncertainty, which is another argument against bothering with the substantially even narrower standard deviation bars.
-If you look back at the error bars in the original Community Charts example graph, they are suggestive of a level of precision regarding the future that begs criticism.
-An informed viewer will know to disregard them (so why have them?), if for no other reason that an awareness that the bars are not intended to portray a complete profile of uncertainty about the future.
+If you look back at the error bars in the original Community Charts example graph, they are suggestive of a level of precision regarding the future that begs criticism
+(and as mentioned in a previous side note, they may be flat out wrong).
+An informed viewer will know to disregard such narrow bars (so why have them?), if for no other reason that an awareness that the bars cannot possibly be intended to portray a complete profile of uncertainty about the future.
 Most will interpret them as suggesting the colored bars are highly precise with regarding predicting the future.
 
 ##
 #### Overlay error bars
 
-We have already seen one method for visualizing variability, which is to overlay error bars on top of the colored bars of the bar plot.
+We have already seen one method for visualizing variability, which is to overlay error bars on top of the primary bars of the bar plot.
 This is in keeping with what was done in the original version (questionable precision aside).
 The only difference considered so far was regarding what statistic to use as a measure of dispersion, the standard deviation or the range.
 Others could be considered, such as the inter-quartile range (IQR), but as mentioned previously,
-there are so few data points contributing to estimation of variability that some statistics just won't work well.
+there are so few data points contributing to estimation of variability that some statistics just won't work.
 
 To recap, and for comparison with subsequent plots, here are two plots with error bars using CRU 3.1 data.
 The first shows a range bar and the second shows +/- one standard deviation from the five-model average.
@@ -54,12 +55,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11ccbfc2fda&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19879c01832&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11ccbfc2fda&quot;,
+ &quot;dom&quot;: &quot;chart19879c01832&quot;,
 
 
 &quot;credits&quot;: {
@@ -691,9 +692,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11ccbfc2fda&quot;,
+&quot;id&quot;: &quot;chart19879c01832&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11ccbfc2fda&quot; 
+ &quot;renderTo&quot;: &quot;chart19879c01832&quot; 
 } 
 });
         });
@@ -702,7 +703,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11ccbfc2fda'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19879c01832'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -728,12 +729,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc780e6ece&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart198453d5bad&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc780e6ece&quot;,
+ &quot;dom&quot;: &quot;chart198453d5bad&quot;,
 
 
 &quot;credits&quot;: {
@@ -1365,9 +1366,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11cc780e6ece&quot;,
+&quot;id&quot;: &quot;chart198453d5bad&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc780e6ece&quot; 
+ &quot;renderTo&quot;: &quot;chart198453d5bad&quot; 
 } 
 });
         });
@@ -1376,13 +1377,13 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc780e6ece'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198453d5bad'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
 #### Floating bars
 
-However, the focus now is on plotting the data differently, in a way that will enhance the view of variability,
+The focus now is on plotting the data differently, in a way that will enhance the view of variability,
 while at the same time benefiting from complete removal of the bar baseline problem (for temperature).
 Whereas measures of spread or dispersion around a mean cannot be inferred from looking at a mean value (this is why we must add explicit error bars),
 measures of center can be inferred relatively easily from a plot of dispersion without having to add layers to the plot.
@@ -1411,12 +1412,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11ccb8713&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart198341844d6&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11ccb8713&quot;,
+ &quot;dom&quot;: &quot;chart198341844d6&quot;,
 
 
 &quot;credits&quot;: {
@@ -1746,9 +1747,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11ccb8713&quot;,
+&quot;id&quot;: &quot;chart198341844d6&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11ccb8713&quot; 
+ &quot;renderTo&quot;: &quot;chart198341844d6&quot; 
 } 
 });
         });
@@ -1757,7 +1758,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11ccb8713'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198341844d6'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1783,12 +1784,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc23f7593&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1984cec284f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc23f7593&quot;,
+ &quot;dom&quot;: &quot;chart1984cec284f&quot;,
 
 
 &quot;credits&quot;: {
@@ -2118,9 +2119,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc23f7593&quot;,
+&quot;id&quot;: &quot;chart1984cec284f&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc23f7593&quot; 
+ &quot;renderTo&quot;: &quot;chart1984cec284f&quot; 
 } 
 });
         });
@@ -2129,18 +2130,18 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc23f7593'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1984cec284f'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
-
-Additionally, adding a layer showing a point estimate like the mean to plots like those above creates less visual clutter that overlaying an interval estimate such as error bars
-on top of a possibly even longer colored bar that is supposed to represent a point estimate but is improperly drawn as an interval (for temperature).
-This essentially would be moving in the direction of a box plot minus several properties.
 
 Referring back to the discussion of CRU 3.1 data and error bars,
 it is clear how the ability to have error bars for the historical baseline period assists in this Community Charts plot.
 There is something to see. Without some measure of dispersion around the historical baseline average, the twelve spaces for historical bars in this plot would be blank.
+
 With PRISM data we do not have a measure of inter-annual variability or any other measure of uncertainty.
-To give the user something to look at for mere visual orientation we have to fake an error bar to at least provide a little rectangle of sorts to remind them where the historical mean is located (and that it's not perfectly estimated).
+To give the user something to look at for mere visual orientation - which is after all the main goal of including the historical baseline despite it being based on an different data source -
+we have to fake an error bar to at least provide a little rectangle of sorts to remind them where the historical mean is located.
+I suppose this can also remind us that PRISM is not perfectly estimated either, even though the little rectangle means nothing.
+It's basically still a point value, but I want it to be clearly visible.
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
 &lt;meta charset = &#039;utf-8&#039;&gt;
@@ -2165,12 +2166,12 @@ To give the user something to look at for mere visual orientation we have to fak
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc32af2ec9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19829bc4820&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc32af2ec9&quot;,
+ &quot;dom&quot;: &quot;chart19829bc4820&quot;,
 
 
 &quot;credits&quot;: {
@@ -2500,9 +2501,9 @@ To give the user something to look at for mere visual orientation we have to fak
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc32af2ec9&quot;,
+&quot;id&quot;: &quot;chart19829bc4820&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc32af2ec9&quot; 
+ &quot;renderTo&quot;: &quot;chart19829bc4820&quot; 
 } 
 });
         });
@@ -2511,7 +2512,7 @@ To give the user something to look at for mere visual orientation we have to fak
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc32af2ec9'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19829bc4820'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

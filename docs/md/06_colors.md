@@ -9,21 +9,37 @@
 ##
 ### Color palettes
 
-For an increasing variable like decades, it is appropriate to apply an increasing or diverging color palette.
-This is not a requirement, however, and not always the best approach.
-First of all, in the plots previously shown, color differences between bars help primarily to visually separate the narrow bars grouped together by month than to identify the decade.
-Second, the decades shown are not evenly spaced.
+For an increasing variable like decades, it is appropriate to apply an increasing color palette.
+A diverging palette may also be acceptable, though sometimes this requires centering the palette on some special value depending on the data and how it is being viewed.
+Neither of these are fundamentally requiremed, however, and are not always the best approach.
+A qualitative palette may work well even for ordinal or numeric data if certain conditions are met.
+
+Let's consider the colors used in the Community Charts application.
+First of all, in the plots previously shown, color differences between bars help primarily to visually separate the narrow bars grouped together by month.
+Second, the decades shown are not evenly spaced in time.
 Third, the first bar has a color unrelated to the rest of the increasing palette in order to help separate historical data from projected climate model outputs and a 30-year period from decadal periods.
+This is a good choice. This is just to say that the increasing color palette doesn't have very many colors in it.
 
-Fourth, while temperature increases are apparent through time, a look at precipitation plots reveals that an increasing color palette has been applied to the levels of the decade variable regardless of whether precipitation increases through time.
-"Of course!" you might say. After all, the increasing palette applies to *decades*, not climate data, as I just mentioned.
+Fourth, while temperature increases are apparent through time,
+a look at precipitation plots reveals that an increasing color palette has been applied to the levels of the decade variable regardless of whether precipitation increases across decades.
+"Of course!" you might say. After all, I just got through saying that the increasing palette applies to *decades*, not climate data.
 Then why does the temperature plot range from yellow to red and the precipitation plot use blue hues?
-On this point alone it would be worth considering using the same colors for both plots. How about four more shades of gray? Shades of gray are more discernible to the human eye than similar shades of some other colors.
+On this point alone it would be worth considering using the same colors for both plots. How about four more shades of gray?
+Shades of gray are more discernible to the human eye than similar shades of some other colors.
 
-This choice of "heat" colors for temperature and "wet" colors for precipitation brings up the fifth point about these plots, which is that in general data should not be redundantly represented by multiple plot attributes.
+This choice of "heat" colors for temperature and "wet" colors for precipitation brings up the fifth point about these plots,
+which is that in general data should not be redundantly represented by multiple plot attributes.
 It gets people asking too many questions, the frustrating kind, frustrating because the questions could have been avoided by making a less ambiguous or confusing plot.
 
-In these plots, 30-year historical and decadal bars are ordered sequentially and there are very few of them per month to concern ourselves with.
+In this case, temperature is represented by height, a position along the y-axis, labeled with temperature values, and similarly with precipitation.
+They should not also be differentiated by color palette.
+Even though this is across plots rather than within plots, the two are often taken together.
+If the temperature plot was nothing but orange and the precipitation plot nothing but blue, this would be a fair distinction between plots.
+In such a case, color would truly pertain to climate variable.
+Use of the two *gradients* for decades in conjunction with colors suggestive of each respective climate variable, however, is not best practice and potentially confusing.
+Colors undeniably are intended to represent decades, as the legend in each plot shows, but here we are trying to use that color to represent two different things, one of which is already represented by height.
+
+Lastly, in these plots 30-year historical and decadal bars are ordered sequentially and there are very few of them per month to concern ourselves with.
 Nevertheless, since they are not explicitly labeled, a color key of some kind is still necessary.
 However, not only ought they not be colors which could be confused with temperature or precipitation values, but considering there are only four colors in the increasing palette anyhow,
 which refer to unequally spaced decades no less, it would not be the end of the world to offer a qualitative color palette option.
@@ -60,12 +76,12 @@ Here are a couple examples using qualitative colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc46f15871&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19839e35f66&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc46f15871&quot;,
+ &quot;dom&quot;: &quot;chart19839e35f66&quot;,
 
 
 &quot;credits&quot;: {
@@ -395,9 +411,9 @@ Here are a couple examples using qualitative colors.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc46f15871&quot;,
+&quot;id&quot;: &quot;chart19839e35f66&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc46f15871&quot; 
+ &quot;renderTo&quot;: &quot;chart19839e35f66&quot; 
 } 
 });
         });
@@ -406,7 +422,7 @@ Here are a couple examples using qualitative colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc46f15871'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19839e35f66'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -435,12 +451,12 @@ Here are a couple examples using qualitative colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc7ebf6894&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart19860cc635b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc7ebf6894&quot;,
+ &quot;dom&quot;: &quot;chart19860cc635b&quot;,
 
 
 &quot;credits&quot;: {
@@ -770,9 +786,9 @@ Here are a couple examples using qualitative colors.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc7ebf6894&quot;,
+&quot;id&quot;: &quot;chart19860cc635b&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc7ebf6894&quot; 
+ &quot;renderTo&quot;: &quot;chart19860cc635b&quot; 
 } 
 });
         });
@@ -781,7 +797,7 @@ Here are a couple examples using qualitative colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc7ebf6894'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart19860cc635b'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

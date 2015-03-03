@@ -40,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc55304dc9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart198391c2fbf&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc55304dc9&quot;,
+ &quot;dom&quot;: &quot;chart198391c2fbf&quot;,
 
 
 &quot;credits&quot;: {
@@ -677,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11cc55304dc9&quot;,
+&quot;id&quot;: &quot;chart198391c2fbf&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc55304dc9&quot; 
+ &quot;renderTo&quot;: &quot;chart198391c2fbf&quot; 
 } 
 });
         });
@@ -688,7 +688,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc55304dc9'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198391c2fbf'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -768,5 +768,5 @@ Fourth, new options available to the user for interacting with the graphs may be
 ##
 #### Community Charts as QAQC
 
-Although this is more true of version 3, version 4 of the Community Charts application is also a practical use case for extracted data which serves as an extension of SNAP data QAQC procedures.
+Although this is more true of version 3, version 4 of the Community Charts application is also a practical use case for extracted raster data which serves as an extension of SNAP data QAQC procedures.
 In fact, the **R** code used to extract data from some of SNAP's core spatially explicit data sets as a fundamental component of my ongoing SNAP data QAQC project provide the very data used by this application.

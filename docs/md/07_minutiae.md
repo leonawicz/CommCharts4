@@ -58,5 +58,5 @@ It also offers more download options and less funny business.
 
 None of these things from version 1 are addressed in this documentation on <code>CC4 Lite</code> because they are lowest priority, having nothing to do with data, analysis, or graphing.
 They are simply noted for the record as worth improving when time permits.
-Also, these issues are not present in **R**-based <code>CC4 Lite</code>, or my versions 2 and 3 of Community Charts.
+Also, these issues are not relevant to **R**-based <code>CC4 Lite</code>, or my versions 2 and 3 of Community Charts.
 They only exist to be contended with in the alternate universe that is the original application.

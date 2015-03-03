@@ -21,18 +21,29 @@ but considering a cell is only four square kilometers and the focus is on very b
 
 Nevertheless, some thought should be given to the accuracy of the coordinates.
 The communities data set from which community names, populations, and coordinates are pulled, is one I would consider to be of ill repute and quite unkempt as previously mentioned.
-A glance at populations for many communities makes it immediately clear that the numbers in the data set are imprecise if not also inaccruate.
 
-This leaves an open question regarding the accuracy and precision of spatial coordinates.
+A glance at populations for many communities makes it immediately clear that the numbers in the data set are imprecise if not also inaccurate.
+It is technically sensible to be skeptical of the accurateness of a population like 100,763, as populations have constant turnover.
+We don't care about that level of accuracy in that particular context.
+On the other hand, it makes a lot of sense to be skeptical of a city population of exactly 100,000.
+This generates concern regarding an unknown level of precision.
+And let's forget about how outdated these numbers may be.
+
+Population data is clearly not part of the Community Charts application, but it flows from the data set used to inform the application.
+Obviously one would not automatically expect spatial coordinates, or any other particular variable in a data set, to be of the same quality of measurement as any other variable.
+I do not expect locations to be way off, nor do I expect them to be out of date (but communities do "move around" if they are defined by a proxy variable which can move).
+
+Still, this leaves an open question regarding the accuracy and precision of spatial coordinates.
 Chiefly, if they are not to a high enough precision, they most assuredly will not be accurate.
 I don't know offhand how many decimal places are required in longitude and latitude to precisely reference a specific 2-km grid cell, but it's more than a few.
 
 Another potential weakness of the data is in terms of strict accuracy.
 This is based on my observation that there are apparent duplicate communities, same name, same province, and almost the same coordinates, but not quite the same.
 Sometimes a community occurs many times within the data set and it must be considered whether this represents a change over time in location of a city center or public administration unit.
+It is safe to assume the data set does not contain communities which are truly nomadic.
 
 With all that in mind, we proceed on the assumption that the spatial coordinates for each community are "good enough".
-Again, our interest is in broad scale climate trends, enough so that some uncertainty in the spatial dimension is a moot point.
+Again, our interest is in broad scale climate trends, enough so that some uncertainty in the spatial dimension based on the overall unkemptness of the communities data set is a moot point.
 
 Until now.
 
@@ -43,8 +54,8 @@ Would you directly compare a sample of annual average temperatures from one comm
 What about average July precipitation from a 2-km downscaled grid cell vs. that seen over a 10-minute grid cell?
 
 Although the communities in the Community Charts application range roughly from northwestern Alaska down through the western half of Canada,
-a quick calculation for a typical community situated at a typical latitude in the application shows that a 10-minute by 10-minute grid cell is somewhere on the order of 70 square kilometers.
-That's no community I've ever heard of.
+a quick calculation for a typical community situated at a typical latitude in the application shows that a 10-minute by 10-minute grid cell can be somewhere on the order of 70 square kilometers.
+That's not typically what people think of as a community.
 Compare that to four square kilometers for a 2-km by 2-km grid cell.
 
 It is not known in advance what kind of effect this will have on assessment of climate trends, in either temperature or precipitation, or whether any difference will be noteworthy.
@@ -53,6 +64,7 @@ Of course, this is not to say that I wouldn't be comfortable wagering on how thi
 
 In the absence of context it is difficult to imagine why this mixture of scales, one to be used for some communities, another to be used for the rest, would even be a consideration.
 It's not like the two scales are 1-km and 2-km, or 10-minute and 12-minute.
+So I will briefly expound upon that.
 The reason it is considered here is simply because there is interest giving the Community Charts application a nominal boost in the number of communities available.
 (How about we remove the duplicates and otherwise clean up the data set first?)
 Anyhow, inclusion of additional communities is sensible because they will be specifically from the Northwest Territories in Canada, which is currently not represented in the application.
@@ -96,12 +108,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc51572471&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1985aa579aa&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc51572471&quot;,
+ &quot;dom&quot;: &quot;chart1985aa579aa&quot;,
 
 
 &quot;credits&quot;: {
@@ -453,9 +465,9 @@ Error bars have been removed to help focus on mean values.
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11cc51572471&quot;,
+&quot;id&quot;: &quot;chart1985aa579aa&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc51572471&quot; 
+ &quot;renderTo&quot;: &quot;chart1985aa579aa&quot; 
 } 
 });
         });
@@ -464,7 +476,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc51572471'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1985aa579aa'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -493,12 +505,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc3427d0a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart198d9f279c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc3427d0a&quot;,
+ &quot;dom&quot;: &quot;chart198d9f279c&quot;,
 
 
 &quot;credits&quot;: {
@@ -850,9 +862,9 @@ Error bars have been removed to help focus on mean values.
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11cc3427d0a&quot;,
+&quot;id&quot;: &quot;chart198d9f279c&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc3427d0a&quot; 
+ &quot;renderTo&quot;: &quot;chart198d9f279c&quot; 
 } 
 });
         });
@@ -861,19 +873,24 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc3427d0a'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart198d9f279c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 During some months, mean monthly temperatures differ between resolutions by more than 10 degrees Celsius and 20 degrees Fahrenheit!
-And this despite that these are decadal averages of monthly averages of five-model averages!
+And this despite that these are decadal averages of monthly averages of five-model averages! Averages of averages of averages! Done exclaiming.
+
 Look at January 2010-2019.
 Use the decadal color key in each of the above two plots to deselect all but this decade to see the difference more easily.
 Comparing data while transcending this much of a spatial scale reveals seriously biased values between scales.
 In other months bias can go in the opposite direction.
 
-Now it is clear that at a 10-minute resolution, where a community falls inside a grid cell based on its coordinates can easily introduce bias if that grid cell is large.
-A larger grid cell has a higher chance of including area which would not downscale to values similar to the 2-km grid cell where the community actually resides.
-The average temperature signal over the 10-minute grid cell is not likely to be representative of any random 4-km square segment within it that is based on high resolution PRISM data.
+Where a community falls inside a grid cell based on its coordinates can easily introduce bias if that grid cell is large.
+Compared to 2-km resolution, the 10-minute resolution is large enough to yield enormous differences in temperature which has been averaged several times over.
+A larger grid cell has a higher chance of including area which would not downscale to values similar to the 2-km grid cell where the community most closely resides.
+The average temperature signal over the 10-minute grid cell is not likely to be representative of any random 4-km square section within it that is based on high resolution PRISM data.
+
+It is worth noting that another difference can be the use of CRU vs. PRISM climatologies for downscaling, which are different, even if related.
+But it is still the case that one of the biggest differences about the respective climatologies used for downscaling is their spatial scale.
 
 Next, the same data are plotted using floating range bars only.
 This makes it easier to focus on the variability at different scales.
@@ -904,12 +921,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc66ca2964&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1987d82677a&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc66ca2964&quot;,
+ &quot;dom&quot;: &quot;chart1987d82677a&quot;,
 
 
 &quot;credits&quot;: {
@@ -1239,9 +1256,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc66ca2964&quot;,
+&quot;id&quot;: &quot;chart1987d82677a&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc66ca2964&quot; 
+ &quot;renderTo&quot;: &quot;chart1987d82677a&quot; 
 } 
 });
         });
@@ -1250,7 +1267,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc66ca2964'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1987d82677a'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1279,12 +1296,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc6bd418c1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1981aa92d65&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc6bd418c1&quot;,
+ &quot;dom&quot;: &quot;chart1981aa92d65&quot;,
 
 
 &quot;credits&quot;: {
@@ -1614,9 +1631,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart11cc6bd418c1&quot;,
+&quot;id&quot;: &quot;chart1981aa92d65&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc6bd418c1&quot; 
+ &quot;renderTo&quot;: &quot;chart1981aa92d65&quot; 
 } 
 });
         });
@@ -1625,7 +1642,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc6bd418c1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1981aa92d65'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias.
@@ -1634,8 +1651,8 @@ here is essentially based on other variables which are constant between scales, 
 Changes in spatial variability with spatial resolution can only creep in here indirectly in terms of the effect of scale on the range of the five models during a ten-year period.
 Ultimately, there is no direct information content here regarding variability across space.
 At both resolutions a community is based on a single grid cell, however large that grid cell may be.
-Compared to precipitation, temperature tends to be positively autocorrelated in space at greater distances.
 
+It may not apply here, but is also worth noting that, compared to precipitation, temperature tends to be positively autocorrelated in space at greater distances.
 It is also important to note that the test case of Fairbanks, Alaska here represents a sample of size one.
 The same properties may behave differently in other geographic locations and must be checked as well.
 
@@ -1670,12 +1687,12 @@ This makes it clear how different the two temperature signals are from one anoth
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart11cc78c25025&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart1987b037423&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart11cc78c25025&quot;,
+ &quot;dom&quot;: &quot;chart1987b037423&quot;,
 
 
 &quot;credits&quot;: {
@@ -2027,9 +2044,9 @@ This makes it clear how different the two temperature signals are from one anoth
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart11cc78c25025&quot;,
+&quot;id&quot;: &quot;chart1987b037423&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart11cc78c25025&quot; 
+ &quot;renderTo&quot;: &quot;chart1987b037423&quot; 
 } 
 });
         });
@@ -2038,7 +2055,7 @@ This makes it clear how different the two temperature signals are from one anoth
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart11cc78c25025'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1987b037423'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
