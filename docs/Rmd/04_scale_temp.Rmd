@@ -67,7 +67,7 @@ Would you directly compare a sample of annual average temperatures from one comm
 What about average July precipitation from a 2-km downscaled grid cell vs. that seen over a 10-minute grid cell?
 
 Although the communities in the Community Charts application range roughly from northwestern Alaska down through the western half of Canada,
-a quick calculation for a typical community situated at a typical latitude in the application shows that a 10-minute by 10-minute grid cell can be somewhere on the order of 70 square kilometers.
+a quick calculation for a typical community situated at a typical latitude in the application shows that a 10-minute by 10-minute grid cell can range anywhere from 100 to 200 square kilometers.
 That's not typically what people think of as a community.
 Compare that to four square kilometers for a 2-km by 2-km grid cell.
 
