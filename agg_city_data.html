@@ -169,27 +169,30 @@ n.cores &lt;-<span class="st"> </span><span class="dv">32</span>
 
 domain &lt;-<span class="st"> &quot;akcan2km&quot;</span>
 <span class="co"># domain &lt;- &#39;world10min&#39;</span>
+
 decades.gcm &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2010</span>, <span class="dv">2040</span>, <span class="dv">2060</span>, <span class="dv">2090</span>)
 decades.cru &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1960</span>, <span class="dv">1970</span>, <span class="dv">1980</span>)
 files.gcm &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_GCM&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
     <span class="dt">full =</span> <span class="ot">TRUE</span>)
-files.cru &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_CRU&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
+files.cru31 &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_CRU31&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
+    <span class="dt">full =</span> <span class="ot">TRUE</span>)
+files.cru32 &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_CRU32&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
     <span class="dt">full =</span> <span class="ot">TRUE</span>)</code></pre>
 <p>The function used for loading and manipulating the data into curated form. The <code>%&gt;%</code> (pipe operator) is available from the <code>magrittr</code> package, which is loaded when <code>dplyr</code> is loaded.</p>
 <pre class="sourceCode r"><code class="sourceCode r">f &lt;-<span class="st"> </span>function(i, files, decades, phase) {
     <span class="kw">print</span>(<span class="kw">length</span>(files) -<span class="st"> </span>i)
     <span class="kw">load</span>(files[i], <span class="dt">envir =</span> <span class="kw">environment</span>())
-    if (phase ==<span class="st"> &quot;CRU 3.1&quot;</span>) 
-        city.dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">Phase =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">Scenario =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">Model =</span> <span class="st">&quot;CRU 3.1&quot;</span>, 
+    if (<span class="kw">substr</span>(phase, <span class="dv">1</span>, <span class="dv">3</span>) ==<span class="st"> &quot;CRU&quot;</span>) 
+        city.dat &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">Phase =</span> phase, <span class="dt">Scenario =</span> phase, <span class="dt">Model =</span> phase, 
             city.cru.dat)
     city.dat &lt;-<span class="st"> </span>city.dat %&gt;%<span class="st"> </span><span class="kw">filter</span>(Phase ==<span class="st"> </span>phase, Decade %in%<span class="st"> </span>decades) %&gt;%<span class="st"> </span>
 <span class="st">        </span><span class="kw">group_by</span>(Location, Scenario, Var, Month)
-    if (phase !=<span class="st"> &quot;CRU 3.1&quot;</span>) 
+    if (<span class="kw">substr</span>(phase, <span class="dv">1</span>, <span class="dv">3</span>) !=<span class="st"> &quot;CRU&quot;</span>) 
         city.dat &lt;-<span class="st"> </span><span class="kw">group_by</span>(city.dat, Decade, <span class="dt">add =</span> <span class="ot">TRUE</span>)
     city.dat &lt;-<span class="st"> </span>city.dat %&gt;%<span class="st"> </span><span class="kw">summarise</span>(<span class="dt">Min =</span> <span class="kw">min</span>(Val), <span class="dt">Mean =</span> <span class="kw">mean</span>(Val), <span class="dt">Max =</span> <span class="kw">max</span>(Val), 
         <span class="dt">SD =</span> <span class="kw">sd</span>(Val)) %&gt;%<span class="st"> </span><span class="kw">mutate</span>(<span class="dt">Mean =</span> <span class="kw">ifelse</span>(Var ==<span class="st"> &quot;Precipitation&quot;</span>, <span class="kw">round</span>(Mean), 
         <span class="kw">round</span>(Mean, <span class="dv">1</span>)), <span class="dt">SD =</span> <span class="kw">round</span>(SD, <span class="dv">1</span>)) %&gt;%<span class="st"> </span><span class="kw">as.data.frame</span>()
-    if (phase ==<span class="st"> &quot;CRU 3.1&quot;</span>) 
+    if (<span class="kw">substr</span>(phase, <span class="dv">1</span>, <span class="dv">3</span>) ==<span class="st"> &quot;CRU&quot;</span>) 
         city.dat$Decade &lt;-<span class="st"> </span><span class="kw">paste</span>(decades[<span class="dv">1</span>], <span class="kw">tail</span>(decades, <span class="dv">1</span>) +<span class="st"> </span><span class="dv">9</span>, <span class="dt">sep =</span> <span class="st">&quot;-&quot;</span>)
     city.dat &lt;-<span class="st"> </span><span class="kw">arrange</span>(city.dat, Location, Scenario, Var, Decade, Month)
     city.dat
@@ -204,35 +207,49 @@ d$Decade &lt;-<span class="st"> </span><span class="kw">paste</span>(d$Decade, <
 
 <span class="co"># identical(d1, d2) identical(d1, d3) identical(d1, d)</span>
 
-<span class="kw">system.time</span>(out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(files.cru), f, <span class="dt">files =</span> files.cru, <span class="dt">decades =</span> decades.cru, 
-    <span class="dt">phase =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">mc.cores =</span> n.cores))
-<span class="co"># system.time( d1 &lt;- do.call(rbind, out) ) system.time( d2 &lt;- ldply(out,</span>
-<span class="co"># data.frame) ) system.time( d3 &lt;- rbind.fill(out) )</span>
-<span class="kw">system.time</span>(d.cru &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(data.table::<span class="kw">rbindlist</span>(out)))
-d.cru &lt;-<span class="st"> </span>d.cru[, <span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">5</span>:<span class="dv">8</span>)]</code></pre>
+out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(files.cru31), f, <span class="dt">files =</span> files.cru31, <span class="dt">decades =</span> decades.cru, 
+    <span class="dt">phase =</span> <span class="st">&quot;CRU 3.1&quot;</span>, <span class="dt">mc.cores =</span> n.cores)
+d.cru31 &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(data.table::<span class="kw">rbindlist</span>(out))
+d.cru31 &lt;-<span class="st"> </span>d.cru31[, <span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">5</span>:<span class="dv">8</span>)]
+
+out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="dv">1</span>:<span class="kw">length</span>(files.cru32), f, <span class="dt">files =</span> files.cru32, <span class="dt">decades =</span> decades.cru, 
+    <span class="dt">phase =</span> <span class="st">&quot;CRU 3.2&quot;</span>, <span class="dt">mc.cores =</span> n.cores)
+d.cru32 &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(data.table::<span class="kw">rbindlist</span>(out))
+d.cru32 &lt;-<span class="st"> </span>d.cru32[, <span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">5</span>:<span class="dv">8</span>)]</code></pre>
 <p>A variety of useful <strong>R</strong> workspace files are saved. Some prior workspaces are also loaded at specific stages below to be added to the current workspace before it is saved again.</p>
 <pre class="sourceCode r"><code class="sourceCode r">locs &lt;-<span class="st"> </span><span class="kw">unique</span>(d$Location)
 file.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_akcan2km.RData&quot;</span>
 file.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_world10min.RData&quot;</span>
-file.cru.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_akcan2km.RData&quot;</span>
-file.cru.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_world10min.RData&quot;</span>
+file.cru31.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_akcan2km.RData&quot;</span>
+file.cru31.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_world10min.RData&quot;</span>
+file.cru32.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru32_akcan2km.RData&quot;</span>
+file.cru32.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru32_world10min.RData&quot;</span>
 if (domain ==<span class="st"> &quot;akcan2km&quot;</span>) {
     d.2km &lt;-<span class="st"> </span>d
-    d.cru.2km &lt;-<span class="st"> </span>d.cru
     <span class="kw">save</span>(d.2km, locs, <span class="dt">file =</span> file.2km)
-    <span class="kw">save</span>(d.2km, d.cru.2km, locs, <span class="dt">file =</span> file.cru.2km)
+    d.cru31.2km &lt;-<span class="st"> </span>d.cru31
+    <span class="kw">save</span>(d.2km, d.cru31.2km, locs, <span class="dt">file =</span> file.cru31.2km)
+    d.cru32.2km &lt;-<span class="st"> </span>d.cru32
+    <span class="kw">save</span>(d.2km, d.cru32.2km, locs, <span class="dt">file =</span> file.cru32.2km)
 } else if (domain ==<span class="st"> &quot;world10min&quot;</span>) {
     d.10min &lt;-<span class="st"> </span>d
-    d.cru.10min &lt;-<span class="st"> </span>d.cru
     <span class="kw">save</span>(d.10min, locs, <span class="dt">file =</span> file.10min)
-    <span class="kw">save</span>(d.10min, d.cru.10min, locs, <span class="dt">file =</span> file.cru.10min)
+    d.cru31.10min &lt;-<span class="st"> </span>d.cru31
+    <span class="kw">save</span>(d.10min, d.cru31.10min, locs, <span class="dt">file =</span> file.cru31.10min)
+    d.cru32.10min &lt;-<span class="st"> </span>d.cru32
+    <span class="kw">save</span>(d.10min, d.cru32.10min, locs, <span class="dt">file =</span> file.cru32.10min)
 }
 
-if (<span class="kw">all</span>(<span class="kw">file.exists</span>(file.cru.2km, file.cru.10min))) {
-    <span class="kw">load</span>(file.cru.2km)
-    <span class="kw">load</span>(file.cru.10min)
+if (<span class="kw">all</span>(<span class="kw">file.exists</span>(file.cru31.2km, file.cru31.10min, file.cru32.2km, file.cru32.10min))) {
+    <span class="kw">load</span>(file.cru31.2km)
+    <span class="kw">load</span>(file.cru31.10min)
+    <span class="kw">load</span>(file.cru32.2km)
+    <span class="kw">load</span>(file.cru32.10min)
     <span class="kw">save</span>(d.2km, d.10min, locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_2km10min.RData&quot;</span>)
-    <span class="kw">save</span>(d.2km, d.10min, d.cru.2km, d.cru.10min, locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_cru31_2km10min.RData&quot;</span>)
+    <span class="kw">save</span>(d.2km, d.10min, d.cru31.2km, d.cru31.10min, locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_cru31_2km10min.RData&quot;</span>)
+    <span class="kw">save</span>(d.2km, d.10min, d.cru32.2km, d.cru32.10min, locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_cru32_2km10min.RData&quot;</span>)
+    <span class="kw">save</span>(d.2km, d.10min, d.cru31.2km, d.cru31.10min, d.cru32.2km, d.cru32.10min, 
+        locs, <span class="dt">file =</span> <span class="st">&quot;cc4lite/cc4lite_cru3132_2km10min.RData&quot;</span>)
 }</code></pre>
 </div>
 </div>
