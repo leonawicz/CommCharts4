@@ -55,12 +55,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1094e322547&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7436f1104d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1094e322547&quot;,
+ &quot;dom&quot;: &quot;charta7436f1104d&quot;,
 
 
 &quot;credits&quot;: {
@@ -91,51 +91,51 @@ The first shows a range bar and the second shows +/- one standard deviation from
  &quot;data&quot;: [
  [
  &quot;Jan&quot;,
-         -22.3 
+         -22.5 
 ],
 [
  &quot;Feb&quot;,
-           -20 
+         -18.7 
 ],
 [
  &quot;Mar&quot;,
-         -11.3 
+         -11.8 
 ],
 [
  &quot;Apr&quot;,
-          -0.6 
+          -1.1 
 ],
 [
  &quot;May&quot;,
-           9.5 
+           9.1 
 ],
 [
  &quot;Jun&quot;,
-          15.7 
+          15.1 
 ],
 [
  &quot;Jul&quot;,
-          17.2 
+          16.4 
 ],
 [
  &quot;Aug&quot;,
-          14.2 
+          13.6 
 ],
 [
  &quot;Sep&quot;,
-           7.9 
+           7.1 
 ],
 [
  &quot;Oct&quot;,
-            -4 
+          -3.4 
 ],
 [
  &quot;Nov&quot;,
-         -15.5 
+         -14.9 
 ],
 [
  &quot;Dec&quot;,
-         -21.5 
+         -21.3 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -380,52 +380,52 @@ The first shows a range bar and the second shows +/- one standard deviation from
 {
  &quot;data&quot;: [
  [
-          -34.3,
-          -6.9 
+          -31.9,
+           -10 
 ],
 [
-          -32.4,
-          -9.8 
+          -30.4,
+         -12.2 
 ],
 [
-          -18.6,
-          -2.2 
+          -18.7,
+          -3.5 
 ],
 [
-           -5.9,
-           3.2 
+           -6.4,
+           2.6 
 ],
 [
-            4.1,
-          12.1 
+            4.9,
+          11.7 
 ],
 [
-           12.4,
-          18.6 
+           12.1,
+          17.9 
 ],
 [
-             14,
-          20.3 
+           14.1,
+          18.9 
 ],
 [
-           10.4,
-          17.5 
+             10,
+          16.8 
 ],
 [
-              5,
-          11.3 
+            4.2,
+          10.1 
 ],
 [
-          -10.1,
-             1 
+           -7.8,
+           1.2 
 ],
 [
-          -22.8,
-          -5.9 
+          -20.5,
+          -6.6 
 ],
 [
-          -32.7,
-         -13.7 
+            -30,
+         -13.8 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -667,7 +667,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
 } 
 ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -692,9 +692,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart1094e322547&quot;,
+&quot;id&quot;: &quot;charta7436f1104d&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1094e322547&quot; 
+ &quot;renderTo&quot;: &quot;charta7436f1104d&quot; 
 } 
 });
         });
@@ -703,7 +703,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094e322547'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7436f1104d'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -729,12 +729,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart109432ce116&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7475861991&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart109432ce116&quot;,
+ &quot;dom&quot;: &quot;charta7475861991&quot;,
 
 
 &quot;credits&quot;: {
@@ -765,51 +765,51 @@ The first shows a range bar and the second shows +/- one standard deviation from
  &quot;data&quot;: [
  [
  &quot;Jan&quot;,
-         -22.3 
+         -22.5 
 ],
 [
  &quot;Feb&quot;,
-           -20 
+         -18.7 
 ],
 [
  &quot;Mar&quot;,
-         -11.3 
+         -11.8 
 ],
 [
  &quot;Apr&quot;,
-          -0.6 
+          -1.1 
 ],
 [
  &quot;May&quot;,
-           9.5 
+           9.1 
 ],
 [
  &quot;Jun&quot;,
-          15.7 
+          15.1 
 ],
 [
  &quot;Jul&quot;,
-          17.2 
+          16.4 
 ],
 [
  &quot;Aug&quot;,
-          14.2 
+          13.6 
 ],
 [
  &quot;Sep&quot;,
-           7.9 
+           7.1 
 ],
 [
  &quot;Oct&quot;,
-            -4 
+          -3.4 
 ],
 [
  &quot;Nov&quot;,
-         -15.5 
+         -14.9 
 ],
 [
  &quot;Dec&quot;,
-         -21.5 
+         -21.3 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -1054,52 +1054,52 @@ The first shows a range bar and the second shows +/- one standard deviation from
 {
  &quot;data&quot;: [
  [
-          -28.6,
-           -16 
+          -28.2,
+         -16.8 
 ],
 [
-            -25,
-           -15 
+          -23.4,
+           -14 
 ],
 [
-          -15.5,
-          -7.1 
+          -15.7,
+          -7.9 
 ],
 [
-           -3.2,
-             2 
+           -3.6,
+           1.4 
 ],
 [
-            7.8,
-          11.2 
+            7.5,
+          10.7 
 ],
 [
-           14.2,
-          17.2 
+           13.6,
+          16.6 
 ],
 [
-           15.9,
-          18.5 
+           15.2,
+          17.6 
 ],
 [
-           12.7,
-          15.7 
+           12.1,
+          15.1 
 ],
 [
-            6.3,
-           9.5 
+            5.5,
+           8.7 
 ],
 [
-           -6.7,
-          -1.3 
+           -5.9,
+          -0.9 
 ],
 [
-          -19.5,
-         -11.5 
+          -18.5,
+         -11.3 
 ],
 [
-          -26.9,
-         -16.1 
+          -26.3,
+         -16.3 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -1341,7 +1341,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
 } 
 ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1366,9 +1366,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart109432ce116&quot;,
+&quot;id&quot;: &quot;charta7475861991&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart109432ce116&quot; 
+ &quot;renderTo&quot;: &quot;charta7475861991&quot; 
 } 
 });
         });
@@ -1377,7 +1377,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109432ce116'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7475861991'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1412,12 +1412,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart10946cc75b97&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7453986c3d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart10946cc75b97&quot;,
+ &quot;dom&quot;: &quot;charta7453986c3d&quot;,
 
 
 &quot;credits&quot;: {
@@ -1445,7 +1445,7 @@ Here are plots of the same data corresponding to the two plots above.
 ],
 &quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1479,52 +1479,52 @@ Here are plots of the same data corresponding to the two plots above.
  {
  &quot;data&quot;: [
  [
-          -34.3,
-          -6.9 
+          -31.9,
+           -10 
 ],
 [
-          -32.4,
-          -9.8 
+          -30.4,
+         -12.2 
 ],
 [
-          -18.6,
-          -2.2 
+          -18.7,
+          -3.5 
 ],
 [
-           -5.9,
-           3.2 
+           -6.4,
+           2.6 
 ],
 [
-            4.1,
-          12.1 
+            4.9,
+          11.7 
 ],
 [
-           12.4,
-          18.6 
+           12.1,
+          17.9 
 ],
 [
-             14,
-          20.3 
+           14.1,
+          18.9 
 ],
 [
-           10.4,
-          17.5 
+             10,
+          16.8 
 ],
 [
-              5,
-          11.3 
+            4.2,
+          10.1 
 ],
 [
-          -10.1,
-             1 
+           -7.8,
+           1.2 
 ],
 [
-          -22.8,
-          -5.9 
+          -20.5,
+          -6.6 
 ],
 [
-          -32.7,
-         -13.7 
+            -30,
+         -13.8 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -1747,9 +1747,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart10946cc75b97&quot;,
+&quot;id&quot;: &quot;charta7453986c3d&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart10946cc75b97&quot; 
+ &quot;renderTo&quot;: &quot;charta7453986c3d&quot; 
 } 
 });
         });
@@ -1758,7 +1758,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10946cc75b97'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7453986c3d'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1784,12 +1784,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart1094538940e9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7478066bc5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart1094538940e9&quot;,
+ &quot;dom&quot;: &quot;charta7478066bc5&quot;,
 
 
 &quot;credits&quot;: {
@@ -1817,7 +1817,7 @@ Here are plots of the same data corresponding to the two plots above.
 ],
 &quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FFD700&quot;, &quot;#FFA500&quot;, &quot;#FF4500&quot;, &quot;#8B0000&quot; ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1851,52 +1851,52 @@ Here are plots of the same data corresponding to the two plots above.
  {
  &quot;data&quot;: [
  [
-          -28.6,
-           -16 
+          -28.2,
+         -16.8 
 ],
 [
-            -25,
-           -15 
+          -23.4,
+           -14 
 ],
 [
-          -15.5,
-          -7.1 
+          -15.7,
+          -7.9 
 ],
 [
-           -3.2,
-             2 
+           -3.6,
+           1.4 
 ],
 [
-            7.8,
-          11.2 
+            7.5,
+          10.7 
 ],
 [
-           14.2,
-          17.2 
+           13.6,
+          16.6 
 ],
 [
-           15.9,
-          18.5 
+           15.2,
+          17.6 
 ],
 [
-           12.7,
-          15.7 
+           12.1,
+          15.1 
 ],
 [
-            6.3,
-           9.5 
+            5.5,
+           8.7 
 ],
 [
-           -6.7,
-          -1.3 
+           -5.9,
+          -0.9 
 ],
 [
-          -19.5,
-         -11.5 
+          -18.5,
+         -11.3 
 ],
 [
-          -26.9,
-         -16.1 
+          -26.3,
+         -16.3 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -2119,9 +2119,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart1094538940e9&quot;,
+&quot;id&quot;: &quot;charta7478066bc5&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart1094538940e9&quot; 
+ &quot;renderTo&quot;: &quot;charta7478066bc5&quot; 
 } 
 });
         });
@@ -2130,7 +2130,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart1094538940e9'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7478066bc5'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Referring back to the discussion of CRU 3.1 data and error bars,
@@ -2166,12 +2166,12 @@ It's basically still a point value, but I want it to be clearly visible.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart109473282803&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta74302a6c78&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart109473282803&quot;,
+ &quot;dom&quot;: &quot;charta74302a6c78&quot;,
 
 
 &quot;credits&quot;: {
@@ -2233,16 +2233,16 @@ It's basically still a point value, but I want it to be clearly visible.
  {
  &quot;data&quot;: [
  [
-         -23.25,
-        -21.75 
+         -23.35,
+        -21.85 
 ],
 [
          -19.75,
         -18.25 
 ],
 [
-         -12.15,
-        -10.65 
+         -12.25,
+        -10.75 
 ],
 [
           -1.65,
@@ -2253,8 +2253,8 @@ It's basically still a point value, but I want it to be clearly visible.
           9.85 
 ],
 [
-          14.35,
-         15.85 
+          14.45,
+         15.95 
 ],
 [
           15.75,
@@ -2269,16 +2269,16 @@ It's basically still a point value, but I want it to be clearly visible.
           7.95 
 ],
 [
-          -4.35,
-         -2.85 
+          -4.25,
+         -2.75 
 ],
 [
          -15.85,
         -14.35 
 ],
 [
-         -22.25,
-        -20.75 
+         -22.45,
+        -20.95 
 ] 
 ],
 &quot;name&quot;: &quot;1961-1990&quot;,
@@ -2501,9 +2501,9 @@ It's basically still a point value, but I want it to be clearly visible.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart109473282803&quot;,
+&quot;id&quot;: &quot;charta74302a6c78&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart109473282803&quot; 
+ &quot;renderTo&quot;: &quot;charta74302a6c78&quot; 
 } 
 });
         });
@@ -2512,7 +2512,7 @@ It's basically still a point value, but I want it to be clearly visible.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109473282803'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74302a6c78'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

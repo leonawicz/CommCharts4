@@ -49,12 +49,12 @@ There are more important differences between the baseline and the future decades
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart109470c951fa&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7446b014d5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart109470c951fa&quot;,
+ &quot;dom&quot;: &quot;charta7446b014d5&quot;,
 
 
 &quot;credits&quot;: {
@@ -85,7 +85,7 @@ There are more important differences between the baseline and the future decades
  &quot;data&quot;: [
  [
  &quot;Jan&quot;,
-         -22.5 
+         -22.6 
 ],
 [
  &quot;Feb&quot;,
@@ -93,7 +93,7 @@ There are more important differences between the baseline and the future decades
 ],
 [
  &quot;Mar&quot;,
-         -11.4 
+         -11.5 
 ],
 [
  &quot;Apr&quot;,
@@ -105,7 +105,7 @@ There are more important differences between the baseline and the future decades
 ],
 [
  &quot;Jun&quot;,
-          15.1 
+          15.2 
 ],
 [
  &quot;Jul&quot;,
@@ -121,7 +121,7 @@ There are more important differences between the baseline and the future decades
 ],
 [
  &quot;Oct&quot;,
-          -3.6 
+          -3.5 
 ],
 [
  &quot;Nov&quot;,
@@ -129,7 +129,7 @@ There are more important differences between the baseline and the future decades
 ],
 [
  &quot;Dec&quot;,
-         -21.5 
+         -21.7 
 ] 
 ],
 &quot;name&quot;: &quot;1961-1990&quot;,
@@ -406,9 +406,9 @@ There are more important differences between the baseline and the future decades
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart109470c951fa&quot;,
+&quot;id&quot;: &quot;charta7446b014d5&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart109470c951fa&quot; 
+ &quot;renderTo&quot;: &quot;charta7446b014d5&quot; 
 } 
 });
         });
@@ -417,7 +417,7 @@ There are more important differences between the baseline and the future decades
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart109470c951fa'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7446b014d5'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -462,12 +462,12 @@ This last point is by no means necessarily true, but happens to be the case here
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart10941dba4e75&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta74484e7fc9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart10941dba4e75&quot;,
+ &quot;dom&quot;: &quot;charta74484e7fc9&quot;,
 
 
 &quot;credits&quot;: {
@@ -498,51 +498,51 @@ This last point is by no means necessarily true, but happens to be the case here
  &quot;data&quot;: [
  [
  &quot;Jan&quot;,
-         -22.3 
+         -22.5 
 ],
 [
  &quot;Feb&quot;,
-           -20 
+         -18.7 
 ],
 [
  &quot;Mar&quot;,
-         -11.3 
+         -11.8 
 ],
 [
  &quot;Apr&quot;,
-          -0.6 
+          -1.1 
 ],
 [
  &quot;May&quot;,
-           9.5 
+           9.1 
 ],
 [
  &quot;Jun&quot;,
-          15.7 
+          15.1 
 ],
 [
  &quot;Jul&quot;,
-          17.2 
+          16.4 
 ],
 [
  &quot;Aug&quot;,
-          14.2 
+          13.6 
 ],
 [
  &quot;Sep&quot;,
-           7.9 
+           7.1 
 ],
 [
  &quot;Oct&quot;,
-            -4 
+          -3.4 
 ],
 [
  &quot;Nov&quot;,
-         -15.5 
+         -14.9 
 ],
 [
  &quot;Dec&quot;,
-         -21.5 
+         -21.3 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -787,52 +787,52 @@ This last point is by no means necessarily true, but happens to be the case here
 {
  &quot;data&quot;: [
  [
-          -34.3,
-          -6.9 
+          -31.9,
+           -10 
 ],
 [
-          -32.4,
-          -9.8 
+          -30.4,
+         -12.2 
 ],
 [
-          -18.6,
-          -2.2 
+          -18.7,
+          -3.5 
 ],
 [
-           -5.9,
-           3.2 
+           -6.4,
+           2.6 
 ],
 [
-            4.1,
-          12.1 
+            4.9,
+          11.7 
 ],
 [
-           12.4,
-          18.6 
+           12.1,
+          17.9 
 ],
 [
-             14,
-          20.3 
+           14.1,
+          18.9 
 ],
 [
-           10.4,
-          17.5 
+             10,
+          16.8 
 ],
 [
-              5,
-          11.3 
+            4.2,
+          10.1 
 ],
 [
-          -10.1,
-             1 
+           -7.8,
+           1.2 
 ],
 [
-          -22.8,
-          -5.9 
+          -20.5,
+          -6.6 
 ],
 [
-          -32.7,
-         -13.7 
+            -30,
+         -13.8 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -1074,7 +1074,7 @@ This last point is by no means necessarily true, but happens to be the case here
 } 
 ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -1099,9 +1099,9 @@ This last point is by no means necessarily true, but happens to be the case here
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart10941dba4e75&quot;,
+&quot;id&quot;: &quot;charta74484e7fc9&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart10941dba4e75&quot; 
+ &quot;renderTo&quot;: &quot;charta74484e7fc9&quot; 
 } 
 });
         });
@@ -1110,7 +1110,7 @@ This last point is by no means necessarily true, but happens to be the case here
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10941dba4e75'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74484e7fc9'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 As the plot shows, this leads to error bars for CRU which are comparable to those shown for the decadal model outputs.

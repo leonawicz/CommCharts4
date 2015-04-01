@@ -76,12 +76,12 @@ Here are a couple examples using qualitative colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart10941ea82f81&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta74a965349&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart10941ea82f81&quot;,
+ &quot;dom&quot;: &quot;charta74a965349&quot;,
 
 
 &quot;credits&quot;: {
@@ -109,7 +109,7 @@ Here are a couple examples using qualitative colors.
 ],
 &quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FF8C00&quot;, &quot;#6495ED&quot;, &quot;#B3EE3A&quot;, &quot;#A020F0&quot; ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -143,52 +143,52 @@ Here are a couple examples using qualitative colors.
  {
  &quot;data&quot;: [
  [
-          -15.6,
-           1.5 
+          -17.5,
+          -0.7 
 ],
 [
-          -12.7,
-           0.3 
+            -13,
+             0 
 ],
 [
-           -8.8,
-           3.4 
+           -9.7,
+           2.2 
 ],
 [
-             -2,
-           5.2 
+           -2.8,
+           4.2 
 ],
 [
-            5.9,
-          11.3 
+              5,
+          10.4 
 ],
 [
-           11.6,
-          15.3 
+           10.9,
+          14.5 
 ],
 [
-           14.1,
-          17.6 
+           13.3,
+          16.7 
 ],
 [
-           12.8,
-          16.3 
+           12.1,
+          15.6 
 ],
 [
-            8.1,
-          12.6 
+            7.4,
+          11.6 
 ],
 [
-           -3.2,
-           4.6 
+           -2.8,
+             5 
 ],
 [
-          -11.2,
-           0.4 
+            -11,
+           0.5 
 ],
 [
-          -16.9,
-          -1.4 
+          -17.3,
+          -2.3 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -411,9 +411,9 @@ Here are a couple examples using qualitative colors.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart10941ea82f81&quot;,
+&quot;id&quot;: &quot;charta74a965349&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart10941ea82f81&quot; 
+ &quot;renderTo&quot;: &quot;charta74a965349&quot; 
 } 
 });
         });
@@ -422,7 +422,7 @@ Here are a couple examples using qualitative colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10941ea82f81'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74a965349'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -451,12 +451,12 @@ Here are a couple examples using qualitative colors.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart10943ea97a91&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta744da25ee&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart10943ea97a91&quot;,
+ &quot;dom&quot;: &quot;charta744da25ee&quot;,
 
 
 &quot;credits&quot;: {
@@ -484,7 +484,7 @@ Here are a couple examples using qualitative colors.
 ],
 &quot;colors&quot;: [ &quot;#666666&quot;, &quot;#FF8C00&quot;, &quot;#6495ED&quot;, &quot;#B3EE3A&quot;, &quot;#A020F0&quot; ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -518,40 +518,40 @@ Here are a couple examples using qualitative colors.
  {
  &quot;data&quot;: [
  [
-              1,
-            57 
+              2,
+            58 
 ],
 [
               4,
             39 
 ],
 [
-              1,
-            41 
+              2,
+            53 
 ],
 [
-              1,
+              2,
             41 
 ],
 [
               6,
-            48 
+            44 
 ],
 [
               6,
-            70 
+            72 
 ],
 [
-             15,
+             14,
            108 
 ],
 [
              15,
-           140 
+           141 
 ],
 [
              19,
-           126 
+           125 
 ],
 [
              14,
@@ -786,9 +786,9 @@ Here are a couple examples using qualitative colors.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;chart10943ea97a91&quot;,
+&quot;id&quot;: &quot;charta744da25ee&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart10943ea97a91&quot; 
+ &quot;renderTo&quot;: &quot;charta744da25ee&quot; 
 } 
 });
         });
@@ -797,7 +797,7 @@ Here are a couple examples using qualitative colors.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10943ea97a91'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta744da25ee'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
