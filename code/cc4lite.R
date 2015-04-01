@@ -1,7 +1,7 @@
 # @knitr setup
 library(rCharts)
 library(plyr)
-load("../../data/cc4lite_cru31_prism_2km10min.RData")
+load("../../data/cc4lite_cru3132_prism_2km10min.RData")
 caption <- 'Due to variability among climate models and among years in a natural climate system, these graphs are useful for examining trends over time, rather than for precisely<br>predicting monthly or yearly values. For more information on derivation, reliability, and variability among these projections, please visit www.snap.uaf.edu.'
 
 location <- "Fairbanks, Alaska"
@@ -13,7 +13,7 @@ RCPLabel <- switch(rcp, "r45"="Low-Range Emissions (RCP 4.5)", "r60"="Mid-Range 
 finalizeData <- function(res="2km", location="Fairbanks, Alaska", variable="Temperature", rcp="r60", RCPLabel, err="overlay", errtype="sd", units="Cmm", baseline="PRISM"){
 	PRISM <- if(variable=="Temperature") prism.t[prism.cities==location,] else prism.p[prism.cities==location,]
 
-	CRU <- if(res=="10min") d.cru.10min else d.cru.2km
+	CRU <- if(res=="10min") d.cru32.10min else d.cru32.2km
 	CRU_loc <- subset(CRU, Location==location)
 	CRU_var <- subset(CRU_loc, Var==variable)
 
@@ -27,7 +27,7 @@ finalizeData <- function(res="2km", location="Fairbanks, Alaska", variable="Temp
 		x$Decade[1:12] <- "1961-1990"
 		x[1:12, 6:9] <- PRISM + rep(c(-gap, 0, gap, gap), each=length(PRISM))
 		if(err!="exclusive"){ x$Min[1:12] <- x$Max[1:12] <- x$SD[1:12] <- NA }
-	} else if(baseline=="CRU 3.1") {
+	} else if(baseline=="CRU 3.2") {
 		x <- rbind(CRU_var, x)
 	}
 	if(units=="Fin") { if(variable=="Temperature") { x[,6:8] <- x[,6:8]*(9/5) + 32; x[,9] <- x[,9]*(9/5) } else x[,6:9] <- x[,6:9]/25.4 }
@@ -68,8 +68,8 @@ makePlot <- function(d, location="Fairbanks, Alaska", variable, err, units, base
 
 #### Intro example
 # @knitr plot00a
-d <- finalizeData(res="2km", location="Barrow, Alaska", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Fin", baseline="CRU 3.1")
-p <- makePlot(d, location="Barrow, Alaska", variable="Temperature", err="overlay", units="Fin", baseline="CRU 3.1")
+d <- finalizeData(res="2km", location="Barrow, Alaska", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Fin", baseline="CRU 3.2")
+p <- makePlot(d, location="Barrow, Alaska", variable="Temperature", err="overlay", units="Fin", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 
@@ -109,32 +109,32 @@ p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="PRIS
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot03b_cru
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 
 #### Displaying variability
 # @knitr plot04a_cru_overlay_range
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot04b_cru_overlay_sd
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="overlay", errtype="sd", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="overlay", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 
 #### Floating bars
 # @knitr plot05a_cru_exclusive_range
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot05b_cru_exclusive_sd
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot05c_prism_exclusive_range
@@ -145,23 +145,23 @@ p$show("iframesrc", cdn=TRUE)
 
 #### 2-km vs. 10-minute resolution: temperature
 # @knitr plot06a_cru_temp_none_2km
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="none", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="none", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot06b_cru_temp_none_10min
-d <- finalizeData(res="10min", variable="Temperature", RCPLabel=RCPLabel, err="none", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="10min", variable="Temperature", RCPLabel=RCPLabel, err="none", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="none", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot07a_cru_temp_exclusive_2km
-d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot07b_cru_temp_exclusive_10min
-d <- finalizeData(res="10min", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="10min", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot07c_prism_temp_none_10min
@@ -172,35 +172,35 @@ p$show("iframesrc", cdn=TRUE)
 
 #### 2-km vs. 10-minute resolution: precipitation
 # @knitr plot08a_cru_precip_exclusive_2km
-d <- finalizeData(res="2km", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot08b_cru_precip_exclusive_10min
-d <- finalizeData(res="10min", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="10min", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot09a_cru_precip_exclusive_2km
-d <- finalizeData(res="2km", location="Juneau, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, location="Juneau, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="2km", location="Juneau, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, location="Juneau, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot09b_cru_precip_exclusive_10min
-d <- finalizeData(res="10min", location="Juneau, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, location="Juneau, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1")
+d <- finalizeData(res="10min", location="Juneau, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="sd", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, location="Juneau, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.2")
 p$show("iframesrc", cdn=TRUE)
 
 
 #### Color options
 # @knitr plot10a_temp_colors
-d <- finalizeData(res="2km", location="Anchorage, Alaska", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, location="Anchorage, Alaska", variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.1", col="default")
+d <- finalizeData(res="2km", location="Anchorage, Alaska", variable="Temperature", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, location="Anchorage, Alaska", variable="Temperature", err="exclusive", units="Cmm", baseline="CRU 3.2", col="default")
 p$show("iframesrc", cdn=TRUE)
 
 # @knitr plot10b_precip_colors
-d <- finalizeData(res="2km", location="Anchorage, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.1")
-p <- makePlot(d, location="Anchorage, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.1", col="default")
+d <- finalizeData(res="2km", location="Anchorage, Alaska", variable="Precipitation", RCPLabel=RCPLabel, err="exclusive", errtype="range", units="Cmm", baseline="CRU 3.2")
+p <- makePlot(d, location="Anchorage, Alaska", variable="Precipitation", err="exclusive", units="Cmm", baseline="CRU 3.2", col="default")
 p$show("iframesrc", cdn=TRUE)
 
 
