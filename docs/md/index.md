@@ -40,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta745ec5259b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7479781f47&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta745ec5259b&quot;,
+ &quot;dom&quot;: &quot;charta7479781f47&quot;,
 
 
 &quot;credits&quot;: {
@@ -677,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta745ec5259b&quot;,
+&quot;id&quot;: &quot;charta7479781f47&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta745ec5259b&quot; 
+ &quot;renderTo&quot;: &quot;charta7479781f47&quot; 
 } 
 });
         });
@@ -688,7 +688,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta745ec5259b'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7479781f47'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##

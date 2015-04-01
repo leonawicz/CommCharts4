@@ -29,7 +29,7 @@ The only difference considered so far was regarding what statistic to use as a m
 Others could be considered, such as the inter-quartile range (IQR), but as mentioned previously,
 there are so few data points contributing to estimation of variability that some statistics just won't work.
 
-To recap, and for comparison with subsequent plots, here are two plots with error bars using CRU 3.1 data.
+To recap, and for comparison with subsequent plots, here are two plots with error bars using CRU 3.2 data.
 The first shows a range bar and the second shows +/- one standard deviation from the five-model average.
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -55,12 +55,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7436f1104d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta746eb77831&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7436f1104d&quot;,
+ &quot;dom&quot;: &quot;charta746eb77831&quot;,
 
 
 &quot;credits&quot;: {
@@ -692,9 +692,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta7436f1104d&quot;,
+&quot;id&quot;: &quot;charta746eb77831&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7436f1104d&quot; 
+ &quot;renderTo&quot;: &quot;charta746eb77831&quot; 
 } 
 });
         });
@@ -703,7 +703,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7436f1104d'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta746eb77831'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -729,12 +729,12 @@ The first shows a range bar and the second shows +/- one standard deviation from
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7475861991&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta74297b693f&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7475861991&quot;,
+ &quot;dom&quot;: &quot;charta74297b693f&quot;,
 
 
 &quot;credits&quot;: {
@@ -1366,9 +1366,9 @@ The first shows a range bar and the second shows +/- one standard deviation from
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta7475861991&quot;,
+&quot;id&quot;: &quot;charta74297b693f&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7475861991&quot; 
+ &quot;renderTo&quot;: &quot;charta74297b693f&quot; 
 } 
 });
         });
@@ -1377,7 +1377,7 @@ The first shows a range bar and the second shows +/- one standard deviation from
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7475861991'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74297b693f'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1412,12 +1412,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7453986c3d&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta747dc24eca&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7453986c3d&quot;,
+ &quot;dom&quot;: &quot;charta747dc24eca&quot;,
 
 
 &quot;credits&quot;: {
@@ -1747,9 +1747,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta7453986c3d&quot;,
+&quot;id&quot;: &quot;charta747dc24eca&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7453986c3d&quot; 
+ &quot;renderTo&quot;: &quot;charta747dc24eca&quot; 
 } 
 });
         });
@@ -1758,7 +1758,7 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7453986c3d'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta747dc24eca'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <iframe srcdoc=' &lt;!doctype HTML&gt;
@@ -1784,12 +1784,12 @@ Here are plots of the same data corresponding to the two plots above.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7478066bc5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta74237c2191&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7478066bc5&quot;,
+ &quot;dom&quot;: &quot;charta74237c2191&quot;,
 
 
 &quot;credits&quot;: {
@@ -2119,9 +2119,9 @@ Here are plots of the same data corresponding to the two plots above.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta7478066bc5&quot;,
+&quot;id&quot;: &quot;charta74237c2191&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7478066bc5&quot; 
+ &quot;renderTo&quot;: &quot;charta74237c2191&quot; 
 } 
 });
         });
@@ -2130,10 +2130,10 @@ Here are plots of the same data corresponding to the two plots above.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7478066bc5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74237c2191'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
-Referring back to the discussion of CRU 3.1 data and error bars,
+Referring back to the discussion of CRU 3.2 data and error bars,
 it is clear how the ability to have error bars for the historical baseline period assists in this Community Charts plot.
 There is something to see. Without some measure of dispersion around the historical baseline average, the twelve spaces for historical bars in this plot would be blank.
 
@@ -2166,12 +2166,12 @@ It's basically still a point value, but I want it to be clearly visible.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta74302a6c78&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta744d6d10e&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta74302a6c78&quot;,
+ &quot;dom&quot;: &quot;charta744d6d10e&quot;,
 
 
 &quot;credits&quot;: {
@@ -2501,9 +2501,9 @@ It's basically still a point value, but I want it to be clearly visible.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta74302a6c78&quot;,
+&quot;id&quot;: &quot;charta744d6d10e&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta74302a6c78&quot; 
+ &quot;renderTo&quot;: &quot;charta744d6d10e&quot; 
 } 
 });
         });
@@ -2512,7 +2512,7 @@ It's basically still a point value, but I want it to be clearly visible.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74302a6c78'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta744d6d10e'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

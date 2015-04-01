@@ -40,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;chart10b07fc3b99&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta7479781f47&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;chart10b07fc3b99&quot;,
+ &quot;dom&quot;: &quot;charta7479781f47&quot;,
 
 
 &quot;credits&quot;: {
@@ -76,15 +76,15 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
  &quot;data&quot;: [
  [
  &quot;Jan&quot;,
-        -12.28 
+        -13.36 
 ],
 [
  &quot;Feb&quot;,
-        -17.86 
+        -17.14 
 ],
 [
  &quot;Mar&quot;,
-         -13.9 
+        -14.98 
 ],
 [
  &quot;Apr&quot;,
@@ -92,7 +92,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 ],
 [
  &quot;May&quot;,
-         19.76 
+          19.4 
 ],
 [
  &quot;Jun&quot;,
@@ -100,27 +100,27 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 ],
 [
  &quot;Jul&quot;,
-         39.02 
+          39.2 
 ],
 [
  &quot;Aug&quot;,
-         37.58 
+          37.4 
 ],
 [
  &quot;Sep&quot;,
-         30.74 
+         30.38 
 ],
 [
  &quot;Oct&quot;,
-         12.56 
+         13.64 
 ],
 [
  &quot;Nov&quot;,
-          -2.2 
+         -1.84 
 ],
 [
  &quot;Dec&quot;,
-        -10.12 
+        -10.84 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -365,52 +365,52 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 {
  &quot;data&quot;: [
  [
-         -18.76,
-          -5.8 
+         -19.66,
+         -7.06 
 ],
 [
-         -25.06,
-        -10.66 
+         -24.34,
+         -9.94 
 ],
 [
-         -18.58,
-         -9.22 
+         -19.66,
+         -10.3 
 ],
 [
           -6.88,
           2.12 
 ],
 [
-          17.42,
-          22.1 
+          17.06,
+         21.74 
 ],
 [
           32.36,
           35.6 
 ],
 [
-          36.86,
-         41.18 
+          37.04,
+         41.36 
 ],
 [
-          33.98,
-         41.18 
+          34.16,
+         40.64 
 ],
 [
-          26.96,
-         34.52 
+          27.14,
+         33.62 
 ],
 [
-           6.98,
-         18.14 
+           8.96,
+         18.32 
 ],
 [
-          -8.86,
-          4.46 
+          -7.96,
+          4.28 
 ],
 [
-         -15.88,
-         -4.36 
+         -16.42,
+         -5.26 
 ] 
 ],
 &quot;name&quot;: &quot;1960-1989&quot;,
@@ -652,7 +652,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 } 
 ],
 &quot;subtitle&quot;: {
- &quot;text&quot;: &quot;Historical CRU 3.1 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
+ &quot;text&quot;: &quot;Historical CRU 3.2 and 5-Model Projected Average, Mid-Range Emissions (RCP 6.0)&quot;,
 &quot;style&quot;: {
  &quot;color&quot;: &quot;gray&quot; 
 } 
@@ -677,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;chart10b07fc3b99&quot;,
+&quot;id&quot;: &quot;charta7479781f47&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;chart10b07fc3b99&quot; 
+ &quot;renderTo&quot;: &quot;charta7479781f47&quot; 
 } 
 });
         });
@@ -688,7 +688,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart10b07fc3b99'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7479781f47'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##

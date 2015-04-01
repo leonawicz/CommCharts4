@@ -10,7 +10,7 @@
 ### Historical baseline
 
 In the original Community Charts application, only the 1961-1990 PRISM climatology was available as a historical baseline against which to compare future climate projections.
-An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
+An alternative would be to use the CRU 3.2 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
 Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.
 
 ##
@@ -49,12 +49,12 @@ There are more important differences between the baseline and the future decades
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7446b014d5&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta744326359b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7446b014d5&quot;,
+ &quot;dom&quot;: &quot;charta744326359b&quot;,
 
 
 &quot;credits&quot;: {
@@ -406,9 +406,9 @@ There are more important differences between the baseline and the future decades
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta7446b014d5&quot;,
+&quot;id&quot;: &quot;charta744326359b&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7446b014d5&quot; 
+ &quot;renderTo&quot;: &quot;charta744326359b&quot; 
 } 
 });
         });
@@ -417,13 +417,13 @@ There are more important differences between the baseline and the future decades
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7446b014d5'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta744326359b'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
-#### Historical baseline: CRU 3.1
+#### Historical baseline: CRU 3.2
 
-Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
+Using the CRU 3.2 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
 However, now error bars are available.
 The historical values are not known with precision, even using CRU, which is based on weather station observations, or when using PRISM for that matter.
 
@@ -462,12 +462,12 @@ This last point is by no means necessarily true, but happens to be the case here
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta74484e7fc9&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;charta741e772469&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta74484e7fc9&quot;,
+ &quot;dom&quot;: &quot;charta741e772469&quot;,
 
 
 &quot;credits&quot;: {
@@ -1099,9 +1099,9 @@ This last point is by no means necessarily true, but happens to be the case here
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta74484e7fc9&quot;,
+&quot;id&quot;: &quot;charta741e772469&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta74484e7fc9&quot; 
+ &quot;renderTo&quot;: &quot;charta741e772469&quot; 
 } 
 });
         });
@@ -1110,7 +1110,7 @@ This last point is by no means necessarily true, but happens to be the case here
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74484e7fc9'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta741e772469'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 As the plot shows, this leads to error bars for CRU which are comparable to those shown for the decadal model outputs.
