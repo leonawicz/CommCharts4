@@ -42,7 +42,7 @@ The only difference considered so far was regarding what statistic to use as a m
 Others could be considered, such as the inter-quartile range (IQR), but as mentioned previously,
 there are so few data points contributing to estimation of variability that some statistics just won't work.
 
-To recap, and for comparison with subsequent plots, here are two plots with error bars using CRU 3.1 data.
+To recap, and for comparison with subsequent plots, here are two plots with error bars using CRU 3.2 data.
 The first shows a range bar and the second shows +/- one standard deviation from the five-model average.
 
 ```{r plot04a_cru_overlay_range}
@@ -66,7 +66,7 @@ Here are plots of the same data corresponding to the two plots above.
 ```{r plot05b_cru_exclusive_sd}
 ```
 
-Referring back to the discussion of CRU 3.1 data and error bars,
+Referring back to the discussion of CRU 3.2 data and error bars,
 it is clear how the ability to have error bars for the historical baseline period assists in this Community Charts plot.
 There is something to see. Without some measure of dispersion around the historical baseline average, the twelve spaces for historical bars in this plot would be blank.
 

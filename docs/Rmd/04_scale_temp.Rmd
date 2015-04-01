@@ -27,7 +27,7 @@ For example, it would not make sense to use raw CRU data at 0.5 degrees latitude
 even if a community is a large, sprawling city.
 Instead, downscaled data are used.
 
-PRISM, the historical baseline, uses 2-km grid cells, as does anything downscaled to the PRISM climatology, e.g., SNAP's CRU 3.1 data and five global climate models.
+PRISM, the historical baseline, uses 2-km grid cells, as does anything downscaled to the PRISM climatology, e.g., SNAP's CRU 3.2 data and five global climate models.
 Climate trends for communities are extracted from these gridded data products using the grid cell in which a community's given spatial coordinates fall.
 These coordinates may fall in the center of a cell or they may fall near an edge or corner,
 but considering a cell is only four square kilometers and the focus is on very broad trends at a decadal time scale, this is not particularly problematic.
@@ -43,8 +43,8 @@ This generates concern regarding an unknown level of precision.
 And let's forget about how outdated these numbers may be.
 
 Population data is clearly not part of the Community Charts application, but it flows from the data set used to inform the application.
-Obviously one would not automatically expect spatial coordinates, or any other particular variable in a data set, to be of the same quality of measurement as any other variable.
-I do not expect locations to be way off, nor do I expect them to be out of date (but communities do "move around" if they are defined by a proxy variable which can move).
+It is not automatically expected that spatial coordinates, or any other particular variable in a data set, be of the same quality of measurement as any other variable.
+In this case I do not expect locations to be way off, nor do I expect them to be out of date (but communities do "move around" if they are defined by a proxy variable which can move).
 
 Still, this leaves an open question regarding the accuracy and precision of spatial coordinates.
 Chiefly, if they are not to a high enough precision, they most assuredly will not be accurate.
@@ -57,8 +57,7 @@ It is safe to assume the data set does not contain communities which are truly n
 
 With all that in mind, we proceed on the assumption that the spatial coordinates for each community are "good enough".
 Again, our interest is in broad scale climate trends, enough so that some uncertainty in the spatial dimension based on the overall unkemptness of the communities data set is a moot point.
-
-Until now.
+However, spatial scale must still be considered.
 
 ##
 #### 10-minute spatial resolution
@@ -73,14 +72,12 @@ Compare that to four square kilometers for a 2-km by 2-km grid cell.
 
 It is not known in advance what kind of effect this will have on assessment of climate trends, in either temperature or precipitation, or whether any difference will be noteworthy.
 However, this is why we analyze these things, so that we know for sure and can make an informed decision on the legitimacy of mixing the two scales.
-Of course, this is not to say that I wouldn't be comfortable wagering on how this will turn out.
 
 In the absence of context it is difficult to imagine why this mixture of scales, one to be used for some communities, another to be used for the rest, would even be a consideration.
 It's not like the two scales are 1-km and 2-km, or 10-minute and 12-minute.
 So I will briefly expound upon that.
 The reason it is considered here is simply because there is interest giving the Community Charts application a nominal boost in the number of communities available.
-(How about we remove the duplicates and otherwise clean up the data set first?)
-Anyhow, inclusion of additional communities is sensible because they will be specifically from the Northwest Territories in Canada, which is currently not represented in the application.
+Inclusion of additional communities is sensible because they will be specifically from the Northwest Territories in Canada, which is currently not represented in the application.
 
 The problem is that there is good reason this region was never included in versions 1, 2, or 3 of Community Charts (it will eventually be added to version 3 as well as this version 4 here).
 The PRISM climatology does not cover this area.
@@ -107,21 +104,7 @@ Error bars have been removed to help focus on mean values.
 ```{r plot06b_cru_temp_none_10min}
 ```
 
-During some months, mean monthly temperatures differ between resolutions by more than 10 degrees Celsius and 20 degrees Fahrenheit!
-And this despite that these are decadal averages of monthly averages of five-model averages! Averages of averages of averages! Done exclaiming.
-
-Look at January 2010-2019.
-Use the decadal color key in each of the above two plots to deselect all but this decade to see the difference more easily.
-Comparing data while transcending this much of a spatial scale reveals seriously biased values between scales.
-In other months bias can go in the opposite direction.
-
-Where a community falls inside a grid cell based on its coordinates can easily introduce bias if that grid cell is large.
-Compared to 2-km resolution, the 10-minute resolution is large enough to yield enormous differences in temperature which has been averaged several times over.
-A larger grid cell has a higher chance of including area which would not downscale to values similar to the 2-km grid cell where the community most closely resides.
-The average temperature signal over the 10-minute grid cell is not likely to be representative of any random 4-km square section within it that is based on high resolution PRISM data.
-
-It is worth noting that another difference can be the use of CRU vs. PRISM climatologies for downscaling, which are different, even if related.
-But it is still the case that one of the biggest differences about the respective climatologies used for downscaling is their spatial scale.
+Across months and decades, temperature differences between the 2-km and 10-minute data sets tend to be within a degree Celcius or so of each other.
 
 Next, the same data are plotted using floating range bars only.
 This makes it easier to focus on the variability at different scales.
@@ -138,26 +121,6 @@ This makes it easier to focus on the variability at different scales.
 ```{r plot07b_cru_temp_exclusive_10min}
 ```
 
-Variability differs between scales but is less consistent in amount and direction and appears less extreme than bias.
-This is possibly because variability, while being in part a function of scale,
-here is essentially based on other variables which are constant between scales, e.g., size of temporal windows and number of climate models.
-Changes in spatial variability with spatial resolution can only creep in here indirectly in terms of the effect of scale on the range of the five models during a ten-year period.
-Ultimately, there is no direct information content here regarding variability across space.
-At both resolutions a community is based on a single grid cell, however large that grid cell may be.
-
-It may not apply here, but is also worth noting that, compared to precipitation, temperature tends to be positively autocorrelated in space at greater distances.
-It is also important to note that the test case of Fairbanks, Alaska here represents a sample of size one.
-The same properties may behave differently in other geographic locations and must be checked as well.
-
-##
-#### 2-km PRISM data with 10-minute climate model output
-
-Note that the above plots all use CRU 3.1 data for a historical baseline.
-For one last comparison using temperature, examine the difference when using PRISM in conjunction with 10-minute resolution data.
-I chose not to aggregate the 2-km monthly PRISM climatologies to 10-minute resolution.
-This makes it clear how different the two temperature signals are from one another as well as which times of year the larger differences are observed, at least for Fairbanks, Alaska.
-
-```{r plot07c_prism_temp_none_10min}
-```
+Variability also appears similar in magnitude and change throughout time.
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>

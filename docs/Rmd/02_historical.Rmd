@@ -23,7 +23,7 @@ read_chunk("../../code/cc4lite.R")
 ### Historical baseline
 
 In the original Community Charts application, only the 1961-1990 PRISM climatology was available as a historical baseline against which to compare future climate projections.
-An alternative would be to use the CRU 3.1 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
+An alternative would be to use the CRU 3.2 climatology from a similar period. I have used 1960-1989 since this is more in step with the decadal periods used for the projected climate model outputs.
 Plots using each historical baseline are shown below. Unless otherwise noted, error bars in plots from here forward default to displaying the range.
 
 ##
@@ -43,9 +43,9 @@ There are more important differences between the baseline and the future decades
 ```
 
 ##
-#### Historical baseline: CRU 3.1
+#### Historical baseline: CRU 3.2
 
-Using the CRU 3.1 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
+Using the CRU 3.2 downscaled climate data (also downscaled to 2-km PRISM), the values are, expectedly, little different from those shown above.
 However, now error bars are available.
 The historical values are not known with precision, even using CRU, which is based on weather station observations, or when using PRISM for that matter.
 
