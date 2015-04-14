@@ -8,7 +8,7 @@ n.cores <- 32
 domain <- "akcan2km"
 #domain <- "world10min"
 
-decades.gcm <- c(2010, 2040, 2060, 2090)
+decades.gcm <- seq(2010, 2090, by=10)
 decades.cru <- c(1960, 1970, 1980)
 files.gcm <- list.files(file.path("city_files_GCM", domain), pattern=".RData$", full=TRUE)
 files.cru31 <- list.files(file.path("city_files_CRU31", domain), pattern=".RData$", full=TRUE)
@@ -49,7 +49,7 @@ d.cru32 <- as.data.frame(data.table::rbindlist(out))
 d.cru32 <- d.cru32[,c(1:4,9,5:8)]
 
 # @knitr save
-locs <- unique(d$Location)
+locs <- unique(d$Location) # run world10min domain last since it has more locations
 file.2km <- "cc4lite/cc4lite_akcan2km.RData"
 file.10min <- "cc4lite/cc4lite_world10min.RData"
 file.cru31.2km <- "cc4lite/cc4lite_cru31_akcan2km.RData"
