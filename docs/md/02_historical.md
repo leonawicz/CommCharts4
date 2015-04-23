@@ -49,12 +49,12 @@ There are more important differences between the baseline and the future decades
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta744326359b&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c620d19e4&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta744326359b&quot;,
+ &quot;dom&quot;: &quot;chart172c620d19e4&quot;,
 
 
 &quot;credits&quot;: {
@@ -406,9 +406,9 @@ There are more important differences between the baseline and the future decades
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta744326359b&quot;,
+&quot;id&quot;: &quot;chart172c620d19e4&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta744326359b&quot; 
+ &quot;renderTo&quot;: &quot;chart172c620d19e4&quot; 
 } 
 });
         });
@@ -417,7 +417,7 @@ There are more important differences between the baseline and the future decades
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta744326359b'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c620d19e4'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -462,12 +462,12 @@ This last point is by no means necessarily true, but happens to be the case here
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta741e772469&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c34b93d8c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta741e772469&quot;,
+ &quot;dom&quot;: &quot;chart172c34b93d8c&quot;,
 
 
 &quot;credits&quot;: {
@@ -1099,9 +1099,9 @@ This last point is by no means necessarily true, but happens to be the case here
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta741e772469&quot;,
+&quot;id&quot;: &quot;chart172c34b93d8c&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta741e772469&quot; 
+ &quot;renderTo&quot;: &quot;chart172c34b93d8c&quot; 
 } 
 });
         });
@@ -1110,7 +1110,7 @@ This last point is by no means necessarily true, but happens to be the case here
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta741e772469'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c34b93d8c'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 As the plot shows, this leads to error bars for CRU which are comparable to those shown for the decadal model outputs.

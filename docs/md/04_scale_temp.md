@@ -105,12 +105,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta742c0028ec&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c5b4e4629&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta742c0028ec&quot;,
+ &quot;dom&quot;: &quot;chart172c5b4e4629&quot;,
 
 
 &quot;credits&quot;: {
@@ -462,9 +462,9 @@ Error bars have been removed to help focus on mean values.
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta742c0028ec&quot;,
+&quot;id&quot;: &quot;chart172c5b4e4629&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta742c0028ec&quot; 
+ &quot;renderTo&quot;: &quot;chart172c5b4e4629&quot; 
 } 
 });
         });
@@ -473,7 +473,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta742c0028ec'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c5b4e4629'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -502,12 +502,12 @@ Error bars have been removed to help focus on mean values.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7422843113&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c521bd11&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7422843113&quot;,
+ &quot;dom&quot;: &quot;chart172c521bd11&quot;,
 
 
 &quot;credits&quot;: {
@@ -859,9 +859,9 @@ Error bars have been removed to help focus on mean values.
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta7422843113&quot;,
+&quot;id&quot;: &quot;chart172c521bd11&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7422843113&quot; 
+ &quot;renderTo&quot;: &quot;chart172c521bd11&quot; 
 } 
 });
         });
@@ -870,7 +870,7 @@ Error bars have been removed to help focus on mean values.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7422843113'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c521bd11'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Across months and decades, temperature differences between the 2-km and 10-minute data sets tend to be within a degree Celcius or so of each other.
@@ -904,12 +904,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta74323e1356&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c6c35d13&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta74323e1356&quot;,
+ &quot;dom&quot;: &quot;chart172c6c35d13&quot;,
 
 
 &quot;credits&quot;: {
@@ -1239,9 +1239,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta74323e1356&quot;,
+&quot;id&quot;: &quot;chart172c6c35d13&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta74323e1356&quot; 
+ &quot;renderTo&quot;: &quot;chart172c6c35d13&quot; 
 } 
 });
         });
@@ -1250,7 +1250,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74323e1356'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c6c35d13'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1279,12 +1279,12 @@ This makes it easier to focus on the variability at different scales.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta743d71761c&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c6b071cfc&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta743d71761c&quot;,
+ &quot;dom&quot;: &quot;chart172c6b071cfc&quot;,
 
 
 &quot;credits&quot;: {
@@ -1614,9 +1614,9 @@ This makes it easier to focus on the variability at different scales.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta743d71761c&quot;,
+&quot;id&quot;: &quot;chart172c6b071cfc&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta743d71761c&quot; 
+ &quot;renderTo&quot;: &quot;chart172c6b071cfc&quot; 
 } 
 });
         });
@@ -1625,7 +1625,7 @@ This makes it easier to focus on the variability at different scales.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta743d71761c'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c6b071cfc'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Variability also appears similar in magnitude and change throughout time.

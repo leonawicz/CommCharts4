@@ -40,12 +40,12 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7479781f47&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c3acb3421&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7479781f47&quot;,
+ &quot;dom&quot;: &quot;chart172c3acb3421&quot;,
 
 
 &quot;credits&quot;: {
@@ -677,9 +677,9 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
 &quot;pointPadding&quot;:           0.05 
 } 
 },
-&quot;id&quot;: &quot;charta7479781f47&quot;,
+&quot;id&quot;: &quot;chart172c3acb3421&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7479781f47&quot; 
+ &quot;renderTo&quot;: &quot;chart172c3acb3421&quot; 
 } 
 });
         });
@@ -688,7 +688,7 @@ An example plot taken from the updated <code>Community Charts version 4 Lite</co
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7479781f47'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c3acb3421'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -714,6 +714,7 @@ Also, although this is only a screenshot, the original application offers some b
 Version 4 of the Community Charts application is documented here.
 Community Charts version 4 is a lightweight application similar to [version 1](https://www.snap.uaf.edu/sites/all/modules/snap_community_charts/charts.php).
 Simple version 4 [alpha](http://shiny.snap.uaf.edu/cc4lite/) and [beta](http://shiny.snap.uaf.edu/cc4lite2/) applications are currently available to explore.
+The final version 4 [gamma](http://shiny.snap.uaf.edu/cc4liteFinal/) is simplified from the beta version.
 
 For a more powerful community charts application, see [version 2](http://shiny.snap.uaf.edu/akcan_climate/), which is differs significantly but offers much more data and interaction to the user.
 Version 3 is an even more powerful and adaptive version than 2, also including more communities, data, as well as graphical and analytic capabilities.

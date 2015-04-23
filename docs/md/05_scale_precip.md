@@ -39,12 +39,12 @@ Only the floating range bars are shown here.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7417f5cda&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c5347bdf&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7417f5cda&quot;,
+ &quot;dom&quot;: &quot;chart172c5347bdf&quot;,
 
 
 &quot;credits&quot;: {
@@ -374,9 +374,9 @@ Only the floating range bars are shown here.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta7417f5cda&quot;,
+&quot;id&quot;: &quot;chart172c5347bdf&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7417f5cda&quot; 
+ &quot;renderTo&quot;: &quot;chart172c5347bdf&quot; 
 } 
 });
         });
@@ -385,7 +385,7 @@ Only the floating range bars are shown here.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7417f5cda'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c5347bdf'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -414,12 +414,12 @@ Only the floating range bars are shown here.
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7423be2aa1&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172cf6154bb&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7423be2aa1&quot;,
+ &quot;dom&quot;: &quot;chart172cf6154bb&quot;,
 
 
 &quot;credits&quot;: {
@@ -749,9 +749,9 @@ Only the floating range bars are shown here.
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta7423be2aa1&quot;,
+&quot;id&quot;: &quot;chart172cf6154bb&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7423be2aa1&quot; 
+ &quot;renderTo&quot;: &quot;chart172cf6154bb&quot; 
 } 
 });
         });
@@ -760,7 +760,7 @@ Only the floating range bars are shown here.
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7423be2aa1'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172cf6154bb'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 Comparisons between data sets for Fairbanks, Alaska suggest there is little difference between resolutions.
@@ -793,12 +793,12 @@ though other characteristics such as the seasonal cycle appear preserved across 
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta74256349b2&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c41366bb7&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta74256349b2&quot;,
+ &quot;dom&quot;: &quot;chart172c41366bb7&quot;,
 
 
 &quot;credits&quot;: {
@@ -1128,9 +1128,9 @@ though other characteristics such as the seasonal cycle appear preserved across 
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta74256349b2&quot;,
+&quot;id&quot;: &quot;chart172c41366bb7&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta74256349b2&quot; 
+ &quot;renderTo&quot;: &quot;chart172c41366bb7&quot; 
 } 
 });
         });
@@ -1139,7 +1139,7 @@ though other characteristics such as the seasonal cycle appear preserved across 
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta74256349b2'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c41366bb7'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 ##
@@ -1168,12 +1168,12 @@ though other characteristics such as the seasonal cycle appear preserved across 
   &lt;/head&gt;
   &lt;body &gt;
     
-    &lt;div id = &#039;charta7421e73816&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
+    &lt;div id = &#039;chart172c5afc4806&#039; class = &#039;rChart highcharts&#039;&gt;&lt;/div&gt;    
     &lt;script type=&#039;text/javascript&#039;&gt;
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- &quot;dom&quot;: &quot;charta7421e73816&quot;,
+ &quot;dom&quot;: &quot;chart172c5afc4806&quot;,
 
 
 &quot;credits&quot;: {
@@ -1503,9 +1503,9 @@ though other characteristics such as the seasonal cycle appear preserved across 
 &quot;type&quot;: &quot;columnrange&quot; 
 } 
 ],
-&quot;id&quot;: &quot;charta7421e73816&quot;,
+&quot;id&quot;: &quot;chart172c5afc4806&quot;,
 &quot;chart&quot;: {
- &quot;renderTo&quot;: &quot;charta7421e73816&quot; 
+ &quot;renderTo&quot;: &quot;chart172c5afc4806&quot; 
 } 
 });
         });
@@ -1514,7 +1514,7 @@ though other characteristics such as the seasonal cycle appear preserved across 
     
     &lt;script&gt;&lt;/script&gt;    
   &lt;/body&gt;
-&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-charta7421e73816'> </iframe>
+&lt;/html&gt; ' scrolling='no' frameBorder='0' seamless class='rChart  highcharts  ' id='iframe-chart172c5afc4806'> </iframe>
  <style>iframe.rChart{ width: 100%; height: 500px;}</style>
 
 <style>iframe.rChart{ width: 100%; height: 500px;}</style>
