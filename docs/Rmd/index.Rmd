@@ -56,6 +56,7 @@ Also, although this is only a screenshot, the original application offers some b
 Version 4 of the Community Charts application is documented here.
 Community Charts version 4 is a lightweight application similar to [version 1](https://www.snap.uaf.edu/sites/all/modules/snap_community_charts/charts.php).
 Simple version 4 [alpha](http://shiny.snap.uaf.edu/cc4lite/) and [beta](http://shiny.snap.uaf.edu/cc4lite2/) applications are currently available to explore.
+The final version 4 [gamma](http://shiny.snap.uaf.edu/cc4liteFinal/) is simplified from the beta version.
 
 For a more powerful community charts application, see [version 2](http://shiny.snap.uaf.edu/akcan_climate/), which is differs significantly but offers much more data and interaction to the user.
 Version 3 is an even more powerful and adaptive version than 2, also including more communities, data, as well as graphical and analytic capabilities.
