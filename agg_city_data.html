@@ -170,7 +170,7 @@ n.cores &lt;-<span class="st"> </span><span class="dv">32</span>
 domain &lt;-<span class="st"> &quot;akcan2km&quot;</span>
 <span class="co"># domain &lt;- &#39;world10min&#39;</span>
 
-decades.gcm &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2010</span>, <span class="dv">2040</span>, <span class="dv">2060</span>, <span class="dv">2090</span>)
+decades.gcm &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">2010</span>, <span class="dv">2090</span>, <span class="dt">by =</span> <span class="dv">10</span>)
 decades.cru &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1960</span>, <span class="dv">1970</span>, <span class="dv">1980</span>)
 files.gcm &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">file.path</span>(<span class="st">&quot;city_files_GCM&quot;</span>, domain), <span class="dt">pattern =</span> <span class="st">&quot;.RData$&quot;</span>, 
     <span class="dt">full =</span> <span class="ot">TRUE</span>)
@@ -217,7 +217,7 @@ out &lt;-<span class="st"> </span><span class="kw">mclapply</span>(<span class="
 d.cru32 &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(data.table::<span class="kw">rbindlist</span>(out))
 d.cru32 &lt;-<span class="st"> </span>d.cru32[, <span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">4</span>, <span class="dv">9</span>, <span class="dv">5</span>:<span class="dv">8</span>)]</code></pre>
 <p>A variety of useful <strong>R</strong> workspace files are saved. Some prior workspaces are also loaded at specific stages below to be added to the current workspace before it is saved again.</p>
-<pre class="sourceCode r"><code class="sourceCode r">locs &lt;-<span class="st"> </span><span class="kw">unique</span>(d$Location)
+<pre class="sourceCode r"><code class="sourceCode r">locs &lt;-<span class="st"> </span><span class="kw">unique</span>(d$Location)  <span class="co"># run world10min domain last since it has more locations</span>
 file.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_akcan2km.RData&quot;</span>
 file.10min &lt;-<span class="st"> &quot;cc4lite/cc4lite_world10min.RData&quot;</span>
 file.cru31.2km &lt;-<span class="st"> &quot;cc4lite/cc4lite_cru31_akcan2km.RData&quot;</span>
