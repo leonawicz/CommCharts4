@@ -11,7 +11,7 @@ domain <- "akcan2km"
 decades.gcm <- seq(2010, 2090, by=10)
 decades.cru <- c(1960, 1970, 1980)
 files.gcm <- list.files(file.path("city_files_GCM", domain), pattern=".RData$", full=TRUE)
-files.cru31 <- list.files(file.path("city_files_CRU31", domain), pattern=".RData$", full=TRUE)
+#files.cru31 <- list.files(file.path("city_files_CRU31", domain), pattern=".RData$", full=TRUE)
 files.cru32 <- list.files(file.path("city_files_CRU32", domain), pattern=".RData$", full=TRUE)
 
 # @knitr function
@@ -29,7 +29,7 @@ f <- function(i, files, decades, phase){
 }
 
 # @knitr process
-system.time( out <- mclapply(1:length(files.gcm), f, files=files.gcm, decades=decades.gcm, phase="CMIP5", mc.cores=n.cores) )
+system.time( out <- mclapply(1:length(files.gcm), f, files=files.gcm, decades=decades.gcm, phase="AR5", mc.cores=n.cores) )
 #system.time( d1 <- do.call(rbind, out) )
 #system.time( d2 <- ldply(out, data.frame) )
 #system.time( d3 <- rbind.fill(out) )
@@ -40,9 +40,9 @@ d$Decade <- paste(d$Decade, as.numeric(d$Decade) + 9, sep="-")
 #identical(d1, d3)
 #identical(d1, d)
 
-out <- mclapply(1:length(files.cru31), f, files=files.cru31, decades=decades.cru, phase="CRU 3.1", mc.cores=n.cores)
-d.cru31 <- as.data.frame(data.table::rbindlist(out))
-d.cru31 <- d.cru31[,c(1:4,9,5:8)]
+#out <- mclapply(1:length(files.cru31), f, files=files.cru31, decades=decades.cru, phase="CRU 3.1", mc.cores=n.cores)
+#d.cru31 <- as.data.frame(data.table::rbindlist(out))
+#d.cru31 <- d.cru31[,c(1:4,9,5:8)]
 
 out <- mclapply(1:length(files.cru32), f, files=files.cru32, decades=decades.cru, phase="CRU 3.2", mc.cores=n.cores)
 d.cru32 <- as.data.frame(data.table::rbindlist(out))
@@ -52,33 +52,33 @@ d.cru32 <- d.cru32[,c(1:4,9,5:8)]
 locs <- unique(d$Location) # run world10min domain last since it has more locations
 file.2km <- "cc4lite/cc4lite_akcan2km.RData"
 file.10min <- "cc4lite/cc4lite_world10min.RData"
-file.cru31.2km <- "cc4lite/cc4lite_cru31_akcan2km.RData"
-file.cru31.10min <- "cc4lite/cc4lite_cru31_world10min.RData"
+#file.cru31.2km <- "cc4lite/cc4lite_cru31_akcan2km.RData"
+#file.cru31.10min <- "cc4lite/cc4lite_cru31_world10min.RData"
 file.cru32.2km <- "cc4lite/cc4lite_cru32_akcan2km.RData"
 file.cru32.10min <- "cc4lite/cc4lite_cru32_world10min.RData"
 if(domain=="akcan2km"){
 	d.2km <- d
 	save(d.2km, locs, file=file.2km)
-	d.cru31.2km <- d.cru31
-	save(d.2km, d.cru31.2km, locs, file=file.cru31.2km)
+	#d.cru31.2km <- d.cru31
+	#save(d.2km, d.cru31.2km, locs, file=file.cru31.2km)
 	d.cru32.2km <- d.cru32
 	save(d.2km, d.cru32.2km, locs, file=file.cru32.2km)
 } else if(domain=="world10min") {
 	d.10min <- d
 	save(d.10min, locs, file=file.10min)
-	d.cru31.10min <- d.cru31
-	save(d.10min, d.cru31.10min, locs, file=file.cru31.10min)
+	#d.cru31.10min <- d.cru31
+	#save(d.10min, d.cru31.10min, locs, file=file.cru31.10min)
 	d.cru32.10min <- d.cru32
 	save(d.10min, d.cru32.10min, locs, file=file.cru32.10min)
 }
 
-if(all(file.exists(file.cru31.2km, file.cru31.10min, file.cru32.2km, file.cru32.10min))){
-	load(file.cru31.2km)
-	load(file.cru31.10min)
+if(all(file.exists(file.cru32.2km, file.cru32.10min))){
+	#load(file.cru31.2km)
+	#load(file.cru31.10min)
 	load(file.cru32.2km)
 	load(file.cru32.10min)
 	save(d.2km, d.10min, locs, file="cc4lite/cc4lite_2km10min.RData")
-	save(d.2km, d.10min, d.cru31.2km, d.cru31.10min, locs, file="cc4lite/cc4lite_cru31_2km10min.RData")
+	#save(d.2km, d.10min, d.cru31.2km, d.cru31.10min, locs, file="cc4lite/cc4lite_cru31_2km10min.RData")
 	save(d.2km, d.10min, d.cru32.2km, d.cru32.10min, locs, file="cc4lite/cc4lite_cru32_2km10min.RData")
-	save(d.2km, d.10min, d.cru31.2km, d.cru31.10min, d.cru32.2km, d.cru32.10min, locs, file="cc4lite/cc4lite_cru3132_2km10min.RData")
+	#save(d.2km, d.10min, d.cru31.2km, d.cru31.10min, d.cru32.2km, d.cru32.10min, locs, file="cc4lite/cc4lite_cru3132_2km10min.RData")
 }
