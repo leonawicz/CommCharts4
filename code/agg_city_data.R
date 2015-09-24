@@ -1,5 +1,5 @@
 # @knitr setup
-setwd("/workspace/UA/mfleonawicz/leonawicz/projects/SNAPQAQC/data/final")
+setwd("/workspace/UA/mfleonawicz/projects/SNAPQAQC/data/final")
 #library(plyr)
 library(dplyr)
 library(parallel)
